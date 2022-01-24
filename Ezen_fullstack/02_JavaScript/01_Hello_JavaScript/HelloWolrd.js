@@ -6,10 +6,13 @@ console.group("MyMessage1");
     console.log("안녕하세요. Javascript2");
     console.log("안녕하세요. Javascript3");
 console.groupEnd();
-    console.group("MyMessage2");
-        console.log("안녕하세요. Javascript4");
-        console.log("안녕하세요. Javascript5");
+console.group("MyMessage2");
+    console.log("안녕하세요. Javascript4");
+    console.log("안녕하세요. Javascript5");
+    console.group("MyMessage2-1");
+        console.log("안녕하세요. Javascript6");
     console.groupEnd();
-        console.group("MyMessage2-1");
-            console.log("안녕하세요. Javascript6");
-        console.groupEnd();
+console.groupEnd();
+
+
+console.log("hello world");
