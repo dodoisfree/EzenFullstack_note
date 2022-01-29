@@ -13,13 +13,13 @@ console.log(myArr[1].length);
 
 // 2차 배열을 반복문으로 탐색할 때는 2중 반복문이 사용된다.
 // 바깥의 반복문은 행을 담당
-for (let i=0; i<myArr.length; i++) {
+for (let i = 0; i < myArr.length; i++) {
     console.group(i + "번째 행 ----------");
-        console.log(myArr[i]);
+    console.log(myArr[i]);
 
-        // 안쪽의 반복문은 i번째 행의 대한 열을 담당
-        for (let j=0; j<myArr[i].length; j++) {
-            console.log(myArr[i][j]);
-        }
+    // 안쪽의 반복문은 i번째 행의 대한 열을 담당
+    for (let j = 0; j < myArr[i].length; j++) {
+        console.log(myArr[i][j]);
+    }
     console.groupEnd();
 }
