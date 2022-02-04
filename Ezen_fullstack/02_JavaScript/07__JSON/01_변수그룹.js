@@ -1,3 +1,6 @@
+
+// JSON = 데이터 교환 규격 = 통신 프로토콜
+
 // 변수들의 그룹으로서의 JSON정의
 const student = {
     // key: value, key: value ... 의 형식으로 나열
