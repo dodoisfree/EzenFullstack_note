@@ -21,3 +21,5 @@ const obj = {abc: 123}; console.log(obj.xyz);
 
 let sampleValue6
 console.log(typeof sampleValue6);
+
+
