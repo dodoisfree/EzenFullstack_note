@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+  </head>
+
+  <body>
+      <>
+          <fieldset>
+              <legend>이동통신사 선택하기</legend>
+              <div>
+                  <!-- 드롭다운(싱글타입) -->
+                  <label for="telecom">이동통신사 선택</label>
+                  <select name="telecom" id="telecom">
+                      <option>----- 선택하세요 -----</option>
+                      <option value="SKT">SKTelecom</option>
+                      <option value="KT">KT</option>
+                      <option value="LG">LG U+</option>
+                  </select>
+              </div>
+          </fieldset>
+
+          <br/>
+
+          <fieldset>
+            <legend>스마트폰 운영체제 선택하기</legend>
+            <div>
+                <!-- 드롭다운(멀티타입) -->
+                <label for="smartphone">스마트폰 운영체제</label>
+                <select name="smartphone" id="smartphone" multiple>
+                    <option>----- 선택하세요 -----</option>
+                    <option value="android">안드로이드</option>
+                    <option value="iOS">iOS</option>
+                    <option value="window">Window</option>
+                </select>
+            </div>
+          </fieldset>
+      </form>
+  </body>
+</html>
