@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <!-- 스타일시트 -->
+    <style type="text/css">
+        .parent {
+            /** 시각적인 확인을 위한 처리 */
+            background-color: #ff00ff;
+            border: 10px dotted #0000ff;
+            /** 크기를 지정합시다. --> 고정사이즈 */
+            width: 500px;
+            height: 300px;
+        }
+
+        .child {
+            /** 시각적인 확인을 위한 처리 */
+            background-color: #00ff00;
+            /** 자식이 부모를 가득 채우기 위해서는,
+            부모의 크기에서 자신의 padding과 border를 뺀 만큼
+            크기를 부여해야 한다. */
+            padding: 10px 20px;
+            border: 5px solid red;
+            width: 450px;
+            height: 270px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">HTML &amp; CSS</div>
+    </div>
+</body>
+</html>
