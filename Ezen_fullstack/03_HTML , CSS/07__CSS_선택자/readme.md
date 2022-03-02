@@ -171,8 +171,8 @@ CSS셀렉터가 복수 요소를 의미할 경우 그 중에서 몇 번째인지
 
 | 셀렉터 | 설명 |
 |--------|------|
-| foo:first-child(2) | foo라는 셀렉터를 갖는 요소 중에서 첫번째 요소 |
-| foo:last-child(2) | foo라는 셀렉터를 갖는 요소 중에서 마지막 요소 |
+| foo:first-child | foo라는 셀렉터를 갖는 요소 중에서 첫번째 요소 |
+| foo:last-child | foo라는 셀렉터를 갖는 요소 중에서 마지막 요소 |
 | foo:nth-child(2) | foo라는 셀렉터를 갖는 요소 중에서 2번째 |
 | foo:nth-child(odd) | 홀수번째 |
 | foo:nth-child(2n) | 짝수번째 |
