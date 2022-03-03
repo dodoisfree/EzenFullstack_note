@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <!-- 스타일시트 -->
+    <style type="text/css">
+        /** 박스를 화면 가득 채우기 */
+        div {
+            background-color: #ff6600;
+            width: 100%;
+            height: 100%;
+        }
+
+        /** body 태그에 기본적으로 적용된 padding, margin을 off 시킨다. */
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        /** 부모를 기준으로 크기를 갖기 때문에, body와 html에게도 크기 설정 */
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>박스</div>
+</body>
+</html>
