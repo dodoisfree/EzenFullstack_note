@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style type="text/css">
+        #parent {
+            border: 5px dotted #000000;
+            padding: 10px;
+        }
+
+        #box1 {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #eee;
+            margin: 0 0 10px 10px;
+            float: right;
+        }
+
+        #box1 img {
+            width: 100%;
+        }
+
+        /**
+        부모 요소가 끝나기 전에 clear 처리 필요함
+        */
+        .clear:after {
+            display: block;
+            content: '';
+            float: none;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent" class="clear">
+        <div id="box1">
+            <img src="img/title.jpg"/>
+        </div>
+        <p>웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어이다.</p>
+    </div>
+</body>
+</html>
