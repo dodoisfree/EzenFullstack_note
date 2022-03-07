@@ -2,7 +2,7 @@
 
 요소의 배치 방법을 결정하는 속성
 
-`relative`(상대좌표), `absolute`(절대좌표), `fixed`(고정좌표) 방식이 있다.
+`relative`(상대좌표), `absolute`(절대좌표), `fixed`(고정좌표), `sticky(유동좌표)` 방식이 있다.
 
 각 방식에 따라 좌표가 설정되는 기준이 달라진다.
 
@@ -35,6 +35,29 @@ relative, absolute에 따라 좌표의 기준 선정 방식이 변경된다.
 기본적으로 absolute와 동일하다.
 
 스크롤이 이동하더라도 요소의 위치가 화면상에 고정되어 있다.
+
+### 4) sticky 속성
+
+sitcky 속성은 필수적으로 top, bottom, left, right들 중에 하나를 필수적으로 설정해주어야 한다.
+
+sitcky로 설정된 영역은 설정된 위치(예 top: 0px)에 도달하기 전까지는 static 속성처럼 행동하다가 설정된 위치에 다다르면 fixed 속성처럼 동작한다.
+
+(IE에서는 동작하지 않는다.)
+
+#### 주의사항
+
+- 부모(혹은 조상)요소에게 overflow속성이 hidden, scroll, auto가 지정되어 있다면 동작하지 않는다.
+- 부모 요소는 반드시 height가 px값으로 지정되어 있어야 한다.
+- 부모 요소에 `%`로 높이가 지정되어 있다면 동작하지 않는다.
+- Safari에서도 동작하게 하려면, 위와 같이 -webkit-sticky 속성을 추가해야 한다.
+    ```CSS
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    ```
+
 
 ## #02. z-index
 
