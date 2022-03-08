@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <!-- 스타일시트 -->
+    <style type="text/css">
+        div {
+            border: 5px solid rgba(255, 0, 255, 0.5);
+            margin: 20px auto;
+            width: 90%;
+            height: 135px;
+            color: white;
+            text-shadow: 0 1px 1px black;
+            text-align: center;
+            padding-top: 10px;
+            background-image: url(img/main_content_bg.png);
+        }
+
+        div#box2 {
+            background-size: 100% 100%;
+        }
+
+        div#box3 {
+            background-size: 50px 50px;
+        }
+
+        div#box4 {
+            background-size: cover;
+        }
+
+        div#box5 {
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        <h2>Default</h2>
+    </div>
+    <div id="box2">
+        <h2>100% 100%</h2>
+    </div>
+    <div id="box3">
+        <h2>50px 50px</h2>
+    </div>
+    <div id="box4">
+        <h2>cover</h2>
+    </div>
+    <div id="box5">
+        <h2>contain</h2>
+    </div>
+    <br/>
+</body>
+</html>
