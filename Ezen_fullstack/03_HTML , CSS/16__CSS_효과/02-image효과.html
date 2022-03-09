@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style type="text/css">
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .img-shadow{
+            box-shadow: 7px 7px 12px #000;;
+        }
+
+        .img-circle{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>기본 이미지</h1>
+        <img src="img/spring.jpg"/>
+    </div>
+    <div>
+        <h1>그림자 효과</h1>
+        <img src="img/summer.jpg" class="img-shadow"/>
+    </div>
+    <div>
+        <h1>둥근 이미지</h1>
+        <img src="img/autumn.jpg" class="img-circle"/>
+    </div>
+    <div>
+        <h1>둥근 이미지 + 그림자 효과</h1>
+        <img src="img/winter.jpg" class="img-circle img-shadow"/>
+    </div>
+</body>
+</html>
