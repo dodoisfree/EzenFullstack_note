@@ -1,0 +1,62 @@
+/* 페이지 배경 및 타이틀 영역 구성 */
+@charset "uft-8";
+
+/* 배경 */
+body {
+    background: #46464D url(../img/top_bg2.png) repeat-x;
+}
+
+/* 상단 타이틀 */
+#header {
+    width: 318px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+/* 상단 타이틀 영역의 로고 이미지 처리 + 버튼 가로 배치 */
+/* 상단 타이틀 > 제목(로고) */
+#header h1 {
+    background: url(../img/top_bg.png) no-repeat;
+    width: auto;
+    height: 85px;
+    text-indent: -10000px;
+    margin-bottom: 15px;
+}
+
+/* 상단 타이틀 > 버튼용 li */
+#header li {
+    display: inline;
+    padding: 0 3px;
+}
+
+/* 메뉴영역 배경 이미지 처리 */
+/* 내용(메인메뉴) */
+#content {
+    background: url(../img/list_bg.png) repeat;
+    width: auto;
+    height: 184px;
+}
+
+/* 내용(메인메뉴) > 목록박스 */
+#content ul {
+    background: url(../img/menu.png) no-repeat;
+    width: auto;
+    height: 184px;
+}
+
+/* 내용(메인메뉴) > 목록박스 > 각 항목<li> */
+#content ul li {
+    width: auto;
+    height: 46px;
+    background: url(../img/list_right.png) right center no-repeat;
+}
+
+/* 내용(메인메뉴) > 목록박스 > 각 항목<li> 링크 */
+#content ul li a {
+    display: block;
+    width: auto;
+    height: 45px;
+    text-indent: -10000px;
+    cursor: pointer;
+}
