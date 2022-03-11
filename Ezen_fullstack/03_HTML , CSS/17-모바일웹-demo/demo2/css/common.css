@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+* {
+    font-family: "나눔고딕", "맑은고딕", "굴림", "Helvetica";
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+hr {
+    display: none;
+}
+
+#header {
+    background: url(../img/bg_header.gif) repeat-x;
+    height: 49px;
+    border-bottom: 1px solid  #000;
+}
+
+#header h1 {
+    width: 71px;
+    height: 24px;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+}
+
+#header span {
+    display: block;
+    width: 48px;
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+#footer {
+    width: auto;
+    text-align: center;
+}
+
+#footer ul {
+    margin: 5px auto;
+}
+
+#footer ul li {
+    display: inline;
+    padding: 0 2px;
+}
+
+#footer address {
+    width: auto;
+    height: 35px;
+    background: #ccc;
+    font-size: 0.8em;
+    line-height: 35px;
+    color: #666;
+}
