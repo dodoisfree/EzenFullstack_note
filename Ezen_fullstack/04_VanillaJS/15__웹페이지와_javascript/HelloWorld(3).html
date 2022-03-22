@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="foo"></h1>
+    <script>
+        // 스크립트를 body태그 닫기 직전에 위치시키면
+        // 웹 브라우저가 HTML태그를 모두 식별한 후에 js가 실행되게 된다.
+        const foo = document.getElementById('foo');
+        foo.innerHTML = "Hello World";
+
+        /*
+            앞서 확인한 방식들보다 JS코드를 맨 마지막에 배치하는 것이 페이지 로딩 속도가 더 빠르다.
+            페이지 로딩속도가 빠르기 때문에 검색엔진이 이 페이지를 식별하는데도 더 수월하다.
+            그래서 구글은 몇년 전부터 JS코드가 아래에 배치된 페이지에 검색 결과 우선권을 주고 있다.
+        */
+    </script>
+</body>
+</html>
