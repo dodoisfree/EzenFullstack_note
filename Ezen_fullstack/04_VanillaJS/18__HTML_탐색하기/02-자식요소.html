@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list">
+        <li id="one">One</li>
+        <li id="two" class="blue">
+            Two
+            <ul>
+                <li id="a">A</li>
+                <li id="b" class="blue">B</li>
+                <li id="c" class="red">C</li>
+                <li id="d">D</li>
+            </ul>
+        </li>
+        <li id="three">Three</li>
+        <li id="four" class="blue">Four</li>
+    </ul>
+
+    <button type="button" id="btn1">상위 ul의 자식들</button>
+    <button type="button" id="btn2">Two의 하위 ul 자식들</button>
+
+    <script>
+        document.querySelector('#btn1').addEventListener('click', (e) => {
+            // 지정된 요소의 텍스트와 하위 Element를 모두 조회
+            // -> 심지어는 코드 줄맞춤을 위한 줄바꿈도 텍스트로 인식 (비추)
+            console.log(document.querySelector('#list').childNodes);
+
+            // 불필요한 요소를 제거하고 하위 Element만 조회
+            console.log(document.querySelector('#list').children);
+
+            // #list의 자식요소들 얻기
+            const children = document.querySelector('#list').children;
+
+            // children으로 획득하는 HTMLCollection은 배열과 비슷한 특성을 갖지만 그 자체가 배열은 아니기 때문에
+            // 배열의 탐색 기능을 활용하기 위해서는 배열로 변환해야 한다.
+            const childrenArr = Array.from(children);
+
+            childrenArr.forEach((v, i) => {
+                v.style.backgroundColor = '#0066ff';
+            });
+        });
+
+        document.querySelector('#btn2').addEventListener('click', (e) => {
+            const childrenArr = Array.from(document.querySelector('#two > ul').children);
+
+            childrenArr.forEach((v, i) => {
+                v.style.fontWeight = '900';
+            });
+        });
+    </script>
+</body>
+</html>
