@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            padding: 5px 10px;
+            cursor: pointer;
+            border-bottom: 1px dotted #d5d5d5;
+        }
+        li:first-child {
+            border-top: 1px dotted #d5d5d5;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="comment" />
+    <button type="button" id="beforebegin">beforebegin</button>
+    <button type="button" id="afterend">afterend</button>
+    <button type="button" id="afterbegin">afterbegin</button>
+    <button type="button" id="beforeend">beforeend</button>
+    <hr/>
+    <!-- 동적으로 JS가 생성한 HTML요소가 추가될 위치 -->
+    <!-- beforebegin -->
+    <ul id="list">
+        <!-- afterbegin  -->
+
+        <!-- beforeend -->
+    </ul>
+    <!-- afterend -->
+
+    <script>
+        function remove(target) {
+            target.remove();
+        }
+
+        // 동적으로 JS가 생성한 HTML요소가 추가될 객체
+        const list = document.querySelector('#list');
+
+        // 사용자가 입력할 input 태그
+        const comment = document.querySelector('#comment');
+
+        /** 앞에추가, 추가 버튼 클릭 이벤트 */
+        document.querySelector('#beforebegin').addEventListener('click', (e) => {
+            // 첫 번째 파라미터에 따라 자식요소가 추가되는 위치가 달라진다.
+            // --> beforebegin : 요소의 시작태그 직전에 추가된다. 엄밀히 말하면 지정된 요소 외부에 추가되므로 추가라고 할 수는 없다.
+            // --> afterend : 요소의 종료태그 직후에 추가된다.
+            // --> afterbegin : 요소의 시작태그 직후에 추가된다. 내부에 추가됨.
+            // --> beforeend : 요소의 종료태그 직전에 추가된다.
+            // [주의] 생성하고자 하는 HTML의 코드 자체를 적용해야 한다.
+            list.insertAdjacentHTML('beforebegin', "<p class='item beforebegin' onclick='remove(this)'>" + comment.value + '</p>');
+        });
+
+        document.querySelector('#afterend').addEventListener('click', (e) => {
+            list.insertAdjacentHTML('afterend', "<p class='item afterend' onclick='remove(this)'>" + comment.value + '</p>');
+        });
+
+        document.querySelector('#afterbegin').addEventListener('click', (e) => {
+            list.insertAdjacentHTML('afterbegin', "<p class='item afterbegin' onclick='remove(this)'>" + comment.value + '</p>');
+        });
+
+        document.querySelector('#beforeend').addEventListener('click', (e) => {
+            list.insertAdjacentHTML('beforeend', "<p class='item beforeend' onclick='remove(this)'>" + comment.value + '</p>');
+        });
+    </script>
+</body>
+</html>

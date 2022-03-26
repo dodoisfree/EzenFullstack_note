@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            padding: 5px 10px;
+            cursor: pointer;
+            border-bottom: 1px dotted #d5d5d5;
+        }
+
+        li:first-child {
+            border-top: 1px dotted #d5d5d5;
+        }
+
+        .blue {
+            background-color: #06f2;
+        }
+
+        .orange {
+            background-color: #f602;
+        }
+
+        .pink {
+            background-color: #f0f2;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="comment" />
+    <button type="button" id="appendChild">appendChild</button>
+    <button type="button" id="insertBefore1">insertBefore1</button>
+    <button type="button" id="insertBefore2">insertBefore2</button>
+    <hr/>
+    <!-- 동적으로 JS가 생성한 HTML요소가 추가될 위치 -->
+    <ul id="list"></ul>
+
+    <script>
+        // 동적으로 JS가 생선한 HTMl요소가 추가될 객체
+        const list = document.querySelector('#list');
+
+        // 사용자가 입력할 input 태그
+        const comment = document.querySelector('#comment');
+
+        // 동적으로 <li>태그 Element 객체를 생성하여 리턴하는 함수
+        const getItem = (clsName) => {
+            // JS에게 <li> 태그를 코딩시킴
+            const li = document.createElement('li');
+            // CSS 클래스 추가시 add()함수에게 갯수제한 없이 콤마로 구분하여 여러개 지정 가능함.
+            li.classList.add('item', clsName);
+            // 사용자가 입력한 내용을 <li>태그에 표시함
+            li.innerHTML = comment.value;
+
+            // <li>에 클릭 이벤트 적용
+            li.addEventListener('click', (e) => {
+                // 클릭된 자기 스스로를 제거함
+                e.currentTarget.remove();
+            });
+
+            return li;
+        };
+
+        /** 자식요소 추가 버튼 클릭 이벤트 */
+        document.querySelector('#appendChild').addEventListener('click', (e) => {
+            // li태그를 반환받음
+            const li = getItem('blue');
+
+            // <ul>태그에 JS가 코딩한 <li>를 자식요소로 추가함 --> 기존 항목을 유지하고 맨 뒤에 추가함.
+            list.appendChild(li);
+        });
+
+        document.querySelector('#insertBefore1').addEventListener('click', (e) => {
+            // 부모노드.insertBefore(삽입 할 노드, 기준점 노드);
+            // -> 기준점이 null인 경우 appendChild와 동일하게 동작
+            list.insertBefore(getItem('orange'), null);
+        });
+        
+        document.querySelector('#insertBefore2').addEventListener('click', (e) => {
+            // 기준점이 지정된 경우 기준점 직전에 추가됨
+            // -> 첫 번째 항목 직전에 추가하라는 의미 --> 가장 첫 번째 요소로 추가됨
+            list.insertBefore(getItem('pink'), document.querySelector('li:first-child'));
+        });
+    </script>
+</body>
+</html>
