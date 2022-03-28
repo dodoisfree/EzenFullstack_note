@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform">
+        <label><input type="radio" name="subject" value="html" />HTML</label>
+        <label><input type="radio" name="subject" value="CSS" />CSS</label>
+        <label><input type="radio" name="subject" value="javascript" />Javascript</label>
+        <button type="button" id="btn">입력값 확인</button>
+    </form>
+
+    <hr/>
+
+    <p id="console"></p>
+
+    <script>
+        // 리턴 타입의 배열과 비슷한 NodeList 타입의 객체.
+        // --> 배열과 특성은 동일하지만 forEach 의외의 탐색을 위한 메서드는 포함하고 있지 않다.
+        const radio = document.querySelectorAll("input[name='subject']");
+
+        // radio의 모든 원소를 스캔하면서 원소(v)와 인덱스(i)를 콜백함수에게 전달하는 탐색
+        radio.forEach( (v, i) => {
+            v.addEventListener('change', e => {
+                document.querySelector("#console").innerHTML = e.currentTarget.value;
+            });
+        });
+
+        // 전송 버튼이 눌러진 경우 처리
+        document.querySelector("#btn").addEventListener("click", e => {
+            // 선택된 항목을 찾았는지 여부
+            Array.from(radio).some( (v, i) => {
+                // 선택된 항목을 찾았다면?
+                if (v.checked) {
+                    document.querySelector("#console").innerHTML = i + "번째 항목" + v.value + "이(가) 선택됨";
+                    return true;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
