@@ -29,7 +29,7 @@ class RegexHelper {
      * 입력값이 지정된 글자수를 초과했는지 검사한다.
      * @param   {string} selector   검사할 대상의 CSS 선택자
      * @param   {int} len           최대 글자수
-     * @param   {string} msg        값이 없을 경우 표시될 메세지
+     * @param   {string} msg        검사에 실패할 경우 표시할 메세지
      */
     maxLength(selector, len, msg) {
         this.value(selector, msg);
@@ -47,7 +47,7 @@ class RegexHelper {
      * 입력값이 지정된 글자수를 초과했는지 검사한다.
      * @param   {string} selector   검사할 대상의 CSS 선택자
      * @param   {int} len           최소 글자수
-     * @param   {string} msg        값이 없을 경우 표시될 메세지
+     * @param   {string} msg        검사에 실패할 경우 표시할 메세지
      */
     minLength(selector, len, msg) {
         this.value(selector, msg);
