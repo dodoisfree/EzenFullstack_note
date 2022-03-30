@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt {
+            font-weight: bold;
+            margin: 10px 0px;
+            font-size: 20px;
+        }
+
+        dt::before{
+            content: '⨷';
+            padding-right: 5px;
+        }
+
+        dd {
+            font-weight: normal;
+            margin-bottom: 30px;
+            border-left: 5px #d5d5d5 solid;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <dl id="navigator-list">
+
+    </dl>
+
+    <script>
+        const navigatorList = document.querySelector("#navigator-list");
+
+        const dt1 = document.createElement("dt");
+        dt1.innerHTML = "브라우저 이름";
+        navigatorList.appendChild(dt1);
+
+        const dd1 = document.createElement("dd");
+        dd1.innerHTML = navigator.appName;
+        navigatorList.appendChild(dd1);
+
+        const dt2 = document.createElement("dt");
+        dt2.innerHTML = "브라우저 코드명";
+        navigatorList.appendChild(dt2);
+
+        const dd2 = document.createElement("dd");
+        dd2.innerHTML = navigator.appCodeName;
+        navigatorList.appendChild(dd2);
+
+        const dt3 = document.createElement("dt");
+        dt3.innerHTML = "플랫폼 정보";
+        navigatorList.appendChild(dt3);
+
+        const dd3 = document.createElement("dd");
+        dd3.innerHTML = navigator.platform;
+        navigatorList.appendChild(dd3);
+
+        const dt4 = document.createElement("dt");
+        dt4.innerHTML = "브라우저 버전";
+        navigatorList.appendChild(dt4);
+
+        const dd4 = document.createElement("dd");
+        dd4.innerHTML = navigator.appVersion;
+        navigatorList.appendChild(dd4);
+
+        const dt5 = document.createElement("dt");
+        dt5.innerHTML = "사용자 정보";
+        navigatorList.appendChild(dt5);
+
+        const dd5 = document.createElement("dd");
+        dt5.innerHTML = navigator.userAgent;
+        navigatorList.appendChild(dd5);
+
+        
+    </script>
+</body>
+</html>

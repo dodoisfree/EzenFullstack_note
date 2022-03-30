@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>window 객체</h1>
+    <h3>open 메소드 확인</h3>
+    <div>
+        <a href="#" id="link1">새 창 열기</a>
+        <br/>
+        <a href="#" id="link2">팝업 창 열기(1)</a>
+        <br/>
+        <a href="#" id="link3">팝업 창 열기(2-1)</a>
+        <br/>
+        <a href="#" id="link4">팝업 창 열기(2-2)</a>
+        <br/>
+    </div>
+
+    <script>
+        document.querySelector("#link1").addEventListener("click", e => {
+            e.preventDefault();
+            /** 새창(혹은 탭) 띄우기 */
+            window.open('open.html');
+        });
+
+        document.querySelector("#link2").addEventListener("click", e => {
+            e.preventDefault();
+            /** 클릭할 때 마다 창이 새로 열리는 팝업창 */
+            // 두 번째 파라미터인 창 이름이 빈 문자열로 전달되었으므로, 매번 새로운 팝업창을 생성한다.
+            // location 옵션은 피싱 사이트를 방지하기 위해 브라우저 개발사들이 담합하여 지원하지 않고 있다.
+            const popup = window.open('open.html', '', 'width=300', 'height=500', 'scrollbars=no', 'toolbar=no', 'menubar=no', 'status=no', 'location=no');
+
+            // 팝업창이 차단된 경우
+            if (!popup) {
+                alert("팝업 차단을 해제해 주세요.");
+            } else {
+                popup.focus();
+            }
+        });
+
+        document.querySelector("#link3").addEventListener("click", e => {
+            e.preventDefault();
+            // #link4가 눌러졌을때 호출되는 팝창과 창 이름이 동일하므로,
+            // 같은 창을 공유한다.
+            window.open('https://www.naver.com', 'mywin', 'width=500', 'height=300', 'scrollbars=no', 'toolbar=no', 'menubar=no', 'status=no', 'location=no');
+        });
+
+        document.querySelector("#link4").addEventListener("click", e => {
+            e.preventDefault();
+            window.open('https://www.daum.net', 'mywin', 'width=500', 'height=300', 'scrollbars=no', 'toolbar=no', 'menubar=no', 'status=no', 'location=no');
+        });
+    </script>
+</body>
+</html>

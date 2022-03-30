@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>쿠키 읽기/쓰기</h1>
+    <div>
+        <select id="cookie_name">
+            <option value="name">name</option>
+            <option value="age">age</option>
+        </select>
+        <select id="cookie_time">
+            <option value="">none</option>
+            <option value="0">0</option>
+            <option value="5">5</option>
+            <option value="10">10s</option>
+            <option value="30">35s</option>
+        </select>
+        <input type="text" id="cookie_var">
+        <button type="button" id="save">save</button>
+        <button type="button" id="read">read</button>
+    </div>
+
+    <script>
+        document.querySelector("#save").addEventListener("click", e => {
+            // 선택한 쿠키 이름 가져오기
+            const cookieName = document.querySelector("cookie_name");
+            const cookieNameChoose = cookieName[cookieName.selectedIndex].value;
+
+            // 선택한 쿠키의 유효시간 가져오기
+            const cookieTime = document.querySelector("cookie_time");
+            const cookieTimeChoose = cookieTime[cookieTime.selectedIndex].value;
+
+            // 저장할 쿠키의 내용
+            const cookieVar = document.querySelector("#cookie_var");
+            const cookieVarValue = cookieVar.value;
+
+            // 쿠키에 저장할 정보의 문자열 구성
+            // --> "user=John; path=/; max-age=3600"
+            let cookie_str = encodeURIComponent(cookieNameChoose) + "=" + encodeURIComponent(cookieVarValue) + ";";
+            cookie_str += "path=/;";
+
+            if (cookieTimeChoose) {
+                cookie_str += "max-age" + cookieTimeChoose + ";";
+            }
+
+            console.log(cookie_str);
+            document.cookie = cookie_str;
+
+            document.querySelector("#read").addEventListener("click", e => {
+                alert(document.cookie);
+            });
+        });
+    </script>
+</body>
+</html>

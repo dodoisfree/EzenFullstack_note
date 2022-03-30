@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="find-me" type="button">Show my location</button><br />
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
+
+    <script>
+      /**
+       *
+       * 최신 노트북은 위치 정보 취득에 제한이 없기 때문에 기능 사용상의 문제가 없지만,
+       * Desktop PC의 경우 위치정보 취득을 위한 하드웨어가 없는 경우가 대부분.
+       * 이 경우 IP주소 기반으로 위치를 취득하는데 대부분 서울시청 근처로 조회될 경우가 많음.
+       *
+       * 구글 크롬브라우저는 상용화 된 웹 페이지에서 이 기능을 사용할 경우
+       * https:// 로 시작되는 주소가 아니면 보안상의 이유로 위치정보를 반환하지 않는다.
+       *
+       * Javascript의 geolocation은 위도, 경도만을 반환한다.
+       * 이 정보를 네이버, 카카오, 구글등이 제공하는 지도 서비스를 통해 시각화 하면 지도 구현이 가능함.
+       * 단, 네이버 맵, 구글맵은 유료 서비스임.
+       *
+       */
+
+      // <p>태그에 대한 객체
+      const status = document.querySelector("#status");
+      // <a>태그에 대한 객체
+      const mapLink = document.querySelector("#map-link");
+
+      // <button>에 대한 클릭 이벤트
+        document.querySelector('#find-me').addEventListener('click', (e) => {
+            // 화면에 표시되는 내용을 모두 지운다.
+            mapLink.setAttribute('href', '#');
+            mapLink.innerHTML = '';
+
+            /** 조회 옵션 */
+            const options = {
+                enableHighAccuracy: true, // 높은 정확도 사용하기
+                maximumAge: 0, // 캐시에 저장한 위치정보를 대신 반환할 수 있는 최대 시간을 밀리초로 나타내는 양
+                // -> 0으로 설정할 경우 캐시를 사용하지 않고 매번 gps 값을 새롭게 취득함.
+                timeout: 30000, // 제한시간(30초). 제한시간 안에 조회가 성공하지 않으면 에러로 간주
+            };
+
+            /** 성공시 수행될 콜백 */
+            function success(position) {
+                const latitude = position.coords.latitude;      // 위도
+                const longitude = position.coords.longitude;    // 경도
+
+                // geolocation 호출전 표시한 "검색중..." 메세지를 삭제
+                status.innerHTML = '';
+
+                // 링크에 openstreetmap으로의 URL을 href속성으로 지정함. (18=확대비율)
+                mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+                mapLink.innerHTML = `위도: ${latitude} ◦, 경도: ${longitude} ◦`; 
+            }
+
+            /** 실패시 수행될 콜백 */
+            function error(e) {
+                status.innerHTML = '위치 정보 획득에 실패했습니다.';
+                console.error(e);
+            }
+
+            // navigator객체 안에 geolocation이라는 기능이 없다면?
+            if (!navigator.geolocation) {
+                status.innerHTML = '현재 브라우저가 위치정보 기능을 제공하지 않습니다.';
+            } else {
+                status.innerHTML = '검색중...';
+
+                // 현재 위치를 1회성으로 조회함.
+                // succes -> 위치정보 조회 성공시 호출될 콜백함수
+                // error -> 위치정보 조회 실패시 호출될 콜백함수
+                // options -> 조회 옵션 (선택사항)
+                navigator.geolocation.getCurrentPosition(success, error, options);
+
+                // 현재위치를 지속적으로 조회함 --> 이동 경로 추적 가능
+                // navigator.geolocation.watchPosition(success, error, options);
+            }
+        });
+    </script>
+  </body>
+</html>
