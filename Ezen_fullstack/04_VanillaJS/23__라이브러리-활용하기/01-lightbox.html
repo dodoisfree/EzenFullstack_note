@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lightbox Example</h1>
+    <p>
+        <a href="https://fslightbox.com/">https://fslightbox.com</a>
+    </p>
+    <hr/>
+
+    <h2>Single Gallery</h2>
+    <p>주의사항: 실행시 Live Server 환경으로 실행해야 함.</p>
+    <p>data-fslightbox 속성의 값을 서로 독립적으로 부여한다.</p>
+    <div>
+        <a data-fslightbox="img1" href="img/001.png">
+            <img src="img/001.png" width="150" />
+        </a>
+        <a data-fslightbox="img2" href="img/002.png">
+            <img src="img/002.png" width="150" />
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+</body>
+</html>

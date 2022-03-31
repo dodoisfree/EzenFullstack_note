@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <h1>Location 객체의 Property 확인</h1>
+    <h2 id="datetime"></h2>
+    <p>라이브서버 기반으로 실행해야 합니다.</p>
+    <a href="http://localhost:5500/22__기타기능/05-location.html?name=helloworld&age=20#info">ex: http://localhost:5500/22__기타기능/05-location.html?name=helloworld&age=20#info</a>
+    <hr/>
+    <ul>
+        <li>문서의 URL 주소: <span id="location1"></span></li>
+        <li>호스트 이름과 포트: <span id="location2"></span></li>
+        <li>호스트 컴퓨터 이름: <span id="location3"></span></li>
+        <li>Hash값: <span id="location4"></span></li>
+        <li>디렉토리 이하 경로: <span id="location5"></span></li>
+        <li>포트번호 부분: <span id="location6"></span></li>
+        <li>프로토콜 종류: <span id="location7"></span></li>
+        <li>URL 조회부분: <span id="location8"></span></li>
+    </ul>
+    <hr/>
+    <button type="button" id="btn1">다음 예제로 이동</button>
+    <button type="button" id="btn2">페이지 새로고침</button>
+
+    <script type="text/javascript">
+        document.querySelector('#location1').innerHTML = decodeURIComponent(location.href);
+        document.querySelector('#location2').innerHTML = location.host;
+        document.querySelector('#location3').innerHTML = location.hostname;
+        document.querySelector('#location4').innerHTML = location.hash;
+        document.querySelector('#location5').innerHTML = decodeURIComponent(location.pathname);
+        document.querySelector('#location6').innerHTML = location.port;
+        document.querySelector('#location7').innerHTML = location.protocol;
+        document.querySelector('#location8').innerHTML = location.search;
+
+        document.querySelector('#btn1').addEventListener('click', (e) => {
+            if (confirm('정말로 이동하시겠습니까?')) {
+                location.href = '06-querystring.html';
+            }
+        });
+
+        document.querySelector('#btn2').addEventListener('click', (e) => {
+            location.reload();
+        });
+    </script>
+</body>
+</html>
