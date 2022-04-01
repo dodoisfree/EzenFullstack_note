@@ -27,6 +27,7 @@
     <button type="button" id="btn2">페이지 새로고침</button>
 
     <script type="text/javascript">
+        document.querySelector("#datetime").innerHTML = new Date();
         document.querySelector('#location1').innerHTML = decodeURIComponent(location.href);
         document.querySelector('#location2').innerHTML = location.host;
         document.querySelector('#location3').innerHTML = location.hostname;
