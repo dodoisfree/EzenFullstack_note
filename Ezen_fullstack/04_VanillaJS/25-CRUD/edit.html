@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학과관리 ::: MySchool</title>
+    <link rel="stylesheet" href="assets/css//style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div data-include="inc/header.html"></div>
+      <!-- body -->
+      <section>
+        <form name="form" id="department-form">
+          <!-- 수정할 대상에 대한 일련번호 값을 포함해야 하므로 hidden 필드로 처리한다. -->
+          <input type="hidden" name="id" id="id" />
+          <div class="form-group">
+            <label for="dname">
+              학과이름 <span class="text-danger">*</span>
+            </label>
+            <div>
+              <input type="text" name="dname" id="dname" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="loc"> 학과위치</label>
+            <div>
+              <input type="text" name="loc" id="loc" />
+            </div>
+          </div>
+          <hr />
+          <div class="text-center">
+            <button type="submit">수정하기</button>
+            <button type="reset">다시작성</button>
+          </div>
+        </form>
+      </section>
+      <!-- footer -->
+      <div data-include="inc/footer.html"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script>
+      (async () => {
+        /** GET 파라미터 받기 */
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        console.log(id);
+
+        // 파라미터가 정삭적이지 않으므로 메세지 출력, 전페이지로 이동 처리 후 수행 중단(return)
+        if (!id) {
+          alert("학과번호가 없습니다.");
+          history.back();
+          return;
+        }
+
+        /** Ajax요청 */
+        // 기존에 저장되어 있는 내용을 <form>안에 셋팅하기 위해 Ajax로 데이터를 가져온다.
+        let json;
+
+        try {
+          json = await axios.get(`http://localhost:3000/department/${id}`);
+        } catch (e) {
+          console.error(e);
+          alert("요청을 처리하는데 실패했습니다.");
+          return;
+        }
+
+        // 가져온 데이터가 있다면 <input> 태그의 value 속성으로 가져온 값을 적용한다.
+        // 일련번호와 같이 시스템이 관리하는 값을 hidden 요소로 포함시킨다.
+        if (json != null) {
+          const { data } = json;
+          document.querySelector("#id").value = data.id;
+          document.querySelector("#dname").value = data.dname;
+          document.querySelector("#loc").value = data.loc;
+        }
+      })();
+
+      /** 수정 버튼의 submit 이벤트 */
+      document.querySelector('#department-form').addEventListener('submit', async (e) => {
+          e.preventDefault();
+
+          // 입력값 받아오기
+          const id = document.querySelector('#id').value;
+          const dname = document.querySelector('#dname').value;
+          const loc = document.querySelector('#loc').value;
+
+          // 입력값에 대한 유효성 검사 진행.... (이 예제에서는 생략)
+
+          let json = null;
+
+          try {
+              json = await axios.put(`http://localhost:3000/department/${id}`, {
+                  dname: dname,
+                  loc: loc,
+              });
+          } catch (e) {
+              console.error(e);
+              alert('요청을 처리하는데 실패했습니다.');
+              return;
+          }
+
+          if (json != null) {
+              window.location.href = `view.html?id=${id}`;
+          }
+      });
+    </script>
+  </body>
+</html>

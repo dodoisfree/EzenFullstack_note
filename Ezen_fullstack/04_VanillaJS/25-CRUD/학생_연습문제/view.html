@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교수 정보관리 ::: MySchool</title>
+    <link rel="stylesheet" href="assets/css//style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div data-include="inc/header.html"></div>
+        <!-- body -->
+        <section>
+            <dl>
+                <dt>학생번호</dt>
+                <dd class="id"></dd>
+                <dt>이름</dt>
+                <dd class="name"></dd>
+                <dt>아이디</dt>
+                <dd class="userid"></dd>
+                <dt>학년</dt>
+                <dd class="grade"></dd>
+                <dt>주민번호</dt>
+                <dd class="idnum"></dd>
+                <dt>생년월일</dt>
+                <dd class="birthdate"></dd>
+                <dt>전화번호</dt>
+                <dd class="tel"></dd>
+                <dt>키</dt>
+                <dd class="height"></dd>
+                <dt>몸무게</dt>
+                <dd class="weight"></dd>
+                <dt>학과번호</dt>
+                <dd class="deptno"></dd>
+                <dt>담당교수 일련번호</dt>
+                <dd class="profno"></dd>
+            </dl>
+            <a href="index.html">목록보기</a>
+            <a href="#" class="btn-edit">수정하기</a>
+            <a href="#" class="btn-delete">삭제하기</a>
+        </section>
+        <!-- footer -->
+        <div data-include="inc/footer.html"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script>
+        (async () => {
+            /** GET 파라미터 받기 */
+            // window.location.search : "?id=101"
+            console.log(`search값 => ${window.location.search}`);
+
+            // querystring값이 key-value 형태로 객체로 분리됨
+            const params = new URLSearchParams(window.location.search);
+
+            // 객체에서 key사용하여 값을 추출 --> 101
+            const id = params.get('id');
+            console.log('id');
+
+            // 파라미터가 정상적이지 않으므로 메세지 출력, 전페이지 이동 처리 후 수행 중단(return)
+            if (!id) {
+                alert('학생번호가 없습니다.');
+                history.back();
+                return;
+            }
+
+            /** Ajax요청 */
+            let json = null;
+
+            try {
+                json = await axios.get(`http://localhost:3000/department/${id}`);
+            } catch (e) {
+                console.error(e);
+                alert('요청을 처리하는데 실패했습니다.');
+                return;
+            }
+
+            if (json != null) {
+                const {data} = json;
+
+                document.querySelector('.id').innerHTML = data.id;
+                document.querySelector('.name').innerHTML = data.name;
+                document.querySelector('.userid').innerHTML = data.userid;
+                document.querySelector('.grade').innerHTML = data.grade;
+                document.querySelector('.idnum').innerHTML = data.idnum;
+                document.querySelector('.birthdate').innerHTML = data.birthdate;
+                document.querySelector('.tel').innerHTML = data.tel;
+                document.querySelector('.height').innerHTML = data.height;
+                document.querySelector('.weight').innerHTML = data.weight;
+                document.querySelector('.deptno').innerHTML = data.deptno;
+                document.querySelector('.profno').innerHTML = data.profno;
+
+                // 가져온 데이터의 일련번호를 사용하여 어떤 대상을 수정할지에 대한 링크 URL 구성
+                document.querySelector('.btn-edit').setAttribute('href', 'edit.html?id=' + data.id);
+
+                // 가져온 데이터의 일련번호를 사용하여 어떤 대상을 삭제할지에 대한 dataset 구성
+                const btnDelete = document.querySelector('.btn-delete');
+                btnDelete.dataset.id = data.id;
+                btnDelete.dataset.name = data.name;
+            }
+        })();
+
+        /** 삭제 버튼에 대한 클릭 이벤트 */
+        document.querySelector('.btn-delete').addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const current = e.currentTarget;
+            const id = current.dataset.id;
+            const name = current.dataset.name;
+
+            if (!confirm(`정말 ${name}(을)를 삭제하시겠습니까?`)) {
+                return;
+            }
+
+            let json;
+
+            try {
+                json = axios.delete(`http://localhost:3000/department/${id}`);
+            } catch (e) {
+                console.error(e);
+                alert('요청을 처리하는데 실패했습니다.');
+                return;
+            }
+
+            if (json != null) {
+                window.location = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
