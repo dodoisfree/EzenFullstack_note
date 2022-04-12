@@ -228,9 +228,123 @@
     width: 80%;
     height: 750px;
     margin: 0 auto;
-    background-color: beige;
+    background-color: white;
     position: relative;
     top: 178px;
+}
+
+.list {
+    width: 380px;
+    height: 560px;
+    background-color: #F6F3F2;
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
+    position: relative;
+    top: 10px;
+    left: 55px;
+}
+
+.list h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+.list img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+.list h3 {
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    color: #177FA8;
+    top: 120px;
+    left: 45px;
+}
+.list p {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    top: 145px;
+    left: 45px;
+}
+.list div {
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #002C5F;
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: 195px;
+    left: 40px;
+    margin: 0 3px 0 3px;
+}
+
+#circle_list {
+    width: 220px;
+    height: 20px;
+    position: relative;
+    top: 60px;
+    left: 780px;
+}
+#circle_list span {
+    float: left;
+    margin: 7px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: relative;
+    background-color: #eee;
+    top: -5px;
+}
+#circle_list span::after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+#circle_list span:first-child {
+    background-color: #002C5F;
+}
+#back2 {
+    width: 50px;
+    height: 50px;
+    background-color: #A5ABB1;
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+    top: 1680px;
+}
+#back2 p {
+    display: block;
+    font-size: 27px;
+    color: white;
+    line-height: 50px;
+}
+#next2 {
+    width: 50px;
+    height: 50px;
+    background-color: #A5ABB1;
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: 1680px;
+    
+}
+#next2 p {
+    display: block;
+    font-size: 27px;
+    color: white;
+    line-height: 50px;
 }
 
 
