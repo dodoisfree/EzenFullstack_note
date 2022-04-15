@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      .slide_wrapper {
+        position: relative;
+        width: 660px;
+        margin: 0 auto;
+        height: 200px;
+        overflow: hidden;
+      }
+      .slides {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .slides.animated {
+        transition: 0.5s ease-out;
+      }
+      .slides li {
+        width: 200px;
+        height: 200px;
+        background: #ccc;
+        float: left;
+      }
+      .slides li:not(:last-child) {
+        margin-right: 30px;
+      }
+      .controls {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide_wrapper">
+      <ul class="slides">
+        <li>slide 01</li>
+        <li>slide 02</li>
+        <li>slide 03</li>
+        <li>slide 04</li>
+        <li>slide 05</li>
+      </ul>
+    </div>
+    <p class="controls">
+      <span class="prev">prev</span>
+      <span class="next">next</span>
+    </p>
+  </body>
+  <script>
+    let slides = document.querySelector(".slides"),
+      slide = document.querySelectorAll(".slides li"),
+      currentIdx = 0,
+      slideCount = slide.length,
+      slidWidth = 200,
+      slideMargin = 30,
+      prevBtn = document.querySelector(".prev"),
+      nextBtn = document.querySelector(".next");
+
+    makeClone();
+
+    function makeClone() {
+      for (let i = 0; i < slideCount; i++) {
+        let cloneSlide = slide[i].cloneNode(true);
+        cloneSlide.classList.add("clone");
+        slides.appendChild(cloneSlide);
+      }
+      for (let i = slideCount - 1; i >= 0; i--) {
+        let cloneSlide = slide[i].cloneNode(true);
+        cloneSlide.classList.add("clone");
+        slides.prepend(cloneSlide);
+      }
+      updateWidth();
+      setInitialPos();
+      setTimeout((e) => {
+        slides.classList.add("animated");
+      }, 100);
+    }
+
+    function updateWidth() {
+      let currentSlides = document.querySelectorAll(".slides li");
+      let newSlideCount = currentSlides.length;
+      let newWidth =
+        (slidWidth + slideMargin) * newSlideCount - slideMargin + "px";
+      slides.style.width = newWidth;
+    }
+    function setInitialPos() {
+      let initialTranslateValue = -(slidWidth + slideMargin) * slideCount;
+      slides.style.transform = "translateX(" + initialTranslateValue + "px)";
+    }
+
+    nextBtn.addEventListener("click", (e) => {
+      moveslide(currentIdx + 1);
+    });
+    prevBtn.addEventListener("click", (e) => {
+      moveslide(currentIdx - 1);
+    });
+
+    function moveslide(num) {
+      slides.style.left = -num * (slidWidth + slideMargin) + "px";
+      currentIdx = num;
+      if (currentIdx == slideCount || currentIdx == -slideCount) {
+        setTimeout((e) => {
+          slides.classList.remove("animated");
+          slides.style.left = "0px";
+          currentIdx = 0;
+        }, 500);
+        setTimeout((e) => {
+            slides.classList.add("animated");
+        }, 600);
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            display: flex;
+        }
+
+        .container2 {
+            display: inline-flex;
+        }
+
+        .container {
+            border: 2px dotted #06f;
+            padding: 10px;
+            height: 200px;
+        }
+        
+        .item {
+            border: 2px solid #f0f;
+            padding: 10px;
+         }
+    </style>
+</head>
+<body>
+    <h1>flex</h1>
+    <div class="container container1">
+        <div class="item">helloflex</div>
+        <div class="item">abc</div>
+        <div class="item">helloflex</div>
+    </div>
+
+    <h1>inline-flex</h1>
+    <div class="container container2">
+        <div class="item">helloflex</div>
+        <div class="item">abc</div>
+        <div class="item">helloflex</div>
+    </div>
+</body>
+</html>
