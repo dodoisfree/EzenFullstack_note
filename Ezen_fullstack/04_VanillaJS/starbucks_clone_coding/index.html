@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타벅스 클론코딩</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  </head>
+  <body>
+    <div data-include="inc/header.html"></div>
+    
+    <div id="content">
+      <img id="slogun" class="opacity" src="./assets/img/2022_Summer1_main_slogun.png" alt="find your taste 슬로건 이미지" />
+      <img id="drink1" class="opacity" src="./assets/img/2022_Summer1_main_punchgraffiti3.png" alt="펀치 그래피티 블렌디드 이미지"/>
+      <img id="drink2" class="opacity" src="./assets/img/2022_Summer1_main_rollinmint.png" alt="롤린 민트 초코 콜드 브루 이미지" />
+      <img id="drink3" class="opacity" src="./assets/img/2022_Summer1_main_pomeloflow.png" alt="포멜로 플로우 그린 티 이미지"/>
+      <a id="detail" class="opacity">자세히 보기</a>
+    </div>
+    <a><img id="card1" src="./assets/img/WIP8gI_20220412094131003.png" alt="find your taste 카드 이미지"/></a>
+    <a><img id="card2" src="./assets/img/5vBa7F_20220331095015399.png" alt="스타벅스 현대카드 카드 이미지"/></a>
+    <div id="content2">
+      <div id="notice">
+        <a><p class="p1">공지사항</p></a>
+        <a><p>스타벅스 프로모션</p></a>
+        <a><img src="./assets/img/btn_notice_plus.png " alt="+ 버튼 이미지" /></a>
+        <a><img id="down" src="./assets/img/btn_prom_down.png" alt="down 버튼 이미지" /></a>
+      </div>
+      <div id="promotion">
+        <div id="slider">
+        <ul id="slide">
+          <li class="clone"><img src="./assets/img/fs8Fa0_20220411134210197.jpg" alt="find your taste 이벤트 이미지"/><span>자세히 보기</span></li>
+          <li class="clone"><img src="./assets/img/Y7YBKr_20220404160419657.jpg" alt="스타벅스 리서브 서머 이벤트 이미지"/><span>자세히 보기</span></li>
+          <li class="clone"><img src="./assets/img/wW63vb_20211231154557623.jpg" alt="카드 결제 별 추가증정 이벤트 이미지"/><span>자세히 보기</span></li>
+        </ul>
+      </div>
+      <a id="prev" ><img src="./assets/img/arrow_left_on.png" alt="이전 아이콘 이미지" /></a>
+      <a id="next"><img src="./assets/img/arrow_right_on.png" alt="다음 아이콘 이미지"/></a>
+      <div id="controller">
+        <a class="playBtn hidden">▶</a>
+        <a><img class="stopBtn" src="./assets/img/main_prom_stop.png" /></a>
+        <a><img src="./assets/img/main_prom_on.png" /></a>
+        <a><img src="./assets/img/main_prom_off.png" /></a>
+        <a><img src="./assets/img/main_prom_off.png" /></a>
+      </div>
+    </div>
+    </div>
+
+    <div data-include="inc/footer.html"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/js/include.js"></script>
+  <script src="./assets/js/index.js"></script>
+</html>

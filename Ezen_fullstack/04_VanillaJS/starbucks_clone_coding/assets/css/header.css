@@ -1,0 +1,627 @@
+@charset "UTF-8";
+#header * {
+  font-family: "nbg", "맑은 고딕", "HelveticaNeue", "DroidSans", Sans-serif, Helvetica;
+  text-decoration: none;
+}
+
+#header *:hover {
+  cursor: pointer;
+}
+
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: #F6F5EF;
+  border-top: 2px solid black;
+  position: fixed;
+  z-index: 999999;
+}
+
+#header a:hover {
+  text-decoration: underline;
+}
+
+#basic_menu {
+  width: 57%;
+  height: 83px;
+  margin: 0 auto;
+  padding: 19px 0 19px 0;
+}
+
+#logo {
+  width: 75px;
+  height: auto;
+  background-size: cover;
+}
+
+.top {
+  font: 13px "Avenir", "Arial", "georgia";
+  color: black;
+  position: relative;
+  left: 460px;
+  bottom: 65px;
+  padding: 0 15px 0 15px;
+  border-right: 0.5px solid #ccc;
+  letter-spacing: -0.5px;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.top:nth-child(5), .top:nth-child(6) {
+  border: 0;
+}
+
+.top:nth-child(6) {
+  display: block;
+  width: 3px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 15%;
+  position: relative;
+  left: 1005px;
+  bottom: 90px;
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+#header #searchInput {
+  width: 172px;
+  height: 28px;
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  border: 0;
+  outline: none;
+}
+
+#searchImg {
+  width: 21px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.bottom {
+  position: relative;
+  left: 350px;
+  bottom: 75px;
+  float: left;
+  width: 80px;
+  height: 66px;
+}
+
+.bottom a {
+  display: block;
+  width: 50px;
+  font-size: 14px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.bottom.long {
+  width: 150px;
+  height: 66px;
+}
+
+.bottom.long a {
+  width: 150px;
+}
+
+.bottom.last {
+  width: 170px;
+}
+
+.bottom.last a {
+  position: relative;
+  right: 22px;
+}
+
+.bottom:last-child {
+  width: 90px;
+}
+
+.bottom:last-child a {
+  width: 100px;
+  position: relative;
+  right: 27px;
+}
+
+.bottom:hover {
+  background-color: #2C2A29;
+  color: #669900;
+  text-decoration: underline;
+}
+
+.bottom::after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.last {
+  padding-left: 45px;
+}
+
+#sub_menu1 {
+  width: 100%;
+  height: 530px;
+  background-color: #2C2A29;
+  border-bottom: 2px solid white;
+  position: absolute;
+}
+
+#sub_menu1 #list1 {
+  width: 1350px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.ul {
+  color: white;
+  font-size: 14px;
+  float: left;
+  margin: 20px 48px 0 48px;
+}
+
+.ul:first-child {
+  margin-left: 130px;
+  margin-bottom: 135px;
+}
+
+.ul:last-child {
+  content: "";
+  float: none;
+  clear: both;
+  display: block;
+  margin-left: 130px;
+  margin-top: 135px;
+}
+
+#list1 .ul > li {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+  position: relative;
+  top: 10px;
+}
+
+#list1-2 {
+  width: 100%;
+  height: 140px;
+  background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+  list-style: none;
+}
+
+#list1-2 #h1 {
+  position: relative;
+  left: 413px;
+  top: 25px;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+#list1-2 > li {
+  position: relative;
+  left: 413px;
+  top: 18px;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #669900;
+}
+
+#header .hidden {
+  display: none;
+}
+
+#sub_menu2 {
+  position: absolute;
+  width: 100%;
+  height: 364px;
+  background-color: #2C2A29;
+}
+
+#sub_menu2 #list2 {
+  width: 1100px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+#list2 .ul2 {
+  float: left;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+}
+
+#list2 .ul2:first-child {
+  right: 1385px;
+  top: 25px;
+}
+
+#list2 .ul2.two2 {
+  right: 1185px;
+  top: 25px;
+}
+
+#list2 .ul2.three2 {
+  right: 985px;
+  top: 25px;
+}
+
+#list2 .ul2.four2 {
+  right: 785px;
+  top: 25px;
+}
+
+#list2 .ul2:last-child {
+  right: 530px;
+  top: 25px;
+}
+
+#list2 .ul2::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+#list2 .ul2 > li {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+#sub_menu2 #list2-2 {
+  width: 100%;
+  height: 90px;
+  background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+  list-style: none;
+}
+
+#list2-2 #h2 {
+  position: absolute;
+  left: 415px;
+  top: 300px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+#list2-2 #h2 img {
+  margin-left: 4px;
+}
+
+#list2-2 > li {
+  position: absolute;
+  left: 415px;
+  top: 320px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #669900;
+}
+
+#sub_menu3 {
+  position: absolute;
+  width: 100%;
+  height: 210px;
+  background-color: #2C2A29;
+}
+
+#sub_menu3 #list3 {
+  width: 1100px;
+  height: 117px;
+  margin: 0 auto;
+}
+
+#list3 .ul3 {
+  float: left;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+}
+
+#list3 .ul3:first-child {
+  right: 1445px;
+  top: 25px;
+}
+
+#list3 .ul3.two3 {
+  right: 1165px;
+  top: 25px;
+}
+
+#list3 .ul3.three3 {
+  right: 910px;
+  top: 25px;
+}
+
+#list3 .ul3.four3 {
+  right: 690px;
+  top: 25px;
+}
+
+#list3 .ul3:last-child {
+  right: 530px;
+  top: 25px;
+}
+
+#list3 .ul3::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+#list3 .ul3 > li {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+#sub_menu3 #list3-2 {
+  width: 100%;
+  height: 90px;
+  background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+  list-style: none;
+}
+
+#list3-2 #h3 {
+  position: absolute;
+  left: 415px;
+  top: 150px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+#list3-2 > li {
+  position: absolute;
+  left: 415px;
+  top: 170px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #669900;
+}
+
+#sub_menu4 {
+  position: absolute;
+  width: 100%;
+  height: 235px;
+  background-color: #2C2A29;
+}
+
+#sub_menu4 #list4 {
+  width: 1100px;
+  height: 205px;
+  margin: 0 auto;
+}
+
+#list4 .ul4 {
+  float: left;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+}
+
+#list4 .ul4:first-child {
+  right: 1375px;
+  top: 25px;
+}
+
+#list4 .ul4.two4 {
+  right: 1155px;
+  top: 25px;
+}
+
+#list4 .ul4.three4 {
+  right: 960px;
+  top: 25px;
+}
+
+#list4 .ul4.four4 {
+  right: 740px;
+  top: 25px;
+}
+
+#list4 .ul4:last-child {
+  right: 520px;
+  top: 25px;
+}
+
+#list4 .ul4::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+#list4 .ul4 > li {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+#sub_menu4 #list4-2 {
+  width: 100%;
+  height: 27px;
+  background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+}
+
+#sub_menu5 {
+  position: absolute;
+  width: 100%;
+  height: 297px;
+  background-color: #2C2A29;
+}
+
+#sub_menu5 #list5 {
+  width: 1100px;
+  height: 205px;
+  margin: 0 auto;
+}
+
+#list5 .ul5 {
+  float: left;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+}
+
+#list5 .ul5:first-child {
+  right: 1390px;
+  top: 25px;
+}
+
+#list5 .ul5.two5 {
+  right: 1170px;
+  top: 25px;
+}
+
+#list5 .ul5:last-child {
+  right: 925px;
+  top: 25px;
+}
+
+#list5 .ul5::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+#list5 .ul5 > li {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+#sub_menu5 #list5-2 {
+  width: 100%;
+  height: 89px;
+  background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+  list-style: none;
+}
+
+#list5-2 #h5 {
+  position: absolute;
+  left: 415px;
+  top: 235px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+#list5-2 > li {
+  position: absolute;
+  left: 415px;
+  top: 255px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #669900;
+}
+
+#sub_menu6 {
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  background-color: #2C2A29;
+}
+
+#sub_menu6 #list6 {
+  width: 1100px;
+  height: 184px;
+  margin: 0 auto;
+}
+
+#list6 .ul6 {
+  float: left;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+}
+
+#list6 .ul6:first-child {
+  right: 1420px;
+  top: 25px;
+}
+
+#list6 .ul6.two6 {
+  right: 1190px;
+  top: 25px;
+}
+
+#list6 .ul6.three6 {
+  right: 980px;
+  top: 25px;
+}
+
+#list6 .ul6.four6 {
+  right: 795px;
+  top: 25px;
+}
+
+#list6 .ul6:last-child {
+  right: 570px;
+  top: 25px;
+}
+
+#list6 .ul6::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+#list6 .ul6 > li {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+#sub_menu6 #list6-2 {
+  width: 100%;
+  height: 134px;
+  background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+  list-style: none;
+}
+
+#list6-2 .h6 {
+  position: relative;
+  top: 32px;
+  left: 410px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+#list6-2 > li {
+  position: relative;
+  top: 28px;
+  left: 410px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #669900;
+}
+
+.scroll0,
+.scroll1,
+.scroll2,
+.scroll3,
+.scroll4,
+.scroll5 {
+  width: 100%;
+  height: 0px;
+  position: relative;
+  bottom: 77px;
+  overflow: hidden;
+  -webkit-transition: height 1.5s ease-out;
+  transition: height 1.5s ease-out;
+}
