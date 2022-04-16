@@ -93,14 +93,14 @@
 
     <script>
         document.querySelectorAll('.menu-item').forEach((v, i) => {
-            v.addEventListener('mouseover', (e) => {
+            v.addEventListener('click', (e) => {
                 const current = e.currentTarget;
                 const sub = current.querySelector('.sub');
                 // scrollHeight는 요소의 크기를 벗어난 만큼의 높이를 의미
                 sub.style.maxHeight = sub.scrollHeight + 'px';
             });
 
-            v.addEventListener('mouseout', (e) => {
+            v.addEventListener('click', (e) => {
                 const current = e.currentTarget;
                 const sub = current.querySelector('.sub');
                 sub.style.maxHeight = null;
