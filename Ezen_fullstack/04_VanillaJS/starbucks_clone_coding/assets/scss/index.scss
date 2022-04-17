@@ -68,6 +68,12 @@
   opacity: 0;
   transition: opacity 550ms;
   transition-delay: 2s;
+  &:hover {
+    background-color: #d73a7a;
+    color: white;
+    text-decoration: underline;
+    transition: all 0.5s;
+  }
 }
 
 #card1 {
@@ -179,6 +185,11 @@
       position: absolute;
       top: 12px;
       left: 17px;
+      z-index: 99;
+    }
+    &:hover {
+      background-color: white;
+      transition: all 0.5s;
     }
   }
   & #next {
@@ -188,6 +199,11 @@
       position: absolute;
       top: 12px;
       left: 17px;
+      z-index: 99;
+    }
+    &:hover {
+      background-color: white;
+      transition: all 0.5s;
     }
   }
 
@@ -202,7 +218,7 @@
       position: absolute;
       top: 5px;
       left: 11px;
-    } 
+    }
     & a:nth-child(2) {
       position: absolute;
       top: 7px;
@@ -232,7 +248,6 @@
   }
 }
 
-
 #promotion > a {
   display: block;
   width: 50px;
@@ -240,4 +255,356 @@
   border: 2px solid black;
   border-radius: 100%;
   position: absolute;
+}
+
+#starbucks_rewards {
+  width: $max;
+  height: 240px;
+  background-color: $stbs;
+  position: relative;
+  bottom: 432px;
+  color: white;
+  letter-spacing: -1.5px;
+  z-index: 9;
+  & img {
+    width: 175px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 460px;
+  }
+  & b {
+    font-weight: 700;
+    font-size: 27px;
+  }
+  & .rewards_top {
+    width: 800px;
+    height: 112px;
+    position: absolute;
+    top: 30px;
+    left: 670px;
+    border-bottom: 1px solid white;
+    & h1 {
+      font-size: 25px;
+    }
+    & h3 {
+      margin-top: 20px;
+      font-size: 16px;
+      & b {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 23px;
+      }
+    }
+    & a {
+      display: block;
+      width: 90px;
+      height: 35px;
+      border: 1px solid #00704a;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      bottom: 20px;
+      right: 90px;
+      background-color: #00704a;
+      font-size: 14px;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    & a:last-child {
+      display: block;
+      width: 75px;
+      height: 33px;
+      border: 2px solid white;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 33px;
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+      background-color: $stbs;
+    }
+  }
+  & .rewards_bottom {
+    width: 800px;
+    height: 112px;
+    position: absolute;
+    top: 150px;
+    left: 670px;
+    & b {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    & p {
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 21px;
+    }
+    & a {
+      display: block;
+      width: 185px;
+      height: 35px;
+      border: 2px solid white;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      bottom: 60px;
+      right: 0px;
+      background-color: $stbs;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+#content4 {
+  width: $max;
+  height: 2139px;
+  & #sulawesi {
+    width: $max;
+    height: 570px;
+    background: url(../img/2022_Summer1_bean_bg2.jpg) no-repeat;
+    position: relative;
+    bottom: 432px;
+    overflow: hidden;
+    & .summer1_left {
+      position: absolute;
+      top: -105px;
+    }
+    & .summer1_bean {
+      position: absolute;
+      left: 562px;
+      top: 74px;
+      width: 310px;
+    }
+    & .summer1_text {
+      position: absolute;
+      top: 178px;
+      left: 1004px;
+      width: 320px;
+    }
+    & .summer1_right {
+      position: absolute;
+      right: 0px;
+      bottom: -87px;
+    }
+    & .summer1_detail {
+      font-size: 14px;
+      font-weight: bold;
+      color: #1e245c;
+      display: block;
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border: 2px solid #1e245c;
+      text-align: center;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 186px;
+      right: 792px;
+      &:hover {
+        background-color: #1e245c;
+        color: white;
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  }
+  & #indonesia {
+    width: $max;
+    height: 400px;
+    background: url(../img/reserve_2022_indonesia_visual_bg.jpg) no-repeat;
+    position: relative;
+    top: -432px;
+    & .indonesia_leaf1 {
+      position: absolute;
+      bottom: 0px;
+      left: -80px;
+    }
+    & .indonesia_leaf2 {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      z-index: 1;
+    }
+    & .indonesia_title {
+      position: absolute;
+      bottom: 171px;
+      left: 409px;
+    }
+    & .indonesia_visual {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    & .indonesia_detail {
+      font-size: 14px;
+      font-weight: bold;
+      color: #b9813e;
+      display: block;
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border: 2px solid #b9813e;
+      text-align: center;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 95px;
+      left: 675px;
+      &:hover {
+        background-color: #b9813e;
+        color: white;
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  }
+  & #pick {
+    position: relative;
+    top: -432px;
+    height: 800px;
+    width: $max;
+    background: url(../img/fav_prod_bg_new.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    & .pick_text1 {
+      position: absolute;
+      left: 520px;
+      top: 119px;
+    }
+    & .pick_text2 {
+      position: absolute;
+      left: 412px;
+      top: 369px;
+    }
+    & .pick_imgs {
+      position: absolute;
+      right: 310px;
+      top: 100px;
+    }
+    & .pick_detail {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      display: block;
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border: 2px solid white;
+      text-align: center;
+      border-radius: 5px;
+      position: absolute;
+      top: 570px;
+      left: 648px;
+      &:hover {
+        background-color: white;
+        color: black;
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  }
+  & #magazine {
+    width: $max;
+    height: 400px;
+    background: url(../img/reserve_bg_pc.png) no-repeat;
+    background-position: -40px 45px;
+    position: relative;
+    top: -432px;
+    & .magazine_text {
+      position: absolute;
+      left: 455px;
+      top: 135px;
+    }
+    & .magazine_imgs {
+      position: absolute;
+      right: 480px;
+    }
+    & .magazine_detail {
+      font-size: 14px;
+      font-weight: bold;
+      color: black;
+      display: block;
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border: 2px solid black;
+      text-align: center;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 100px;
+      left: 750px;
+      &:hover {
+        background-color: black;
+        color: white;
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  } 
+  & #store {
+    width: $max;
+    height: 400px;
+    background: url(../img/store_bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    top: -432px;
+    & .store_img1 {
+      position: absolute;
+      left: 480px;
+    }
+    & .store_img2 {
+      position: absolute;
+      left: 710px;
+      bottom: 23px;
+    }
+    & .store_img3 {
+      position: absolute;
+      top: -60px;
+      left: 840px;
+    }
+    & .store_txt1 {
+      position: absolute;
+      right: 469px;
+      top: 100px;
+    }
+    & .store_txt2 {
+      position: absolute;
+      right: 488px;
+      top: 168px;
+    }
+    & .store_img4 {
+      position: absolute;
+      bottom: 0;
+      right: 350px;
+    }
+    & .store_detail {
+      font-size: 15px;
+      font-weight: bold;
+      color: #222;
+      display: block;
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border: 2px solid #222;
+      text-align: center;
+      border-radius: 3px;
+      position: absolute;
+      bottom: 105px;
+      right: 720px;
+      &:hover {
+        background-color: #222;
+        color: white;
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  } 
 }

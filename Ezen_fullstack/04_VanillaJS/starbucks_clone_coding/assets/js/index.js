@@ -59,8 +59,7 @@ function makeClone() {
 function updateWidth() {
   let currentSlides = document.querySelectorAll("#slide li");
   let newSlideCount = currentSlides.length;
-  let newWidth = 
-  (slideWidth + slideMargin) * newSlideCount - slideMargin + "px";
+  let newWidth = (slideWidth + slideMargin) * newSlideCount - slideMargin + "px";
   slide.style.left = newWidth;
 }
 // 초기 위치를 클론이 아닌 원본으로 설정
