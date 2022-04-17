@@ -90,6 +90,7 @@
   float: left;
   width: 80px;
   height: 66px;
+  z-index: 99;
 }
 
 .bottom a {
