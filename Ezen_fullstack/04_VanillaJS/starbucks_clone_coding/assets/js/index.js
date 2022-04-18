@@ -21,30 +21,44 @@ downBtn.addEventListener("click", (e) => {
     stopSlide();
   }
 });
+const notices = document.querySelectorAll(".n_content a").length;
+const notice = document.querySelector(".n_content");
+let n_loc = 0, i = 0;
+
+// 공지사항 
+setInterval((e) => {
+  if (i % notices == 0) {
+    (n_loc = 0)
+  } else {
+    (n_loc -= 65);
+  }
+  notice.style.top = n_loc +"px";
+  i++;
+  console.log(notice.style.top);
+}, 3000);
 
 /* 이미지 무한 슬라이드 */
 const slide = document.querySelector("#slide"),
-slides = document.querySelectorAll("#slide li"),
-prevBtn = document.querySelector("#prev"),
-nextBtn = document.querySelector("#next");
+  slides = document.querySelectorAll("#slide li"),
+  prevBtn = document.querySelector("#prev"),
+  nextBtn = document.querySelector("#next");
 const on = document.querySelector("#controller a:nth-child(3)"),
-off1 = document.querySelector("#controller a:nth-child(4)"),
-off2 = document.querySelector("#controller a:last-child");
+  off1 = document.querySelector("#controller a:nth-child(4)"),
+  off2 = document.querySelector("#controller a:last-child");
 
 let currentIdx = 0,
-slideCount = slides.length;
-slideWidth = 819,
-slideMargin = 20;
+  slideCount = slides.length;
+(slideWidth = 819), (slideMargin = 20);
 makeClone();
 
 // 클론 생성
 function makeClone() {
-  for(let i=0; i<slideCount; i++) {
+  for (let i = 0; i < slideCount; i++) {
     let cloneSlide = slides[i].cloneNode(true);
     cloneSlide.classList.add("clone");
     slide.appendChild(cloneSlide);
   }
-  for(let i=slideCount - 1; i >= 0; i--) {
+  for (let i = slideCount - 1; i >= 0; i--) {
     let cloneSlide = slides[i].cloneNode(true);
     cloneSlide.classList.add("clone");
     slide.prepend(cloneSlide);
@@ -52,14 +66,15 @@ function makeClone() {
   updateWidth();
   setInitalPos();
   setTimeout((e) => {
-    slide.classList.add('animate')
+    slide.classList.add("animate");
   }, 100);
 }
 // ul에 전체 넓이 지정
 function updateWidth() {
   let currentSlides = document.querySelectorAll("#slide li");
   let newSlideCount = currentSlides.length;
-  let newWidth = (slideWidth + slideMargin) * newSlideCount - slideMargin + "px";
+  let newWidth =
+    (slideWidth + slideMargin) * newSlideCount - slideMargin + "px";
   slide.style.left = newWidth;
 }
 // 초기 위치를 클론이 아닌 원본으로 설정
@@ -76,7 +91,7 @@ nextBtn.addEventListener("click", (e) => {
 // 이전 버튼 클릭 시 이동
 prevBtn.addEventListener("click", (e) => {
   moveslide(currentIdx - 1);
-    stopSlide();
+  stopSlide();
 });
 
 // 이미지 슬라이드
@@ -95,7 +110,7 @@ function moveslide(num) {
     off1.style.left = "33px";
     off2.style.left = "53px";
     on.style.left = "73px";
-  } 
+  }
   currentIdx = num;
   console.log(currentIdx, slideCount);
   if (currentIdx == slideCount || currentIdx == -slideCount) {
@@ -105,7 +120,7 @@ function moveslide(num) {
       currentIdx = 0;
     }, 500);
     setTimeout((e) => {
-        slide.classList.add("animate");
+      slide.classList.add("animate");
     }, 520);
   }
 }
@@ -118,7 +133,7 @@ const stopBtn = document.querySelector(".stopBtn");
 // 3초마다 자동 슬라이드
 function autoSlide() {
   if (timer == undefined) {
-    timer = setInterval( e => {
+    timer = setInterval((e) => {
       moveslide(currentIdx + 1);
     }, 3000);
   }
@@ -126,12 +141,11 @@ function autoSlide() {
 autoSlide();
 // 마우스 내리면 자동 슬라이드
 slide.addEventListener("mouseout", (e) => {
-  if (stopBtn.classList.contains('hidden')){
+  if (stopBtn.classList.contains("hidden")) {
     stopSlide();
   } else {
     autoSlide();
   }
-  
 });
 // 재생버튼 누르면 자동 슬라이드
 palyBtn.addEventListener("click", (e) => {
@@ -157,3 +171,11 @@ stopBtn.addEventListener("click", (e) => {
   palyBtn.classList.remove("hidden");
   stopBtn.classList.add("hidden");
 });
+
+
+const trigger = new ScrollTrigger.default({
+  trigger: {
+    onece: true
+  }
+});
+trigger.add('[data-trigger]');

@@ -28,6 +28,13 @@
     <div id="content2">
       <div id="notice">
         <a><p class="p1">공지사항</p></a>
+        <div class="n_content n_animate">
+          <a>시스템 개선 및 점검 안내</a><br/>
+          <a>홈페이지 이용약관 / 스타벅스 카드 이용약관 개정 안내</a><br/>
+          <a>사이렌 오더/딜리버스 음료 기본 설정 변경 안내 (HOT → ICED)</a><br/>
+          <a>시스템 개선 및 점검 안내</a><br/>
+          <a>시스템 개선 및 점검 안내</a><br/>
+        </div>
         <a><p>스타벅스 프로모션</p></a>
         <a><img src="./assets/img/btn_notice_plus.png " alt="+ 버튼 이미지" /></a>
         <a><img id="down" src="./assets/img/btn_prom_down.png" alt="down 버튼 이미지"/></a>
@@ -64,7 +71,7 @@
       </div>
     </div>
     <div id="content3">
-      <div id="starbucks_rewards">
+      <div id="rewards">
         <img src="./assets/img/rewards-logo.png" />
         <div class="rewards_top">
           <h1>스타벅스만의 특별한 혜택, <b>스타벅스 리워드</b></h1>
@@ -82,10 +89,13 @@
     <div id="content4">
       <div id="sulawesi">
         <img class="summer1_left" src="./assets/img/2022_Summer1_bean_bg_left.png" />
-        <img class="summer1_bean" src="./assets/img/m_2022_Summer1_bean_bean.png" />
-        <img class="summer1_text" src="./assets/img/2022_Summer1_bean_text.png" />
+        <img class="summer1_bean" data-trigger src="./assets/img/m_2022_Summer1_bean_bean.png" />
+        
         <img class="summer1_right" src="./assets/img/2022_Summer1_bean_bg_right.png" />
+        <div class="text_detail" data-trigger>
+        <img class="summer1_text" src="./assets/img/2022_Summer1_bean_text.png" />
         <a class="summer1_detail">자세히 보기</a>
+        </div>
       </div>
       <div id="indonesia">
         <img class="indonesia_leaf1" src="./assets/img/reserve_2022_indonesia_leaf1.png" />
@@ -95,8 +105,8 @@
         <a class="indonesia_detail">자세히 보기</a>
       </div>
       <div id="pick">
-        <img class="pick_text1" src="./assets/img/fav_prod_txt01.png"/>
-        <img class="pick_text2" src="./assets/img/fav_prod_txt02.png"/>
+        <img class="pick_text1" data-trigger src="./assets/img/fav_prod_txt01.png"/>
+        <img class="pick_text2" data-trigger src="./assets/img/fav_prod_txt02.png"/>
         <img class="pick_imgs" src="./assets/img/2022_Summer1_pick_img.png"/>
         <a class="pick_detail">자세히 보기</a>
       </div>
@@ -109,16 +119,17 @@
         <img class="store_img1" src="./assets/img/store_exp_img02.png"/>
         <img class="store_img2" src="./assets/img/store_exp_img01.png"/>
         <img class="store_img3" src="./assets/img/store_exp_img03.png"/>
-        <img class="store_txt1" src="./assets/img/store_txt01.png"/>
-        <img class="store_txt2" src="./assets/img/store_txt02.png"/>
+        <img class="store_txt1" data-trigger src="./assets/img/store_txt01.png"/>
+        <img class="store_txt2" data-trigger src="./assets/img/store_txt02.png"/>
         <img class="store_img4" src="./assets/img/store_exp_img04.png"/>
-        <a class="store_detail">매장 찾기</a>
+        <a class="store_detail" data-trigger>매장 찾기</a>
       </div>
     </div>
 
     <div data-include="inc/footer.html"></div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/dist/ScrollTrigger.min.js"></script>
   <script src="./assets/js/include.js"></script>
   <script src="./assets/js/index.js"></script>
 </html>

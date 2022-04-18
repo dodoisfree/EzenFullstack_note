@@ -16,6 +16,7 @@
   background: url(../img/2022_Summer1_main_bg.jpg) center bottom no-repeat;
   position: relative;
   bottom: 432px;
+  z-index: 1;
 }
 
 #slogun {
@@ -119,6 +120,27 @@
   background-size: cover;
   height: 62px;
   margin-right: 81px;
+  overflow: hidden;
+}
+
+#content2 #notice .n_content {
+  width: 470px;
+  height: 320px;
+  position: absolute;
+  left: 490px;
+  top: 0px;
+}
+
+#content2 #notice .n_content a {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 65px;
+  color: white;
+}
+
+#content2 #notice .n_animate {
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
 }
 
 #content2 #notice p {
@@ -141,7 +163,7 @@
   height: 35px;
   position: absolute;
   top: 14px;
-  left: 993px;
+  left: 966px;
 }
 
 #content2 #notice #down {
@@ -305,7 +327,7 @@
   position: absolute;
 }
 
-#starbucks_rewards {
+#rewards {
   width: 100%;
   height: 240px;
   background-color: #1E3932;
@@ -316,7 +338,7 @@
   z-index: 9;
 }
 
-#starbucks_rewards img {
+#rewards img {
   width: 175px;
   height: auto;
   position: absolute;
@@ -324,12 +346,12 @@
   left: 460px;
 }
 
-#starbucks_rewards b {
+#rewards b {
   font-weight: 700;
   font-size: 27px;
 }
 
-#starbucks_rewards .rewards_top {
+#rewards .rewards_top {
   width: 800px;
   height: 112px;
   position: absolute;
@@ -338,22 +360,22 @@
   border-bottom: 1px solid white;
 }
 
-#starbucks_rewards .rewards_top h1 {
+#rewards .rewards_top h1 {
   font-size: 25px;
 }
 
-#starbucks_rewards .rewards_top h3 {
+#rewards .rewards_top h3 {
   margin-top: 20px;
   font-size: 16px;
 }
 
-#starbucks_rewards .rewards_top h3 b {
+#rewards .rewards_top h3 b {
   font-weight: bold;
   font-size: 17px;
   line-height: 23px;
 }
 
-#starbucks_rewards .rewards_top a {
+#rewards .rewards_top a {
   display: block;
   width: 90px;
   height: 35px;
@@ -369,11 +391,11 @@
   font-weight: bold;
 }
 
-#starbucks_rewards .rewards_top a:hover {
+#rewards .rewards_top a:hover {
   text-decoration: underline;
 }
 
-#starbucks_rewards .rewards_top a:last-child {
+#rewards .rewards_top a:last-child {
   display: block;
   width: 75px;
   height: 33px;
@@ -387,7 +409,7 @@
   background-color: #1E3932;
 }
 
-#starbucks_rewards .rewards_bottom {
+#rewards .rewards_bottom {
   width: 800px;
   height: 112px;
   position: absolute;
@@ -395,18 +417,18 @@
   left: 670px;
 }
 
-#starbucks_rewards .rewards_bottom b {
+#rewards .rewards_bottom b {
   font-size: 16px;
   font-weight: bold;
 }
 
-#starbucks_rewards .rewards_bottom p {
+#rewards .rewards_bottom p {
   margin-top: 10px;
   font-size: 15px;
   line-height: 21px;
 }
 
-#starbucks_rewards .rewards_bottom a {
+#rewards .rewards_bottom a {
   display: block;
   width: 185px;
   height: 35px;
@@ -420,7 +442,7 @@
   background-color: #1E3932;
 }
 
-#starbucks_rewards .rewards_bottom a:hover {
+#rewards .rewards_bottom a:hover {
   text-decoration: underline;
 }
 
@@ -445,25 +467,47 @@
 
 #content4 #sulawesi .summer1_bean {
   position: absolute;
-  left: 562px;
+  left: 0px;
   top: 74px;
   width: 310px;
+  opacity: 0;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
-#content4 #sulawesi .summer1_text {
-  position: absolute;
-  top: 178px;
-  left: 1004px;
-  width: 320px;
+#content4 #sulawesi .summer1_bean.visible {
+  left: 540px;
+  opacity: 1;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
-#content4 #sulawesi .summer1_right {
+#content4 #sulawesi .text_detail.visible {
+  right: 390px;
+  opacity: 1;
+  -webkit-transition: right 2s;
+  transition: right 2s;
+}
+
+#content4 #sulawesi .text_detail {
+  width: 500px;
+  height: 400px;
   position: absolute;
+  top: 175px;
   right: 0px;
-  bottom: -87px;
+  opacity: 0;
+  -webkit-transition: right 5s;
+  transition: right 5s;
 }
 
-#content4 #sulawesi .summer1_detail {
+#content4 #sulawesi .text_detail .summer1_text {
+  width: 320px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+#content4 #sulawesi .text_detail .summer1_detail {
   font-size: 14px;
   font-weight: bold;
   color: #1e245c;
@@ -475,16 +519,22 @@
   text-align: center;
   border-radius: 5px;
   position: absolute;
-  bottom: 186px;
-  right: 792px;
+  bottom: 185px;
+  left: 0px;
 }
 
-#content4 #sulawesi .summer1_detail:hover {
+#content4 #sulawesi .text_detail .summer1_detail:hover {
   background-color: #1e245c;
   color: white;
   text-decoration: underline;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+#content4 #sulawesi .summer1_right {
+  position: absolute;
+  right: 0px;
+  bottom: -87px;
 }
 
 #content4 #indonesia {
@@ -558,14 +608,34 @@
 
 #content4 #pick .pick_text1 {
   position: absolute;
-  left: 520px;
   top: 119px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#content4 #pick .pick_text1.visible {
+  left: 520px;
+  opacity: 1;
+  -webkit-transition: left 2s;
+  transition: left 2s;
 }
 
 #content4 #pick .pick_text2 {
   position: absolute;
-  left: 412px;
   top: 369px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: left 2s;
+  transition: left 2s;
+}
+
+#content4 #pick .pick_text2.visible {
+  left: 412px;
+  opacity: 1;
+  -webkit-transition: left 2s;
+  transition: left 2s;
 }
 
 #content4 #pick .pick_imgs {
@@ -671,14 +741,35 @@
 
 #content4 #store .store_txt1 {
   position: absolute;
-  right: 469px;
+  right: 0;
   top: 100px;
+  opacity: 0;
+  -webkit-transition: right 4s;
+  transition: right 4s;
+}
+
+#content4 #store .store_txt1.visible {
+  right: 469px;
+  opacity: 1;
+  -webkit-transition: right 2s;
+  transition: right 2s;
 }
 
 #content4 #store .store_txt2 {
   position: absolute;
+  right: 0;
+  top: 168px;
+  opacity: 0;
+  -webkit-transition: right 4s;
+  transition: right 4s;
+}
+
+#content4 #store .store_txt2.visible {
   right: 488px;
   top: 168px;
+  opacity: 1;
+  -webkit-transition: right 2s;
+  transition: right 2s;
 }
 
 #content4 #store .store_img4 {
@@ -700,7 +791,10 @@
   border-radius: 3px;
   position: absolute;
   bottom: 105px;
-  right: 720px;
+  right: 0px;
+  opacity: 0;
+  -webkit-transition: right 2s;
+  transition: right 2s;
 }
 
 #content4 #store .store_detail:hover {
@@ -709,4 +803,11 @@
   text-decoration: underline;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+#content4 #store .store_detail.visible {
+  right: 720px;
+  opacity: 1;
+  -webkit-transition: right 1s;
+  transition: right 1s;
 }
