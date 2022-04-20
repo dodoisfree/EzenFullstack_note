@@ -132,6 +132,11 @@
     clear: both;
   }
 }
+.hover {
+  background-color: $sub;
+  color: $grn;
+  text-decoration: underline;
+}
 
 .last {
   padding-left: 45px;
@@ -203,10 +208,6 @@
   font-size: 12px;
   font-weight: bold;
   color: $grn;
-}
-
-#header .hidden {
-  display: none;
 }
 
 #sub_menu2 {

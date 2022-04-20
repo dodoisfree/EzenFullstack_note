@@ -22,7 +22,7 @@
 #slogun {
   position: absolute;
   top: 601px;
-  left: 439px;
+  left: 420px;
   opacity: 0;
   -webkit-transition: opacity 550ms;
   transition: opacity 550ms;
@@ -31,7 +31,7 @@
 #drink1 {
   position: absolute;
   bottom: 115px;
-  left: 616px;
+  left: 593px;
   opacity: 0;
   -webkit-transition: opacity 550ms;
   transition: opacity 550ms;
@@ -42,7 +42,7 @@
 #drink2 {
   position: absolute;
   bottom: 161px;
-  left: 798px;
+  left: 775px;
   opacity: 0;
   -webkit-transition: opacity 550ms;
   transition: opacity 550ms;
@@ -53,7 +53,7 @@
 #drink3 {
   position: absolute;
   bottom: 85px;
-  right: 306px;
+  right: 283px;
   opacity: 0;
   -webkit-transition: opacity 550ms;
   transition: opacity 550ms;
@@ -67,7 +67,7 @@
   color: #d73a7a;
   position: absolute;
   top: 808px;
-  left: 510px;
+  left: 490px;
   display: block;
   width: 125px;
   height: 34px;
@@ -93,14 +93,14 @@
 #card1 {
   position: fixed;
   top: 154px;
-  right: 250px;
+  right: 228px;
   z-index: 9999;
 }
 
 #card2 {
   position: fixed;
   top: 250px;
-  right: 250px;
+  right: 228px;
   z-index: 9999;
 }
 
@@ -149,7 +149,7 @@
   color: black;
   line-height: 62px;
   position: absolute;
-  left: 1250px;
+  left: 1230px;
 }
 
 #content2 #notice .p1 {
@@ -169,7 +169,7 @@
 #content2 #notice #down {
   position: absolute;
   top: 14px;
-  left: 1455px;
+  left: 1435px;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
@@ -548,26 +548,26 @@
 #content4 #indonesia .indonesia_leaf1 {
   position: absolute;
   bottom: 0px;
-  left: -80px;
+  left: -51px;
 }
 
 #content4 #indonesia .indonesia_leaf2 {
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: -75px;
   z-index: 1;
 }
 
 #content4 #indonesia .indonesia_title {
   position: absolute;
   bottom: 171px;
-  left: 409px;
+  left: 385px;
 }
 
 #content4 #indonesia .indonesia_visual {
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: -75px;
 }
 
 #content4 #indonesia .indonesia_detail {
@@ -583,7 +583,7 @@
   border-radius: 5px;
   position: absolute;
   bottom: 95px;
-  left: 675px;
+  left: 650px;
 }
 
 #content4 #indonesia .indonesia_detail:hover {
@@ -616,7 +616,7 @@
 }
 
 #content4 #pick .pick_text1.visible {
-  left: 520px;
+  left: 498px;
   opacity: 1;
   -webkit-transition: left 2s;
   transition: left 2s;
@@ -632,7 +632,7 @@
 }
 
 #content4 #pick .pick_text2.visible {
-  left: 412px;
+  left: 390px;
   opacity: 1;
   -webkit-transition: left 2s;
   transition: left 2s;
@@ -640,8 +640,14 @@
 
 #content4 #pick .pick_imgs {
   position: absolute;
-  right: 310px;
+  right: 287px;
   top: 100px;
+}
+
+#content4 #pick .pick_detail.visible {
+  opacity: 1;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 #content4 #pick .pick_detail {
@@ -657,7 +663,8 @@
   border-radius: 5px;
   position: absolute;
   top: 570px;
-  left: 648px;
+  left: 627px;
+  opacity: 0;
 }
 
 #content4 #pick .pick_detail:hover {
@@ -808,6 +815,6 @@
 #content4 #store .store_detail.visible {
   right: 720px;
   opacity: 1;
-  -webkit-transition: right 1s;
-  transition: right 1s;
+  -webkit-transition: right 1.5s;
+  transition: right 1.5s;
 }

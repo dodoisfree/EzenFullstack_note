@@ -12,38 +12,44 @@ Array.from(document.querySelectorAll("*[data-include]")).map(async (v, i) => {
   if (html != null) {
     v.outerHTML = html;
   }
-
-  //   if (include.indexOf("header.html") > -1) {
-  //     document.querySelector(".bottom").addEventListener("mouseover", (e) => {
-  //       const current = e.currentTarget;
-  //       const sub = current.querySelector("#hidden");
-  //       sub.style.maxHeight = sub.scrollHeight + "px";
-  //     });
-
-  //     document.querySelector(".bottom").addEventListener("mouseout", (e) => {
-  //         const current = e.currentTarget;
-  //         const sub = current.querySelector("#hidden");
-  //         // scrollHeight는 요소의 크기를 벗어난 만큼의 높이를 의미
-  //         sub.style.maxHeight = null;
-  //       });
-  //   }
-
-
   
   if (include.indexOf("header.html") > -1) {
 
-    document.querySelectorAll(`.bottom`).forEach((v, i) =>{
+    // 마우스 올리면 메뉴 펴기
+    document.querySelectorAll('.bottom').forEach((v, i) =>{
       v.addEventListener('mouseover', (e) => {
           const sub = document.querySelector(`.scroll${i}`);
           sub.style.height = sub.scrollHeight + "px";
           sub.style.transition = 350 + "ms";
       });
     });
-    document.querySelectorAll(`.bottom`).forEach((v, i) =>{
+
+    // 마우스 내리면 메뉴 접기
+    document.querySelectorAll('.bottom').forEach((v, i) =>{
       v.addEventListener('mouseout', (e) => {
           const sub = document.querySelector(`.scroll${i}`);
           sub.style.height = null;
           sub.style.transition = 0 +"ms";
+      });
+    });
+
+      // 서브메뉴에 마우스 올리면 서브메뉴와 맞는 메뉴 선택 효과
+    document.querySelectorAll('.scroll').forEach((v, i) => {
+      v.addEventListener("mouseover", (e) => {
+        const sub = document.querySelector(`.scroll${i}`);
+        const bottom = document.querySelector(`.bottom${i}`);
+        sub.style.height = sub.scrollHeight + "px";
+        bottom.classList.add('hover');
+        
+      });
+    });
+    // 서브메뉴에서 마우스 내리면 서브메뉴와 맞는 메뉴 선택해제 효과
+    document.querySelectorAll('.scroll').forEach((v, i) => {
+      v.addEventListener("mouseout", (e) => {
+        const sub = document.querySelector(`.scroll${i}`);
+        const bottom = document.querySelector(`.bottom${i}`);
+        sub.style.height = null;
+        bottom.classList.remove('hover');
       });
     });
 

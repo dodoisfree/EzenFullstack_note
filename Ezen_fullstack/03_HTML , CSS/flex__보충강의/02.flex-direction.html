@@ -7,17 +7,28 @@
     <style>
         .container {
             box-sizing: border-box;
+            display: flex;
             border: 2px dotted #06f;
             padding: 10px;
+            width: 800px;
             height: 200px;
+            
         }
         
         .container1 {
-            display: flex;
+            flex-direction: row;
         }
 
         .container2 {
-            display: inline-flex;
+            flex-direction: row-reverse;
+        }
+
+        .container3 {
+            flex-direction: column;
+        }
+
+        .container4 {
+            flex-direction: column-reverse;
         }
 
         .item {
@@ -26,17 +37,31 @@
             margin: 5px;
          }
     </style>
-</head>
+</head> 
 <body>
-    <h1>flex</h1>
+    <h1>row</h1>
     <div class="container container1">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
     </div>
 
-    <h1>inline-flex</h1>
+    <h1>row-reverse</h1>
     <div class="container container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h1>column</h1>
+    <div class="container container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h1>column-reverse</h1>
+    <div class="container container4">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>

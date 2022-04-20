@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .header {
+            height: 65px;
+            background-color: #00c73c;
+            text-align: center;
+        }
+        .tablist {
+            height: 70px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .aside {
+            display: flex;
+            flex: none;
+            width: 400px;
+            background-color: #bfbab078;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+            overflow: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <header class="header">
+            <h1>풀페이지 레이아웃</h1>
+        </header>
+        <div class="tablist">
+            <h2>메뉴 영역</h2>
+        </div>
+        <div class="content">
+            <div class="aside"></div>
+            <div class="main"></div>
+        </div>
+    </div>
+</body>
+</html>
