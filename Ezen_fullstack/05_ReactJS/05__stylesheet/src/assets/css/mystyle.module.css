@@ -1,0 +1,34 @@
+/**
+ * "*.modlue.css" 형식으로 작성되는 CSS는
+ * 모든 클래스 이름이 Javascript 변수화 되기 때문에 클래스 이름을 카멜 표기법으로 지정해야 한다. (권장)
+ * 또한 id속성에 의한 접근은 사용할 수 없다.
+ */
+.myCssBox {
+    background-image: url(../img/ryan.gif);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border: 5px solid #eee;
+}
+
+/** js의 import에 명시한 참조변수에 속하지 않는 독립 클래스  */
+:global .myBorderBox {
+    background-color: #ff05;
+    border: 10px solid #f0f;
+    width: 300px;
+    height: 300px;
+}
+/** 
+ * 스네이크 표기법을 사용한 클래스
+ * 클래스 이름이 객체 key가 된다.
+ * ex) 객체명['my-size'] 
+ */
+.my-size {
+    width: 100px;
+    height: 100px;
+}
+
+.my-bg {
+    background-color: #ece7f8;
+    border: 1px solid #004080;
+}
