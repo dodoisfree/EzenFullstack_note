@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef, useReducer } from "react";
+import React, { useState, useCallback, useRef, useReducer, useMemo } from "react";
 
 const result = (state, action) => {
   let n1 = Number(action.number1);
@@ -42,6 +42,10 @@ function App() {
   const onClick = useCallback(() => {
     setCalc(json);
   },);
+
+  const asdsad = useMemo(() => {
+
+  });
 
   console.log(number1,operator,number2);
 
