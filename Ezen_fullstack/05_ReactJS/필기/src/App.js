@@ -1,11 +1,7 @@
-import React from "react";
-import Say from "Say";
+import Average from "./Average";
 
-function App() {
-
-  return (
-    <Say />
-  );
-}
+const App = () => {
+  return <Average />;
+};
 
 export default App;

@@ -1,4 +1,5 @@
 import React from 'react';
+import MyBox from '../components/MyBox';
 
 /**
  * React에서 document.getElementById(...)에 해당하는 기능을 사용하는 방법
@@ -13,6 +14,8 @@ const MyRef = () => {
     const myLoc = React.useRef();
     const myResult = React.useRef();
 
+    // 컴포넌트에 설정하기 위한 ref
+    const myBoxRef = React.useRef();
     return (
         <div>
             <h2>MyRef</h2>
@@ -43,6 +46,23 @@ const MyRef = () => {
 
                 myResult.current.innerHTML = dname + ", " + loc;
             }}>클릭</button>
+
+            <hr />
+
+            <h3>컴포넌트에 ref 적용하기</h3>
+            
+            {/* ref 참조변수를 컴포넌트에 전달한다. */}
+            <MyBox ref={myBoxRef} />
+
+            <button type='button' onClick={() => {
+                // <MyBox>를 통해 myBoxRef를 주입받은 DOM에 접근하여 제어함.
+                myBoxRef.current.style.backgroundColor = '#f00';
+            }}>Red</button>
+
+            <button type='button' onClick={() => {
+                // <MyBox>를 통해 myBoxRef를 주입받은 DOM에 접근하여 제어함.
+                myBoxRef.current.style.backgroundColor = '#00f';
+            }}>Blue</button>
         </div>
     );
 };
