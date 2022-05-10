@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ValidationSample.css";
+import "./css/ValidationSample.css";
 
 const ValidationSample = () => {
   const [password, setPassword] = useState("");

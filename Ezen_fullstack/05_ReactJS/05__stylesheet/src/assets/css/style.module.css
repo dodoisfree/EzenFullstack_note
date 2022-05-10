@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/** 여기저기서 반복적으로 등장해야 하는 구문들에 대한 묶음 = 믹스인 => JS의 함수 */
+.myScss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myScss .myScssBox {
+  cursor: pointer;
+}
+
+.myScss .myScssBox.red {
+  background-color: #f00;
+  width: 100px;
+  height: 64px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.myScss .myScssBox.red:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.myScss .myScssBox.green {
+  background-color: #0f0;
+  width: 150px;
+  height: 64px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.myScss .myScssBox.green:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.myScss .myScssBox.blue {
+  background-color: #00f;
+  width: 200px;
+  height: 64px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.myScss .myScssBox.blue:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.myScss .myScssBox.orange {
+  background-color: #f60;
+  width: 150px;
+  height: 64px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.myScss .myScssBox.orange:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.myScss .myScssBox.yellow {
+  background-color: #ff0;
+  width: 100px;
+  height: 64px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.myScss .myScssBox.yellow:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.myScss .myScssBox.pink {
+  background-color: #f0f;
+  width: 150px;
+  height: 64px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.myScss .myScssBox.pink:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}

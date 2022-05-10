@@ -1,7 +1,12 @@
-import Average from "./Average";
+import React from "react";
+import StyledComponent from "./StyledComponent";
 
 const App = () => {
-  return <Average />;
+  return (
+    <div>
+      <StyledComponent />
+    </div>
+  );
 };
 
 export default App;
