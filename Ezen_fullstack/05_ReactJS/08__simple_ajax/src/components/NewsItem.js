@@ -112,4 +112,4 @@ const NewsItem = ({ item: {author, title, description, url, image, datetime} }) 
   );
 };
 
-export default NewsItem;
+export default React.memo(NewsItem);

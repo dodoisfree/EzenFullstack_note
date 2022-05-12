@@ -45,4 +45,4 @@ const MenuLinkContainer = styled(NavLink)`
 `;
 
 const MenuLink = ({to, children}) => <MenuLinkContainer to={to}>{children}</MenuLinkContainer>
-export default MenuLink;
+export default React.memo(MenuLink);

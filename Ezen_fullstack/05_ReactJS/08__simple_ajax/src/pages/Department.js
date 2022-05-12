@@ -28,7 +28,11 @@ const Department = () => {
             // 검색어가 있다면 dname값으로 설정, 그렇지 않으면 정의 안함
             params: keyword ? { dname: keyword } : null,
           });
-          setDepartment(response.data);
+
+          // 일반 상태값 업데이트
+          // setDepartment(response.data);
+          // 함수형 업데이트
+          setDepartment(department => response.data);
           console.log(response.data);
         } catch (e) {
           console.error(e);
@@ -45,13 +49,13 @@ const Department = () => {
   const myKeywordInput = React.useRef();
 
   /** 검색 버튼에 대한 클릭 이벤트 */
-  const onButtonClick = (e) => {
+  const onButtonClick = React.useCallback((e) => {
     setKeyword(myKeywordInput.current.value);
-  };
+  }, []);
 
   /** 추가 */
   /** form 에서 submit이벤트가 발생할 때 호출될 이벤트 핸들러. */
-  const onDepartmentSave = (e) => {
+  const onDepartmentSave = React.useCallback((e) => {
     // 페이지 강제 이동을 차단
     e.preventDefault();
 
@@ -92,11 +96,14 @@ const Department = () => {
           console.log("묶기전" + json);
           const addArr = [json];
           // 배열 병합 결과로 상태값을 갱신함
-          setDepartment(department.concat(addArr));
+          // setDepartment(department.concat(addArr));
+          // 성능향상을 위해 상태값을 함수형 업데이트로 처리함
+          // --> 상태값을 파라미터로 받는 콜백에서 상태값 갱신 결과를 리턴
+          setDepartment(department => department.concat(addArr));
         }
       })();
     }, 500);
-  };
+  }, []);
 
   /** 삭제 */
   /** 삭제하기 버튼이 클릭되었을 때 호출될 이벤트 핸들러 */
@@ -113,7 +120,10 @@ const Department = () => {
   useEffect(() => {
     if (dropId > -1) {
       // id가 일치하지 않는 항목만 filter로 걸러내어 상태값 갱신함
-      setDepartment(department.filter((v, i) => v.id !== dropId));
+      // setDepartment(department.filter((v, i) => v.id !== dropId));
+      // 성능 향상을 위해 상태값을 함수형 업데이트로 처리함
+      // --> 상태값을 파라미터로 받는 콜백에서 상태값 갱신 결과를 리턴
+      setDepartment(department => department.filter((v, i) => v.id !== dropId));
 
       setTimeout(() => {
         // 백엔드 데이터가 삭제되었음을 알린다.
@@ -200,4 +210,4 @@ const Department = () => {
   );
 };
 
-export default Department;
+export default React.memo(Department);

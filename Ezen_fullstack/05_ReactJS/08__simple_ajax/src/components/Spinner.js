@@ -58,4 +58,4 @@ Spinner.propTypes = {
     height: PropTypes.string,
 };
 
-export default Spinner;
+export default React.memo(Spinner);

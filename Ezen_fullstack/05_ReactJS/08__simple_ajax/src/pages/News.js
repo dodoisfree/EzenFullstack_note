@@ -48,7 +48,10 @@ const NewsList = () => {
 
         // ajax 연동 결과가 있다면 그 결과를 상태값에 적용함
         if (json != null) {
-          setNewsList(json);
+          // 일반 상태값 업데이트
+          // setNewsList(json);
+          // 성능 향상을 위한 함수형 업데이트 적용
+          setNewsList(newList => json);
         }
       })();
     }, 500);
@@ -64,4 +67,4 @@ const NewsList = () => {
   );
 };
 
-export default NewsList;
+export default React.memo(NewsList);
