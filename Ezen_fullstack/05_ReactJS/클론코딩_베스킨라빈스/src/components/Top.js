@@ -14,29 +14,28 @@ import search from "../assets/img/icon_search.png";
 const TopCss = styled.header`
   background: url(${top_bg}) repeat-x;
   width: 100%;
-  height: 142px;
+  height: 135px;
   border-top: 3px solid #ff7c98;
-  border-bottom: 1px solid #ccc;
 
   .inner {
     box-sizing: border-box;
-    width: 1260px;
-    height: 142px;
+    width: 1200px;
+    height: 135px;
     margin: 0px auto;
     padding-top: 22px;
     display: flex;
     h1 {
       display: block;
-      width: 97px;
-      height: 97px;
+      width: 92px;
+      height: 92px;
+      margin-right: 10px;
       .logo_link {
         display: block;
         background: url(${logo_img}) no-repeat;
         background-size: contain;
-        width: 97px;
-        height: 97px;
+        width: 92px;
+        height: 92px;
         text-indent: -9999em;
-        margin: 0px auto;
       }
     }
 
@@ -79,9 +78,9 @@ const TopCss = styled.header`
         .etc_link {
           color: #4a3d39;
           text-decoration: none;
-          font-size: 12px;
+          font-size: 11px;
           line-height: 54px;
-          letter-spacing: -1.5px;
+          letter-spacing: -1.3px;
         }
       }
     }
