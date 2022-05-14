@@ -10,6 +10,7 @@ import blog from "../assets/img/icon_blog.png";
 import instagram from "../assets/img/icon_instagram.png";
 import youtube from "../assets/img/icon_youtube.png";
 import search from "../assets/img/icon_search.png";
+import s_close from "../assets/img/btn_search_close.gif";
 
 const TopCss = styled.header`
   background: url(${top_bg}) repeat-x;
@@ -75,6 +76,13 @@ const TopCss = styled.header`
           height: 54px;
           text-indent: -9999em;
         }
+        .active {
+          display: inline-block;
+          background: url(${s_close}) no-repeat;
+          width: 54px;
+          height: 54px;
+          text-indent: -9999em;
+        }
         .etc_link {
           color: #4a3d39;
           text-decoration: none;
@@ -88,6 +96,23 @@ const TopCss = styled.header`
 `;
 
 const Top = () => {
+  const [searchBarBtn, setSearchBarBtn] = React.useState("search");
+  const [searchBarUrl, setSearchBarUrl] = React.useState("");
+
+
+  const SearchBtnClick = React.useCallback(() => {
+    if (searchBarBtn === "search") {
+      setSearchBarBtn("active");
+      setSearchBarUrl("/searchbar");
+    } else {
+      setSearchBarBtn("search");
+      setSearchBarUrl("/");
+    }
+    console.log(searchBarBtn, searchBarUrl);
+  }, [searchBarBtn, searchBarUrl]);
+
+  
+
   return (
     <TopCss>
       <div className="inner">
@@ -135,8 +160,8 @@ const Top = () => {
             <li>
               <Link className='etc_link' to="/">CONTACT US</Link>
             </li>
-            <li className="search">
-              <Link className='etc_link' to="/">search</Link>
+            <li>
+              <Link className={`"etc_link" , ${searchBarBtn}`} onClick={SearchBtnClick} to={searchBarUrl}>search</Link>
             </li>
           </ul>
         </nav>

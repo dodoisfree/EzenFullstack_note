@@ -7,23 +7,21 @@ import title from "../assets/img/gnb_menu.png";
 
 const MenuCss = styled.div`
   width: 100%;
-  height: 46px;
+  height: auto;
   border-top: 1px solid #e2d9d6;
-  border-bottom: 1px solid #3F291A;
   letter-spacing: -0.05em;
-  .menu_all {
-    width: 1320px;
+  position: absolute;
+  .titles_all {
+    width: 100%;
     height: 46px;
-    margin: 0 auto;
-    text-align: center;
-    overflow: hidden;
     .titles {
-      width: 100%;
-      height: 46px;
+      width: 1320px;
+      height: inherit;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      margin: 0 auto;
       .link {
         display: block;
         text-decoration: none;
@@ -78,45 +76,55 @@ const MenuCss = styled.div`
         }
       }
     }
-    .menu_sub {
+    .menu_all {
       width: 100%;
-      height: 254px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      .hpapp {
-        width: 195px;
-        height: 145px;
-        margin: auto 0;
-        margin-left: 40px;
-      }
-      .idal {
-        margin-left: 15px;
-      }
-      .lists {
-        width: 800px;
+      height: 0; //275px
+      text-align: center;
+      overflow: hidden;
+      border-top: 0px solid #3f291a;
+      border-bottom: 1px solid #3f291a;
+      background-color: white;
+      .menu_sub {
+        width: 1320px;
+        height: inherit;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        .list {
-          font-size: 14px;
-          color: #b7afaa;
-          line-height: 37px;
-          margin-top: 35px;
-          &:first-child {
-            margin-left: -15px;
-          }
-          &:nth-child(2) {
-           margin-left: -15px;
-          }
-          &:nth-child(3){
-            margin-right: 10px;
-          }
-          &:nth-child(4){
-            margin-right: 10px;
-          }
-          &:nth-child(5){
-            margin-right: -13px;
+        margin: 0 auto;
+        .hpapp {
+          width: 195px;
+          height: 145px;
+          margin: auto 0;
+          margin-left: 47px;
+        }
+        .idal {
+          margin-left: 0px;
+        }
+        .lists {
+          width: 800px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          .list {
+            font-size: 14px;
+            color: #b7afaa;
+            line-height: 37px;
+            margin-top: 35px;
+            &:first-child {
+              margin-left: -15px;
+            }
+            &:nth-child(2) {
+              margin-left: -15px;
+            }
+            &:nth-child(3) {
+              margin-right: 10px;
+            }
+            &:nth-child(4) {
+              margin-right: 10px;
+            }
+            &:nth-child(5) {
+              margin-right: -13px;
+            }
           }
         }
       }
@@ -124,10 +132,13 @@ const MenuCss = styled.div`
   }
 `;
 
+
+
 const Menu = () => {
+
   return (
     <MenuCss>
-      <div className="menu_all">
+      <div className="titles_all">
         <div className="titles">
           <Link className="link" to="/">
             LOGIN
@@ -154,38 +165,44 @@ const Menu = () => {
             ABOUT
           </Link>
         </div>
-        <div className="menu_sub">
+        <div className="menu_all">
+          <div className="menu_sub">
             <img className="hpapp" src={hpapp} alt="해피포인트 QR코드" />
-            <img className="idal" src={idal} alt="피카피카 피카츄 아이스크림 사진" />
-          <div className="lists">
-            <ul className="list">
-              <li>아이스크림</li>
-              <li>아이스크림케이크</li>
-              <li>음료</li>
-              <li>커피</li>
-              <li>디저트</li>
-            </ul>
-            <ul className="list">
-              <li>아이스크림</li>
-              <li>음료</li>
-              <li>커피</li>
-            </ul>
-            <ul className="list">
-              <li>진행중이벤트</li>
-              <li>당첨자발표</li>
-            </ul>
-            <ul className="list">
-              <li>매장찾기</li>
-              <li>고객센터</li>
-              <li>단체주문</li>
-            </ul>
-            <ul className="list">
-              <li>공지사항</li>
-              <li>보도자료</li>
-              <li>채용정보</li>
-              <li>점포개설문의</li>
-              <li>CONTACT US</li>
-            </ul>
+            <img
+              className="idal"
+              src={idal}
+              alt="피카피카 피카츄 아이스크림 사진"
+            />
+            <div className="lists">
+              <ul className="list">
+                <li>아이스크림</li>
+                <li>아이스크림케이크</li>
+                <li>음료</li>
+                <li>커피</li>
+                <li>디저트</li>
+              </ul>
+              <ul className="list">
+                <li>아이스크림</li>
+                <li>음료</li>
+                <li>커피</li>
+              </ul>
+              <ul className="list">
+                <li>진행중이벤트</li>
+                <li>당첨자발표</li>
+              </ul>
+              <ul className="list">
+                <li>매장찾기</li>
+                <li>고객센터</li>
+                <li>단체주문</li>
+              </ul>
+              <ul className="list">
+                <li>공지사항</li>
+                <li>보도자료</li>
+                <li>채용정보</li>
+                <li>점포개설문의</li>
+                <li>CONTACT US</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

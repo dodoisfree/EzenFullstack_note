@@ -1,13 +1,12 @@
 import React from "react";
-import {Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
-    <Routes>
-      <Route path="/" exact element={<Header />} />
-    </Routes>
+    <Header/>
+    <Main />
     </>
   );
 }
