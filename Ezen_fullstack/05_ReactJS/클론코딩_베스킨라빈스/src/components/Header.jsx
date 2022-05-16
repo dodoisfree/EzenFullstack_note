@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <Top />
-      <Menu searchBtnClick/>
+      <Menu/>
       <Routes>
         <Route path="searchbar" element={<SearchBar />}/>
       </Routes>
