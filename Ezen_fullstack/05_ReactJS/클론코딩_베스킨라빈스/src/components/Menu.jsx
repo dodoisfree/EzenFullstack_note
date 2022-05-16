@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import hpapp from "../assets/img/img_happypoint_app.jpg";
@@ -11,6 +11,7 @@ const MenuCss = styled.div`
   border-top: 1px solid #e2d9d6;
   letter-spacing: -0.05em;
   position: absolute;
+  border-bottom: 1px solid #3f291a;
   .titles_all {
     width: 100%;
     height: 46px;
@@ -22,68 +23,86 @@ const MenuCss = styled.div`
       justify-content: space-around;
       align-items: center;
       margin: 0 auto;
-      .link {
-        display: block;
-        text-decoration: none;
-        color: #483834;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 47px;
+      .login {
+        background: url(${title}) no-repeat center;
+        width: 35px;
         height: 46px;
+        background-position: 0.5px -1px;
         text-indent: -9999px;
-        &:nth-child(1) {
-          background: url(${title}) no-repeat;
-          width: 35px;
-          background-position: 0px -1px;
-          margin-right: -75px;
-        }
-        &:nth-child(2) {
-          background: url(${title}) no-repeat;
-          width: 30px;
-          background-position: -95px -1px;
-        }
-        &:nth-child(3) {
-          background: url(${title}) no-repeat;
-          width: 164px;
-          background-position: -133px -2px;
-        }
-        &:nth-child(4) {
-          background: url(${title}) no-repeat;
-          width: 42px;
-          background-position: -416px -2px;
-          margin-right: -30px;
-        }
-        &:nth-child(5) {
-          background: url(${title}) no-repeat;
-          width: 105px;
-          background-position: -545px -2px;
-          margin-right: -30px;
-        }
-        &:nth-child(6) {
-          background: url(${title}) no-repeat;
-          width: 42px;
-          background-position: -736px -2px;
-        }
-        &:nth-child(7) {
-          background: url(${title}) no-repeat;
-          width: 49px;
-          background-position: -893.5px -2px;
-        }
-        &:nth-child(8) {
-          background: url(${title}) no-repeat;
-          width: 49px;
-          background-position: -1057px -2px;
+        margin-left: 3px;
+        margin-right: -10px;
+      }
+      .join {
+        background: url(${title}) no-repeat;
+        width: 30px;
+        height: 46px;
+        background-position: -96px -1px;
+        text-indent: -9999px;
+        margin-left: -58px;
+      }
+      .linkOverArea {
+        width: 980px;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        .link {
+          display: block;
+          text-decoration: none;
+          color: #483834;
+          font-size: 13px;
+          font-weight: bold;
+          line-height: 47px;
+          height: 46px;
+          text-indent: -9999px;
+          &:nth-child(1) {
+            background: url(${title}) no-repeat;
+            width: 164px;
+            background-position: -133px -2px;
+            margin-right: 0px;
+          }
+          &:nth-child(2) {
+            background: url(${title}) no-repeat;
+            width: 42px;
+            background-position: -416px -2px;
+            margin-right: -35px;
+          }
+          &:nth-child(3) {
+            background: url(${title}) no-repeat;
+            width: 105px;
+            background-position: -545px -2px;
+            margin-right: -35px;
+          }
+          &:nth-child(4) {
+            background: url(${title}) no-repeat;
+            width: 42px;
+            background-position: -736px -2px;
+          }
+          &:nth-child(5) {
+            background: url(${title}) no-repeat;
+            width: 49px;
+            background-position: -893.5px -2px;
+          }
+          &:nth-child(6) {
+            background: url(${title}) no-repeat;
+            width: 49px;
+            background-position: -1057px -2px;
+          }
         }
       }
     }
     .menu_all {
       width: 100%;
-      height: 0; //275px
+      height: 0px; //275px
       text-align: center;
       overflow: hidden;
-      border-top: 0px solid #3f291a;
+      border-top: 0;
       border-bottom: 1px solid #3f291a;
       background-color: white;
+      position: relative;
+      transition: height 0.5s;
       .menu_sub {
         width: 1320px;
         height: inherit;
@@ -94,12 +113,22 @@ const MenuCss = styled.div`
         .hpapp {
           width: 195px;
           height: 145px;
-          margin: auto 0;
-          margin-left: 47px;
+          margin-right: 47px;
+          position: relative;
+          top: 65px;
+          left: 47px;
         }
-        .idal {
-          margin-left: 0px;
+        .idal_area {
+          width: 208px;
+          height: 274px;
+          background-color: white;
+          .idal {
+            width: inherit;
+            height: inherit;
+            cursor: pointer;
+          }
         }
+
         .lists {
           width: 800px;
           display: flex;
@@ -110,6 +139,10 @@ const MenuCss = styled.div`
             color: #b7afaa;
             line-height: 37px;
             margin-top: 35px;
+            li:hover {
+              color: #ff8bac;
+              cursor: pointer;
+            }
             &:first-child {
               margin-left: -15px;
             }
@@ -132,47 +165,95 @@ const MenuCss = styled.div`
   }
 `;
 
-
-
 const Menu = () => {
+  const [pika, setPika] = React.useState("");
+  const mO = useRef();
+
+  const m_MouseOver = useCallback(() => {
+    mO.current.style.height = "275px";
+    mO.current.style.borderTop = "1px solid #3f291a";
+    setPika(true);
+  }, []);
+
+  const m_MouseOut = useCallback(() => {
+    mO.current.style.height = "0";
+    mO.current.style.borderTop = "0";
+    setPika(false);
+  }, []);
 
   return (
     <MenuCss>
       <div className="titles_all">
         <div className="titles">
-          <Link className="link" to="/">
-            LOGIN
-          </Link>
-          <Link className="link" to="/">
-            JOIN
-          </Link>
-          <Link className="link" to="/">
-            FLAVOR OF THE MONTH
-          </Link>
-          <Link className="link" to="/">
-            MENU
-          </Link>
-          <Link className="link" to="/">
-            영양성분 및 알레르기
-          </Link>
-          <Link className="link" to="/">
-            EVENT
-          </Link>
-          <Link className="link" to="/">
-            STORE
-          </Link>
-          <Link className="link" to="/">
-            ABOUT
-          </Link>
+            <Link className="login" to="/">
+              LOGIN
+            </Link>
+            <Link className="join" to="/">
+              JOIN
+            </Link>
+          <div className="linkOverArea" onMouseOver={m_MouseOver} onMouseOut={m_MouseOut}>
+            <Link
+              className="link"
+              to="/"
+              onMouseOver={m_MouseOver}
+              onMouseOut={m_MouseOut}
+            >
+              FLAVOR OF THE MONTH
+            </Link>
+            <Link
+              className="link"
+              to="/"
+              onMouseOver={m_MouseOver}
+              onMouseOut={m_MouseOut}
+            >
+              MENU
+            </Link>
+            <Link
+              className="link"
+              to="/"
+              onMouseOver={m_MouseOver}
+              onMouseOut={m_MouseOut}
+            >
+              영양성분 및 알레르기
+            </Link>
+            <Link
+              className="link"
+              to="/"
+              onMouseOver={m_MouseOver}
+              onMouseOut={m_MouseOut}
+            >
+              EVENT
+            </Link>
+            <Link
+              className="link"
+              to="/"
+              onMouseOver={m_MouseOver}
+              onMouseOut={m_MouseOut}
+            >
+              STORE
+            </Link>
+            <Link
+              className="link"
+              to="/"
+              onMouseOver={m_MouseOver}
+              onMouseOut={m_MouseOut}
+            >
+              ABOUT
+            </Link>
+          </div>
         </div>
-        <div className="menu_all">
-          <div className="menu_sub">
+        <div className="menu_all" ref={mO}>
+          <div
+            className="menu_sub"
+            onMouseOver={m_MouseOver}
+            onMouseOut={m_MouseOut}
+          >
             <img className="hpapp" src={hpapp} alt="해피포인트 QR코드" />
-            <img
-              className="idal"
-              src={idal}
-              alt="피카피카 피카츄 아이스크림 사진"
-            />
+            <div className="idal_area">
+              {pika && (
+                <img className="idal" src={idal} alt="피카츄 아이스크림 사진" />
+              )}
+            </div>
             <div className="lists">
               <ul className="list">
                 <li>아이스크림</li>
@@ -210,4 +291,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default React.memo(Menu);

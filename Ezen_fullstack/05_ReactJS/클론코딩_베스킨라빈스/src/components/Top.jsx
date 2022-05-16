@@ -29,7 +29,6 @@ const TopCss = styled.header`
       display: block;
       width: 92px;
       height: 92px;
-      margin-right: 10px;
       .logo_link {
         display: block;
         background: url(${logo_img}) no-repeat;
@@ -42,8 +41,8 @@ const TopCss = styled.header`
 
     .sns {
       display: block;
-      width: 225px;
-      height: 35px;
+      width: 215px;
+      height: 31px;
       margin-right: auto;
       margin-top: 31px;
       ul {
@@ -70,14 +69,14 @@ const TopCss = styled.header`
           padding-right: 15px;
         }
         .search {
-          display: inline-block;
+          display: block;
           background: url(${search}) no-repeat;
           width: 54px;
           height: 54px;
           text-indent: -9999em;
         }
         .active {
-          display: inline-block;
+          display: block;
           background: url(${s_close}) no-repeat;
           width: 54px;
           height: 54px;
@@ -97,32 +96,29 @@ const TopCss = styled.header`
 
 const Top = () => {
   const [searchBarBtn, setSearchBarBtn] = React.useState("search");
-  const [searchBarUrl, setSearchBarUrl] = React.useState("");
+  const [searchBarUrl, setSearchBarUrl] = React.useState("/searchbar");
 
-
-  const SearchBtnClick = React.useCallback(() => {
+  const searchBtnClick = React.useCallback(() => {
     if (searchBarBtn === "search") {
       setSearchBarBtn("active");
-      setSearchBarUrl("/searchbar");
+      setSearchBarUrl("/");
     } else {
       setSearchBarBtn("search");
-      setSearchBarUrl("/");
+      setSearchBarUrl("/searchbar");
     }
     console.log(searchBarBtn, searchBarUrl);
   }, [searchBarBtn, searchBarUrl]);
-
-  
 
   return (
     <TopCss>
       <div className="inner">
         <nav className="sns">
           <ul>
-          <li>
-							<a href="https://www.facebook.com/baskinrobbins.kr/" target="_blank" rel="noopener noreferrer">
-								<img src={facebook} alt="FACEBOOK" />
-							</a>
-						</li>
+            <li>
+              <a href="https://www.facebook.com/baskinrobbins.kr/" target="_blank" rel="noopener noreferrer">
+                <img src={facebook} alt="FACEBOOK" />
+              </a>
+            </li>
             <li>
               <a href="https://twitter.com/BaskinrobbinsKR" target="_blank" rel="noopener noreferrer">
                 <img src={twitter} alt="TWITTER" />
@@ -145,7 +141,7 @@ const Top = () => {
             </li>
           </ul>
         </nav>
-        
+
         <h1 className="logo_h1">
           <Link className="logo_link" to="/">
             baskin robbins
@@ -155,13 +151,19 @@ const Top = () => {
         <nav className="etc">
           <ul>
             <li className="customer">
-              <Link className='etc_link' to="/">고객센터</Link>
+              <Link className="etc_link" to="/">
+                고객센터
+              </Link>
             </li>
             <li>
-              <Link className='etc_link' to="/">CONTACT US</Link>
+              <Link className="etc_link" to="/">
+                CONTACT US
+              </Link>
             </li>
             <li>
-              <Link className={`"etc_link" , ${searchBarBtn}`} onClick={SearchBtnClick} to={searchBarUrl}>search</Link>
+              <Link className={`"etc_link" , ${searchBarBtn}`} onClick={searchBtnClick} to={searchBarUrl}>
+                search
+              </Link>
             </li>
           </ul>
         </nav>
@@ -170,4 +172,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+export default React.memo(Top);

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <Top />
-      <Menu />
+      <Menu searchBtnClick/>
       <Routes>
         <Route path="searchbar" element={<SearchBar />}/>
       </Routes>
@@ -16,4 +16,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);
