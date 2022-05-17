@@ -1,3 +1,10 @@
+# 구현 결과 (답지 보고 수정)
+
+<img src="./img/a.png">
+
+## App.js
+
+```js
 import React, { useCallback } from "react";
 import Table from "./components/Table";
 import Spinner from "./components/Spinner";
@@ -98,7 +105,8 @@ const App = () => {
         <tfoot>
           <tr>
             <th colSpan={3}>합계</th>
-            {/* 리액트는 렌더링이 먼저 실행되어서 데이터가 없을 경우 undefined로 에러가 날 수 있다. && 연산자를 사용해 주면 해결 가능하다.*/}
+            {/* 리액트는 렌더링이 먼저 되기에, 데이터가 없을 경우 undefined로 에러가 날 수 있다.
+                && 연산자를 사용해 주면 에러 해결이 가능하다. */}
             <th>{data && data.map((v) => v.accident).reduce((p, c) => p + c, 0).toLocaleString()}건</th>
             <th>{data && data.map((v) => v.death).reduce((p, c) => p + c, 0).toLocaleString()}명</th>
             <th>{data && data.map((v) => v.injury).reduce((p, c) => p + c, 0).toLocaleString()}명</th>
@@ -110,3 +118,4 @@ const App = () => {
 };
 
 export default App;
+```

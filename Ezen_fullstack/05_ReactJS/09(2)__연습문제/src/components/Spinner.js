@@ -54,8 +54,8 @@ Spinner.defaultProps = {
 Spinner.propTypes = {
     visible: PropTypes.bool.isRequired,
     color: PropTypes.string,
-    width: PropTypes.string,
-    height: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number,
 };
 
 export default React.memo(Spinner);
