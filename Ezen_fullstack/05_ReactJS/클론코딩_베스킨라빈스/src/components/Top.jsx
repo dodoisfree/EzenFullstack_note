@@ -94,20 +94,23 @@ const TopCss = styled.header`
   }
 `;
 
-const Top = () => {
+const Top = (childe) => {
   const [searchBarBtn, setSearchBarBtn] = React.useState("search");
   const [searchBarUrl, setSearchBarUrl] = React.useState("/searchbar");
-
+  
   const searchBtnClick = React.useCallback(() => {
     if (searchBarBtn === "search") {
       setSearchBarBtn("active");
       setSearchBarUrl("/");
+      childe.getChild(false);
     } else {
       setSearchBarBtn("search");
       setSearchBarUrl("/searchbar");
+      childe.getChild(true);
     }
-    console.log(searchBarBtn, searchBarUrl);
-  }, [searchBarBtn, searchBarUrl]);
+    console.log('Top : ' + searchBarBtn, searchBarUrl);
+  }, [childe, searchBarBtn, searchBarUrl]);
+ 
 
   return (
     <TopCss>
@@ -143,7 +146,7 @@ const Top = () => {
         </nav>
 
         <h1 className="logo_h1">
-          <Link className="logo_link" to="/">
+          <Link className="logo_link" to="">
             baskin robbins
           </Link>
         </h1>
@@ -151,12 +154,12 @@ const Top = () => {
         <nav className="etc">
           <ul>
             <li className="customer">
-              <Link className="etc_link" to="/">
+              <Link className="etc_link" to="">
                 고객센터
               </Link>
             </li>
             <li>
-              <Link className="etc_link" to="/">
+              <Link className="etc_link" to="">
                 CONTACT US
               </Link>
             </li>

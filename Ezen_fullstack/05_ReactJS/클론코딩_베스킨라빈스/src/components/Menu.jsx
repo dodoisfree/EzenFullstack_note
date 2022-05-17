@@ -12,6 +12,7 @@ const MenuCss = styled.div`
   letter-spacing: -0.05em;
   position: absolute;
   border-bottom: 1px solid #3f291a;
+  z-index: 9999;
   .titles_all {
     width: 100%;
     height: 46px;
@@ -42,12 +43,12 @@ const MenuCss = styled.div`
       }
       .linkOverArea {
         width: 980px;
-        height: inherit;
+        height: 48px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        
+
         .link {
           display: block;
           text-decoration: none;
@@ -128,7 +129,6 @@ const MenuCss = styled.div`
             cursor: pointer;
           }
         }
-
         .lists {
           width: 800px;
           display: flex;
@@ -168,92 +168,49 @@ const MenuCss = styled.div`
 const Menu = () => {
   const [pika, setPika] = React.useState("");
   const mO = useRef();
+  const lO = useRef();
 
   const m_MouseOver = useCallback(() => {
-    mO.current.style.height = "275px";
+    mO.current.style.height = "276px";
     mO.current.style.borderTop = "1px solid #3f291a";
+    mO.current.style.top = "-1px";
     setPika(true);
-  }, []);
+  }, [mO, setPika]);
 
   const m_MouseOut = useCallback(() => {
     mO.current.style.height = "0";
-    mO.current.style.borderTop = "0";
+    mO.current.style.borderTop = "0px solid #3f291a";
+    mO.current.style.top = "0px";
     setPika(false);
-  }, []);
+  }, [mO, setPika]);
 
   return (
     <MenuCss>
       <div className="titles_all">
         <div className="titles">
-            <Link className="login" to="/">
-              LOGIN
-            </Link>
-            <Link className="join" to="/">
-              JOIN
-            </Link>
-          <div className="linkOverArea" onMouseOver={m_MouseOver} onMouseOut={m_MouseOut}>
-            <Link
-              className="link"
-              to="/"
-              onMouseOver={m_MouseOver}
-              onMouseOut={m_MouseOut}
-            >
-              FLAVOR OF THE MONTH
-            </Link>
-            <Link
-              className="link"
-              to="/"
-              onMouseOver={m_MouseOver}
-              onMouseOut={m_MouseOut}
-            >
-              MENU
-            </Link>
-            <Link
-              className="link"
-              to="/"
-              onMouseOver={m_MouseOver}
-              onMouseOut={m_MouseOut}
-            >
-              영양성분 및 알레르기
-            </Link>
-            <Link
-              className="link"
-              to="/"
-              onMouseOver={m_MouseOver}
-              onMouseOut={m_MouseOut}
-            >
-              EVENT
-            </Link>
-            <Link
-              className="link"
-              to="/"
-              onMouseOver={m_MouseOver}
-              onMouseOut={m_MouseOut}
-            >
-              STORE
-            </Link>
-            <Link
-              className="link"
-              to="/"
-              onMouseOver={m_MouseOver}
-              onMouseOut={m_MouseOut}
-            >
-              ABOUT
-            </Link>
+          <Link className="login" to="/">LOGIN</Link>
+          <Link className="join" to="/">JOIN</Link>
+          <div className="linkOverArea" ref={lO}
+            onMouseOver={m_MouseOver}
+            onMouseOut={m_MouseOut}>
+            <Link className="link" to="/">FLAVOR OF THE MONTH</Link>
+            <Link className="link" to="/">MENU</Link>
+            <Link className="link" to="/">영양성분 및 알레르기</Link>
+            <Link className="link" to="/">EVENT</Link>
+            <Link className="link" to="/">STORE</Link>
+            <Link className="link" to="/">ABOUT</Link>
           </div>
         </div>
-        <div className="menu_all" ref={mO}>
-          <div
-            className="menu_sub"
-            onMouseOver={m_MouseOver}
-            onMouseOut={m_MouseOut}
-          >
+        <div className="menu_all" ref={mO}
+          onMouseOver={m_MouseOver}
+          onMouseOut={m_MouseOut}>
+          <div className="menu_sub">
             <img className="hpapp" src={hpapp} alt="해피포인트 QR코드" />
-            <div className="idal_area">
-              {pika && (
-                <img className="idal" src={idal} alt="피카츄 아이스크림 사진" />
-              )}
-            </div>
+              <div className="idal_area">
+                {pika && (
+                  <img className="idal" src={idal} alt="피카츄 아이스크림 사진" /> 
+                )}
+              </div>
             <div className="lists">
               <ul className="list">
                 <li>아이스크림</li>

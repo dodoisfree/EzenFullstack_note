@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const MainCss = styled.div`
     width: 100%;
     height: 850px;
-    background-color: aqua;
+    background-color: #fc637f;
     margin-top: 48px;
     .main_header {
         width: 100%;
@@ -20,7 +20,6 @@ const Main = () => {
     return (
         <MainCss>
             <div className='main_header'>
-
             </div>
             <MainSlide />
         </MainCss>

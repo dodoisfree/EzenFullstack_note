@@ -114,10 +114,10 @@ const Ser = styled.div`
       }
     }
     .search {
-        width: 1200px;
-        height: 37px;
-        margin: 0 auto;
-        padding-top: 25px;
+      width: 1200px;
+      height: 37px;
+      margin: 0 auto;
+      padding-top: 25px;
       button {
         display: block;
         width: 147px;
@@ -138,7 +138,6 @@ const Ser = styled.div`
 `;
 
 const SearchBar = () => {
-
   return (
     <Ser>
       <div className="searchbar">
@@ -149,89 +148,93 @@ const SearchBar = () => {
             <col width="90" />
             <col width="*" />
           </colgroup>
-          <tr>
-            <td>
-              <label htmlFor="prodinput" className="t_title">
-                제품명
-              </label>
-            </td>
-            <td>
-              <select className="prod_select">
-                <option>전체</option>
-                <option>아이스크림</option>
-                <option>아이스크림케이크</option>
-                <option>음료</option>
-                <option>커피</option>
-                <option>디저트</option>
-                <option>block pack</option>
-                <option>ready pack</option>
-              </select>
-              <input type="text" id="prodinput" className="prodinput" />
-            </td>
-            <th>
-              <label htmlFor="hashinput" className="t_title">
-                해시태그
-              </label>
-            </th>
-            <td>
-              <div>
-                <input type="text" id="hashinput" className="hashinput" />
-              </div>
-              <div className="hashtag">
-                <dl>
-                  <dt>자주 찾는 해시태그</dt>
-                  <dd>
-                    <span>#피카피카피카츄</span>
-                    <span>#피카츄초코바나나블라스트</span>
-                    <span>#쿨쿨잠만보밀키소다블라스트</span>
-                    <span>#고라파덕아이스크림콘</span>
-                    <br />
-                    <span>#푸린아이스크림콘</span>
-                    <span>#포켓몬스터</span>
-                  </dd>
-                </dl>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th className="t_title">알레르기 성분</th>
-            <td colSpan="3">
-              <div className="allergie">
+          <tbody>
+            <tr>
+              <th>
+                <label htmlFor="prodinput" className="t_title">
+                  제품명
+                </label>
+              </th>
+              <td>
+                <select className="prod_select">
+                  <option>전체</option>
+                  <option>아이스크림</option>
+                  <option>아이스크림케이크</option>
+                  <option>음료</option>
+                  <option>커피</option>
+                  <option>디저트</option>
+                  <option>block pack</option>
+                  <option>ready pack</option>
+                </select>
+                <input type="text" id="prodinput" className="prodinput" />
+              </td>
+              <th>
+                <label htmlFor="hashinput" className="t_title">
+                  해시태그
+                </label>
+              </th>
+              <td>
                 <div>
-                  <input type="checkbox" value="계란" />
-                  <span>계란</span>
+                  <input type="text" id="hashinput" className="hashinput" />
                 </div>
-                <div>
-                  <input type="checkbox" value="대두" />
-                  <span>대두</span>
+                <div className="hashtag">
+                  <dl>
+                    <dt>자주 찾는 해시태그</dt>
+                    <dd>
+                      <span>#피카피카피카츄</span>
+                      <span>#피카츄초코바나나블라스트</span>
+                      <span>#쿨쿨잠만보밀키소다블라스트</span>
+                      <span>#고라파덕아이스크림콘</span>
+                      <br />
+                      <span>#푸린아이스크림콘</span>
+                      <span>#포켓몬스터</span>
+                    </dd>
+                  </dl>
                 </div>
-                <div>
-                  <input type="checkbox" value="돼지고기" />
-                  <span>돼지고기</span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th className="t_title">알레르기 성분</th>
+              <td colSpan="3">
+                <div className="allergie">
+                  <div>
+                    <input type="checkbox" value="계란" />
+                    <span>계란</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="대두" />
+                    <span>대두</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="돼지고기" />
+                    <span>돼지고기</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="땅콩" />
+                    <span>땅꽁</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="밀" />
+                    <span>밀</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="복숭아" />
+                    <span>복숭아</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="우유" />
+                    <span>우유</span>
+                  </div>
+                  <div>
+                    <input type="checkbox" value="없음" />
+                    <span>없음</span>
+                  </div>
                 </div>
-                <div>
-                  <input type="checkbox" value="땅콩" />
-                  <span>땅꽁</span>
-                </div>
-                <div>
-                  <input type="checkbox" value="밀" />
-                  <span>밀</span>
-                </div>
-                <div>
-                  <input type="checkbox" value="복숭아" />
-                  <span>복숭아</span>
-                </div>
-                <div>
-                  <input type="checkbox" value="우유" />
-                  <span>우유</span>
-                </div>
-                <div>
-                  <input type="checkbox" value="없음" />
-                  <span>없음</span>
-                </div>
-              </div>
-            </td>
-          </tr>
+              </td>
+            </tr>
+          </tbody>
         </table>
         <div className="search">
           <button type="button">검색</button>
