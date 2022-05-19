@@ -1,0 +1,856 @@
+{
+  "Nationality": [
+    {
+      "country": "가나",
+      "ncode": "+233"
+    },
+    {
+      "country": "가봉",
+      "ncode": "+241"
+    },
+    {
+      "country": "가이아나",
+      "ncode": "+592"
+    },
+    {
+      "country": "감비아",
+      "ncode": "+220"
+    },
+    {
+      "country": "괌",
+      "ncode": "+1 671"
+    },
+    {
+      "country": "그레나다",
+      "ncode": "+1 473"
+    },
+    {
+      "country": "그리스",
+      "ncode": "+30"
+    },
+    {
+      "country": "기니",
+      "ncode": "+224"
+    },
+    {
+      "country": "기니비사우",
+      "ncode": "+245"
+    },
+    {
+      "country": "나미비아",
+      "ncode": "+264"
+    },
+    {
+      "country": "나우루",
+      "ncode": "+674"
+    },
+    {
+      "country": "나이지리아",
+      "ncode": "+234"
+    },
+    {
+      "country": "남극,오스트레일리아의외",
+      "ncode": "+672"
+    },
+    {
+      "country": "남아프리카공화국",
+      "ncode": "+27"
+    },
+    {
+      "country": "네덜란드",
+      "ncode": "+31"
+    },
+    {
+      "country": "네덜란드령보네르",
+      "ncode": "+599"
+    },
+    {
+      "country": "네덜란드령아루바",
+      "ncode": "+297"
+    },
+    {
+      "country": "네팔",
+      "ncode": "+977"
+    },
+    {
+      "country": "노르웨이",
+      "ncode": "+47"
+    },
+    {
+      "country": "뉴질랜드",
+      "ncode": "+64"
+    },
+    {
+      "country": "뉴질랜드령니우에",
+      "ncode": "+683"
+    },
+    {
+      "country": "뉴질랜드령토켈라우제도",
+      "ncode": "+690"
+    },
+    {
+      "country": "니제르",
+      "ncode": "+227"
+    },
+    {
+      "country": "니카라과",
+      "ncode": "+505"
+    },
+    {
+      "country": "대한민국",
+      "ncode": "+82"
+    },
+    {
+      "country": "덴마크",
+      "ncode": "+45"
+    },
+    {
+      "country": "덴마크령그린란드",
+      "ncode": "+299"
+    },
+    {
+      "country": "덴마크령페로제도",
+      "ncode": "+298"
+    },
+    {
+      "country": "도미니카공화국",
+      "ncode": "+1 809"
+    },
+    {
+      "country": "도미니카공화국",
+      "ncode": "2 +1 829"
+    },
+    {
+      "country": "도미니카공화국",
+      "ncode": "3 +1 849"
+    },
+    {
+      "country": "독일",
+      "ncode": "+49"
+    },
+    {
+      "country": "동티모르",
+      "ncode": "+670"
+    },
+    {
+      "country": "라오스",
+      "ncode": "+856"
+    },
+    {
+      "country": "라이베리아",
+      "ncode": "+231"
+    },
+    {
+      "country": "라트비아",
+      "ncode": "+371"
+    },
+    {
+      "country": "러시아/카자흐스탄",
+      "ncode": "+7"
+    },
+    {
+      "country": "레바논",
+      "ncode": "+961"
+    },
+    {
+      "country": "레소토",
+      "ncode": "+266"
+    },
+    {
+      "country": "루마니아",
+      "ncode": "+40"
+    },
+    {
+      "country": "룩셈부르크",
+      "ncode": "+352"
+    },
+    {
+      "country": "르완다",
+      "ncode": "+250"
+    },
+    {
+      "country": "리비아",
+      "ncode": "+218"
+    },
+    {
+      "country": "리투아니아",
+      "ncode": "+370"
+    },
+    {
+      "country": "리히텐슈타인",
+      "ncode": "+423"
+    },
+    {
+      "country": "마다가스카르",
+      "ncode": "+261"
+    },
+    {
+      "country": "마셜제도공화국",
+      "ncode": "+692"
+    },
+    {
+      "country": "마이크로네시아연방",
+      "ncode": "+691"
+    },
+    {
+      "country": "마카오",
+      "ncode": "+853"
+    },
+    {
+      "country": "마케도니아공화국",
+      "ncode": "+389"
+    },
+    {
+      "country": "말라위",
+      "ncode": "+265"
+    },
+    {
+      "country": "말레이시아",
+      "ncode": "+60"
+    },
+    {
+      "country": "말리",
+      "ncode": "+223"
+    },
+    {
+      "country": "멕시코",
+      "ncode": "+52"
+    },
+    {
+      "country": "모나코",
+      "ncode": "+377"
+    },
+    {
+      "country": "모로코",
+      "ncode": "+212"
+    },
+    {
+      "country": "모리셔스",
+      "ncode": "+230"
+    },
+    {
+      "country": "모리타니아",
+      "ncode": "+222"
+    },
+    {
+      "country": "모잠비크",
+      "ncode": "+258"
+    },
+    {
+      "country": "몬테네그로",
+      "ncode": "+382"
+    },
+    {
+      "country": "몰도바",
+      "ncode": "+373"
+    },
+    {
+      "country": "몰디브",
+      "ncode": "+960"
+    },
+    {
+      "country": "몰타",
+      "ncode": "+356"
+    },
+    {
+      "country": "몽골",
+      "ncode": "+976"
+    },
+    {
+      "country": "미국/캐나다",
+      "ncode": "+1"
+    },
+    {
+      "country": "미국령북마리아나제도",
+      "ncode": "+1 670"
+    },
+    {
+      "country": "미얀마",
+      "ncode": "+95"
+    },
+    {
+      "country": "바누아투",
+      "ncode": "+678"
+    },
+    {
+      "country": "바레인",
+      "ncode": "+973"
+    },
+    {
+      "country": "바베이도스",
+      "ncode": "+1 246"
+    },
+    {
+      "country": "바하마",
+      "ncode": "+1 242"
+    },
+    {
+      "country": "방글라데시",
+      "ncode": "+880"
+    },
+    {
+      "country": "베냉",
+      "ncode": "+229"
+    },
+    {
+      "country": "베네수엘라",
+      "ncode": "+58"
+    },
+    {
+      "country": "베트남",
+      "ncode": "+84"
+    },
+    {
+      "country": "벨기에",
+      "ncode": "+32"
+    },
+    {
+      "country": "벨라루스",
+      "ncode": "+375"
+    },
+    {
+      "country": "벨리즈 ",
+      "ncode": "+501"
+    },
+    {
+      "country": "보스니아헤르체고비나",
+      "ncode": "+387"
+    },
+    {
+      "country": "보츠와나",
+      "ncode": "+267"
+    },
+    {
+      "country": "볼리비아",
+      "ncode": "+591"
+    },
+    {
+      "country": "부룬디",
+      "ncode": "+257"
+    },
+    {
+      "country": "부르키나파소",
+      "ncode": "+226"
+    },
+    {
+      "country": "부탄",
+      "ncode": "+975"
+    },
+    {
+      "country": "불가리아",
+      "ncode": "+359"
+    },
+    {
+      "country": "브라질",
+      "ncode": "+55"
+    },
+    {
+      "country": "브루나이",
+      "ncode": "+673"
+    },
+    {
+      "country": "사모아",
+      "ncode": "+685"
+    },
+    {
+      "country": "사우디아라비아",
+      "ncode": "+966"
+    },
+    {
+      "country": "산마리노 ",
+      "ncode": "+378"
+    },
+    {
+      "country": "상투메프린시페 ",
+      "ncode": "+239"
+    },
+    {
+      "country": "세네갈 ",
+      "ncode": "+221"
+    },
+    {
+      "country": "세르비아",
+      "ncode": "+381"
+    },
+    {
+      "country": "세이셀",
+      "ncode": "+248"
+    },
+    {
+      "country": "세인트빈센트그레나딘",
+      "ncode": "+1 784"
+    },
+    {
+      "country": "소말리아",
+      "ncode": "+252"
+    },
+    {
+      "country": "솔로몬제도",
+      "ncode": "+677"
+    },
+    {
+      "country": "수단",
+      "ncode": "+249"
+    },
+    {
+      "country": "수리남",
+      "ncode": "+597"
+    },
+    {
+      "country": "스리랑카",
+      "ncode": "+94"
+    },
+    {
+      "country": "스와질랜드",
+      "ncode": "+268"
+    },
+    {
+      "country": "스웨덴",
+      "ncode": "+46"
+    },
+    {
+      "country": "스위스",
+      "ncode": "+41"
+    },
+    {
+      "country": "스페인",
+      "ncode": "+34"
+    },
+    {
+      "country": "슬로바키아",
+      "ncode": "+421"
+    },
+    {
+      "country": "슬로베니아",
+      "ncode": "+386"
+    },
+    {
+      "country": "시리아",
+      "ncode": "+963"
+    },
+    {
+      "country": "시에라리온",
+      "ncode": "+232"
+    },
+    {
+      "country": "싱가포르",
+      "ncode": "+65"
+    },
+    {
+      "country": "아랍에미리트",
+      "ncode": "+971"
+    },
+    {
+      "country": "아르메니아",
+      "ncode": "+374"
+    },
+    {
+      "country": "아르헨티나",
+      "ncode": "+54"
+    },
+    {
+      "country": "아메리칸사모아",
+      "ncode": "+1 684"
+    },
+    {
+      "country": "아이슬란드",
+      "ncode": "+354"
+    },
+    {
+      "country": "아이티",
+      "ncode": "+509"
+    },
+    {
+      "country": "아일랜드",
+      "ncode": "+353"
+    },
+    {
+      "country": "아제르바이잔",
+      "ncode": "+994"
+    },
+    {
+      "country": "아프가니스탄",
+      "ncode": "+93"
+    },
+    {
+      "country": "안도라 ",
+      "ncode": "+376"
+    },
+    {
+      "country": "알바니아 ",
+      "ncode": "+355"
+    },
+    {
+      "country": "알제리 ",
+      "ncode": "+213"
+    },
+    {
+      "country": "앙골라 ",
+      "ncode": "+244"
+    },
+    {
+      "country": "에디오피아 ",
+      "ncode": "+251"
+    },
+    {
+      "country": "에리트레아",
+      "ncode": "+291"
+    },
+    {
+      "country": "에스토니아",
+      "ncode": "+372"
+    },
+    {
+      "country": "에콰도르",
+      "ncode": "+593"
+    },
+    {
+      "country": "엘살바도르 ",
+      "ncode": "+503"
+    },
+    {
+      "country": "영국",
+      "ncode": "+44"
+    },
+    {
+      "country": "영국령세인트헬레나 ",
+      "ncode": "+290"
+    },
+    {
+      "country": "영국령인도양지역",
+      "ncode": "+246"
+    },
+    {
+      "country": "영국령지브롤터",
+      "ncode": "+350"
+    },
+    {
+      "country": "영국령포클랜드제도",
+      "ncode": "+500"
+    },
+    {
+      "country": "예멘",
+      "ncode": "+967"
+    },
+    {
+      "country": "오만 ",
+      "ncode": "+968"
+    },
+    {
+      "country": "오스트리아 ",
+      "ncode": "+43"
+    },
+    {
+      "country": "온두라스 ",
+      "ncode": "+504"
+    },
+    {
+      "country": "요르단 ",
+      "ncode": "+962"
+    },
+    {
+      "country": "우간다 ",
+      "ncode": "+256"
+    },
+    {
+      "country": "우루과이 ",
+      "ncode": "+598"
+    },
+    {
+      "country": "우즈베키스탄 ",
+      "ncode": "+998"
+    },
+    {
+      "country": "우크라이나 ",
+      "ncode": "+380"
+    },
+    {
+      "country": "이라크 ",
+      "ncode": "+964"
+    },
+    {
+      "country": "이란",
+      "ncode": "+98"
+    },
+    {
+      "country": "이스라엘 ",
+      "ncode": "+972"
+    },
+    {
+      "country": "이집트",
+      "ncode": "+20"
+    },
+    {
+      "country": "이탈리아",
+      "ncode": "+39"
+    },
+    {
+      "country": "인도",
+      "ncode": "+91"
+    },
+    {
+      "country": "인도네시아",
+      "ncode": "+62"
+    },
+    {
+      "country": "일본",
+      "ncode": "+81"
+    },
+    {
+      "country": "자메이카",
+      "ncode": "+1 876"
+    },
+    {
+      "country": "잠비아",
+      "ncode": "+260"
+    },
+    {
+      "country": "적도기니",
+      "ncode": "+240"
+    },
+    {
+      "country": "조지아",
+      "ncode": "+995"
+    },
+    {
+      "country": "중국",
+      "ncode": "+86"
+    },
+    {
+      "country": "중앙아프리카공화국 ",
+      "ncode": "+236"
+    },
+    {
+      "country": "지부티",
+      "ncode": "+253"
+    },
+    {
+      "country": "짐바브웨 ",
+      "ncode": "+263"
+    },
+    {
+      "country": "차드 ",
+      "ncode": "+235"
+    },
+    {
+      "country": "체코 ",
+      "ncode": "+420"
+    },
+    {
+      "country": "칠레",
+      "ncode": "+56"
+    },
+    {
+      "country": "카메룬",
+      "ncode": "+237"
+    },
+    {
+      "country": "카보베르데",
+      "ncode": "+238"
+    },
+    {
+      "country": "카타르",
+      "ncode": "+974"
+    },
+    {
+      "country": "캄보디아왕국",
+      "ncode": "+855"
+    },
+    {
+      "country": "케냐",
+      "ncode": "+254"
+    },
+    {
+      "country": "코모로,마요트",
+      "ncode": "+269"
+    },
+    {
+      "country": "코스타리카",
+      "ncode": "+506"
+    },
+    {
+      "country": "코트디부아르",
+      "ncode": "+225"
+    },
+    {
+      "country": "콜롬비아",
+      "ncode": "+57"
+    },
+    {
+      "country": "콩고 ",
+      "ncode": "+242"
+    },
+    {
+      "country": "콩고민주공화국",
+      "ncode": "+243"
+    },
+    {
+      "country": "쿠바",
+      "ncode": "+53"
+    },
+    {
+      "country": "쿠웨이트",
+      "ncode": "+965"
+    },
+    {
+      "country": "쿡제도",
+      "ncode": "+682"
+    },
+    {
+      "country": "크로아티아",
+      "ncode": "+385"
+    },
+    {
+      "country": "키르기스스탄",
+      "ncode": "+996"
+    },
+    {
+      "country": "키리바시",
+      "ncode": "+686"
+    },
+    {
+      "country": "키프로스",
+      "ncode": "+357"
+    },
+    {
+      "country": "타이완",
+      "ncode": "+886"
+    },
+    {
+      "country": "타지키스탄 ",
+      "ncode": "+992"
+    },
+    {
+      "country": "탄자니아",
+      "ncode": "+255"
+    },
+    {
+      "country": "태국",
+      "ncode": "+66"
+    },
+    {
+      "country": "터키",
+      "ncode": "+90"
+    },
+    {
+      "country": "토고",
+      "ncode": "+228"
+    },
+    {
+      "country": "통가",
+      "ncode": "+676"
+    },
+    {
+      "country": "투르크메니스탄",
+      "ncode": "+993"
+    },
+    {
+      "country": "튀니지",
+      "ncode": "+216"
+    },
+    {
+      "country": "트리니다드토바고",
+      "ncode": "+1 868"
+    },
+    {
+      "country": "파나마 ",
+      "ncode": "+507"
+    },
+    {
+      "country": "파라과이",
+      "ncode": "+595"
+    },
+    {
+      "country": "파키스탄",
+      "ncode": "+92"
+    },
+    {
+      "country": "파푸아뉴기니",
+      "ncode": "+675"
+    },
+    {
+      "country": "팔라우",
+      "ncode": "+680"
+    },
+    {
+      "country": "팔레스타인",
+      "ncode": "+970"
+    },
+    {
+      "country": "페루 ",
+      "ncode": "+51"
+    },
+    {
+      "country": "포르투갈 ",
+      "ncode": "+351"
+    },
+    {
+      "country": "폴란드 ",
+      "ncode": "+48"
+    },
+    {
+      "country": "푸에르토리코",
+      "ncode": "+1 787"
+    },
+    {
+      "country": "프랑스",
+      "ncode": "+33"
+    },
+    {
+      "country": "프랑스령과들루프",
+      "ncode": "+590"
+    },
+    {
+      "country": "프랑스령기아나",
+      "ncode": "+594"
+    },
+    {
+      "country": "프랑스령뉴칼레도니아",
+      "ncode": "+687"
+    },
+    {
+      "country": "프랑스령레위니옹",
+      "ncode": "+262"
+    },
+    {
+      "country": "프랑스령마르티니크",
+      "ncode": "+596"
+    },
+    {
+      "country": "프랑스령생피에르미클롱",
+      "ncode": "+508"
+    },
+    {
+      "country": "프랑스령월리스푸투나제",
+      "ncode": "+681"
+    },
+    {
+      "country": "프랑스령폴리네시아",
+      "ncode": "+689"
+    },
+    {
+      "country": "피지",
+      "ncode": "+679"
+    },
+    {
+      "country": "핀란드",
+      "ncode": "+358"
+    },
+    {
+      "country": "필리핀",
+      "ncode": "+63"
+    },
+    {
+      "country": "헝가리",
+      "ncode": "+36"
+    },
+    {
+      "country": "호주",
+      "ncode": "+61"
+    },
+    {
+      "country": "홍콩",
+      "ncode": "+852"
+    }
+  ]
+}

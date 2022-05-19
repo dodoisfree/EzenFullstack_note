@@ -3,7 +3,6 @@ import React, {
   useCallback,
   useRef,
   useReducer,
-  useMemo,
 } from "react";
 
 const result = (state, action) => {
@@ -34,14 +33,14 @@ function App() {
     (e) => {
       setNumber1(e.currentTarget.value);
     },
-    [number1]
+    []
   );
 
   const onNumber2 = useCallback(
     (e) => {
       setNumber2(e.currentTarget.value);
     },
-    [number2]
+    []
   );
 
   const opValue = useCallback(
@@ -50,10 +49,11 @@ function App() {
       const oper = op[op.selectedIndex].value;
       setOperator(oper);
     },
-    [operator]
+    []
   );
 
   const [calc, setCalc] = useReducer(result, 0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onClick = useCallback(() => {
     setCalc(json);
   });
