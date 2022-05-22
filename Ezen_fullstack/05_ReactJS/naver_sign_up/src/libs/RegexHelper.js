@@ -25,9 +25,8 @@ class RegexHelper {
       content === null ||
       (typeof content === "string" && content.trim().length === 0)
     ) {
-      throw new BadRequestException(msg, field);
+      return (msg, field);
     }
-    return true;
   }
 
   /**
@@ -175,7 +174,7 @@ class RegexHelper {
    * @param {HTMLElement} field     검사할 대상에 대한 <INPUT>요소의 DOM 객체
    * @param {string} msg            표시할 메시지
    */
-   engNum(field, msg) {
+  engNum(field, msg) {
     return this.field(field, msg, /^[a-zA-Z0-9]*$/);
   }
 
@@ -183,35 +182,39 @@ class RegexHelper {
    * @param {HTMLElement} field     검사할 대상에 대한 <INPUT>요소의 DOM 객체
    * @param {string} msg            표시할 메시지
    */
-   korNum(field, msg) {
+  korNum(field, msg) {
     return this.field(field, msg, /^[ㄱ-ㅎ가-힣0-9]*$/);
   }
-    
+
   /** 이메일주소 형식인지 검사하기 위해 field()를 간접적으로 호출한다.
    * @param {HTMLElement} field     검사할 대상에 대한 <INPUT>요소의 DOM 객체
    * @param {string} msg            표시할 메시지
    */
-   email(field, msg) {
-    return this.field(field, msg, /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/);
+  email(field, msg) {
+    return this.field(
+      field,
+      msg,
+      /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/
+    );
   }
 
   /** 핸드폰 번호 형식인지 검사하기 위해 field()를 간접적으로 호출한다.
    * @param {HTMLElement} field     검사할 대상에 대한 <INPUT>요소의 DOM 객체
    * @param {string} msg            표시할 메시지
    */
-    cellphone(field, msg) {
-     return this.field(field, msg, /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/);
+  cellphone(field, msg) {
+    return this.field(field, msg, /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/);
   }
 
   /** 집전화 형식인지 검사하기 위해 field()를 간접적으로 호출한다.
    * @param {HTMLElement} field     검사할 대상에 대한 <INPUT>요소의 DOM 객체
    * @param {string} msg            표시할 메시지
    */
-   telphone(field, msg) {
+  telphone(field, msg) {
     return this.field(field, msg, /^\d{2,3}\d{3,4}\d{4}$/);
- }
+  }
 
- /** 핸드폰 번호 형식과 집전화 번호 형식 둘중 하나를 충족하는지 검사.
+  /** 핸드폰 번호 형식과 집전화 번호 형식 둘중 하나를 충족하는지 검사.
    * @param {HTMLElement} field     검사할 대상에 대한 <INPUT>요소의 DOM 객체
    * @param {string} msg            표시할 메시지
    */
@@ -219,15 +222,14 @@ class RegexHelper {
     this.field(field, msg);
 
     const content = field.value.trim();
-    var check1 = /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/;   // 핸드폰 형식
-    var check2 = /^\d{2,3}\d{3,4}\d{4}$/;                   // 집전화 형식
+    var check1 = /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/; // 핸드폰 형식
+    var check2 = /^\d{2,3}\d{3,4}\d{4}$/; // 집전화 형식
 
-    if(!check1.text(content) && !check2.test(content)) {
-        throw new BadRequestException(msg, field);
+    if (!check1.text(content) && !check2.test(content)) {
+      throw new BadRequestException(msg, field);
     }
-    return true;    // 성공했음을 리턴
- }
-
+    return true; // 성공했음을 리턴
+  }
 }
 
 export default new RegexHelper();

@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
 * {
 	font-family: Dotum,'돋움',Helvetica,sans-serif;
-	//background-color: #F5F6F7;
+	background-color: #F5F6F7;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

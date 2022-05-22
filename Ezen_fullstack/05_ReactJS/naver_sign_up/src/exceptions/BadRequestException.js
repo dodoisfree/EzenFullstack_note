@@ -17,6 +17,7 @@ class BadRequestException extends Error {
   set field(params) {
     this._field = params;
   }
+
 }
 
 export default BadRequestException;

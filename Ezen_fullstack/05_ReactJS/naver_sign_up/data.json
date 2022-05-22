@@ -1,4 +1,15 @@
 {
+  "Profile": [
+    {
+      "id": "",
+      "pw": "",
+      "name": "",
+      "birthday": "",
+      "sex": "",
+      "email": "",
+      "cellPhone": ""
+    }
+  ],
   "Nationality": [
     {
       "country": "가나",
