@@ -5,6 +5,7 @@ const Store = configureStore({
   reducer: {
     news: newsSlice,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false}),
   devTools: true,
 });
 
