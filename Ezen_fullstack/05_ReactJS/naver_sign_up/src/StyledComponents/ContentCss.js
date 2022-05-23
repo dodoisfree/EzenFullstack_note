@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import selectArr from "../img/sel_arr_2x.gif";
+import riskImg from "../img/m_icon_pw_step.png";
 
 const ContentCss = styled.div`
   width: 100%;
@@ -33,6 +34,7 @@ const ContentCss = styled.div`
             padding-left: 14px;
             background-color: #fff;
             border: 1px solid #dadada;
+            position: relative;
             &:hover {
               border: 1px solid #03c75a;
             }
@@ -58,6 +60,7 @@ const ContentCss = styled.div`
               height: 18px;
               font-size: 15px;
               color: #8e8e8e;
+              background-color: #fff;
               line-height: 18px;
               margin-left: 15px;
             }
@@ -68,6 +71,17 @@ const ContentCss = styled.div`
               color: #03c75a;
               font-size: 12px;
               margin-left: 47px;
+            }
+            .riskImg {
+              background: url(${riskImg}) no-repeat;
+              background-size: 125px 75px;
+              position: absolute;
+              top: 50%;
+              right: 13px;
+              margin-top: -12.5px;
+
+              width: 24px;
+              height: 24px;
             }
           }
         }

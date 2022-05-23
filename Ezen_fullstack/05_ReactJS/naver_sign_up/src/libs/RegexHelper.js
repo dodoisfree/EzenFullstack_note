@@ -17,7 +17,7 @@ class RegexHelper {
    * ex) regexHelper.value('#user_id', '아이디를 입력하세요');
    */
 
-  value(field, msg) {
+  value(field) {
     const content = field.value;
 
     if (
@@ -25,8 +25,9 @@ class RegexHelper {
       content === null ||
       (typeof content === "string" && content.trim().length === 0)
     ) {
-      return (msg, field);
+      return false;
     }
+    return true;
   }
 
   /**
