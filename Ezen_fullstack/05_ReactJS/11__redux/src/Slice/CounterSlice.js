@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const CounterSlice = createSlice({
+const counterSlice = createSlice({
     name: "counter",
     // 이 모듈이 관리하고자하는 상태값들을 명시
     initialState: {
@@ -42,7 +42,7 @@ const CounterSlice = createSlice({
 });
 
 // 액션함수들 내보내기
-export const { plus, minus } = CounterSlice.actions;
+export const { plus, minus } = counterSlice.actions;
 
 // 리듀서 객체 내보내기
-export default CounterSlice.reducer;
+export default counterSlice.reducer;
