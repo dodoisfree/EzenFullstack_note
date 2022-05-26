@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import './App.css';
 import Signup from './Signup';
 
 const App = memo(() => {

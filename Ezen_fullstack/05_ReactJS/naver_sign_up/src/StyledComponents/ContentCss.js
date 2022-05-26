@@ -64,7 +64,7 @@ const ContentCss = styled.div`
               line-height: 18px;
               margin-left: 15px;
             }
-            .risk {
+            .safe {
               display: inline-block;
               width: 24px;
               height: 18px;
@@ -72,14 +72,33 @@ const ContentCss = styled.div`
               font-size: 12px;
               margin-left: 47px;
             }
-            .riskImg {
+            .notSafe {
+              display: inline-block;
+              width: 48px;
+              height: 18px;
+              color: red;
+              font-size: 12px;
+              margin-left: 23px;
+            }
+            .defaultImg {
               background: url(${riskImg}) no-repeat;
               background-size: 125px 75px;
+              background-position: 0 0;
               position: absolute;
               top: 50%;
               right: 13px;
               margin-top: -12.5px;
-
+              width: 24px;
+              height: 24px;
+            }
+            .notSafeImg {
+              background: url(${riskImg}) no-repeat;
+              background-size: 125px 75px;
+              background-position: -27px -27px;
+              position: absolute;
+              top: 50%;
+              right: 13px;
+              margin-top: -12.5px;
               width: 24px;
               height: 24px;
             }

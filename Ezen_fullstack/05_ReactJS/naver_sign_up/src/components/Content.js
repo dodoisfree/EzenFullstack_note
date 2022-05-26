@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContentCss from "../StyledComponents/ContentCss";
 // import regexHelper from "../libs/RegexHelper";
 import useAxios from "axios-hooks";
@@ -7,7 +7,7 @@ import * as Yup from "yup";
 
 const Content = () => {
   // 국가 목록 불러오기
-  const [nationality, setNationality] = React.useState([]);
+  const [nationality, setNationality] = useState([]);
   const [{ data }] = useAxios(
     "http://localhost:3001/Nationality",
     { useCache: false }
@@ -97,6 +97,8 @@ const Content = () => {
   //   },
   // });
 
+  //const [i, setI] = React.useState();
+
   return (
     <ContentCss>
       <Formik
@@ -114,6 +116,9 @@ const Content = () => {
           id: Yup.string()
             .required("필수 정보입니다.")
             .matches(/^[a-z0-9_-]{5,20}$/,"5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다."),
+          pw: Yup.string()
+            .required("필수 정보입니다.")
+            .matches(/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/,"8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.")
         })}
         onSubmit={(values) => {
           console.log(values);
@@ -131,17 +136,18 @@ const Content = () => {
                     <span>@naver.com</span>
                   </span>
                   {formik.touched.id ? <span className="alert">{formik.errors.id}</span> : null}
+                  {/* {formik.errors.pw === "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요." ? console.log("a") : null} */}
                 </div>
                 <div className="inputArea">
                   <label htmlFor="pw">
                     <h3>비밀번호</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pw" className="field" type="text" name="pw" />
-                    <span className="risk">안전</span>
-                    <span className="riskImg"></span>
+                    <input id="pw" className="field" type="text" name="pw" {...formik.getFieldProps('pw')}/>
+                    {formik.touched.pw ? <span className="notSafe">사용불가</span> : formik.errors.pw === "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요." }
+                    {formik.touched.pw ? <span className="notSafeImg"></span> : <span className="defaultImg"></span>}
                   </span>
-                  {/* <span className="alert">필수 정보입니다.</span> */}
+                  {formik.touched.pw ? <span className="alert">{formik.errors.pw}</span> : null}
                   <label htmlFor="pwCnfm">
                     <h3>비밀번호 재확인</h3>
                   </label>
@@ -153,7 +159,7 @@ const Content = () => {
               </div>
 
               <div className="privGroup">
-                <div div className="inputArea">
+                <div className="inputArea">
                   <label htmlFor="name">
                     <h3>이름</h3>
                   </label>
@@ -208,7 +214,7 @@ const Content = () => {
                       본인 확인 이메일<span>(선택)</span>
                     </h3>
                   </label>
-                  <span span className="inputBox">
+                  <span className="inputBox">
                     <input id="email" className="field" type="text" placeholder="선택입력" />
                   </span>
                   {/* <span className="alert">이메일 주소를 다시 확인해주세요.</span> */}
