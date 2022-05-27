@@ -9,6 +9,7 @@ const App = memo(() => {
   return (
     <div>
       <Top />
+      
       <Routes>
         <Route path="/:api" element={<KakaoSearch />} />
       </Routes>

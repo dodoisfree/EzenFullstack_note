@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import sample from "./assets/img/sample.jpg";
+import sample from "./assets/img/sample.png";
 
 const Meta = memo((props) => {
   return (
