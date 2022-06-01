@@ -104,7 +104,7 @@ const ImageItem = memo(({ item: {doc_url, image_url, thumbnail_url, display_site
   return (
     <ListItemContainer>
       <a className="list-item-link" href={doc_url} target="_blank" rel="noreferrer" ref={inview}>
-        <img className="thumnail" src={thumbnail_url || noimg} onError={(e) => {
+        <img className="thumnail" src={image_url || noimg} onError={(e) => {
           e.target.src = noimg;
         }} alt={display_sitename} />
         <div className="content">

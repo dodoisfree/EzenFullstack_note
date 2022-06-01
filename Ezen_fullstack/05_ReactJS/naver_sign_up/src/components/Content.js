@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ContentCss from "../StyledComponents/ContentCss";
-// import regexHelper from "../libs/RegexHelper";
 import useAxios from "axios-hooks";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -16,21 +15,6 @@ const Content = () => {
     setNationality(data);
     //console.log(data);
   }, [data]);
-
-  // // 정규식 검사
-  // const [alertID, setAlertID] = React.useState(false);
-  // const RegEx = (current) => {
-  //   let idValue = regexHelper.value(current.id, '필수 입력정보입니다.');
-  //   idValue === false ? setAlertID(true) : setAlertID(false);
-  //   console.log("RegEx"+current.id);
-  // }
-
-  // 회원가입 submit
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   const current = e.target;
-  //   console.log("submit"+current.id);
-  //   RegEx(current);
 
   //   // const id = current.id.value;
   //   // const pw = current.pw.value;
@@ -71,34 +55,6 @@ const Content = () => {
   //   // })();
   // }
 
-  // const onBlur = (e) => {
-  //   const cr = e.target;
-  //   console.log("Br : "+cr.id);
-  // }
-
-  // const formik = useFormik({
-  //   initialValues: {
-  //     id: "",
-  //     pw: "",
-  //     pwCfm: "",
-  //     name: "",
-  //     birthday: "",
-  //     sex: "",
-  //     email: "",
-  //     cellphone: ""
-  //   },
-  //   validationSchema: Yup.object({
-  //     id: Yup.string()
-  //       .required("필수 정보입니다.")
-  //       .matches(/^[a-z0-9_-]{5,20}$/, "5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다."),
-  //   }),
-  //   onSubmit: (values) => {
-  //     console.log(values);
-  //   },
-  // });
-
-  //const [i, setI] = React.useState();
-
   return (
     <ContentCss>
       <Formik
@@ -118,7 +74,10 @@ const Content = () => {
             .matches(/^[a-z0-9_-]{5,20}$/,"5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다."),
           pw: Yup.string()
             .required("필수 정보입니다.")
-            .matches(/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/,"8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.")
+            .matches(/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/,"8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요."),
+          pwCfm: Yup.string()
+          .required("필수 정보입니다.")
+          .oneOf([Yup.ref("pw"), null], "비밀번호가 일치하지 않습니다."),
         })}
         onSubmit={(values) => {
           console.log(values);
@@ -132,29 +91,30 @@ const Content = () => {
                     <h3>아이디</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="id" className="field" type="text" name="id" {...formik.getFieldProps('id')}/>
+                    <input id="id" className="field" type="text" name="id" value={formik.values.id} {...formik.getFieldProps('id')} />
                     <span>@naver.com</span>
                   </span>
                   {formik.touched.id ? <span className="alert">{formik.errors.id}</span> : null}
-                  {/* {formik.errors.pw === "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요." ? console.log("a") : null} */}
                 </div>
                 <div className="inputArea">
                   <label htmlFor="pw">
                     <h3>비밀번호</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pw" className="field" type="text" name="pw" {...formik.getFieldProps('pw')}/>
-                    {formik.touched.pw ? <span className="notSafe">사용불가</span> : formik.errors.pw === "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요." }
-                    {formik.touched.pw ? <span className="notSafeImg"></span> : <span className="defaultImg"></span>}
+                    <input id="pw" className="field" type="text" name="pw" value={formik.values.pw} {...formik.getFieldProps('pw')} />
+                    {formik.touched.pw ? <span></span>  : 
+                     formik.touched.pw ? <span className="notSafe">사용불가</span> : <span className="safe">안전</span>}
+                    {formik.touched.pw && formik.touched.pw ? <span className="notSafeImg"></span> : <span className="defaultImg"></span>}
                   </span>
                   {formik.touched.pw ? <span className="alert">{formik.errors.pw}</span> : null}
-                  <label htmlFor="pwCnfm">
+                  <label htmlFor="pwCfm">
                     <h3>비밀번호 재확인</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pwCnfm" className="field" type="text" name="pwCnfm" />
+                    <input id="pwCfm" className="field" type="text" name="pwCfm" value={formik.values.pwCfm} {...formik.getFieldProps("pwCfm")} />
+                    {formik.touched.pwCfm ? <span className="safeImg"></span> : <span className="defaultImg2"></span>}
                   </span>
-                  {/* <span className="alert">필수 정보입니다.</span> */}
+                  {formik.touched.pwCfm ? <span className="alert">{formik.errors.pwCfm}</span> : null}
                 </div>
               </div>
 

@@ -102,6 +102,28 @@ const ContentCss = styled.div`
               width: 24px;
               height: 24px;
             }
+            .defaultImg2 {
+              background: url(${riskImg}) no-repeat;
+              background-size: 125px 75px;
+              background-position: -27px 0;
+              position: absolute;
+              top: 50%;
+              right: 13px;
+              margin-top: -12.5px;
+              width: 24px;
+              height: 24px;
+            }
+            .safeImg {
+              background: url(${riskImg}) no-repeat;
+              background-size: 125px 75px;
+              background-position: -81px 0;
+              position: absolute;
+              top: 50%;
+              right: 13px;
+              margin-top: -12.5px;
+              width: 24px;
+              height: 24px;
+            }
           }
         }
       }
