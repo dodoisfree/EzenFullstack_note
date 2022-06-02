@@ -12,7 +12,7 @@ import Table from "../components/Table";
 // 에러정보를 표시하기 위한 컴포넌트
 import ErrorView from "../components/ErrorView";
 // 그래프를 표시하기 위한 컴포넌트
-import BarCartView from "../components/BarCartView";
+import BarChartView from "../components/BarChartView";
 
 // 날짜 처리 라이브러리
 import dayjs from "dayjs";
@@ -95,7 +95,7 @@ const MovieRank = memo(() => {
       ) : (
         <Container>
           <div className="flex-item">
-            <BarCartView chartData={chartData} />
+            <BarChartView chartData={chartData} />
           </div>
           <div className="flex-item">
             <Table>

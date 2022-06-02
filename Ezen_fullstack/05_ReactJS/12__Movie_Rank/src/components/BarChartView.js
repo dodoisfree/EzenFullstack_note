@@ -20,7 +20,7 @@ ChartJS.register(
   Legend
 );
 
-const BarCartView = memo(({chartData}) => {
+const BarChartView = memo(({chartData}) => {
   /** 그래프 옵션 */
   const options = {
     indexAxis: "x",
@@ -56,11 +56,11 @@ const BarCartView = memo(({chartData}) => {
 });
 
 
-BarCartView.defaultProps = {
+BarChartView.defaultProps = {
   chartData: {
     movieNm: [],
     audiCnt: [],
   },
 };
 
-export default BarCartView;
+export default BarChartView;
