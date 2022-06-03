@@ -1,9 +1,9 @@
-import React, {memo, useCallback} from "react";
+import React, { memo, useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQueryString } from "../hooks/useQueryString";
 import styled from "styled-components";
-
 import MenuLink from "./MenuLink";
+import dayjs from "dayjs";
 
 const Form = styled.form`
   position: sticky;
@@ -32,39 +32,46 @@ const Form = styled.form`
   }
 `;
 
-
 const Top = memo(() => {
   const navigate = useNavigate();
 
   const { date_gte, date_lte } = useQueryString();
-  const [st, setSt] = React.useState(false);
-  const onSearchSubmit = useCallback((e) => {
+  const [sumDate, setSumDate] = useState();
+  const [srtDate, setSrtDate] = React.useState("");
+  const [endDate, setEndDate] = React.useState("");
+
+  const onSearchSubmit = useCallback(
+    (e) => {
       e.preventDefault();
       let date = e.target.date;
       navigate(`/covid19?date_gte=${date[0].value}&date_lte=${date[1].value}`);
-      if(date[0] !== null) {
-        setSt(true);
-      }
-    }, [navigate]);
+    },
+    [navigate]
+  );
 
+  useEffect(() => {
+    setSrtDate(String(dayjs(date_gte).format("YYYY-MM-DD")));
+      setEndDate(String(dayjs(date_lte).format("YYYY-MM-DD")));
+      setSumDate(String(`date_gte=${srtDate}&date_lte=${endDate}`));
+  }, [date_gte, date_lte, endDate, srtDate]);
   return (
     <div>
       <h1>Covid19 현황</h1>
       <Form onSubmit={onSearchSubmit}>
-        <input type='date' name="date" defaultValue={date_gte}/>~
-        <input type='date' name="date" defaultValue={date_lte} />
-        <button type='submit'>검색</button>
+        <input type="date" name="date" defaultValue={date_gte} />~
+        <input type="date" name="date" defaultValue={date_lte} />
+        <button type="submit">검색</button>
       </Form>
 
-      { st && (
+      {sumDate && (
         <nav>
-          <MenuLink to={"/confirmed?"}>일일확진자</MenuLink>
-          <MenuLink to={"/confirmed_acc?"}>누적확진자</MenuLink>
-          <MenuLink to={"/active?"}>격리환자</MenuLink>
-          <MenuLink to={"/released?"}>격리해제</MenuLink>
-          <MenuLink to={"/released_acc?"}>누적격리해제</MenuLink>
-          <MenuLink to={"/death?"}>사망자</MenuLink>
-          <MenuLink to={"/death_acc?"}>누적사망자</MenuLink>
+          <MenuLink to={`/confirmed?${sumDate}`}>일일확진자</MenuLink>
+          <MenuLink to={`/confirmed_acc?${sumDate}`}>누적확진자</MenuLink>
+          <MenuLink to={`/active?${sumDate}`}>격리환자</MenuLink>
+          <MenuLink to={`/released?${sumDate}`}>격리해제</MenuLink>
+          <MenuLink to={`/released_acc?${sumDate}`}>누적격리해제</MenuLink>
+          <MenuLink to={`/death?${sumDate}`}>사망자</MenuLink>
+          <MenuLink to={`/death_acc?${sumDate}`}>누적사망자</MenuLink>
         </nav>
       )}
     </div>

@@ -9,18 +9,18 @@ import dayjs from "dayjs";
 import Spinner from "../components/Spinner";
 import ErrorView from "../components/ErrorView";
 import LineChartView from "../components/LineChartView";
-import useMounterdRef from '../hooks/useMounterdRef';
+import useMounterdRef from "../hooks/useMounterdRef";
 
 const covid19 = memo(() => {
+
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.covid19);
   const { date_gte, date_lte } = useQueryString();
-
-  const [srtDate, setSrtDate] = React.useState('');
-  const [endDate, setEndDate] = React.useState('');
+  const [srtDate, setSrtDate] = React.useState("");
+  const [endDate, setEndDate] = React.useState("");
   const { option } = useParams();
   const mountedRef = useMounterdRef();
-  const [chartData, setChartData] = React.useState([]);
+  const [chartData, setChartData] = React.useState();
 
   React.useEffect(() => {
     setSrtDate(String(dayjs(date_gte).format("YYYY-MM-DD") + "T00:00:00Z"));
@@ -33,9 +33,9 @@ const covid19 = memo(() => {
     );
   }, [date_gte, date_lte, dispatch, endDate, option, srtDate]);
 
+
   React.useEffect(() => {
     if (mountedRef.current) {
-
       const newData = {
         confirmed: ['confirmed'],
         confirmed_acc: ['confirmed_acc'],
@@ -54,11 +54,10 @@ const covid19 = memo(() => {
         newData.released_acc.push(v.released_acc);
         newData.death.push(v.death);
         newData.death_acc.push(v.death_acc);
-        ///console.log(newData);
       });
-      data && setChartData(newData);
+      setChartData(newData);
     }
-  }, [data, mountedRef, option]);
+  }, [data, mountedRef]);
 
   return (
     <div>
