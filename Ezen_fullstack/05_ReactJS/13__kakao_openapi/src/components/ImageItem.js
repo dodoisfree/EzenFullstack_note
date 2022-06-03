@@ -100,7 +100,7 @@ const ListItemContainer = styled.li`
   }
 `;
 
-const ImageItem = memo(({ item: {doc_url, image_url, thumbnail_url, display_sitename, collection, width, height, datetime}, inview}) => {
+const ImageItem = memo(({type, item: {doc_url, image_url, thumbnail_url, display_sitename, collection, width, height, datetime}, inview}) => {
   return (
     <ListItemContainer>
       <a className="list-item-link" href={doc_url} target="_blank" rel="noreferrer" ref={inview}>

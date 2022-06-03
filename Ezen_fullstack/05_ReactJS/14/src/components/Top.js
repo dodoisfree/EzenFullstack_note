@@ -37,30 +37,31 @@ const Top = memo(() => {
   const navigate = useNavigate();
 
   const { date_gte, date_lte } = useQueryString();
-
-  
+  const [st, setSt] = React.useState(false);
   const onSearchSubmit = useCallback((e) => {
       e.preventDefault();
       let date = e.target.date;
       navigate(`/covid19?date_gte=${date[0].value}&date_lte=${date[1].value}`);
+      if(date[0] !== null) {
+        setSt(true);
+      }
     }, [navigate]);
 
   return (
     <div>
       <h1>Covid19 현황</h1>
       <Form onSubmit={onSearchSubmit}>
-        <input type='date' name="date" defaultValue={date_gte}/>
-        ~
+        <input type='date' name="date" defaultValue={date_gte}/>~
         <input type='date' name="date" defaultValue={date_lte} />
         <button type='submit'>검색</button>
       </Form>
 
-      { (date_gte&&date_lte) && (
+      { st && (
         <nav>
           <MenuLink to={"/confirmed?"}>일일확진자</MenuLink>
           <MenuLink to={"/confirmed_acc?"}>누적확진자</MenuLink>
           <MenuLink to={"/active?"}>격리환자</MenuLink>
-          <MenuLink to={"released?"}>격리해제</MenuLink>
+          <MenuLink to={"/released?"}>격리해제</MenuLink>
           <MenuLink to={"/released_acc?"}>누적격리해제</MenuLink>
           <MenuLink to={"/death?"}>사망자</MenuLink>
           <MenuLink to={"/death_acc?"}>누적사망자</MenuLink>

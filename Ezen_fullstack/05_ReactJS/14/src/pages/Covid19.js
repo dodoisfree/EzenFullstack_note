@@ -20,7 +20,7 @@ const covid19 = memo(() => {
   const [endDate, setEndDate] = React.useState('');
   const { option } = useParams();
   const mountedRef = useMounterdRef();
-  const [chartData, setChartData] = React.useState();
+  const [chartData, setChartData] = React.useState([]);
 
   React.useEffect(() => {
     setSrtDate(String(dayjs(date_gte).format("YYYY-MM-DD") + "T00:00:00Z"));
@@ -35,10 +35,30 @@ const covid19 = memo(() => {
 
   React.useEffect(() => {
     if (mountedRef.current) {
-      setChartData(data);
+
+      const newData = {
+        confirmed: ['confirmed'],
+        confirmed_acc: ['confirmed_acc'],
+        active: ['active'],
+        released: ['released'],
+        released_acc: ['released_acc'],
+        death: ['death'],
+        death_acc: ['death_acc'],
+      };
+
+      data.forEach((v, i) => {
+        newData.confirmed.push(v.confirmed);
+        newData.confirmed_acc.push(v.confirmed_acc);
+        newData.active.push(v.active);
+        newData.released.push(v.released);
+        newData.released_acc.push(v.released_acc);
+        newData.death.push(v.death);
+        newData.death_acc.push(v.death_acc);
+        ///console.log(newData);
+      });
+      data && setChartData(newData);
     }
-  }, [data, mountedRef]);
-  
+  }, [data, mountedRef, option]);
 
   return (
     <div>
@@ -49,7 +69,7 @@ const covid19 = memo(() => {
       ) : (
         data && (
           <div>
-            <LineChartView chartData={chartData} />
+            <LineChartView option={option} chartData={chartData} />
           </div>
         )
       )}

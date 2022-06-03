@@ -1,4 +1,6 @@
 import React, { memo } from "react";
+import { useQueryString } from "../hooks/useQueryString";
+import dayjs from "dayjs";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -22,30 +24,45 @@ ChartJS.register(
   Legend
 );
 
-const LineChartView = memo((chartData) => {
+const LineChartView = memo(({ option, chartData }) => {
+  const { date_gte, date_lte } = useQueryString();
+  const [period, setPeriod] = React.useState([]);
+  let { confirmed, confirmed_acc, active, released, released_acc, death, death_acc } = chartData;
 
-  const menu = {
-    confirmed: [],
-    confirmed_acc: [],
-    active: [],
-    released: [],
-    released_acc: [],
-    death: [],
-    death_acc: [],
-  };
-  
   React.useEffect(() => {
-    Array.from(chartData).map((v, i) => {
-      console.log(v.released);
-      return (
-        menu.confirmed.push(v.confirmed)
-      )
-    })
-    
-  }, [chartData, menu.confirmed])
-  
+    const srtDate = new Date(date_gte);
+    let result = [];
+    while (srtDate <= new Date(date_lte)) {
+      let fmDate = new dayjs(srtDate).format("MM/DD");
+      result.push(fmDate);
+      srtDate.setDate(srtDate.getDate() + 1);
+    }
+    setPeriod(result);
+  }, [chartData, date_gte, date_lte]);
 
-  
+  const [chart, setChart] = React.useState([confirmed]);
+
+  React.useEffect(() => {
+    if (confirmed && confirmed[0] === option) {
+      setChart(confirmed);
+    } else if (confirmed_acc[0] === option) {
+      setChart(confirmed_acc);
+    } else if (active[0] === option) {
+      setChart(active);
+    } else if (released[0] === option) {
+      setChart(released);
+    } else if (released_acc[0] === option) {
+      setChart(released_acc);
+    } else if (death[0] === option) {
+      setChart(death);
+    } else if (death_acc[0] === option) {
+      setChart(death_acc);
+    } else {
+      setChart();
+    }
+  }, [active, confirmed, confirmed_acc, death, death_acc, option, released, released_acc]);
+
+  console.log(chart);
   const options = {
     responsive: true,
     plugins: {
@@ -58,22 +75,19 @@ const LineChartView = memo((chartData) => {
     },
   };
 
-  const data = {
- // x축에 나타날 항목들
- labels: chartData.released,
- // y축에 값을 비롯한 기타 옵션들
- datasets: [
-   {
-     label: "명",
-     backgroundColor: "#0066ff44",
-     borderColor: "#0066ff",
-     // 그래프 각 항목별 y축 수치값
-     data: chartData.released,
-   },
- ],
-};
-  
-  return <Line data={data} options={options}></Line>;
+  const data1 = {
+    labels: period,
+    datasets: [
+      {
+        label: "명",
+        backgroundColor: "#0066ff44",
+        borderColor: "#0066ff",
+        data: chart,
+      },
+    ],
+  };
+
+  return <Line data={data1} options={options}></Line>;
 });
 
 LineChartView.defaultProps = {
