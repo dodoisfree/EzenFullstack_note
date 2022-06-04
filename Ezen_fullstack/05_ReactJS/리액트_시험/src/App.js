@@ -10,7 +10,7 @@ const App = memo(() => {
       <Top />
 
       <Routes>
-        <Route path={`/:option`} element={<Covid19 />} />
+        <Route path={'/:option'} element={<Covid19 />} />
       </Routes>
     </div>
   );

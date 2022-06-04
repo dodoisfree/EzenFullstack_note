@@ -36,7 +36,7 @@ const Top = memo(() => {
   const navigate = useNavigate();
 
   const { date_gte, date_lte } = useQueryString();
-  const [sumDate, setSumDate] = useState();
+  const [period, setPeriod] = useState();
   const [srtDate, setSrtDate] = React.useState("");
   const [endDate, setEndDate] = React.useState("");
 
@@ -52,7 +52,7 @@ const Top = memo(() => {
   useEffect(() => {
     setSrtDate(String(dayjs(date_gte).format("YYYY-MM-DD")));
       setEndDate(String(dayjs(date_lte).format("YYYY-MM-DD")));
-      setSumDate(String(`date_gte=${srtDate}&date_lte=${endDate}`));
+      setPeriod(String(`date_gte=${srtDate}&date_lte=${endDate}`));
   }, [date_gte, date_lte, endDate, srtDate]);
   return (
     <div>
@@ -63,15 +63,15 @@ const Top = memo(() => {
         <button type="submit">검색</button>
       </Form>
 
-      {sumDate && (
+      {period && (
         <nav>
-          <MenuLink to={`/confirmed?${sumDate}`}>일일확진자</MenuLink>
-          <MenuLink to={`/confirmed_acc?${sumDate}`}>누적확진자</MenuLink>
-          <MenuLink to={`/active?${sumDate}`}>격리환자</MenuLink>
-          <MenuLink to={`/released?${sumDate}`}>격리해제</MenuLink>
-          <MenuLink to={`/released_acc?${sumDate}`}>누적격리해제</MenuLink>
-          <MenuLink to={`/death?${sumDate}`}>사망자</MenuLink>
-          <MenuLink to={`/death_acc?${sumDate}`}>누적사망자</MenuLink>
+          <MenuLink to={`/confirmed?${period}`}>일일확진자</MenuLink>
+          <MenuLink to={`/confirmed_acc?${period}`}>누적확진자</MenuLink>
+          <MenuLink to={`/active?${period}`}>격리환자</MenuLink>
+          <MenuLink to={`/released?${period}`}>격리해제</MenuLink>
+          <MenuLink to={`/released_acc?${period}`}>누적격리해제</MenuLink>
+          <MenuLink to={`/death?${period}`}>사망자</MenuLink>
+          <MenuLink to={`/death_acc?${period}`}>누적사망자</MenuLink>
         </nav>
       )}
     </div>

@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import sample from "./assets/img/sample.png";
+import COVID_19 from "./assets/img/COVID-19.jpg";
 
 const Meta = memo((props) => {
   return (
@@ -29,7 +29,7 @@ Meta.defaultProps = {
   description: '리액트 시험 풀이 입니다.',
   keywords: 'React,Redux,시험',
   author: 'dodo',
-  image: sample,
+  image: COVID_19,
   url: window.location.href
 };
 

@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { getInfo } from "../slices/Covid19Slice";
 import { useParams } from "react-router-dom";
 import { useQueryString } from "../hooks/useQueryString";
-// import styled from "styled-components";
 import dayjs from "dayjs";
 
 import Spinner from "../components/Spinner";
@@ -19,31 +18,26 @@ const covid19 = memo(() => {
   const [srtDate, setSrtDate] = React.useState("");
   const [endDate, setEndDate] = React.useState("");
   const { option } = useParams();
+  
+  React.useEffect(() => {
+    setSrtDate(String(dayjs(date_gte).format("YYYY-MM-DD") + "T00:00:00Z"));
+    setEndDate(String(dayjs(date_lte).add(+1, 'd').format("YYYY-MM-DD") + "T00:00Z"));
+    dispatch(getInfo({date: `date_gte=${srtDate}&date_lte=${endDate}`}));
+  }, [date_gte, date_lte, dispatch, endDate, option, srtDate]);
+
   const mountedRef = useMounterdRef();
   const [chartData, setChartData] = React.useState();
 
   React.useEffect(() => {
-    setSrtDate(String(dayjs(date_gte).format("YYYY-MM-DD") + "T00:00:00Z"));
-    setEndDate(String(dayjs(date_lte).add(+1, 'd').format("YYYY-MM-DD") + "T00:00Z"));
-    dispatch(
-      getInfo({
-        date: `date_gte=${srtDate}&date_lte=${endDate}`,
-        option: option,
-      })
-    );
-  }, [date_gte, date_lte, dispatch, endDate, option, srtDate]);
-
-
-  React.useEffect(() => {
     if (mountedRef.current) {
       const newData = {
-        confirmed: ['confirmed'],
-        confirmed_acc: ['confirmed_acc'],
-        active: ['active'],
-        released: ['released'],
-        released_acc: ['released_acc'],
-        death: ['death'],
-        death_acc: ['death_acc'],
+        confirmed: [],
+        confirmed_acc: [],
+        active: [],
+        released: [],
+        released_acc: [],
+        death: [],
+        death_acc: [],
       };
 
       data.forEach((v, i) => {

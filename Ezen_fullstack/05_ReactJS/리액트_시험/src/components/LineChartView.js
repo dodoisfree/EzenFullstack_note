@@ -36,8 +36,7 @@ const ChartCss = styled.div`
 const LineChartView = memo(({ option, chartData }) => {
   const { date_gte, date_lte } = useQueryString();
   const [period, setPeriod] = React.useState([]);
-  const { confirmed,  confirmed_acc, active, released, released_acc, death, death_acc } = chartData;
-  
+ 
   React.useEffect(() => {
     const srtDate = new Date(date_gte);
     let result = [];
@@ -48,8 +47,6 @@ const LineChartView = memo(({ option, chartData }) => {
     }
     setPeriod(result);
   }, [date_gte, date_lte]);
-
-  // console.log(chartData);
 
   const options = {
     indexAxis: "x",
@@ -64,17 +61,18 @@ const LineChartView = memo(({ option, chartData }) => {
     },
   };
 
+  const { confirmed,  confirmed_acc, active, released, released_acc, death, death_acc } = chartData;
   const [optionV, setOptionV] = React.useState({});
 
   React.useEffect(() => {
     setOptionV({
-      a: option === confirmed[0],
-      b: option === confirmed_acc[0],
-      c: option === active[0],
-      d: option === released[0],
-      e: option === released_acc[0],
-      f: option === death[0],
-      g: option === death_acc[0],
+      a: option === 'confirmed',
+      b: option === 'confirmed_acc',
+      c: option === 'active',
+      d: option === 'released',
+      e: option === 'released_acc',
+      f: option === 'death',
+      g: option === 'death_acc',
     });
   }, [active, confirmed, confirmed_acc, death, death_acc, option, released, released_acc]);
   const data1 = {
