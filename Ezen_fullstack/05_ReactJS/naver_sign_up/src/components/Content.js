@@ -1,88 +1,66 @@
 import React, { useState } from "react";
 import ContentCss from "../StyledComponents/ContentCss";
 import useAxios from "axios-hooks";
-import { Formik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
 
 const Content = () => {
   // 국가 목록 불러오기
   const [nationality, setNationality] = useState([]);
-  const [{ data }] = useAxios(
-    "http://localhost:3001/Nationality",
-    { useCache: false }
-  );
+  const [{ data }] = useAxios("http://localhost:3001/Nationality", {
+    useCache: false,
+  });
   React.useEffect(() => {
     setNationality(data);
-    //console.log(data);
   }, [data]);
 
-  //   // const id = current.id.value;
-  //   // const pw = current.pw.value;
-  //   // const name = current.name.value;
-  //   // const sex = current.sex.value;
-  //   // const birthday = current.birthday.value;
-  //   // const email = current.email.value;
-  //   // const cellPhone = current.cellPhone.value;
-  //   // let json = null;
-  //   // console.log(id);
-  //   // (async () => {
-  //   //   try {
-  //   //     const response = await refetch(
-  //   //       { url: "http://localhost:3001/Profile",
-  //   //         method: "POST",
-  //   //         data: {
-  //   //           id: id,
-  //   //           pw: pw,
-  //   //           name: name,
-  //   //           sex: sex,
-  //   //           birthday: birthday,
-  //   //           email: email,
-  //   //           cellPhone: cellPhone,
-  //   //         }
-  //   //       }, { menual: true }
-  //   //     );
-  //   //     console.log(response.data);
-  //   //     json = response.data;
-  //   //   } catch (e) {
-  //   //     console.log("저장 실패");
-  //   //   }
-
-  //   //   // 정삭적으로 저장되어 응답을 받았다면?
-  //   //   if (json != null) {
-  //   //     window.alert("저장되었습니다.");
-  //   //     // 페이지 강제 이동 (window.location.href = URL 기능과 동일함)
-  //   //   }
-  //   // })();
-  // }
+  const formik = useFormik({
+    initialValues: {
+      id: "",
+      pw: "",
+      pwCfm: "",
+      name: "",
+      year: "",
+      month: "",
+      day: "",
+      sex: "",
+      email: "",
+      cellphone: "",
+    },
+    onBlur: (values) => {
+      console.log(values.pw);
+    },
+    validationSchema: Yup.object({
+      id: Yup.string()
+        .required(["필수 정보입니다."])
+        .matches(/^[a-z0-9_-]{5,20}$/, "5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다."),
+      pw: Yup.string()
+        .required("필수 정보입니다.")
+        .matches(/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/, "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요."),
+      pwCfm: Yup.string()
+        .required("필수 정보입니다.")
+        .oneOf([Yup.ref("pw"), null], "비밀번호가 일치하지 않습니다."),
+      name: Yup.string()
+      // .required("필수 정보입니다.")
+      // .matches(/^[a-zA-Z가-힣0-9]*$/, "한글과 영문 대 소문자를 사용하세요. (특수기호, 공백 사용 불가)"),
+      .matches(/^\d([1-9]|1[012])$/, "태어난 월을 선택하세요."),
+      year: Yup.string()
+      .required("태어난 년도 4자리를 정확하게 입력하세요.")
+      .matches(/^\d{4}$/, "태어난 년도 4자리를 정확하게 입력하세요."),
+      month: Yup.string()
+      .required("태어난 월을 선택하세요.")
+      .matches(/^\d([1-9]|1[012])$/, "태어난 월을 선택하세요."),
+      day: Yup.string()
+      .required("태어난 일(날짜) 2자리를 정확하게 입력하세요.")
+      .matches(/^\d([1-9]|1[012])$/, "태어난 일(날짜) 2자리를 정확하게 입력하세요."),
+    }),
+    onSubmit: (values) => {
+      console.log(values.pw);
+    },
+  });
 
   return (
     <ContentCss>
-      <Formik
-        initialValues={{
-          id: "",
-          pw: "",
-          pwCfm: "",
-          name: "",
-          birthday: "",
-          sex: "",
-          email: "",
-          cellphone: "",
-        }}
-        validationSchema={Yup.object({
-          id: Yup.string()
-            .required("필수 정보입니다.")
-            .matches(/^[a-z0-9_-]{5,20}$/,"5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다."),
-          pw: Yup.string()
-            .required("필수 정보입니다.")
-            .matches(/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/,"8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요."),
-          pwCfm: Yup.string()
-          .required("필수 정보입니다.")
-          .oneOf([Yup.ref("pw"), null], "비밀번호가 일치하지 않습니다."),
-        })}
-        onSubmit={(values) => {
-          console.log(values);
-        }}>
-        {formik => (
           <form onSubmit={formik.handleSubmit}>
             <div className="joinArea">
               <div className="privGroup">
@@ -102,9 +80,8 @@ const Content = () => {
                   </label>
                   <span className="inputBox">
                     <input id="pw" className="field" type="text" name="pw" value={formik.values.pw} {...formik.getFieldProps('pw')} />
-                    {formik.touched.pw ? <span></span>  : 
-                     formik.touched.pw ? <span className="notSafe">사용불가</span> : <span className="safe">안전</span>}
-                    {formik.touched.pw && formik.touched.pw ? <span className="notSafeImg"></span> : <span className="defaultImg"></span>}
+                    {formik.touched.pw ? (formik.errors.pw ? <span className="notSafe">사용불가</span> : <span className="safe">안전</span>) : <span></span>}
+                    {formik.touched.pw ? (formik.errors.pw ? <span className="notSafeImg"></span> : <span className="safeImg"></span>) : <span className="defaultImg"></span>}
                   </span>
                   {formik.touched.pw ? <span className="alert">{formik.errors.pw}</span> : null}
                   <label htmlFor="pwCfm">
@@ -112,7 +89,7 @@ const Content = () => {
                   </label>
                   <span className="inputBox">
                     <input id="pwCfm" className="field" type="text" name="pwCfm" value={formik.values.pwCfm} {...formik.getFieldProps("pwCfm")} />
-                    {formik.touched.pwCfm ? <span className="safeImg"></span> : <span className="defaultImg2"></span>}
+                    {formik.touched.pwCfm ? (formik.errors.pwCfm ? <span className="defaultImg2"></span> : <span className="safeImg"></span>) : <span className="defaultImg2"></span>}
                   </span>
                   {formik.touched.pwCfm ? <span className="alert">{formik.errors.pwCfm}</span> : null}
                 </div>
@@ -124,9 +101,9 @@ const Content = () => {
                     <h3>이름</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="name" className="field" type="text" name="name" />
+                    <input id="name" className="field" type="text" name="name" value={formik.values.name} {...formik.getFieldProps("name")}/>
                   </span>
-                  {/* <span className="alert">필수 정보입니다.</span> */}
+                  {formik.touched.name ? <span className="alert">{formik.errors.name}</span> : null}
                 </div>
                 <div className="inputArea">
                   <label htmlFor="birhday">
@@ -134,7 +111,7 @@ const Content = () => {
                   </label>
                   <div className="bdayIptBox">
                     <span className="inputBox">
-                      <input id="birhday" className="field" type="text" placeholder="년(4자)" />
+                      <input id="year" className="field" type="text" name="year" placeholder="년(4자)" {...formik.getFieldProps("year")} />
                     </span>
                     <span className="inputBox">
                       <select className="field">
@@ -147,12 +124,11 @@ const Content = () => {
                       </select>
                     </span>
                     <span className="inputBox">
-                      <input className="field" type="text" placeholder="일" />
+                      <input className="field" type="text" name="month" placeholder="일" value={formik.values.month} {...formik.getFieldProps("month")} />
                     </span>
                   </div>
-                  {/* <span className="alert">
-                    태어난 년도 4자리를 정확하게 입력하세요.
-                  </span> */}
+                  {formik.touched.year ? (formik.errors.year ? <span className="alert">{formik.errors.year}</span> : <span className="alert">{formik.errors.month}</span>) :
+                  formik.touched.month ? (formik.errors.month ? <span className="alert">{formik.errors.month}</span> : <span className="alert">{formik.errors.day}</span>) : null }
                 </div>
                 <div className="inputArea">
                   <label htmlFor="sex">
@@ -216,8 +192,6 @@ const Content = () => {
               </div>
             </div>
           </form>
-          )}
-      </Formik>
     </ContentCss>
   );
 };

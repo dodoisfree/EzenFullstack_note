@@ -132,6 +132,11 @@ const ContentCss = styled.div`
         color: red;
         margin: 9px 0 2px;
       }
+      .checkYear {
+        font-size: 12px;
+        color: red;
+        margin: 9px 0 2px;
+      }
 
       // 이름, 생년월일, 성별, 이메일 까지의 CSS
       .privGroup:nth-child(2) {
