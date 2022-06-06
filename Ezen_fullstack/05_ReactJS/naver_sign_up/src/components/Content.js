@@ -14,6 +14,7 @@ const Content = () => {
     setNationality(data);
   }, [data]);
 
+
   const formik = useFormik({
     initialValues: {
       id: "",
@@ -41,21 +42,24 @@ const Content = () => {
         .required("필수 정보입니다.")
         .oneOf([Yup.ref("pw"), null], "비밀번호가 일치하지 않습니다."),
       name: Yup.string()
-      // .required("필수 정보입니다.")
-      // .matches(/^[a-zA-Z가-힣0-9]*$/, "한글과 영문 대 소문자를 사용하세요. (특수기호, 공백 사용 불가)"),
-      .matches(/^\d([1-9]|1[012])$/, "태어난 월을 선택하세요."),
+      .required("필수 정보입니다.")
+      .matches(/^[a-zA-Z가-힣0-9]*$/, "한글과 영문 대 소문자를 사용하세요. (특수기호, 공백 사용 불가)"),
       year: Yup.string()
       .required("태어난 년도 4자리를 정확하게 입력하세요.")
-      .matches(/^\d{4}$/, "태어난 년도 4자리를 정확하게 입력하세요."),
+      .matches(/^(19[0-9][0-9]|20[0-2][0-2])$/, "태어난 년도 4자리를 정확하게 입력하세요."),
       month: Yup.string()
       .required("태어난 월을 선택하세요.")
-      .matches(/^\d([1-9]|1[012])$/, "태어난 월을 선택하세요."),
+      .matches(/^([1-9]|1[012])$/, "태어난 월을 선택하세요."),
       day: Yup.string()
       .required("태어난 일(날짜) 2자리를 정확하게 입력하세요.")
-      .matches(/^\d([1-9]|1[012])$/, "태어난 일(날짜) 2자리를 정확하게 입력하세요."),
+      .matches(/^([1-9]|0[1-9]|[12][0-9]|3[01])$/, "생년월일을 다시 확인해주세요."),
+      sex: Yup.string()
+      .required("필수 정보입니다."),
+      email: Yup.string()
+      .email("이메일 주소를 다시 확인해주세요.")
     }),
     onSubmit: (values) => {
-      console.log(values.pw);
+      console.log(values);
     },
   });
 
@@ -69,7 +73,7 @@ const Content = () => {
                     <h3>아이디</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="id" className="field" type="text" name="id" value={formik.values.id} {...formik.getFieldProps('id')} />
+                    <input id="id" className="field" type="text" name="id" maxLength='20' value={formik.values.id} {...formik.getFieldProps('id')} />
                     <span>@naver.com</span>
                   </span>
                   {formik.touched.id ? <span className="alert">{formik.errors.id}</span> : null}
@@ -79,7 +83,7 @@ const Content = () => {
                     <h3>비밀번호</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pw" className="field" type="text" name="pw" value={formik.values.pw} {...formik.getFieldProps('pw')} />
+                    <input id="pw" className="field" type="text" name="pw" maxLength='20' value={formik.values.pw} {...formik.getFieldProps('pw')} />
                     {formik.touched.pw ? (formik.errors.pw ? <span className="notSafe">사용불가</span> : <span className="safe">안전</span>) : <span></span>}
                     {formik.touched.pw ? (formik.errors.pw ? <span className="notSafeImg"></span> : <span className="safeImg"></span>) : <span className="defaultImg"></span>}
                   </span>
@@ -88,7 +92,7 @@ const Content = () => {
                     <h3>비밀번호 재확인</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pwCfm" className="field" type="text" name="pwCfm" value={formik.values.pwCfm} {...formik.getFieldProps("pwCfm")} />
+                    <input id="pwCfm" className="field" type="text" name="pwCfm" maxLength='20' value={formik.values.pwCfm} {...formik.getFieldProps("pwCfm")} />
                     {formik.touched.pwCfm ? (formik.errors.pwCfm ? <span className="defaultImg2"></span> : <span className="safeImg"></span>) : <span className="defaultImg2"></span>}
                   </span>
                   {formik.touched.pwCfm ? <span className="alert">{formik.errors.pwCfm}</span> : null}
@@ -101,7 +105,7 @@ const Content = () => {
                     <h3>이름</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="name" className="field" type="text" name="name" value={formik.values.name} {...formik.getFieldProps("name")}/>
+                    <input id="name" className="field" type="text" name="name" maxLength='40' value={formik.values.name} {...formik.getFieldProps("name")}/>
                   </span>
                   {formik.touched.name ? <span className="alert">{formik.errors.name}</span> : null}
                 </div>
@@ -109,12 +113,12 @@ const Content = () => {
                   <label htmlFor="birhday">
                     <h3>생년월일</h3>
                   </label>
-                  <div className="bdayIptBox">
+                  <div className="bdayIptBox" name="birthday" value={formik.values.birthday} {...formik.getFieldProps('birthday')}  >
                     <span className="inputBox">
-                      <input id="year" className="field" type="text" name="year" placeholder="년(4자)" {...formik.getFieldProps("year")} />
+                      <input id="year" className="field" type="text" name="year" placeholder="년(4자)" maxLength='4' value={formik.values.year} {...formik.getFieldProps("year")} />
                     </span>
                     <span className="inputBox">
-                      <select className="field">
+                      <select className="field" name="month" value={formik.values.month} {...formik.getFieldProps("month")}>
                         <option value="">월</option>
                         {[...new Array(0 + 12)].map((v, i) => (
                           <option key={i} value={1 + i}>
@@ -124,25 +128,26 @@ const Content = () => {
                       </select>
                     </span>
                     <span className="inputBox">
-                      <input className="field" type="text" name="month" placeholder="일" value={formik.values.month} {...formik.getFieldProps("month")} />
+                      <input className="field" type="text" placeholder="일" name="day"  maxLength='2' value={formik.values.day} {...formik.getFieldProps("day")}/>
                     </span>
                   </div>
-                  {formik.touched.year ? (formik.errors.year ? <span className="alert">{formik.errors.year}</span> : <span className="alert">{formik.errors.month}</span>) :
-                  formik.touched.month ? (formik.errors.month ? <span className="alert">{formik.errors.month}</span> : <span className="alert">{formik.errors.day}</span>) : null }
+                  {(formik.touched.year || formik.touched.month || formik.touched.day) && (formik.errors.year ? <span className="alert">{formik.errors.year}</span> :
+                   formik.errors.month ? <span className="alert">{formik.errors.month}</span> : 
+                   formik.errors.day ? <span className="alert">{formik.errors.day}</span> : null)}
                 </div>
                 <div className="inputArea">
                   <label htmlFor="sex">
                     <h3>성별</h3>
                   </label>
                   <span className="inputBox">
-                    <select id="sex" className="field" type="text">
+                    <select id="sex" className="field" name='sex' value={formik.values.sex} {...formik.getFieldProps("sex")}>
                       <option value="">성별</option>
                       <option value="male">남자</option>
                       <option value="female">여자</option>
                       <option value="unchecked">선택안함</option>
                     </select>
                   </span>
-                  {/* <span className="alert">필수 정보입니다.</span> */}
+                  {formik.touched.sex ? <span className="alert">필수 정보입니다.</span> : null}
                 </div>
                 <div className="inputArea">
                   <label htmlFor="email">
@@ -151,9 +156,9 @@ const Content = () => {
                     </h3>
                   </label>
                   <span className="inputBox">
-                    <input id="email" className="field" type="text" placeholder="선택입력" />
+                    <input id="email" className="field" type="email" placeholder="선택입력" maxLength="100" name="email" value={formik.values.email} {...formik.getFieldProps("email")} />
                   </span>
-                  {/* <span className="alert">이메일 주소를 다시 확인해주세요.</span> */}
+                  {formik.touched.email && (formik.errors.email ? <span className="alert">{formik.errors.email}</span> : null)}
                 </div>
               </div>
 

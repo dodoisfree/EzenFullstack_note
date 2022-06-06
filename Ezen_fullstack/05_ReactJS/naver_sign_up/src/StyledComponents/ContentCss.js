@@ -35,7 +35,7 @@ const ContentCss = styled.div`
             background-color: #fff;
             border: 1px solid #dadada;
             position: relative;
-            &:hover {
+            &:focus-within {
               border: 1px solid #03c75a;
             }
             .field {
@@ -128,11 +128,6 @@ const ContentCss = styled.div`
         }
       }
       .alert {
-        font-size: 12px;
-        color: red;
-        margin: 9px 0 2px;
-      }
-      .checkYear {
         font-size: 12px;
         color: red;
         margin: 9px 0 2px;
