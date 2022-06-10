@@ -17,7 +17,7 @@ const TableEx = styled(Table)`
     padding: 0;
     position: relative;
     text-align: left;
-
+    
     .field {
       box-sizing: border-box;
       display: block;
