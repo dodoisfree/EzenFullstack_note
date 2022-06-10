@@ -54,6 +54,7 @@ const Content = () => {
       .required("태어난 일(날짜) 2자리를 정확하게 입력하세요.")
       .matches(/^([1-9]|0[1-9]|[12][0-9]|3[01])$/, "생년월일을 다시 확인해주세요."),
       sex: Yup.string()
+      .matches('male' && 'female')
       .required("필수 정보입니다."),
       email: Yup.string()
       .email("이메일 주소를 다시 확인해주세요.")
