@@ -4,6 +4,7 @@ import useAxios from "axios-hooks";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import dayjs from "dayjs";
+import Spinner from "./Spinner";
 
 const Content = () => {
   // 국가 목록 불러오기
@@ -87,10 +88,9 @@ const Content = () => {
           });
           json = response.data;
         } catch (e) {
-          console.log(e);
+          console.error(e);
         }
         if (json !== null) {
-          console.log(loading);
           window.alert("회원가입이 완료 되었습니다.");
         }
       })();
@@ -99,6 +99,7 @@ const Content = () => {
 
   return (
     <ContentCss>
+          <Spinner visible={loading} />
           <form onSubmit={formik.handleSubmit}>
             <div className="joinArea">
               <div className="privGroup">
