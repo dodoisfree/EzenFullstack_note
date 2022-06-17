@@ -1,13 +1,14 @@
 {
   "Profile": [
     {
-      "id": "",
-      "pw": "",
-      "name": "",
-      "birthday": "",
-      "sex": "",
-      "email": "",
-      "cellPhone": ""
+      "id": "dkdlel",
+      "pw": "dkdlel123-",
+      "name": "아이디",
+      "birthdate": "2000-01-01",
+      "sex": "male",
+      "email": "dkdlel@gmail.com",
+      "ncode": "+82",
+      "cellPhone": "01011234567"
     }
   ],
   "Nationality": [

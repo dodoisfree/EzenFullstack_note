@@ -3,6 +3,7 @@ import ContentCss from "../StyledComponents/ContentCss";
 import useAxios from "axios-hooks";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import dayjs from "dayjs";
 
 const Content = () => {
   // 국가 목록 불러오기
@@ -14,6 +15,14 @@ const Content = () => {
     setNationality(data);
   }, [data]);
 
+  // 입력정보 json 서버에 넣기
+  const [ { loading }, refetch] = useAxios(
+    {
+      url: "http://localhost:3001/Profile",
+      method: "POST",
+    },
+    { manual: true }
+  );
 
   const formik = useFormik({
     initialValues: {
@@ -26,7 +35,8 @@ const Content = () => {
       day: "",
       sex: "",
       email: "",
-      cellphone: "",
+      ncode: "+82",
+      cellPhone: "",
     },
     onBlur: (values) => {
       console.log(values.pw);
@@ -53,14 +63,37 @@ const Content = () => {
       day: Yup.string()
       .required("태어난 일(날짜) 2자리를 정확하게 입력하세요.")
       .matches(/^([1-9]|0[1-9]|[12][0-9]|3[01])$/, "생년월일을 다시 확인해주세요."),
-      sex: Yup.string()
-      .matches('male' && 'female')
-      .required("필수 정보입니다."),
-      email: Yup.string()
-      .email("이메일 주소를 다시 확인해주세요.")
+      sex: Yup.string().required("필수 정보입니다."),
+      email: Yup.string().email("이메일 주소를 다시 확인해주세요."),
+      cellPhone: Yup.string()
+      .required("필수 정보입니다.")
+      .matches(/^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/, "형식에 맞지 않는 번호입니다."),
     }),
     onSubmit: (values) => {
-      console.log(values);
+      let json = null;
+      (async () => {
+        try {
+          const response = await refetch({
+            data: {
+              id: values.id,
+              pw: values.pw,
+              name: values.name,
+              birthdate: String(dayjs(values.year + dayjs(values.month).format("MM") + values.day).format("YYYY-MM-DD")),
+              sex: values.sex,
+              email: values.email,
+              ncode: values.ncode,
+              cellPhone: values.cellPhone,
+            },
+          });
+          json = response.data;
+        } catch (e) {
+          console.log(e);
+        }
+        if (json !== null) {
+          console.log(loading);
+          window.alert("회원가입이 완료 되었습니다.");
+        }
+      })();
     },
   });
 
@@ -84,7 +117,7 @@ const Content = () => {
                     <h3>비밀번호</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pw" className="field" type="text" name="pw" maxLength='20' value={formik.values.pw} {...formik.getFieldProps('pw')} />
+                    <input id="pw" className="field" type="password" name="pw" maxLength='20' value={formik.values.pw} {...formik.getFieldProps('pw')} />
                     {formik.touched.pw ? (formik.errors.pw ? <span className="notSafe">사용불가</span> : <span className="safe">안전</span>) : <span></span>}
                     {formik.touched.pw ? (formik.errors.pw ? <span className="notSafeImg"></span> : <span className="safeImg"></span>) : <span className="defaultImg"></span>}
                   </span>
@@ -93,7 +126,7 @@ const Content = () => {
                     <h3>비밀번호 재확인</h3>
                   </label>
                   <span className="inputBox">
-                    <input id="pwCfm" className="field" type="text" name="pwCfm" maxLength='20' value={formik.values.pwCfm} {...formik.getFieldProps("pwCfm")} />
+                    <input id="pwCfm" className="field" type="password" name="pwCfm" maxLength='20' value={formik.values.pwCfm} {...formik.getFieldProps("pwCfm")} />
                     {formik.touched.pwCfm ? (formik.errors.pwCfm ? <span className="defaultImg2"></span> : <span className="safeImg"></span>) : <span className="defaultImg2"></span>}
                   </span>
                   {formik.touched.pwCfm ? <span className="alert">{formik.errors.pwCfm}</span> : null}
@@ -141,14 +174,14 @@ const Content = () => {
                     <h3>성별</h3>
                   </label>
                   <span className="inputBox">
-                    <select id="sex" className="field" name='sex' value={formik.values.sex} {...formik.getFieldProps("sex")}>
+                    <select id="sex" className="field" name='sex' selectedvalue={formik.values.sex} {...formik.getFieldProps("sex")}>
                       <option value="">성별</option>
                       <option value="male">남자</option>
                       <option value="female">여자</option>
                       <option value="unchecked">선택안함</option>
                     </select>
                   </span>
-                  {formik.touched.sex ? <span className="alert">필수 정보입니다.</span> : null}
+                  {formik.touched.sex ? <span className="alert">{formik.errors.sex}</span> : null}
                 </div>
                 <div className="inputArea">
                   <label htmlFor="email">
@@ -170,14 +203,13 @@ const Content = () => {
                   </label>
                   <div className="ctryBox">
                     <span className="inputBox">
-                      <select className="field">
-                        <option value="+82">대한민국 +82</option>
+                      <select className="field" name="ncode" selectedvalue={formik.values.ncode} {...formik.getFieldProps("ncode")}>
                         {nationality && nationality.map(({ country, ncode }, i) => <option key={i} value={ncode}>{country} {ncode}</option>)}
                       </select>
                     </span>
                     <span className="sendCellIptBox">
                       <span className="inputBox">
-                        <input id="cellPhone" className="field" type="text" placeholder="전화번호 입력" />
+                        <input id="cellPhone" className="field" type="text" placeholder="전화번호 입력" name="cellPhone" value={formik.values.cellPhone} {...formik.getFieldProps("cellPhone")} />
                       </span>
                       <span className="inputBox">
                         <input className="sendCellBtn" type="button" value="인증번호 받기" />
@@ -186,7 +218,7 @@ const Content = () => {
                     <span className="inputBox">
                       <input className="field" type="text" placeholder="인증번호 입력하세요" disabled />
                     </span>
-                    {/* <span className="alert">필수 정보입니다.</span> */}
+                    {formik.touched.cellPhone && (formik.errors.cellPhone ? <span className="alert">{formik.errors.cellPhone}</span> : null)}
                   </div>
                 </div>
               </div>
