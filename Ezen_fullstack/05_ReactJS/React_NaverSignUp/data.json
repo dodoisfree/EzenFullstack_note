@@ -9,6 +9,16 @@
       "email": "dkdlel@gmail.com",
       "ncode": "+82",
       "cellPhone": "01011234567"
+    },
+    {
+      "id": "dkdlel2",
+      "pw": "dkdlel123-",
+      "name": "아이디",
+      "birthdate": "2000-01-01",
+      "sex": "male",
+      "email": "dkdlel2@gmail.com",
+      "ncode": "+82",
+      "cellPhone": "01011234567"
     }
   ],
   "Nationality": [
