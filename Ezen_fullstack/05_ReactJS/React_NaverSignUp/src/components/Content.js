@@ -39,9 +39,6 @@ const Content = () => {
       ncode: "+82",
       cellPhone: "",
     },
-    onBlur: (values) => {
-      console.log(values.pw);
-    },
     validationSchema: Yup.object({
       id: Yup.string()
         .required(["필수 정보입니다."])
