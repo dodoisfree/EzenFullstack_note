@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "winston": "^3.8.0",
     "winston-daily-rotate-file": "^4.7.1"
   }
