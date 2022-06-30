@@ -2,8 +2,8 @@
  | (1) 모듈참조
  --------------------------------------------------------------------------------*/
  /** 직접 구현한 모듈 */
- import logger from './helper/LogHelper.js';
- import {myip, urlFormat} from './helper/UtilHelper.js';
+ import logger from '../helper/LogHelper.js';
+ import {myip, urlFormat} from '../helper/UtilHelper.js';
  /** 내장모듈 */
  import url from 'url';
  import path from 'path';
@@ -102,7 +102,7 @@
 router.get('/page1', (req, res, next) => {
   // 브라우저에게 전달할 응답 내용
   let html = '<h1>Page1</h1>';
-  html += <h2>Express로 구현한 Node.js 백엔드 페이지</h2>
+  html += `<h2>Express로 구현한 Node.js 백엔드 페이지</h2>`;
 
   /** 응답보내기(1) - Node 순정 방법 */
   // res.writeHead(200);
