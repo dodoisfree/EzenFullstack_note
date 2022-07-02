@@ -16,7 +16,7 @@ import serveFavicon from "serve-favicon"; // favicon 처리
 import bodyParser from 'body-parser'; // POST 파라미터 처리
 import MethodOverride from "method-override"; // PUT 파라미터 처리
 import cookieParser from 'cookie-parser'; // Cookie 처리
-import expressSession from 'express-session'; // Session 처리
+
 
 /*-------------------------------------------------------------------------------
  | (2) Express 객체 생성
@@ -107,17 +107,6 @@ app.use(MethodOverride('_method')); // HTML form
 // cookie-parser는 데이터를 저장, 조회할 때 암호화 처리를 동반한다.
 // 이 때 암호화에 사용되는 key 문자열을 개발자가 정해야 한다.
 app.use(cookieParser(process.env.COOKIE_ENCRYPT_KEY));
-
-/** 세션 설정 */
-app.use(expressSession({
-  // 암호화 키
-  secret: process.env.SESSION_ENCRYPT_KEY,
-  // 세션이 초기화 되지 않더라도 새로 저장할지 여부 (일반적으로 false)
-  resave: false,
-  // 세션이 저장되기 전에 기존의 세션을 초기화 상태로 만들지 여부
-  saveUninitialized: false
-}));
-
 
 /** HTML, CSS, IMG, JS 등의 정적 파일을 URL에 노출시킬 폴더 연결 */
 // "http://아이피(혹은 도메인):포트번호" 이후의 경로가 router에 등록되지 않은 경로라면
@@ -329,121 +318,7 @@ router
       res.status(200).send('clear');
     });
 
-/** 05-Session.js */
-// Insomnia로 테스트
-router
-    .post('/session', (req, res, next) => {
-      // POST로 전송된 변수값을 추출
-      const username = req.body.username;
-      const nickname = req.body.nickname;
-
-      // 세션 저장
-      req.session.username = username;
-      req.session.nickname = nickname;
-
-      // 결과 응답
-      const json = { rt: 'ok' };
-      res.status(200).send(json);
-    })
-    .get('/session', (req, res, next) => {
-      // 저장되어 있는 모든 session값 탐색
-      for (let key in req.session) {
-        const str = '[session]' + key + '=' + req.session[key];
-        logger.debug(str);
-      }
-
-      // 세션 데이터를 JSON으로 구성 후 클라이언트에게 응답으로 전송
-      const my_data = {
-        username: req.session.username,
-        nickname: req.session.nickname,
-      };
-
-      res.status(200).send(my_data);
-    })
-    .delete('/session', async (req, res, next) => {
-      let result = 'ok';
-      let code = 200;
-
-      try {
-        await req.session.destroy();
-      } catch (e) {
-        logger.error(e.message);
-        result = e.message;
-        code = 500;
-      }
-
-      const json = { rt: result };
-      res.status(code).send(json);
-    });
-
-// public/05_login.html
-router
-    .post('/session/login', (req, res, next) => {
-      const id = req.body.userid;
-      const pw = req.body.userpw;
-
-      logger.debug('id=' + id);
-      logger.debug('pw=' + pw);
-
-      let login_ok = false;
-      if (id == 'node' && pw == '1234') {
-        logger.debug('로그인 성공');
-        login_ok = true;
-      }
-
-      let result_code = null;
-      let result_msg = null;
-
-      if (login_ok) {
-        req.session.userid = id;
-        req.session.userpw = pw;
-        result_code = 200;
-        result_msg= 'ok';
-      } else {
-        result_code = 403;
-        result_msg = 'fali';
-      }
-
-      const json = { rt: result_msg };
-      res.status(result_code).send(json);
-    })
-    .delete('/session/login', async (req, res, next) => {
-      let result = 'ok';
-      let code = 200;
-
-      try {
-        await req.session.destroy();
-      } catch (e) {
-        logger.error(e.message);
-        result = e.message;
-        code = 500;
-      }
-
-      const json = { rt: result };
-      res.status(code).send(json);
-    })
-    .get('/session/login', (req, res, next) => {
-      const id = req.session.userid;
-      const pw = req.session.userpw;
-
-      let result_code = null;
-      let result_msg = null;
-
-      if (id !== undefined && pw !== undefined) {
-        logger.debug('현재 로그인중이 맞습니다.');
-        result_code = 200;
-        result_msg = 'ok';
-      } else {
-        logger.debug('현재 로그인중이 아닙니다.');
-        result_code = 400;
-        result_msg = 'fali';
-      }
-
-      const json = { rt : result_msg };
-      res.status(result_code).send(json);
-    });
-
-
+    
 /*-------------------------------------------------------------------------------
  | (6) 설정한 내용을 기반으로 서버 구동 시작
  --------------------------------------------------------------------------------*/
