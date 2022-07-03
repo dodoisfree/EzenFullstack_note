@@ -41,12 +41,13 @@ const LineChartView = memo(({ option, chartData }) => {
     const srtDate = new Date(date_gte);
     let result = [];
     while (srtDate <= new Date(date_lte)) {
-      let fmDate = new dayjs(srtDate).add(-1, "d").format("MM/DD");
+      let fmDate = new dayjs(srtDate).format("MM/DD");
       result.push(fmDate);
       srtDate.setDate(srtDate.getDate() + 1);
     }
     setPeriod(result);
   }, [date_gte, date_lte]);
+  console.log(period);
 
   const options = {
     indexAxis: "x",
