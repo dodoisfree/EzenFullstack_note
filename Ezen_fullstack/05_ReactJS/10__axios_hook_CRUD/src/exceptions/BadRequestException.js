@@ -1,3 +1,9 @@
+/**
+ * @filename    : BadRequestException.js
+ * @author      : 천경재 (yocasd2@gamil.com)
+ * @description : Error의 Getter, Setter
+*/
+
 class BadRequestException extends Error {
   constructor(msg = "잘못된 요청입니다.", field = null) {
     super(msg);

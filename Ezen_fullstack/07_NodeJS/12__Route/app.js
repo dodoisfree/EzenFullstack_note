@@ -4,11 +4,12 @@
 /** 직접 구현한 모듈 */
 import logger from "./helper/LogHelper.js";
 import { myip, urlFormat } from "./helper/UtilHelper.js";
+import WebHelper from './helper/WebHelper.js';
 // import { mkdirs, initMulter, checkUploadError, createThumbnail, createThumbnailMultiple } from "./helper/FileHelper.js";
 
 /** 내장모듈 */
 import url from "url";
-import path, { extname } from "path";
+import path from "path";
 
 /** 설치가 필요한 모듈 */
 import dotenv from "dotenv";
@@ -22,6 +23,9 @@ import cookieParser from "cookie-parser"; // Cookie 처리
 import expressSession from "express-session"; // Session 처리
 // import nodemailer from "nodemailer"; // 메일발송 --> app.use()로 추가설정 필요 없음.
 
+/** 예외처리 관련 클래스 */
+import PageNotFoundException from './exceptions/PageNotFoundException.js';
+
 /** URL을 라우팅하는 모듈 참조 */
 import SetupController from "./controllers/SetupController.js";
 import GetParamsController from "./controllers/GetParamsController.js";
@@ -30,6 +34,7 @@ import CookieController from "./controllers/CookieController.js";
 import SessionController from "./controllers/SessionController.js";
 import SendMailController from "./controllers/SendMailController.js";
 import FileUploadController from "./controllers/FileUploadController.js";
+import ApiTest from "./controllers/ApiTest.js";
 
 /*-------------------------------------------------------------------------------
  | (2) Express 객체 생성
@@ -145,10 +150,14 @@ app.use(process.env.THUMB_URL, serveStatic(process.env.THUMB_DIR));
 /** favicon 설정 */
 app.use(serveFavicon(process.env.FAVICON_PATH));
 
+/** WebHelper 설정 */
+app.use(WebHelper());
+
 /** 라우터(URL 분배기) 객체 설정 --> 맨 마지막에 설정 */
 // const router = express.Router();
 // 라우터를 express에 등록
 // app.use("/", router);
+
 
 /*-------------------------------------------------------------------------------
  | (5) 각 URL별 백엔드 기능 정의
@@ -160,6 +169,14 @@ app.use(CookieController());
 app.use(SessionController());
 app.use(SendMailController());
 app.use(FileUploadController());
+app.use(ApiTest());
+
+/** 컨트롤러에서 에러 발생시 'next(에러객체)`를 호출 했을 때 동작할 처리 */
+app.use((err, req, res, next) => res.sendError(err));
+
+/** 앞에서 정의하지 않은 기타 URL에 대한 일괄 처리 (무조건 맨 마지막에 정의해야 함) */
+app.use("*", (req, res, next) => res.sendError(new PageNotFoundException()));
+
 
 /*-------------------------------------------------------------------------------
  | (6) 설정한 내용을 기반으로 서버 구동 시작
