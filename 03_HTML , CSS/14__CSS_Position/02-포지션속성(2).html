@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #box1 {
+            background-color: #ff0000;
+            position: absolute;
+            left: 130px;
+            top: 130px;
+            z-index: 100;
+        }
+
+        #box2 {
+            background-color: #00ff00;
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 1;
+        }
+
+        #box3 {
+            background-color: #0000ff;
+            position: absolute;
+            left: 110px;
+            top: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">박스1</div>
+    <div id="box2">박스2</div>
+    <div id="box3">박스3</div>
+</body>
+</html>

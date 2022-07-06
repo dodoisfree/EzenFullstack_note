@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-success {
+        color: #0066ff;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Promise</h1>
+    <a href="#" id="btn">load hello.json</a>
+    <div id="console"></div>
+
+    <script>
+      /*
+            promise 객체는 비동기 작업이 맞이할 미래의 완료 또는 실패와 그 결과 값을 나타냅니다.
+
+            1) 하나의 비동기 작업(=Ajax)를 위해서 하나의 함수를 정의
+            2) 그 함수 안에서 Promise 클래스의 객체를 생성한다.
+                --> 생성자 파라미터가 콜백함수.
+                --> 이 콜백함수의 파라미터 resolve와 reject 객체를 통해 작업의 성공, 실패를 처리할 수 있다.
+        */
+
+      function getDeptItem() {
+        // 파라미터로 전달되는 콜백은 객체가 생성될 때 호출 당한다.
+        return new Promise((resolve, reject) => {
+          // 이 안에서 일반적인 Ajax 연동처리
+          const xhr = new XMLHttpRequest();
+          const method = "GET";
+          const url = "backend/hello.json";
+          xhr.open(method, url);
+
+          xhr.onreadystatechange = (e) => {
+            const ajax = e.target;
+
+            if (ajax.readyState == XMLHttpRequest.DONE) {
+              if (ajax.status == 200) {
+                // Ajax처리 성공
+                const json = JSON.parse(ajax.responseText);
+                resolve(json);
+              } else {
+                // Ajax처리 실패
+                reject({status: ajax.status, text: statusText});
+              }
+            } // end if
+          };
+
+          xhr.send();
+        });
+      }
+
+      document.querySelector("#btn").addEventListener("click", (e) => {
+        // 준비한 함수를 호출하여 promise객체를 반환받는다.
+        // 이 과정에서 이미 Ajax연동처리는 완료되고 결과에 따라 reslove나 reject가 호출될 것이다.
+        const promise = getDeptItem();
+        promise.then((json) => {
+            const h1 = document.createElement("h1");
+            h1.classList.add("text-success");
+            h1.innerHTML = json.msg;
+            document.querySelector("#console").appendChild(h1);
+          }).catch((e) => {
+            // reject가 호출될때 따라 실행된다.
+            console.error(e);
+            alert(e.msg);
+          });
+        // promise 기법은 Ajax의 다중 처리로 인한 콜백헬 현상을 완전히 해결하지는 못한다.
+        // 다만 Ajax 처리에서 다소 복잡한 호출과정과 성공, 실패에 따른 결과 처리 부분을
+        // 분리해냈다는 점에서 코드의 관리가 조금 수월해 질 수 있다.
+
+        // 그래서 현재의 JS에서는 Promise가 개선된 async-await 기법을 새롭게 고안하여 사용중이다.
+
+        // --> Async-Await가 JS 문법의 끝판왕.
+      });
+    </script>
+  </body>
+</html>

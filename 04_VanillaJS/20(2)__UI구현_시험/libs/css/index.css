@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/**
+ * @filename    : index.css
+ * @author      : 천경재 (yocasd2@gmail.com)
+ * @description : CSS 수정
+ */
+
+* {
+    font-family: Dotum, "돋움", Helvetica, sans-serif;
+    background-color: #f5f6f7;
+  }
+
+  #container {
+    width: 768px;
+    height: 1300px;
+    margin: 0 auto;
+  }
+
+  #content {
+    height: 1100px;
+    width: auto;
+  }
+
+  #container #logo {
+    width: 240px;
+    height: 44px;
+    margin: 60px 0 50px 34.5%;
+    cursor: pointer;
+  }
+
+  #container .inputbox {
+    display: block;
+    width: 460px;
+    height: 98px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .inputbox h3 {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .textbox {
+    display: block;
+    width: 460px;
+    height: 51px;
+    background-color: white;
+    position: relative;
+    border: 1px solid #ccc;
+  }
+
+  .textbox span {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8f8f8f;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 7px;
+  }
+
+  #container .inputbox .alert {
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    color: red;
+  }
+  .textbox input {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 350px;
+    height: 29px;
+    border: 0;
+    background-color: white;
+  }
+  .textbox input:focus {
+    outline: 0;
+  }
+  .inputbox #textbox {
+    width: 600px;
+    position: relative;
+    right: 20px;
+    border: 0;
+    background-color: #f5f6f7;
+  }
+  .inputbox .yearbox {
+    width: 140px;
+    height: 51px;
+    float: left;
+    background-color: white;
+    margin-left: 18px;
+    border: 1px solid #ccc;
+  }
+  .inputbox .yearbox::after {
+    display: none;
+    content: "";
+    float: none;
+    clear: both;
+  }
+
+  .inputbox #user_year {
+    width: 118px;
+    height: 25px;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .inputbox #user_year2 {
+    width: 118px;
+    height: 26px;
+    position: relative;
+    top: 10px;
+    left: 8px;
+    border: 0;
+    background-color: white;
+    font-size: 15px;
+  }
+  .inputbox #user_year3 {
+    width: 118px;
+    height: 25px;
+    border: 0;
+    font-size: 15px;
+  }
+  .inputbox #user_year,
+  #user_year2,
+  #user_year3:focus {
+    outline: 0;
+  }
+
+  #container #genderbox {
+    width: 460px;
+    height: 75px;
+    background-color: white;
+    border: 0;
+  }
+  #container #genderbox select {
+    display: block;
+    width: 430px;
+    height: 35px;
+    margin: 0 auto;
+    border: 0;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+  }
+  #container #genderbox #genderbox2 {
+    width: 460px;
+    height: 55px;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+  #container #content #mailbox {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  #container #content #phbox1 {
+    width: 460px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+
+  #container #content #phbox1 select {
+    display: block;
+    width: 437px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+    border: 0;
+    background-color: white;
+    font-size: 15px;
+  }
+  #container #content #phbox1 select:focus {
+    outline: 0;
+  }
+
+  #container #content #phbox2 {
+    width: 325px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    float: left;
+    margin-top: 10px;
+  }
+  #container #content #phbox2 input {
+    display: block;
+    width: 300px;
+    height: 29px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    border: 0;
+    background-color: white;
+    font-size: 15px;
+  }
+  #container #content #phbox2 input:focus {
+    outline: 0;
+  }
+
+  #container #content button {
+    display: block;
+    width: 125px;
+    height: 51px;
+    background-color: #03cf5d;
+    float: right;
+    color: white;
+    border: 1px solid #03cf5d;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  #container #content #phbox3 {
+    width: 460px;
+    height: 51px;
+    background-color: white;
+    position: relative;
+    top: 75px;
+    border: 1px solid #ccc;
+  }
+
+  #container #content #phbox3 input {
+    display: block;
+    width: 430px;
+    height: 29px;
+    border: 0;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+  }
+  #container #content #phbox3 input:focus {
+    outline: 0;
+  }
+
+  #container #join #joinbutton {
+    width: 460px;
+    height: 51px;
+    background-color: #03cf5d;
+    position: relative;
+    bottom: 70px;
+    left: 155px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+  }
+
+  #container #footer {
+    width: 1300px;
+    height: 26px;
+    position: relative;
+    right: 250px;
+    background-color: beige;
+  }
+
+  #container #footer img {
+    width: 1500px;
+    height: auto;
+    position: relative;
+    right: 125px;
+    bottom: 55px;
+  }
+
+  #container #phbox3 span {
+    position: relative;
+    right: 325px;
+  }

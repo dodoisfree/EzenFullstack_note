@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /** CSS는 중복 ID에 대해서 문제 없이 처리함 */
+        #hello {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="hello">Hello World</h1>
+    <h1 id="hello">Hello World</h1>
+    <h1 id="hello">Hello World</h1>
+
+    <script>
+        // JS는 중복 ID가 있을 경우 처리 불가.
+        // --> 가장 첫 번째 항목만을 처리 가능함.
+        // document.getElementById("hello").innerHTML = "헬로월드";
+        document.querySelector("#hello").innerHTML = "헬로월드";
+    </script>
+</body>
+</html>

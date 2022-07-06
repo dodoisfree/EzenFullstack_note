@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid"></h1>
+    <h2 class="mycls"></h2>
+    <h2 class="mycls"></h2>
+    <p></p>
+    <p></p>
+    <div class="a">
+        <div class="b">
+            <h3 id="c"></h3>
+        </div>
+    </div>
+    <h3 class="myh3"></h3>
+    <h3 class="myh3"></h3>
+    <h3 class="myh3"></h3>
+
+    <!-- Javascript 블록은 body태그 종료 직전에 위치 -->
+    <script>
+        /** Tag 이름으로 접근하는 경우 */
+        const el1 = document.getElementsByTagName("p");
+
+        // 특정 태그가 여러 개 존재하는 것이 대부분이므로 항상 배열 형태(컬렉션)로 반환된다.
+        // -> 반복문 처리가 필요함 (기본 반복문)
+        for (let i=0; i<el1.length; i++) {
+            el1[i].innerHTML = "P태그 영역 (" + i + ")";
+        }
+
+        /** Class 이름으로 접근하는 경우 */
+        const el2 = document.getElementsByClassName("mycls");
+
+        // 특정 클래스 여러 개 존재하는 것이 대부분이므로 항상 배열 형태(컬렉션)로 반환된다.
+        // -> 반복문 처리가 필요함 (for~of 문법 사용)
+        let count = 0;
+        for (let e of el2) {
+            e.innerHTML = ".mycls 영역 (" + count + ")";
+            count++;
+        }
+
+        /** ID값으로 객체 가져오기 */
+        // ID값은 항상 단 하나만 존재하므로 리턴은 단일 객체
+        // --> 반복문이 불필요.
+        const el3 = document.getElementById("myid");
+        el3.innerHTML = "#myid영역";
+
+        /** CSS 선택자로 가져오기 */
+        const el4 = document.querySelector(".a > .b > #c");
+        el4.innerHTML = ".a > .b > #c 영역";
+
+        /** CSS 선택자로 복수 객체 가져오기 */
+        // -> 반복문 처리가 필요함 (forEach문법 사용)
+        // 리턴 타입이 배열과 비슷한 NodeList 타입의 객체.
+        // --> 배열과 특성은 동일하지만 forEach 이외의 탐색을 위한 메서드는 포함하고 있지 않다.
+        const el5 = document.querySelectorAll(".myh3");
+        el5.forEach( (v, i) => {
+            v.innerHTML = ".myh3 영역 (" + i + ")";
+        });
+
+    </script>
+</body>
+</html>

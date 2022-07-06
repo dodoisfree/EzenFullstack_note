@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaBox 라이트박스 플러그인</title>
+    <link rel="stylesheet" type="text/css" href="libs/mediabox-1.1.3/dist/mediabox.min.css"/>
+  </head>
+  <body>
+    <h1>MediaBox 라이트박스 플러그인</h1>
+    <p>
+      <a href="https://github.com/pinceladasdaweb/mediabox">https://github.com/pinceladasdaweb/mediabox</a>
+    </p>
+    <hr />
+    <div class="translated-ltr">
+        <!-- 유튜브 주소 중 v= 이후 주소는 동영상코드 -->
+      <a href="https://www.youtube.com/watch?v=ZrQNdpAL6w4" class="mediabox">
+        <!-- 동영상 배경 썸네일(480x360): https://img.yotube.com/vi/cdX5JvL43oM/0.jpg -->
+        <!-- 동영상 시작지점 썸네일(120x90): https://img.yotube.com/vi/cdX5JvL43oM/1.jpg -->
+        <!-- 동영상 중간지점 썸네일(120x90): https://img.yotube.com/vi/cdX5JvL43oM/2.jpg -->
+        <!-- 동영상 끝지점 썸네일(120x90): https://img.yotube.com/vi/cdX5JvL43oM/3.jpg -->
+        <!-- 고해상도 썸네일(1280x720): https://img.yotube.com/vi/cdX5JvL43oM/maxresdefault.jpg -->
+        <!-- 중간해상도 썸네일(640x480): https://img.yotube.com/vi/cdX5JvL43oM/sddefault.jpg -->
+        <!-- 고품질 썸네일(480x360): https://img.yotube.com/vi/cdX5JvL43oM/hqdefault.jpg -->
+        <!-- 중간품질 썸네일(320x180): https://img.yotube.com/vi/cdX5JvL43oM/mqdefault.jpg -->
+        <!-- 보통품질 썸네일(120x90): https://img.yotube.com/vi/cdX5JvL43oM/default.jpg -->
+        <img src="https://img.youtube.com/vi/ZrQNdpAL6w4/hqdefault.jpg" />
+      </a>
+    </div>
+
+    <script type="text/javascript" src="libs/mediabox-1.1.3/dist/mediabox.js"></script>
+    <script type="text/javascript">
+        // Youtube 영상 주소를 갖는 링크에 대한 CSS 선택자를 파라미터로 전달하여 플러그인 함수 호출
+        MediaBox('.mediabox');
+    </script>
+  </body>
+</html>

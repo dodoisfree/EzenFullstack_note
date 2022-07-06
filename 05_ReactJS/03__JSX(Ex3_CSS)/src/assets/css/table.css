@@ -1,0 +1,29 @@
+.table {
+    margin: 30px auto;
+    width: 600px;
+    height: 200px;
+    border: 2px solid brown;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.table2 {
+    margin: 30px auto;
+    width: 800px;
+    height: 200px;
+    border: 2px solid seagreen;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.table3 {
+    margin: 30px auto;
+    width: 980px;
+    height: 200px;
+    border: 2px solid skyblue;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}

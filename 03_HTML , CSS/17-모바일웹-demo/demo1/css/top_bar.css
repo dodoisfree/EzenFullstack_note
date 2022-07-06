@@ -1,0 +1,29 @@
+@charset "uft-8";
+
+/* 배경 */
+body {
+    background: #46464d url(../img/sub_bg.png) repeat-x;
+}
+
+/* 상단 영역 */
+#header {
+    width: 318px;
+    height: 45px;
+    margin: auto;
+    position: relative ;
+}
+
+/* 상단 영역 > 로고 */
+#header h1 {
+    width: 318px;
+    height: 45px;
+    background: url(../img/sub_logo.png) center center no-repeat;
+    text-indent: -10000px;
+}
+
+/* 상단 영역 > 홈 버튼 */
+#header span {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}

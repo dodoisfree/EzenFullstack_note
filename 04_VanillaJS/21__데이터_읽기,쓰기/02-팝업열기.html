@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup {
+            border: 1px solid  black;
+            background-color: #eee;
+            box-shadow: 0 0 10px #000;
+            padding: 15px;
+            position: absolute;
+            width: 280px;
+            height: 300px;
+            left: 50%;
+            top: 50%;
+            margin-top: -150px;
+            margin-left: -140px;
+            z-index: 9999999;
+
+            /* 기본적으로 팝업을 숨김 */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>팝업창 열기</h1>
+
+    <div class="popup">
+        <h2>이 부분은 팝업창 영역입니다.</h2>
+        <hr/>
+        <label>
+            <input type="checkbox" id="no-open" value="Y" />
+            15초간 이 창 열지 않음
+        </label>
+        <button type="button" id="close-popup">닫기</button>
+    </div>
+
+    <script src="libs/CookieHelper.js"></script>
+    <script>
+        const cookieHelper = new CookieHelper();
+
+        // 쿠키가 저장되어 있지 않다면 레이어 팝업을 화면에 표시함
+        // --> 쿠키가 저장되어있다면 이 if문은 건너뛰므로 팝업을 표시하지 않음.
+        if (cookieHelper.getCookie("noPopup") == undefined) {
+            document.querySelector(".popup").style.display = "block";
+        }
+
+        /** 닫기 번튼에 대한 클릭 이벤트 */
+        document.querySelector("#close-popup").addEventListener("click", e => {
+            // 일단 팝업을 닫는다.
+            document.querySelector(".popup").style.display = "none";
+            
+            // 체크가 되었다면 쿠키를 생성 -> 새로고침 되었을 때 47라인의 코드가 실행되지 않을것이다.
+            if (document.querySelector("#no-open").checked) {
+                cookieHelper.setCookie("noPopup", "Y", {"max-age": 15});
+                // 오늘 하루 이 창 열지 않음인 경우 24시간으로 설정
+                // cookieHEelper.setCookie("noPopup", "Y", {'max-age': 60*60*24});
+            }
+        });
+    </script>
+</body>
+</html>

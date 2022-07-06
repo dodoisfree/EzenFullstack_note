@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+#content {
+    width: 300px;
+    margin: auto;
+    font-size: 0.8em;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+
+#content h2 {
+    height: 90px;
+    background: url(../img/top_ca1.jpg) no-repeat;
+    margin-top: 15px;
+    text-indent: -10000px;
+}
+
+#content ul li {
+    width: 33.3%;
+    float: left;
+}
+
+#content ul:after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+}
+
+#content ul li a {
+    display: block;
+    width: auto;
+    padding: 5px;
+}
+
+#content ul li a img {
+    width: 100%;
+}

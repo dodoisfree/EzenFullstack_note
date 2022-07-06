@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            font-size: 40px;
+            color: white;
+            background-color: #f60;
+            text-align: center;
+            line-height: 200px;
+            margin: 250px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>AOS</h1>
+    <p>
+        <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+    </p>
+    <hr />
+
+    <ul> 
+        <li>data-aos : 애니메이션 종류 문자열 (필수)</li>
+        <li>data-aos-duration : 애니메이션 속도 (1/1000초)</li>
+        <li>data-aos-easing : 애니메이션 재생 옵션 (css의 transition 속성값을 따름)</li>
+        <li>data-aos-offset : 대상 요소가 화면 하단으로부터 떨어진 거리. (이 거리에 도달하면 에니메이션이 작동함)</li>
+    </ul>
+
+    <div class="box" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">AOS</div>
+    
+    <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">AOS</div>
+
+    <div class="box" data-aos="fade-right" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">AOS</div>
+
+    <div class="box" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">AOS</div>
+
+    <div class="box" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600">AOS</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

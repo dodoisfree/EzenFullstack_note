@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#" class="find-parent" data-color="#ff6600">parent</a>
+            <a href="#" class="find-parents" data-color="#ff6600">parents</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="find-parent" data-color="#0066ff">parent</a>
+            <a href="#" class="find-parents" data-color="#0066ff">parents</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="find-parent" data-color="#00aa00">parent</a>
+            <a href="#" class="find-parents" data-color="#00aa00">parents</a>
+        </li>
+    </ul>
+
+    <script>
+        /** 1) 부모요소 찾기 */
+        // 객체들의 수 만큼 반복처리
+        document.querySelectorAll('.find-parent').forEach((v, i) => {
+            // 각 링크에 click 이벤트를 적용
+            v.addEventListener('click', (e) => {
+                // click 이벤트 발생시 link의 href, form의 action으로 페이지가 이동하는 것을 방지
+                e.preventDefault();
+
+                // 여러 객체들에 대해 반복처리 중이므로 이벤트가 발생한 특정 하나를 코드로는 지정 불가.
+                // 이벤트가 발생한 자기 자신을 조회하여 가져온다.
+                const current = e.currentTarget;
+
+                // 클릭된 링크의 data-color 속성값을 취득
+                const color = current.dataset.color;
+
+                // 클릭된 자신의 부모요소를 조회
+                // -> 여기서는 클릭한 링크가 포함된 <li>태그의 객체
+                    const parent = current.parentElement;
+
+                    console.log(parent);
+
+                    // 부모의 배경 색상을 변경
+                    parent.style.backgroundColor = color;
+            });
+        });
+
+        /** 2) 조상요소 찾기 */
+        // 객체들의 수 만큼 반복처리
+        document.querySelectorAll('.find-parents').forEach((v, i) => {
+            v.addEventListener('click', (e) => {
+                // click 이벤트 발생시 link의 href, form의 action으로 페이지가 이동하는 것을 방지
+                e.preventDefault();
+
+                // 여러 객체들에 대해 반복처리 중이므로 이벤트가 발생한 특정 하나를 코드로는 지정 불가.
+                // 이벤트가 발생한 자기 자신을 조회하여 가져온다.
+                const current = e.currentTarget;
+
+                // 클릭된 링크의 data-color 속성값을 취득
+                const color = current.dataset.color;
+
+                // 상위 요소들 중에서 주어진 selector를 충족하는 가장 가까운 요소를 검색
+                // -> IE는 지원하지 않음
+                    const parents = current.closest('.list-group');
+
+                    console.log(parents);
+
+                    // 검색된 조상 요소의 배경 색상을 변경
+                    parents.style.backgroundColor = color;
+            });
+        });
+    </script>
+</body>
+</html>

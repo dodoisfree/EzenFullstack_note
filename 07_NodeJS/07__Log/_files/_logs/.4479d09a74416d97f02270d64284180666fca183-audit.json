@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 50
+    },
+    "auditLog": "C:\\Users\\yocas\\Desktop\\Down\\studynote\\Ezen_fullstack\\07_NodeJS\\07__Log\\_files\\_logs\\.4479d09a74416d97f02270d64284180666fca183-audit.json",
+    "files": [
+        {
+            "date": 1656295853055,
+            "name": "C:\\Users\\yocas\\Desktop\\Down\\studynote\\Ezen_fullstack\\07_NodeJS\\07__Log\\_files\\_logs\\log_220627.log",
+            "hash": "878521670f2f7107e910d332ae9a16d0f436b992f949c83b140ec12e2e9b1779"
+        }
+    ],
+    "hashType": "sha256"
+}

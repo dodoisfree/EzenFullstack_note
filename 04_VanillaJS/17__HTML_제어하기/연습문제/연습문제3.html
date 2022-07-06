@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #imgbox {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .img1, .img2, .img3 {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/1.jpg" id="imgbox" class="img1">
+
+    <script>
+        let img = document.getElementById('imgbox');
+        img.innerHTML = "<img src='./img/2.jpg' id='imgbox' class='img1' />"
+    </script>
+</body>
+</html>

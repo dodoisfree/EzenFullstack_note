@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>
+            <button type="button" id="btn1">Prev</button>
+            <button type="button" id="btn2">Next</button>
+        </span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+
+    <script>
+        let size1 = 16;
+        let size2 = 16;
+
+        document.querySelector('#btn1').addEventListener('click', (e) => {
+            size1 += 2;
+
+            // 클릭된 버튼 자신
+            const current = e.currentTarget;
+            // 자신의 부모에 대한 '이전' 요소의 style 변경
+            current.parentElement.previousElementSibling.style.fontSize = size1 + 'px';
+        });
+
+        document.querySelector('#btn2').addEventListener('click', (e) => {
+            size2 += 2;
+            const current = e.currentTarget;
+            // 자신의 부모에 대한 '다음' 요소의 style 변경
+            current.parentElement.nextElementSibling.style.fontSize = size2 + 'px';
+        });
+    </script>
+</body>
+</html>

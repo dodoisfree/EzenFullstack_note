@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="site" id="site">
+        <option value="">--- 선택하세요 ---</option>
+        <option value="http://www.naver.com">네이버</option>
+        <option value="http://www.daum.net">다음</option>
+        <option value="http://www.google.com">구글</option>
+    </select>
+
+    <hr/>
+
+    <input type="text" id="src" />
+    <input type="text" id="dsc" readonly />
+
+    <hr/>
+
+    <input type="text" id="keycheck" />
+    <p id="keycopy"></p>
+
+    <script type="text/javascript">
+        document.querySelector("#site").addEventListener("change", e=> {
+            const choose = e.currentTarget.selectedIndex;
+            const value = e.currentTarget[choose].value;
+
+            if (value) {
+                // 파라미터로 전달된 URL을 새로운 탭으로 여는 함수
+                window.open(value);
+            }
+        });
+
+        // input 요소의 change 이벤트는 입력 후 포커스가 빠져 나왔을 때 동작함.
+        document.querySelector("#src").addEventListener("change", e => {
+            document.querySelector("#dsc").value = e.currentTarget.value;
+        });
+
+        // 실시간으로 키 입력을 감지하기 위해서는 keyup 이벤트 사용.
+        document.querySelector("#keycheck").addEventListener("keyup", e => {
+            document.querySelector("#keycopy").innerHTML = e.currentTarget.value;
+        });
+    </script>
+</body>
+</html>

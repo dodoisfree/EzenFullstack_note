@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-horizontal {
+            border: 5px solid #d5d5d5;
+            width: 500px;
+            margin: auto;
+            padding: 0 10px;
+        }
+
+        .form-group:after {
+            content: '';
+            display: block;
+            clear: both;
+            float: none;
+        }
+
+        .form-group {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #eee;
+        }
+
+        .form-group:last-child {
+            border-bottom: 0;
+        }
+
+        .col-md-2 {
+            width: 20%;
+            display: block;
+            float: left;
+            font-size: 14px;
+            padding-top: 7px;
+            text-indent: 5px;
+        }
+
+        .col-md-10 {
+            width: 80%;
+            display: block;
+            float: left;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 14px;
+            border: 1px solid #eee;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+
+        .identify {
+            font-size: 14px;
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <!-- 가입폼 시작 -->
+    <form class="form-horizontal" name="join_form" id="join_form">
+        <div class="form-group">
+            <label for="user_id" class="col-md-2">아이디 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <input type="text" name="user_id" id="user_id" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user_pw" class="col-md-2">비밀번호 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <input type="password" name="user_pw" id="user_pw" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user_pw_re" class="col-md-2">비밀번호 확인 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <input type="password" name="user_pw_re" id="user_pw_re" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user_name" class="col-md-2">이름 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <input type="text" name="user_name" id="user_name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-md-2">이메일 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <input type="email" name="email" id="email" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tel" class="col-md-2">연락처 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <input type="tel" name="tel" id="tel" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gender1" class="col-md-2">성별 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <label><input type="radio" name="gender" id="gender1" value="M" />남자</label>
+                <label><input type="radio" name="gender" id="gender2" value="F" />여자</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="subject1" class="col-md-2">수강과목 <span class="identify">*</span></label>
+            <div class="col-md-10">
+                <label><input type="checkbox" name="subject" id="subject1" value="html" />HTML</label>
+                <label><input type="checkbox" name="subject" id="subject2" value="css" />CSS</label>
+                <label><input type="checkbox" name="subject" id="subject3" value="javascript" />Javascript</label>
+                <label><input type="checkbox" name="subject" id="subject4" value="jquery" />jQuery</label>
+                <label><input type="checkbox" name="subject" id="subject5" value="php" />PHP</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="text-center">
+                <button type="submit">가입하기</button>
+                <button type="reset">다시작성</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- 정규표현식 검사 객체를 참조한다. -->
+    <script src="libs/BadRequestException.js"></script>
+    <script src="libs/RegexHelper.js"></script>
+    <script type="text/javascript">
+        document.querySelector("#join_form").addEventListener("submit", e => {
+            e.preventDefault();
+
+            const regexHelper = new RegexHelper();
+
+            try {
+                /** 아이디 검사 */
+                regexHelper.value('#user_id', '아이디를 입력하세요.');
+                regexHelper.minLength('#user_id', 4, '아이디는 최소 4자 이상 입력 가능합니다.');
+                regexHelper.maxLength('#user_id', 20, '아이디는 최대 20자 까지만 입력 가능합니다.');
+                regexHelper.engNum('#user_id', '아이디는 영어와 숫자 조합만 입력 가능합니다.');
+
+                /** 비밀번호 검사 */
+                regexHelper.value('#user_pw', '비밀번호를 입력하세요.');
+                regexHelper.minLength('#user_pw', 4, '비밀번호는 최소 4자 이상 입력 가능합니다.');
+                regexHelper.maxLength('#user_pw', 20, '비밀번호는 최대 20자 까지만 입력 가능합니다.');
+                regexHelper.compareTo('#user_pw', '#user_pw_re', '비밀번호 확인이 잘못되었습니다.')
+                
+                /** 이름 검사 */
+                regexHelper.value('#user_name', '이름을 입력하세요.');
+                regexHelper.minLength('#user_name', 2, '이름은 최소 2자 이상 입력 가능합니다.');
+                regexHelper.maxLength('#user_name', 20, '이름은 최대 20자 까지만 입력 가능합니다.');
+                regexHelper.kor('#user_name', '이름은 한글만 입력 가능합니다.');
+
+                /** 이메일 검사 */
+                regexHelper.value('#email', '이메일을 입력하세요.');
+                regexHelper.email('#email', '이메일 주소가 잘못되었습니다.');
+
+                /** 연락처 검사 */
+                regexHelper.value('#tel', '연락처를 입력하세요.');
+                regexHelper.phone('#tel', '연락처가 잘못되었습니다.');
+
+                /** 성별검사 */
+                regexHelper.check('input[name=gender]', '성별을 선택하세요.');
+
+                /** 수강 과목 검사 */
+                regexHelper.check('input[name=subject]', '과목을 선택하세요.');
+                regexHelper.checkMin('input[name=subject]', 2, '과목은 2개 이상 선택하셔야 합니다.');
+                regexHelper.checkMax('input[name=subject]', 3, '과목은 최대 3개까지 선택 가능합니다.');
+
+            } catch (e) {
+                alert(e.message);
+                console.error(e);
+                document.querySelector(e.selector).focus();
+                return;
+            }
+
+            // 처리 완료
+            alert("입력형식 검사 완료!!!");
+        });
+    </script>
+</body>
+</html>
