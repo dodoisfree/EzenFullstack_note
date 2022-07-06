@@ -1,7 +1,0 @@
-{
-  "name": "03-Module(ES6)",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "type": "module"
-}
