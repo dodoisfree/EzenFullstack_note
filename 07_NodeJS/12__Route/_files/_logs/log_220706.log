@@ -1,0 +1,1574 @@
+2022-07-06 10:31:46 332 [debug]: --------------------------------------------
+2022-07-06 10:31:46 336 [debug]: |           Start Express Server           |
+2022-07-06 10:31:46 337 [debug]: --------------------------------------------
+2022-07-06 10:31:46 340 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 10:31:46 341 [debug]: --------------------------------------------
+2022-07-06 10:31:53 523 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:31:53 523 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:31:53 524 [debug]: [POST] http://localhost:3001/session
+2022-07-06 10:31:53 550 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 10:31:53 553 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 10:31:53 561 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 38ms
+2022-07-06 10:31:53 561 [debug]: --------------------------------------------------------
+2022-07-06 10:31:56 600 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:31:56 600 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:31:56 602 [debug]: [GET] http://localhost:3001/session
+2022-07-06 10:31:56 606 [debug]: [session]cookie=[object Object]
+2022-07-06 10:31:56 606 [debug]: [session]username=세션테스트
+2022-07-06 10:31:56 607 [debug]: [session]nickname=session test
+2022-07-06 10:31:56 609 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 10:31:56 610 [debug]: --------------------------------------------------------
+2022-07-06 10:31:59 731 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:31:59 731 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:31:59 732 [debug]: [DELETE] http://localhost:3001/session
+2022-07-06 10:31:59 733 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 10:31:59 734 [debug]: --------------------------------------------------------
+2022-07-06 10:34:52 309 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:34:52 310 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:34:52 311 [debug]: [POST] http://localhost:3001/session/login
+2022-07-06 10:34:52 313 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 10:34:52 314 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 10:34:52 314 [debug]: id=node
+2022-07-06 10:34:52 314 [debug]: pw=1234
+2022-07-06 10:34:52 316 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-06 10:34:52 316 [debug]: --------------------------------------------------------
+2022-07-06 10:34:54 576 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:34:54 576 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:34:54 576 [debug]: [GET] http://localhost:3001/session/login
+2022-07-06 10:34:54 579 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 10:34:54 579 [debug]: --------------------------------------------------------
+2022-07-06 10:34:57 040 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:34:57 046 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:34:57 047 [debug]: [DELETE] http://localhost:3001/session/login
+2022-07-06 10:34:57 049 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 10:34:57 049 [debug]: --------------------------------------------------------
+2022-07-06 10:35:00 952 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:35:00 952 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:35:00 953 [debug]: [GET] http://localhost:3001/session/login
+2022-07-06 10:35:00 956 [error]: [Error] 현재 로그인중이 아닙니다.
+2022-07-06 10:35:00 956 [error]: Error: 현재 로그인중이 아닙니다.
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SessionController.js:187:23
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:35:00 959 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 10:35:00 959 [debug]: --------------------------------------------------------
+2022-07-06 10:37:21 450 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:37:21 451 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:37:21 451 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:37:21 453 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 10:37:21 453 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:37:21 456 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 10:37:21 456 [debug]: --------------------------------------------------------
+2022-07-06 10:37:49 685 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:37:49 685 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:37:49 686 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:37:49 688 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 10:37:49 688 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:37:49 690 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 10:37:49 691 [debug]: --------------------------------------------------------
+2022-07-06 10:38:44 470 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:38:44 470 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:38:44 471 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:38:44 473 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 10:38:44 473 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:38:44 476 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-06 10:38:44 476 [debug]: --------------------------------------------------------
+2022-07-06 10:39:06 746 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:39:06 747 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:39:06 748 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 10:39:06 749 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 10:39:06 751 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 10:39:06 752 [debug]: --------------------------------------------------------
+2022-07-06 10:39:15 919 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:39:15 920 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:39:15 920 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 10:39:15 922 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 10:39:15 923 [debug]: --------------------------------------------------------
+2022-07-06 10:39:18 183 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:39:18 184 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:39:18 184 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:39:18 186 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 10:39:18 186 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:39:18 189 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 10:39:18 189 [debug]: --------------------------------------------------------
+2022-07-06 10:40:45 111 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:40:45 111 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:40:45 112 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:40:45 113 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 10:40:45 114 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:40:45 116 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 10:40:45 116 [debug]: --------------------------------------------------------
+2022-07-06 10:41:00 885 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:41:00 886 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:41:00 886 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:41:00 887 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 10:41:00 888 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 10:41:00 890 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 10:41:00 890 [debug]: --------------------------------------------------------
+2022-07-06 10:41:29 596 [debug]: --------------------------------------------
+2022-07-06 10:41:29 598 [debug]: |           Start Express Server           |
+2022-07-06 10:41:29 599 [debug]: --------------------------------------------
+2022-07-06 10:41:29 601 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 10:41:29 601 [debug]: --------------------------------------------
+2022-07-06 10:41:31 838 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:41:31 839 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:41:31 840 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:41:31 860 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 10:41:31 866 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 27ms
+2022-07-06 10:41:31 869 [debug]: --------------------------------------------------------
+2022-07-06 10:41:34 447 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:41:34 448 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:41:34 448 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 10:41:34 452 [debug]: [cookies]my_msg=j:null
+2022-07-06 10:41:34 453 [debug]: [singedCookies]my_msg_signed=j:null
+2022-07-06 10:41:34 453 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 10:41:34 455 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 10:41:34 456 [debug]: --------------------------------------------------------
+2022-07-06 10:41:37 855 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:41:37 856 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:41:37 856 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 10:41:37 859 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 10:41:37 859 [debug]: --------------------------------------------------------
+2022-07-06 10:42:24 089 [debug]: --------------------------------------------
+2022-07-06 10:42:24 091 [debug]: |           Start Express Server           |
+2022-07-06 10:42:24 092 [debug]: --------------------------------------------
+2022-07-06 10:42:24 093 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 10:42:24 094 [debug]: --------------------------------------------
+2022-07-06 10:42:27 094 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:42:27 095 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:42:27 096 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 10:42:27 118 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 10:42:27 123 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+2022-07-06 10:42:27 124 [debug]: --------------------------------------------------------
+2022-07-06 10:42:28 774 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:42:28 775 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:42:28 775 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 10:42:28 780 [debug]: [cookies]my_msg=j:null
+2022-07-06 10:42:28 781 [debug]: [singedCookies]my_msg_signed=j:null
+2022-07-06 10:42:28 781 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 10:42:28 783 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-06 10:42:28 783 [debug]: --------------------------------------------------------
+2022-07-06 10:42:31 245 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 10:42:31 246 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 10:42:31 246 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 10:42:31 248 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 10:42:31 249 [debug]: --------------------------------------------------------
+2022-07-06 11:06:51 802 [debug]: --------------------------------------------
+2022-07-06 11:06:51 804 [debug]: |           Start Express Server           |
+2022-07-06 11:06:51 804 [debug]: --------------------------------------------
+2022-07-06 11:06:51 805 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:06:51 806 [debug]: --------------------------------------------
+2022-07-06 11:10:23 811 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:10:23 812 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:10:23 813 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:10:23 834 [error]: [Error] 발신자 메일주소를 입력하세요.
+2022-07-06 11:10:23 835 [error]: Error: 발신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:20:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:10:23 842 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+2022-07-06 11:10:23 844 [debug]: --------------------------------------------------------
+2022-07-06 11:10:27 329 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:10:27 330 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:10:27 330 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:10:27 334 [error]: [Error] 발신자 메일주소가 잘못되었습니다.
+2022-07-06 11:10:27 335 [error]: Error: 발신자 메일주소가 잘못되었습니다.
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:36:19)
+    at RegexHelper.email (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:149:21)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:21:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+2022-07-06 11:10:27 337 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 11:10:27 338 [debug]: --------------------------------------------------------
+2022-07-06 11:10:36 093 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:10:36 093 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:10:36 094 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:10:36 096 [error]: [Error] 발신자 메일주소가 잘못되었습니다.
+2022-07-06 11:10:36 096 [error]: Error: 발신자 메일주소가 잘못되었습니다.
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:36:19)
+    at RegexHelper.email (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:149:21)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:21:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+2022-07-06 11:10:36 098 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:10:36 099 [debug]: --------------------------------------------------------
+2022-07-06 11:10:48 907 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:10:48 908 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:10:48 908 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:10:48 910 [error]: [Error] 발신자 메일주소가 잘못되었습니다.
+2022-07-06 11:10:48 911 [error]: Error: 발신자 메일주소가 잘못되었습니다.
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:36:19)
+    at RegexHelper.email (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:149:21)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:21:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+2022-07-06 11:10:48 913 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:10:48 913 [debug]: --------------------------------------------------------
+2022-07-06 11:11:33 234 [debug]: --------------------------------------------
+2022-07-06 11:11:33 244 [debug]: |           Start Express Server           |
+2022-07-06 11:11:33 245 [debug]: --------------------------------------------
+2022-07-06 11:11:33 246 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:11:33 248 [debug]: --------------------------------------------
+2022-07-06 11:12:03 536 [debug]: --------------------------------------------
+2022-07-06 11:12:03 540 [debug]: |           Start Express Server           |
+2022-07-06 11:12:03 541 [debug]: --------------------------------------------
+2022-07-06 11:12:03 541 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:12:03 542 [debug]: --------------------------------------------
+2022-07-06 11:12:05 662 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:12:05 664 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:12:05 665 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:12:05 687 [error]: [Error] 발신자 메일주소가 잘못되었습니다.
+2022-07-06 11:12:05 688 [error]: Error: 발신자 메일주소가 잘못되었습니다.
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:36:19)
+    at RegexHelper.email (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:149:21)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:21:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+2022-07-06 11:12:05 695 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+2022-07-06 11:12:05 696 [debug]: --------------------------------------------------------
+2022-07-06 11:13:39 592 [debug]: --------------------------------------------
+2022-07-06 11:13:39 596 [debug]: |           Start Express Server           |
+2022-07-06 11:13:39 600 [debug]: --------------------------------------------
+2022-07-06 11:13:39 603 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:13:39 605 [debug]: --------------------------------------------
+2022-07-06 11:21:47 367 [debug]: --------------------------------------------
+2022-07-06 11:21:47 370 [debug]: |           Start Express Server           |
+2022-07-06 11:21:47 371 [debug]: --------------------------------------------
+2022-07-06 11:21:47 371 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:21:47 372 [debug]: --------------------------------------------
+2022-07-06 11:26:44 595 [debug]: --------------------------------------------
+2022-07-06 11:26:44 597 [debug]: |           Start Express Server           |
+2022-07-06 11:26:44 598 [debug]: --------------------------------------------
+2022-07-06 11:26:44 599 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:26:44 600 [debug]: --------------------------------------------
+2022-07-06 11:26:59 872 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:26:59 874 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:26:59 875 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:26:59 896 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:26:59 897 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:26:59 903 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+2022-07-06 11:26:59 904 [debug]: --------------------------------------------------------
+2022-07-06 11:27:07 477 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:27:07 477 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:27:07 478 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:27:07 482 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:27:07 483 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:27:07 485 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-06 11:27:07 486 [debug]: --------------------------------------------------------
+2022-07-06 11:27:08 357 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:27:08 358 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:27:08 359 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:27:08 360 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:27:08 361 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:27:08 363 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:27:08 364 [debug]: --------------------------------------------------------
+2022-07-06 11:27:19 945 [debug]: --------------------------------------------
+2022-07-06 11:27:19 948 [debug]: |           Start Express Server           |
+2022-07-06 11:27:19 951 [debug]: --------------------------------------------
+2022-07-06 11:27:19 951 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:27:19 953 [debug]: --------------------------------------------
+2022-07-06 11:27:30 652 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:27:30 653 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:27:30 655 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:27:30 675 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:27:30 676 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:27:30 682 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+2022-07-06 11:27:30 683 [debug]: --------------------------------------------------------
+2022-07-06 11:29:01 858 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:29:01 859 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:29:01 860 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:29:01 864 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:29:01 866 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 11:29:01 866 [debug]: --------------------------------------------------------
+2022-07-06 11:29:17 740 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:29:17 741 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:29:17 742 [debug]: [GET] http://localhost:3001/
+2022-07-06 11:29:17 750 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 11:29:17 750 [debug]: --------------------------------------------------------
+2022-07-06 11:29:17 931 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:29:17 932 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:29:17 932 [debug]: [GET] http://localhost:3001/favicon.ico
+2022-07-06 11:29:17 942 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-06 11:29:17 943 [debug]: --------------------------------------------------------
+2022-07-06 11:29:35 025 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:29:35 026 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:29:35 027 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:29:35 028 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:29:35 029 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:29:35 030 [debug]: --------------------------------------------------------
+2022-07-06 11:31:46 717 [debug]: --------------------------------------------
+2022-07-06 11:31:46 721 [debug]: |           Start Express Server           |
+2022-07-06 11:31:46 721 [debug]: --------------------------------------------
+2022-07-06 11:31:46 722 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:31:46 723 [debug]: --------------------------------------------
+2022-07-06 11:35:31 340 [debug]: --------------------------------------------
+2022-07-06 11:35:31 343 [debug]: |           Start Express Server           |
+2022-07-06 11:35:31 343 [debug]: --------------------------------------------
+2022-07-06 11:35:31 344 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:35:31 345 [debug]: --------------------------------------------
+2022-07-06 11:35:48 129 [debug]: --------------------------------------------
+2022-07-06 11:35:48 132 [debug]: |           Start Express Server           |
+2022-07-06 11:35:48 134 [debug]: --------------------------------------------
+2022-07-06 11:35:48 135 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:35:48 136 [debug]: --------------------------------------------
+2022-07-06 11:36:06 407 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:36:06 408 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:36:06 410 [debug]: [POST] http://localhost:3001/upload/multiple
+2022-07-06 11:36:06 528 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 120ms
+2022-07-06 11:36:06 539 [debug]: --------------------------------------------------------
+2022-07-06 11:36:44 375 [debug]: --------------------------------------------
+2022-07-06 11:36:44 378 [debug]: |           Start Express Server           |
+2022-07-06 11:36:44 379 [debug]: --------------------------------------------
+2022-07-06 11:36:44 379 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:36:44 381 [debug]: --------------------------------------------
+2022-07-06 11:36:48 430 [debug]: --------------------------------------------
+2022-07-06 11:36:48 436 [debug]: |           Start Express Server           |
+2022-07-06 11:36:48 437 [debug]: --------------------------------------------
+2022-07-06 11:36:48 438 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:36:48 440 [debug]: --------------------------------------------
+2022-07-06 11:36:50 162 [debug]: --------------------------------------------
+2022-07-06 11:36:50 180 [debug]: |           Start Express Server           |
+2022-07-06 11:36:50 187 [debug]: --------------------------------------------
+2022-07-06 11:36:50 188 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:36:50 190 [debug]: --------------------------------------------
+2022-07-06 11:37:53 558 [debug]: --------------------------------------------
+2022-07-06 11:37:53 566 [debug]: |           Start Express Server           |
+2022-07-06 11:37:53 567 [debug]: --------------------------------------------
+2022-07-06 11:37:53 569 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:37:53 572 [debug]: --------------------------------------------
+2022-07-06 11:37:54 896 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:37:54 897 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:37:54 898 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:37:54 916 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:37:54 918 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:37:54 918 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:37:54 919 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:37:54 920 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:37:54 921 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:37:54 922 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:37:54 923 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:37:54 928 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+2022-07-06 11:37:54 931 [debug]: --------------------------------------------------------
+2022-07-06 11:39:16 247 [debug]: --------------------------------------------
+2022-07-06 11:39:16 253 [debug]: |           Start Express Server           |
+2022-07-06 11:39:16 255 [debug]: --------------------------------------------
+2022-07-06 11:39:16 256 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:39:16 258 [debug]: --------------------------------------------
+2022-07-06 11:39:21 807 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:39:21 808 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:39:21 809 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:39:21 833 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:39:21 835 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:39:21 836 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:39:21 837 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:39:21 838 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:39:21 839 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:39:21 841 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:39:21 842 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:39:21 851 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 43ms
+2022-07-06 11:39:21 852 [debug]: --------------------------------------------------------
+2022-07-06 11:40:17 154 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:40:17 155 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:40:17 155 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:40:17 158 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:17 159 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:17 159 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:17 159 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:17 160 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:17 160 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:17 162 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:40:17 162 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:40:17 165 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-06 11:40:17 165 [debug]: --------------------------------------------------------
+2022-07-06 11:40:20 431 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:40:20 432 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:40:20 432 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:40:20 434 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:20 434 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:20 435 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:20 435 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:20 436 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:20 437 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:20 437 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:40:20 438 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:40:20 440 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-06 11:40:20 441 [debug]: --------------------------------------------------------
+2022-07-06 11:40:23 137 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:40:23 137 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:40:23 138 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:40:23 140 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 140 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 141 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 141 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 142 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 142 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 143 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:40:23 143 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:40:23 146 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 11:40:23 146 [debug]: --------------------------------------------------------
+2022-07-06 11:40:23 903 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:40:23 903 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:40:23 904 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:40:23 905 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 906 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 906 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 907 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 907 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 908 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:23 908 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:40:23 909 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:40:23 912 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 11:40:23 913 [debug]: --------------------------------------------------------
+2022-07-06 11:40:27 191 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:40:27 192 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:40:27 192 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:40:27 194 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:27 195 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:27 195 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:27 196 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:27 196 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:27 196 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:27 197 [error]: [Error] 수신자 메일주소를 입력하세요.
+2022-07-06 11:40:27 197 [error]: Error: 수신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/RegexHelper.js:18:19)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/SendMailController.js:22:19
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 11:40:27 199 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 11:40:27 200 [debug]: --------------------------------------------------------
+2022-07-06 11:40:33 616 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:40:33 616 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:40:33 617 [debug]: [POST] http://localhost:3001/send_mail
+2022-07-06 11:40:33 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:33 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:33 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:33 619 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:33 619 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:33 619 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:40:36 631 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3015ms
+2022-07-06 11:40:36 631 [debug]: --------------------------------------------------------
+2022-07-06 11:41:13 675 [debug]: --------------------------------------------
+2022-07-06 11:41:13 678 [debug]: |           Start Express Server           |
+2022-07-06 11:41:13 679 [debug]: --------------------------------------------
+2022-07-06 11:41:13 680 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:41:13 681 [debug]: --------------------------------------------
+2022-07-06 11:45:26 736 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:45:26 738 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:45:26 739 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:45:26 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:45:26 766 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+2022-07-06 11:45:26 768 [debug]: --------------------------------------------------------
+2022-07-06 11:45:28 654 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:45:28 655 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:45:28 655 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:45:28 660 [debug]: [cookies]my_msg=j:null
+2022-07-06 11:45:28 661 [debug]: [singedCookies]my_msg_signed=j:null
+2022-07-06 11:45:28 662 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 11:45:28 664 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 11:45:28 665 [debug]: --------------------------------------------------------
+2022-07-06 11:45:31 066 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:45:31 067 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:45:31 067 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 11:45:31 069 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 11:45:31 070 [debug]: --------------------------------------------------------
+2022-07-06 11:45:56 614 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:45:56 615 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:45:56 616 [debug]: [OPTIONS] http://localhost:3001/cookie
+2022-07-06 11:45:56 618 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:45:56 618 [debug]: --------------------------------------------------------
+2022-07-06 11:45:58 547 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:45:58 548 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:45:58 549 [debug]: [OPTIONS] http://localhost:3001/cookie
+2022-07-06 11:45:58 551 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:45:58 551 [debug]: --------------------------------------------------------
+2022-07-06 11:46:00 703 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:46:00 704 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:46:00 705 [debug]: [OPTIONS] http://localhost:3001/cookie
+2022-07-06 11:46:00 707 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:46:00 707 [debug]: --------------------------------------------------------
+2022-07-06 11:46:02 895 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:46:02 895 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:46:02 896 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:46:02 899 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:46:02 899 [debug]: --------------------------------------------------------
+2022-07-06 11:46:32 762 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:46:32 763 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:46:32 763 [debug]: [OPTIONS] http://localhost:3001/cookie
+2022-07-06 11:46:32 765 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 11:46:32 766 [debug]: --------------------------------------------------------
+2022-07-06 11:48:49 362 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:48:49 363 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:48:49 364 [debug]: [GET] http://127.0.0.1:3001/public/04_cookie.html
+2022-07-06 11:48:49 367 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-06 11:48:49 367 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/app.js:178:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:328:13)
+2022-07-06 11:48:49 369 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-06 11:48:49 370 [debug]: --------------------------------------------------------
+2022-07-06 11:48:49 635 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:48:49 635 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:48:49 636 [debug]: [GET] http://127.0.0.1:3001/favicon.ico
+2022-07-06 11:48:49 644 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 11:48:49 644 [debug]: --------------------------------------------------------
+2022-07-06 11:49:49 031 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:49:49 032 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:49:49 032 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:49:49 037 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:49:49 038 [debug]: --------------------------------------------------------
+2022-07-06 11:49:52 646 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:49:52 647 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:49:52 647 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:49:52 649 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:49:52 652 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:49:52 652 [debug]: --------------------------------------------------------
+2022-07-06 11:49:54 801 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:49:54 802 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:49:54 803 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:49:54 805 [debug]: [cookies]my_msg=asas
+2022-07-06 11:49:54 805 [debug]: [singedCookies]my_msg_signed=asas
+2022-07-06 11:49:54 806 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:49:54 807 [debug]: --------------------------------------------------------
+2022-07-06 11:49:56 383 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:49:56 384 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:49:56 384 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 11:49:56 386 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 11:49:56 387 [debug]: --------------------------------------------------------
+2022-07-06 11:49:57 110 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:49:57 111 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:49:57 112 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:49:57 113 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:49:57 114 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:49:57 114 [debug]: --------------------------------------------------------
+2022-07-06 11:50:14 766 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:50:14 767 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:50:14 767 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:50:14 769 [debug]: [cookies]my_msg_signed=
+2022-07-06 11:50:14 769 [debug]: [cookies]my_msg=
+2022-07-06 11:50:14 769 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 11:50:14 771 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:50:14 772 [debug]: --------------------------------------------------------
+2022-07-06 11:50:18 332 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:50:18 333 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:50:18 334 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 11:50:18 336 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:50:18 337 [debug]: --------------------------------------------------------
+2022-07-06 11:50:19 767 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:50:19 768 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:50:19 768 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:50:19 769 [debug]: [cookies]my_msg_signed=
+2022-07-06 11:50:19 770 [debug]: [cookies]my_msg=
+2022-07-06 11:50:19 770 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 11:50:19 771 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:50:19 772 [debug]: --------------------------------------------------------
+2022-07-06 11:50:22 660 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:50:22 661 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:50:22 662 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:50:22 664 [debug]: [cookies]my_msg_signed=
+2022-07-06 11:50:22 664 [debug]: [cookies]my_msg=
+2022-07-06 11:50:22 664 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 11:50:22 665 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:50:22 665 [debug]: --------------------------------------------------------
+2022-07-06 11:50:40 126 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:50:40 126 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:50:40 127 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:50:40 128 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:50:40 129 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:50:40 130 [debug]: --------------------------------------------------------
+2022-07-06 11:50:41 721 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:50:41 721 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-06 11:50:41 722 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:50:41 723 [debug]: [cookies]my_msg=j:null
+2022-07-06 11:50:41 723 [debug]: [singedCookies]my_msg_signed=j:null
+2022-07-06 11:50:41 724 [debug]: [singedCookies]connect.sid=g8oVKlKIJE7-u_hT_ClvYxmK-VkI2O_l
+2022-07-06 11:50:41 725 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:50:41 725 [debug]: --------------------------------------------------------
+2022-07-06 11:51:23 686 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:51:23 687 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:51:23 688 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:51:23 694 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 11:51:23 695 [debug]: --------------------------------------------------------
+2022-07-06 11:51:25 504 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:51:25 505 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:51:25 506 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:51:25 507 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:51:25 508 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:51:25 508 [debug]: --------------------------------------------------------
+2022-07-06 11:51:39 114 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:51:39 115 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:51:39 116 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:51:39 117 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:51:39 119 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:51:39 119 [debug]: --------------------------------------------------------
+2022-07-06 11:53:12 896 [debug]: --------------------------------------------
+2022-07-06 11:53:12 897 [debug]: |           Start Express Server           |
+2022-07-06 11:53:12 898 [debug]: --------------------------------------------
+2022-07-06 11:53:12 899 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:53:12 899 [debug]: --------------------------------------------
+2022-07-06 11:53:13 778 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:53:13 779 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:53:13 780 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:53:13 799 [error]: [ReferenceError] Cannot access 'msg' before initialization
+2022-07-06 11:53:13 800 [error]: ReferenceError: Cannot access 'msg' before initialization
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:16:28
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:47:12)
+2022-07-06 11:53:13 807 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 27ms
+2022-07-06 11:53:13 807 [debug]: --------------------------------------------------------
+2022-07-06 11:53:18 480 [debug]: --------------------------------------------
+2022-07-06 11:53:18 482 [debug]: |           Start Express Server           |
+2022-07-06 11:53:18 484 [debug]: --------------------------------------------
+2022-07-06 11:53:18 485 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:53:18 486 [debug]: --------------------------------------------
+2022-07-06 11:55:04 030 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:04 032 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:04 033 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:55:04 047 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-06 11:55:04 048 [debug]: --------------------------------------------------------
+2022-07-06 11:55:06 073 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:06 074 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:06 075 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:55:06 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:55:06 095 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+2022-07-06 11:55:06 096 [debug]: --------------------------------------------------------
+2022-07-06 11:55:14 440 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:14 440 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:14 441 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:55:14 445 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:55:14 446 [debug]: --------------------------------------------------------
+2022-07-06 11:55:16 714 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:16 714 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:16 715 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:55:16 717 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:55:16 718 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:55:16 719 [debug]: --------------------------------------------------------
+2022-07-06 11:55:17 466 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:17 466 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:17 467 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:55:17 469 [debug]: [cookies]my_msg=asdasdsd
+2022-07-06 11:55:17 469 [debug]: [singedCookies]my_msg_signed=asdasdsd
+2022-07-06 11:55:17 471 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:55:17 471 [debug]: --------------------------------------------------------
+2022-07-06 11:55:18 118 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:18 118 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:18 119 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:55:18 120 [debug]: [cookies]my_msg=asdasdsd
+2022-07-06 11:55:18 121 [debug]: [singedCookies]my_msg_signed=asdasdsd
+2022-07-06 11:55:18 122 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:55:18 123 [debug]: --------------------------------------------------------
+2022-07-06 11:55:18 447 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:18 449 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:18 449 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:55:18 451 [debug]: [cookies]my_msg=asdasdsd
+2022-07-06 11:55:18 451 [debug]: [singedCookies]my_msg_signed=asdasdsd
+2022-07-06 11:55:18 452 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:55:18 453 [debug]: --------------------------------------------------------
+2022-07-06 11:55:18 597 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:18 598 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:18 599 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:55:18 600 [debug]: [cookies]my_msg=asdasdsd
+2022-07-06 11:55:18 601 [debug]: [singedCookies]my_msg_signed=asdasdsd
+2022-07-06 11:55:18 602 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:55:18 602 [debug]: --------------------------------------------------------
+2022-07-06 11:55:20 235 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:55:20 235 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:55:20 236 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:55:20 238 [debug]: [cookies]my_msg=asdasdsd
+2022-07-06 11:55:20 238 [debug]: [singedCookies]my_msg_signed=asdasdsd
+2022-07-06 11:55:20 239 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:55:20 240 [debug]: --------------------------------------------------------
+2022-07-06 11:56:00 789 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:56:00 790 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:56:00 791 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:56:00 793 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:56:00 795 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:56:00 795 [debug]: --------------------------------------------------------
+2022-07-06 11:56:01 360 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:56:01 360 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:56:01 361 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:56:01 363 [debug]: [cookies]my_msg=asdasdsd
+2022-07-06 11:56:01 363 [debug]: [singedCookies]my_msg_signed=asdasdsd
+2022-07-06 11:56:01 364 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:56:01 365 [debug]: --------------------------------------------------------
+2022-07-06 11:56:02 079 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:56:02 080 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:56:02 080 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:56:02 083 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:56:02 084 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:56:02 085 [debug]: --------------------------------------------------------
+2022-07-06 11:57:18 689 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:18 690 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:18 691 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:57:18 692 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:57:18 693 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:57:18 694 [debug]: --------------------------------------------------------
+2022-07-06 11:57:19 200 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:19 201 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:19 201 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:57:19 203 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:57:19 204 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:57:19 205 [debug]: --------------------------------------------------------
+2022-07-06 11:57:19 862 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:19 863 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:19 863 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:57:19 868 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 11:57:19 868 [debug]: --------------------------------------------------------
+2022-07-06 11:57:23 200 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:23 200 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:23 201 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:57:23 202 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:57:23 203 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:57:23 204 [debug]: --------------------------------------------------------
+2022-07-06 11:57:23 870 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:23 870 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:23 871 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:57:23 873 [debug]: [cookies]my_msg=sads
+2022-07-06 11:57:23 873 [debug]: [singedCookies]my_msg_signed=sads
+2022-07-06 11:57:23 874 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:57:23 875 [debug]: --------------------------------------------------------
+2022-07-06 11:57:24 295 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:24 296 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:24 296 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 11:57:24 298 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 11:57:24 299 [debug]: --------------------------------------------------------
+2022-07-06 11:57:40 113 [debug]: --------------------------------------------
+2022-07-06 11:57:40 120 [debug]: |           Start Express Server           |
+2022-07-06 11:57:40 122 [debug]: --------------------------------------------
+2022-07-06 11:57:40 124 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:57:40 125 [debug]: --------------------------------------------
+2022-07-06 11:57:40 810 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:40 811 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:40 812 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:57:40 824 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-06 11:57:40 825 [debug]: --------------------------------------------------------
+2022-07-06 11:57:44 006 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:44 007 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:44 007 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:57:44 024 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:57:44 028 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 20ms
+2022-07-06 11:57:44 028 [debug]: --------------------------------------------------------
+2022-07-06 11:57:44 562 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:44 563 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:44 564 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:57:44 568 [debug]: [cookies]my_msg=sadsa
+2022-07-06 11:57:44 568 [debug]: [singedCookies]my_msg_signed=sadsa
+2022-07-06 11:57:44 570 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 11:57:44 570 [debug]: --------------------------------------------------------
+2022-07-06 11:57:45 198 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:57:45 199 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:57:45 199 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 11:57:45 201 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 11:57:45 202 [debug]: --------------------------------------------------------
+2022-07-06 11:58:02 159 [debug]: --------------------------------------------
+2022-07-06 11:58:02 160 [debug]: |           Start Express Server           |
+2022-07-06 11:58:02 161 [debug]: --------------------------------------------
+2022-07-06 11:58:02 162 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 11:58:02 162 [debug]: --------------------------------------------
+2022-07-06 11:58:03 460 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:03 461 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:03 462 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:58:03 479 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:58:03 486 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+2022-07-06 11:58:03 487 [debug]: --------------------------------------------------------
+2022-07-06 11:58:04 177 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:04 178 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:04 178 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 11:58:04 186 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-06 11:58:04 187 [debug]: --------------------------------------------------------
+2022-07-06 11:58:06 719 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:06 720 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:06 720 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:58:06 723 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:58:06 724 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:58:06 725 [debug]: --------------------------------------------------------
+2022-07-06 11:58:07 566 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:07 566 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:07 567 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:58:07 569 [debug]: [cookies]my_msg=sdda
+2022-07-06 11:58:07 569 [debug]: [singedCookies]my_msg_signed=sdda
+2022-07-06 11:58:07 570 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:58:07 571 [debug]: --------------------------------------------------------
+2022-07-06 11:58:09 283 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:09 283 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:09 284 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 11:58:09 285 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 11:58:09 287 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:58:09 287 [debug]: --------------------------------------------------------
+2022-07-06 11:58:09 948 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:09 949 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:09 949 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:58:09 951 [debug]: [cookies]my_msg=sdda
+2022-07-06 11:58:09 951 [debug]: [singedCookies]my_msg_signed=sdda
+2022-07-06 11:58:09 952 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 11:58:09 953 [debug]: --------------------------------------------------------
+2022-07-06 11:58:13 657 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 11:58:13 657 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 11:58:13 658 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 11:58:13 659 [debug]: [cookies]my_msg=sdda
+2022-07-06 11:58:13 660 [debug]: [singedCookies]my_msg_signed=sdda
+2022-07-06 11:58:13 661 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 11:58:13 662 [debug]: --------------------------------------------------------
+2022-07-06 12:00:38 937 [debug]: --------------------------------------------
+2022-07-06 12:00:38 940 [debug]: |           Start Express Server           |
+2022-07-06 12:00:38 941 [debug]: --------------------------------------------
+2022-07-06 12:00:38 942 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:00:38 942 [debug]: --------------------------------------------
+2022-07-06 12:00:51 714 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:00:51 716 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:00:51 717 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:00:51 729 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-06 12:00:51 731 [debug]: --------------------------------------------------------
+2022-07-06 12:00:54 200 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:00:54 200 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:00:54 201 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:00:54 220 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:00:54 223 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
+2022-07-06 12:00:54 224 [debug]: --------------------------------------------------------
+2022-07-06 12:00:54 664 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:00:54 664 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:00:54 665 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:00:54 668 [debug]: [cookies]my_msg=sadas
+2022-07-06 12:00:54 669 [debug]: [singedCookies]my_msg_signed=sadas
+2022-07-06 12:00:54 670 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-06 12:00:54 670 [debug]: --------------------------------------------------------
+2022-07-06 12:01:16 134 [debug]: --------------------------------------------
+2022-07-06 12:01:16 138 [debug]: |           Start Express Server           |
+2022-07-06 12:01:16 139 [debug]: --------------------------------------------
+2022-07-06 12:01:16 140 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:01:16 141 [debug]: --------------------------------------------
+2022-07-06 12:01:16 892 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:01:16 893 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:01:16 894 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:01:16 900 [debug]: [cookies]my_msg=sadas
+2022-07-06 12:01:16 902 [debug]: [singedCookies]my_msg_signed=sadas
+2022-07-06 12:01:16 907 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+2022-07-06 12:01:16 908 [debug]: --------------------------------------------------------
+2022-07-06 12:01:18 026 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:01:18 026 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:01:18 027 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:01:18 042 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:01:18 045 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
+2022-07-06 12:01:18 046 [debug]: --------------------------------------------------------
+2022-07-06 12:01:18 617 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:01:18 618 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:01:18 619 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:01:18 620 [debug]: [cookies]my_msg=sadas
+2022-07-06 12:01:18 621 [debug]: [singedCookies]my_msg_signed=sadas
+2022-07-06 12:01:18 622 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:01:18 623 [debug]: --------------------------------------------------------
+2022-07-06 12:02:46 061 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:02:46 063 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:02:46 065 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:02:46 071 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-06 12:02:46 071 [debug]: --------------------------------------------------------
+2022-07-06 12:02:48 047 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:02:48 047 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:02:48 048 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:02:48 049 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:02:48 051 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:02:48 052 [debug]: --------------------------------------------------------
+2022-07-06 12:02:49 284 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:02:49 284 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:02:49 285 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:02:49 287 [debug]: [cookies]my_msg=asda
+2022-07-06 12:02:49 287 [debug]: [singedCookies]my_msg_signed=asda
+2022-07-06 12:02:49 288 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:02:49 289 [debug]: --------------------------------------------------------
+2022-07-06 12:03:18 182 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:18 183 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:18 183 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:03:18 185 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:03:18 186 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:18 186 [debug]: --------------------------------------------------------
+2022-07-06 12:03:19 053 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:19 054 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:19 054 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:19 056 [debug]: [cookies]my_msg=asda
+2022-07-06 12:03:19 056 [debug]: [singedCookies]my_msg_signed=asda
+2022-07-06 12:03:19 057 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:19 058 [debug]: --------------------------------------------------------
+2022-07-06 12:03:19 689 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:19 690 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:19 690 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:03:19 693 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:03:19 695 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 12:03:19 696 [debug]: --------------------------------------------------------
+2022-07-06 12:03:20 079 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:20 080 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:20 081 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:20 082 [debug]: [cookies]my_msg=asda
+2022-07-06 12:03:20 082 [debug]: [singedCookies]my_msg_signed=asda
+2022-07-06 12:03:20 084 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:03:20 084 [debug]: --------------------------------------------------------
+2022-07-06 12:03:21 808 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:21 809 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:21 810 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:03:21 811 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:03:21 813 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:03:21 814 [debug]: --------------------------------------------------------
+2022-07-06 12:03:22 298 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:22 298 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:22 299 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:22 300 [debug]: [cookies]my_msg=asdasdasd
+2022-07-06 12:03:22 300 [debug]: [singedCookies]my_msg_signed=asdasdasd
+2022-07-06 12:03:22 301 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:22 302 [debug]: --------------------------------------------------------
+2022-07-06 12:03:23 376 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:23 377 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:23 378 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:03:23 379 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:03:23 381 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:03:23 381 [debug]: --------------------------------------------------------
+2022-07-06 12:03:24 082 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:24 083 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:24 083 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:24 084 [debug]: [cookies]my_msg=asdasdasd
+2022-07-06 12:03:24 085 [debug]: [singedCookies]my_msg_signed=asdasdasd
+2022-07-06 12:03:24 086 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:24 086 [debug]: --------------------------------------------------------
+2022-07-06 12:03:24 513 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:24 514 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:24 514 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:03:24 516 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:03:24 516 [debug]: --------------------------------------------------------
+2022-07-06 12:03:25 293 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:25 293 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:25 294 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:25 295 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:03:25 296 [debug]: --------------------------------------------------------
+2022-07-06 12:03:26 512 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:26 513 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:26 514 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:03:26 515 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:03:26 516 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:26 516 [debug]: --------------------------------------------------------
+2022-07-06 12:03:27 171 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:27 171 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:27 172 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:03:27 173 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:03:27 174 [debug]: --------------------------------------------------------
+2022-07-06 12:03:27 597 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:27 597 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:27 598 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:27 600 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:27 601 [debug]: --------------------------------------------------------
+2022-07-06 12:03:28 328 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:28 329 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:28 329 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:03:28 331 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:03:28 332 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:03:28 332 [debug]: --------------------------------------------------------
+2022-07-06 12:03:28 876 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:28 877 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:28 877 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:03:28 879 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:03:28 879 [debug]: --------------------------------------------------------
+2022-07-06 12:03:29 494 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:29 495 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:29 496 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:03:29 497 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:03:29 498 [debug]: --------------------------------------------------------
+2022-07-06 12:03:29 969 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:03:29 970 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:03:29 970 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:03:29 972 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:03:29 972 [debug]: --------------------------------------------------------
+2022-07-06 12:04:09 105 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:04:09 106 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:04:09 106 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:04:09 108 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:04:09 111 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 12:04:09 111 [debug]: --------------------------------------------------------
+2022-07-06 12:04:19 664 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:04:19 665 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:04:19 665 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:04:19 666 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:04:19 667 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:04:19 668 [debug]: --------------------------------------------------------
+2022-07-06 12:04:20 094 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:04:20 095 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:04:20 095 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:04:20 097 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:04:20 098 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:04:20 099 [debug]: --------------------------------------------------------
+2022-07-06 12:04:20 395 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:04:20 395 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:04:20 396 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:04:20 397 [debug]: [cookies]my_msg=asdasdasd
+2022-07-06 12:04:20 397 [debug]: [singedCookies]my_msg_signed=asdasdasd
+2022-07-06 12:04:20 398 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:04:20 399 [debug]: --------------------------------------------------------
+2022-07-06 12:04:20 802 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:04:20 802 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:04:20 803 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:04:20 804 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:04:20 805 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:04:20 806 [debug]: --------------------------------------------------------
+2022-07-06 12:04:21 207 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:04:21 208 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:04:21 209 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:04:21 210 [debug]: [cookies]my_msg=asdasdasd
+2022-07-06 12:04:21 211 [debug]: [singedCookies]my_msg_signed=asdasdasd
+2022-07-06 12:04:21 211 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:04:21 212 [debug]: --------------------------------------------------------
+2022-07-06 12:07:27 551 [debug]: --------------------------------------------
+2022-07-06 12:07:27 554 [debug]: |           Start Express Server           |
+2022-07-06 12:07:27 555 [debug]: --------------------------------------------
+2022-07-06 12:07:27 557 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:07:27 559 [debug]: --------------------------------------------
+2022-07-06 12:07:28 740 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:28 741 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:28 742 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:07:28 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:07:28 762 [error]: [TypeError] Cannot read properties of undefined (reading 'data')
+2022-07-06 12:07:28 763 [error]: TypeError: Cannot read properties of undefined (reading 'data')
+    at ServerResponse.res.sendResult (file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/helper/WebHelper.js:99:39)
+    at file:///c:/Users/yocas/Desktop/Down/studynote/Ezen_fullstack/07_NodeJS/12__Route/controllers/CookieController.js:37:11
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\studynote\Ezen_fullstack\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:175:3)
+2022-07-06 12:07:28 770 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+2022-07-06 12:07:28 771 [debug]: --------------------------------------------------------
+2022-07-06 12:07:30 281 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:30 281 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:30 282 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:07:30 286 [debug]: [cookies]my_msg=asdasdasd
+2022-07-06 12:07:30 286 [debug]: [singedCookies]my_msg_signed=asdasdasd
+2022-07-06 12:07:30 288 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 12:07:30 289 [debug]: --------------------------------------------------------
+2022-07-06 12:07:33 731 [debug]: --------------------------------------------
+2022-07-06 12:07:33 736 [debug]: |           Start Express Server           |
+2022-07-06 12:07:33 737 [debug]: --------------------------------------------
+2022-07-06 12:07:33 753 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:07:33 759 [debug]: --------------------------------------------
+2022-07-06 12:07:33 836 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:33 838 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:33 839 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:07:33 861 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:07:33 868 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+2022-07-06 12:07:33 869 [debug]: --------------------------------------------------------
+2022-07-06 12:07:34 380 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:34 381 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:34 381 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:07:34 384 [debug]: [cookies]my_msg=asdasdasd
+2022-07-06 12:07:34 385 [debug]: [singedCookies]my_msg_signed=asdasdasd
+2022-07-06 12:07:34 387 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-06 12:07:34 387 [debug]: --------------------------------------------------------
+2022-07-06 12:07:35 650 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:35 651 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:35 651 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:07:35 658 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 12:07:35 660 [debug]: --------------------------------------------------------
+2022-07-06 12:07:37 749 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:37 750 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:37 750 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:07:37 752 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:07:37 753 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:07:37 754 [debug]: --------------------------------------------------------
+2022-07-06 12:07:38 237 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:38 238 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:38 238 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:07:38 240 [debug]: [cookies]my_msg=ㄴㅇㅁㅇ
+2022-07-06 12:07:38 241 [debug]: [singedCookies]my_msg_signed=ㄴㅇㅁㅇ
+2022-07-06 12:07:38 242 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:07:38 242 [debug]: --------------------------------------------------------
+2022-07-06 12:07:47 437 [debug]: --------------------------------------------
+2022-07-06 12:07:47 441 [debug]: |           Start Express Server           |
+2022-07-06 12:07:47 442 [debug]: --------------------------------------------
+2022-07-06 12:07:47 443 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:07:47 444 [debug]: --------------------------------------------
+2022-07-06 12:07:53 545 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:53 546 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:53 547 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:07:53 563 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+2022-07-06 12:07:53 564 [debug]: --------------------------------------------------------
+2022-07-06 12:07:55 760 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:55 761 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:55 761 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:07:55 777 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:07:55 782 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+2022-07-06 12:07:55 783 [debug]: --------------------------------------------------------
+2022-07-06 12:07:56 321 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:07:56 322 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:07:56 323 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:07:56 326 [debug]: [cookies]my_msg=ㅇㅁㄴㅁㄴㅇ
+2022-07-06 12:07:56 327 [debug]: [singedCookies]my_msg_signed=ㅇㅁㄴㅁㄴㅇ
+2022-07-06 12:07:56 329 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 12:07:56 330 [debug]: --------------------------------------------------------
+2022-07-06 12:14:28 172 [debug]: --------------------------------------------
+2022-07-06 12:14:28 175 [debug]: |           Start Express Server           |
+2022-07-06 12:14:28 176 [debug]: --------------------------------------------
+2022-07-06 12:14:28 177 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:14:28 179 [debug]: --------------------------------------------
+2022-07-06 12:14:45 993 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:14:45 994 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:14:45 995 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:14:46 007 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-06 12:14:46 008 [debug]: --------------------------------------------------------
+2022-07-06 12:15:00 986 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:00 987 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:00 987 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:15:00 992 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 12:15:00 993 [debug]: --------------------------------------------------------
+2022-07-06 12:15:03 396 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:03 397 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:03 398 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:15:03 412 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:15:03 414 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+2022-07-06 12:15:03 415 [debug]: --------------------------------------------------------
+2022-07-06 12:15:04 178 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:04 179 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:04 179 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:15:04 181 [debug]: [cookies]my_msg=asdas
+2022-07-06 12:15:04 181 [debug]: [singedCookies]my_msg_signed=asdas
+2022-07-06 12:15:04 182 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:15:04 183 [debug]: --------------------------------------------------------
+2022-07-06 12:15:04 981 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:04 982 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:04 982 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:15:04 985 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:15:04 985 [debug]: --------------------------------------------------------
+2022-07-06 12:15:05 703 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:05 703 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:05 704 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:15:05 705 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:15:05 706 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:15:05 707 [debug]: --------------------------------------------------------
+2022-07-06 12:15:07 054 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:07 054 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:07 055 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:15:07 056 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:15:07 057 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:15:07 058 [debug]: --------------------------------------------------------
+2022-07-06 12:15:07 679 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:07 680 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:07 680 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:15:07 682 [debug]: [cookies]my_msg=asdasasdas
+2022-07-06 12:15:07 682 [debug]: [singedCookies]my_msg_signed=asdasasdas
+2022-07-06 12:15:07 683 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:15:07 684 [debug]: --------------------------------------------------------
+2022-07-06 12:15:08 252 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:08 252 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:08 253 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:15:08 255 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:15:08 255 [debug]: --------------------------------------------------------
+2022-07-06 12:15:08 754 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:08 755 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:08 755 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:15:08 757 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:15:08 758 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:15:08 758 [debug]: --------------------------------------------------------
+2022-07-06 12:15:37 372 [debug]: --------------------------------------------
+2022-07-06 12:15:37 375 [debug]: |           Start Express Server           |
+2022-07-06 12:15:37 376 [debug]: --------------------------------------------
+2022-07-06 12:15:37 377 [debug]: server address => http://221.154.247.73:3001
+2022-07-06 12:15:37 378 [debug]: --------------------------------------------
+2022-07-06 12:15:46 659 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:46 660 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:46 661 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:15:46 677 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:15:46 683 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
+2022-07-06 12:15:46 684 [debug]: --------------------------------------------------------
+2022-07-06 12:15:47 146 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:47 146 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:47 147 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:15:47 151 [debug]: [cookies]my_msg=asdasasdassad
+2022-07-06 12:15:47 152 [debug]: [singedCookies]my_msg_signed=asdasasdassad
+2022-07-06 12:15:47 153 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 12:15:47 154 [debug]: --------------------------------------------------------
+2022-07-06 12:15:47 836 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:15:47 837 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:15:47 838 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:15:47 839 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:15:47 841 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:15:47 841 [debug]: --------------------------------------------------------
+2022-07-06 12:16:22 570 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:22 570 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:22 571 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:22 572 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:22 573 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:16:22 574 [debug]: --------------------------------------------------------
+2022-07-06 12:16:23 446 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:23 447 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:23 448 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:16:23 456 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-06 12:16:23 457 [debug]: --------------------------------------------------------
+2022-07-06 12:16:25 393 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:25 394 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:25 394 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:25 396 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:25 397 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:16:25 397 [debug]: --------------------------------------------------------
+2022-07-06 12:16:26 370 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:26 370 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:26 371 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:16:26 372 [debug]: [cookies]my_msg=asdsa
+2022-07-06 12:16:26 372 [debug]: [singedCookies]my_msg_signed=asdsa
+2022-07-06 12:16:26 373 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:16:26 374 [debug]: --------------------------------------------------------
+2022-07-06 12:16:26 978 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:26 979 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:26 979 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:26 981 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:26 983 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:26 984 [debug]: --------------------------------------------------------
+2022-07-06 12:16:35 864 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:35 865 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:35 866 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:35 868 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:35 869 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:35 869 [debug]: --------------------------------------------------------
+2022-07-06 12:16:36 224 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:36 224 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:36 225 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:36 226 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:36 227 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:16:36 228 [debug]: --------------------------------------------------------
+2022-07-06 12:16:37 044 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:37 045 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:37 045 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:16:37 049 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:37 050 [debug]: --------------------------------------------------------
+2022-07-06 12:16:38 730 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:38 730 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:38 731 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:38 734 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:38 735 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 12:16:38 735 [debug]: --------------------------------------------------------
+2022-07-06 12:16:39 713 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:39 714 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:39 714 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:16:39 716 [debug]: [cookies]my_msg=asdsda
+2022-07-06 12:16:39 717 [debug]: [singedCookies]my_msg_signed=asdsda
+2022-07-06 12:16:39 718 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:39 718 [debug]: --------------------------------------------------------
+2022-07-06 12:16:40 413 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:40 414 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:40 414 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:40 416 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:40 418 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:40 418 [debug]: --------------------------------------------------------
+2022-07-06 12:16:51 679 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:51 680 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:51 680 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:16:51 684 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:51 685 [debug]: --------------------------------------------------------
+2022-07-06 12:16:53 484 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:53 485 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:53 485 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:16:53 487 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:16:53 488 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:16:53 488 [debug]: --------------------------------------------------------
+2022-07-06 12:16:54 238 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:54 239 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:54 240 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:16:54 242 [debug]: [cookies]my_msg=adsdas
+2022-07-06 12:16:54 242 [debug]: [singedCookies]my_msg_signed=adsdas
+2022-07-06 12:16:54 243 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:16:54 244 [debug]: --------------------------------------------------------
+2022-07-06 12:16:55 307 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:16:55 308 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:16:55 309 [debug]: [DELETE] http://localhost:3001/cookie
+2022-07-06 12:16:55 310 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:16:55 311 [debug]: --------------------------------------------------------
+2022-07-06 12:17:11 047 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:11 048 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:11 050 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:17:11 055 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-06 12:17:11 055 [debug]: --------------------------------------------------------
+2022-07-06 12:17:13 042 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:13 043 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:13 043 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:17:13 044 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:17:13 046 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:17:13 046 [debug]: --------------------------------------------------------
+2022-07-06 12:17:15 977 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:15 978 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:15 978 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:17:15 979 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:17:15 980 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:17:15 981 [debug]: --------------------------------------------------------
+2022-07-06 12:17:16 351 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:16 351 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:16 352 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:17:16 353 [debug]: [cookies]my_msg=asdasdadsd
+2022-07-06 12:17:16 354 [debug]: [singedCookies]my_msg_signed=asdasdadsd
+2022-07-06 12:17:16 354 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:17:16 355 [debug]: --------------------------------------------------------
+2022-07-06 12:17:24 345 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:24 345 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:24 346 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:17:24 350 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-06 12:17:24 351 [debug]: --------------------------------------------------------
+2022-07-06 12:17:26 167 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:26 168 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:26 168 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:17:26 170 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:17:26 171 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:17:26 172 [debug]: --------------------------------------------------------
+2022-07-06 12:17:27 188 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:17:27 189 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:17:27 190 [debug]: [GET] http://localhost:3001/cookie
+2022-07-06 12:17:27 191 [debug]: [cookies]my_msg=asds
+2022-07-06 12:17:27 191 [debug]: [singedCookies]my_msg_signed=asds
+2022-07-06 12:17:27 192 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:17:27 193 [debug]: --------------------------------------------------------
+2022-07-06 12:18:04 111 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:04 112 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:04 112 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:18:04 114 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:18:04 116 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:18:04 116 [debug]: --------------------------------------------------------
+2022-07-06 12:18:05 248 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:05 249 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:05 250 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:18:05 255 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-06 12:18:05 256 [debug]: --------------------------------------------------------
+2022-07-06 12:18:07 075 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:07 076 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:07 076 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:18:07 077 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:18:07 078 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:18:07 079 [debug]: --------------------------------------------------------
+2022-07-06 12:18:08 078 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:08 079 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:08 079 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:18:08 080 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:18:08 082 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:18:08 083 [debug]: --------------------------------------------------------
+2022-07-06 12:18:08 205 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:08 206 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:08 206 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:18:08 207 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:18:08 208 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+2022-07-06 12:18:08 209 [debug]: --------------------------------------------------------
+2022-07-06 12:18:17 575 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:17 576 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:17 576 [debug]: [GET] http://localhost:3001/04_cookie.html
+2022-07-06 12:18:17 578 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+2022-07-06 12:18:17 578 [debug]: --------------------------------------------------------
+2022-07-06 12:18:19 244 [debug]: 클라이언트가 접속했습니다.
+2022-07-06 12:18:19 245 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-06 12:18:19 245 [debug]: [POST] http://localhost:3001/cookie
+2022-07-06 12:18:19 248 [debug]: [HTTP %s Params]  %s=%s
+2022-07-06 12:18:19 249 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+2022-07-06 12:18:19 249 [debug]: --------------------------------------------------------
