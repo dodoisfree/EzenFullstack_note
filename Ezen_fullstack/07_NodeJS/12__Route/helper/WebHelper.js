@@ -63,7 +63,7 @@ const WebHelper = () => {
     };
 
     /** 프론트엔드에게 JSON결과를 출력하는 기능 */
-    res._sendResult = (statusCode, message, data=null) => {
+    res._sendResult = (statusCode, message, data = null) => {
       /**
         {
             rt: 결과코드 (200, 400, 404, 500),
@@ -81,7 +81,9 @@ const WebHelper = () => {
       };
 
       if (data) {
-        json.data = data;
+        for (const item in data) {
+          json[item] = data[item];
+        }
       }
 
       // 표준시로부터 한국의 시차를 적용하여 ISO 포멧을 생성

@@ -9,7 +9,7 @@ class BadRequestException extends Error {
         super(msg);
         // 멤버변수 추가
         this._statusCode = 400;
-        this._selector = field;
+        this._field = field;
     }
 
     get statusCode() {
