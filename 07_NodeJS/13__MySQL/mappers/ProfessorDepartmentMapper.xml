@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="URF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ProfessorDepartmentMapper">
+  <!-- Join 결과를 반환 -->
+  <select id="selectJoin">
+    SELECT 
+      profno, name, userid, position, sal,
+      date_format(hiredate, '%Y-%m-%d') AS `h_date`,
+      comm, p.deptno, dname, loc
+    FROM professor AS `p`
+    INNER JOIN department AS `d`
+    ON p.deptno = d.deptno
+
+    <where>
+      <if test="dname != null and dname != ''">
+        dname LIKE concat('%', #{dname}, '%')
+      </if>
+
+      <if test="loc != null and loc != ''">
+        OR loc LIKE concat('%', #{loc}, '%')
+      </if>
+    </where>
+  </select>
+</mapper>

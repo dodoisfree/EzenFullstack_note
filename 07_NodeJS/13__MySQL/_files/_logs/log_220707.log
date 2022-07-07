@@ -1,0 +1,59 @@
+2022-07-07 20:40:44 839 [info]:  >> DATABASE 접속됨 [threaId=12]
+2022-07-07 20:40:44 842 [info]:  >> Connection 임대됨 [threaId=12]
+2022-07-07 20:40:44 844 [debug]: SELECT * FROM student
+2022-07-07 20:40:44 868 [info]:  >> Connection 반납됨 [threaId=12]
+2022-07-07 20:41:14 034 [info]:  >> DATABASE 접속됨 [threaId=13]
+2022-07-07 20:41:32 378 [info]:  >> DATABASE 접속됨 [threaId=14]
+2022-07-07 20:41:32 381 [info]:  >> Connection 임대됨 [threaId=14]
+2022-07-07 20:41:32 383 [debug]: SELECT * FROM student
+2022-07-07 20:41:32 398 [info]:  >> Connection 반납됨 [threaId=14]
+2022-07-07 20:41:53 342 [info]:  >> DATABASE 접속됨 [threaId=15]
+2022-07-07 20:41:53 344 [info]:  >> Connection 임대됨 [threaId=15]
+2022-07-07 20:41:53 346 [debug]: SELECT * FROM student
+2022-07-07 20:41:53 368 [info]:  >> Connection 반납됨 [threaId=15]
+2022-07-07 20:44:13 209 [info]:  >> DATABASE 접속됨 [threaId=17]
+2022-07-07 21:51:16 197 [info]:  >> DATABASE 접속됨 [threaId=18]
+2022-07-07 21:51:16 201 [info]:  >> Connection 임대됨 [threaId=18]
+2022-07-07 21:51:16 205 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 21:51:16 217 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '풀스택', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 21:58:11 640 [info]:  >> DATABASE 접속됨 [threaId=21]
+2022-07-07 21:58:11 643 [info]:  >> Connection 임대됨 [threaId=21]
+2022-07-07 21:58:11 645 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 21:58:11 654 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '풀스택', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 21:59:38 273 [info]:  >> DATABASE 접속됨 [threaId=22]
+2022-07-07 21:59:38 278 [info]:  >> Connection 임대됨 [threaId=22]
+2022-07-07 21:59:38 281 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 21:59:38 288 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '풀스택', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 21:59:55 770 [info]:  >> DATABASE 접속됨 [threaId=23]
+2022-07-07 21:59:55 775 [info]:  >> Connection 임대됨 [threaId=23]
+2022-07-07 21:59:55 782 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 21:59:55 801 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '풀스택', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:05:47 090 [info]:  >> DATABASE 접속됨 [threaId=26]
+2022-07-07 22:05:47 092 [info]:  >> Connection 임대됨 [threaId=26]
+2022-07-07 22:05:47 095 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 22:05:47 104 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '풀스택', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:06:10 971 [info]:  >> DATABASE 접속됨 [threaId=27]
+2022-07-07 22:06:10 974 [info]:  >> Connection 임대됨 [threaId=27]
+2022-07-07 22:06:10 976 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 22:06:10 983 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '풀스택', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:09:27 877 [info]:  >> DATABASE 접속됨 [threaId=28]
+2022-07-07 22:09:27 879 [info]:  >> Connection 임대됨 [threaId=28]
+2022-07-07 22:09:27 882 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 22:09:27 891 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '201', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:09:36 109 [info]:  >> DATABASE 접속됨 [threaId=29]
+2022-07-07 22:09:36 111 [info]:  >> Connection 임대됨 [threaId=29]
+2022-07-07 22:09:36 114 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 22:09:36 122 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '201', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:10:06 716 [info]:  >> DATABASE 접속됨 [threaId=30]
+2022-07-07 22:10:06 718 [info]:  >> Connection 임대됨 [threaId=30]
+2022-07-07 22:10:06 721 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 22:10:06 729 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '202', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:12:57 229 [info]:  >> DATABASE 접속됨 [threaId=31]
+2022-07-07 22:12:57 232 [info]:  >> Connection 임대됨 [threaId=31]
+2022-07-07 22:12:57 235 [debug]: select deptno, dname, loc FROM department WHERE deptno='201';
+2022-07-07 22:12:57 243 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '202', '%')     ORDER BY deptno DESC     LIMIT 0, 3
+2022-07-07 22:12:57 245 [debug]: INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+2022-07-07 22:12:57 250 [debug]: DELETE FROM department WHERE deptno='300';
+2022-07-07 22:12:57 252 [debug]: UPDATE department SET dname='수정된학과', loc='수정된위치'  WHERE deptno='300';
+2022-07-07 22:12:57 254 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-07 22:12:57 258 [debug]: SELECT   profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') AS `h_date`,  comm, p.deptno, dname, loc  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno
