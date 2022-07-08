@@ -1,0 +1,1071 @@
+2022-07-08 11:25:48 723 [debug]: --------------------------------------------
+2022-07-08 11:25:48 728 [debug]: |           Start Express Server           |
+2022-07-08 11:25:48 730 [debug]: --------------------------------------------
+2022-07-08 11:25:48 734 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:25:48 736 [debug]: --------------------------------------------
+2022-07-08 11:26:14 888 [debug]: --------------------------------------------
+2022-07-08 11:26:14 891 [debug]: |           Start Express Server           |
+2022-07-08 11:26:14 891 [debug]: --------------------------------------------
+2022-07-08 11:26:14 892 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:26:14 892 [debug]: --------------------------------------------
+2022-07-08 11:27:59 073 [debug]: --------------------------------------------
+2022-07-08 11:27:59 076 [debug]: |           Start Express Server           |
+2022-07-08 11:27:59 077 [debug]: --------------------------------------------
+2022-07-08 11:27:59 079 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:27:59 081 [debug]: --------------------------------------------
+2022-07-08 11:38:55 624 [debug]: --------------------------------------------
+2022-07-08 11:38:55 626 [debug]: |           Start Express Server           |
+2022-07-08 11:38:55 627 [debug]: --------------------------------------------
+2022-07-08 11:38:55 628 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:38:55 629 [debug]: --------------------------------------------
+2022-07-08 11:39:36 465 [debug]: --------------------------------------------
+2022-07-08 11:39:36 468 [debug]: |           Start Express Server           |
+2022-07-08 11:39:36 468 [debug]: --------------------------------------------
+2022-07-08 11:39:36 470 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:39:36 471 [debug]: --------------------------------------------
+2022-07-08 11:39:39 646 [info]: -----------Server is close -----------
+2022-07-08 11:40:40 905 [debug]: --------------------------------------------
+2022-07-08 11:40:40 908 [debug]: |           Start Express Server           |
+2022-07-08 11:40:40 910 [debug]: --------------------------------------------
+2022-07-08 11:40:40 911 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:40:40 912 [debug]: --------------------------------------------
+2022-07-08 11:43:06 391 [debug]: --------------------------------------------
+2022-07-08 11:43:06 401 [debug]: |           Start Express Server           |
+2022-07-08 11:43:06 402 [debug]: --------------------------------------------
+2022-07-08 11:43:06 405 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:43:06 407 [debug]: --------------------------------------------
+2022-07-08 11:44:17 981 [debug]: --------------------------------------------
+2022-07-08 11:44:17 986 [debug]: |           Start Express Server           |
+2022-07-08 11:44:17 987 [debug]: --------------------------------------------
+2022-07-08 11:44:17 988 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:44:17 988 [debug]: --------------------------------------------
+2022-07-08 11:54:31 977 [debug]: --------------------------------------------
+2022-07-08 11:54:31 979 [debug]: |           Start Express Server           |
+2022-07-08 11:54:31 980 [debug]: --------------------------------------------
+2022-07-08 11:54:31 988 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 11:54:31 989 [debug]: --------------------------------------------
+2022-07-08 11:54:35 375 [info]: Database Pool is closed
+2022-07-08 16:20:29 857 [info]:  >> DATABASE 접속됨 [threaId=36]
+2022-07-08 16:20:29 860 [info]:  >> Connection 임대됨 [threaId=36]
+2022-07-08 16:20:29 867 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:20:29 874 [info]:  >> Connection 반납됨 [threaId=36]
+2022-07-08 16:20:45 353 [info]:  >> DATABASE 접속됨 [threaId=37]
+2022-07-08 16:20:45 356 [info]:  >> Connection 임대됨 [threaId=37]
+2022-07-08 16:20:45 360 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:20:45 364 [info]:  >> Connection 반납됨 [threaId=37]
+2022-07-08 16:25:03 407 [info]: Database Pool is closed
+2022-07-08 16:25:30 196 [info]:  >> DATABASE 접속됨 [threaId=38]
+2022-07-08 16:25:30 199 [info]:  >> Connection 임대됨 [threaId=38]
+2022-07-08 16:25:30 202 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:25:30 207 [info]:  >> Connection 반납됨 [threaId=38]
+2022-07-08 16:25:30 212 [info]:  >> Connection 임대됨 [threaId=38]
+2022-07-08 16:25:30 214 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:25:30 217 [info]:  >> Connection 반납됨 [threaId=38]
+2022-07-08 16:25:30 218 [info]:  >> Connection 임대됨 [threaId=38]
+2022-07-08 16:25:30 219 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:25:30 226 [info]:  >> Connection 반납됨 [threaId=38]
+2022-07-08 16:25:30 229 [info]: Database Pool is closed
+2022-07-08 16:27:50 228 [info]:  >> DATABASE 접속됨 [threaId=39]
+2022-07-08 16:27:50 231 [info]:  >> Connection 임대됨 [threaId=39]
+2022-07-08 16:27:50 236 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:27:50 240 [info]:  >> Connection 반납됨 [threaId=39]
+2022-07-08 16:27:50 245 [info]:  >> Connection 임대됨 [threaId=39]
+2022-07-08 16:27:50 246 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:27:50 248 [info]:  >> Connection 반납됨 [threaId=39]
+2022-07-08 16:27:50 249 [info]:  >> Connection 임대됨 [threaId=39]
+2022-07-08 16:27:50 250 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:27:50 254 [info]:  >> Connection 반납됨 [threaId=39]
+2022-07-08 16:27:50 257 [info]: Database Pool is closed
+2022-07-08 16:29:39 777 [info]:  >> DATABASE 접속됨 [threaId=40]
+2022-07-08 16:29:39 779 [info]:  >> Connection 임대됨 [threaId=40]
+2022-07-08 16:29:39 783 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:29:39 788 [info]:  >> Connection 반납됨 [threaId=40]
+2022-07-08 16:29:39 801 [info]:  >> Connection 임대됨 [threaId=40]
+2022-07-08 16:29:39 803 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:29:39 806 [info]:  >> Connection 반납됨 [threaId=40]
+2022-07-08 16:29:39 808 [info]:  >> Connection 임대됨 [threaId=40]
+2022-07-08 16:29:39 810 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:29:39 813 [info]:  >> Connection 반납됨 [threaId=40]
+2022-07-08 16:29:39 816 [info]: Database Pool is closed
+2022-07-08 16:30:01 338 [info]:  >> DATABASE 접속됨 [threaId=41]
+2022-07-08 16:30:01 341 [info]:  >> Connection 임대됨 [threaId=41]
+2022-07-08 16:30:01 345 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:30:01 350 [info]:  >> Connection 반납됨 [threaId=41]
+2022-07-08 16:30:01 356 [info]:  >> Connection 임대됨 [threaId=41]
+2022-07-08 16:30:01 357 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:30:01 359 [info]:  >> Connection 반납됨 [threaId=41]
+2022-07-08 16:30:01 360 [info]:  >> Connection 임대됨 [threaId=41]
+2022-07-08 16:30:01 362 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:30:01 366 [info]:  >> Connection 반납됨 [threaId=41]
+2022-07-08 16:30:01 369 [info]: Database Pool is closed
+2022-07-08 16:30:42 968 [info]:  >> DATABASE 접속됨 [threaId=42]
+2022-07-08 16:30:42 970 [info]:  >> Connection 임대됨 [threaId=42]
+2022-07-08 16:30:42 974 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:30:42 978 [info]:  >> Connection 반납됨 [threaId=42]
+2022-07-08 16:30:42 988 [info]:  >> Connection 임대됨 [threaId=42]
+2022-07-08 16:30:42 989 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:30:42 991 [info]:  >> Connection 반납됨 [threaId=42]
+2022-07-08 16:30:42 992 [info]:  >> Connection 임대됨 [threaId=42]
+2022-07-08 16:30:42 993 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:30:42 996 [info]:  >> Connection 반납됨 [threaId=42]
+2022-07-08 16:30:42 998 [info]: Database Pool is closed
+2022-07-08 16:35:15 166 [info]:  >> DATABASE 접속됨 [threaId=43]
+2022-07-08 16:35:15 169 [info]:  >> Connection 임대됨 [threaId=43]
+2022-07-08 16:35:15 175 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:35:15 180 [info]:  >> Connection 반납됨 [threaId=43]
+2022-07-08 16:35:15 191 [info]:  >> Connection 임대됨 [threaId=43]
+2022-07-08 16:35:15 192 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:35:15 194 [info]:  >> Connection 반납됨 [threaId=43]
+2022-07-08 16:35:15 196 [info]:  >> Connection 임대됨 [threaId=43]
+2022-07-08 16:35:15 197 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:35:15 206 [info]:  >> Connection 반납됨 [threaId=43]
+2022-07-08 16:35:15 208 [info]: Database Pool is closed
+2022-07-08 16:35:39 925 [info]:  >> DATABASE 접속됨 [threaId=44]
+2022-07-08 16:35:39 927 [info]:  >> Connection 임대됨 [threaId=44]
+2022-07-08 16:35:39 933 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:35:39 938 [info]:  >> Connection 반납됨 [threaId=44]
+2022-07-08 16:35:39 944 [info]:  >> Connection 임대됨 [threaId=44]
+2022-07-08 16:35:39 947 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:35:39 951 [info]:  >> Connection 반납됨 [threaId=44]
+2022-07-08 16:35:39 953 [info]:  >> Connection 임대됨 [threaId=44]
+2022-07-08 16:35:39 954 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:35:39 962 [info]:  >> Connection 반납됨 [threaId=44]
+2022-07-08 16:35:39 966 [info]: Database Pool is closed
+2022-07-08 16:36:28 513 [info]:  >> DATABASE 접속됨 [threaId=45]
+2022-07-08 16:36:28 516 [info]:  >> Connection 임대됨 [threaId=45]
+2022-07-08 16:36:28 521 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:36:28 525 [info]:  >> Connection 반납됨 [threaId=45]
+2022-07-08 16:36:28 536 [info]:  >> Connection 임대됨 [threaId=45]
+2022-07-08 16:36:28 537 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:36:28 540 [info]:  >> Connection 반납됨 [threaId=45]
+2022-07-08 16:36:28 542 [info]:  >> Connection 임대됨 [threaId=45]
+2022-07-08 16:36:28 543 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:36:28 547 [info]:  >> Connection 반납됨 [threaId=45]
+2022-07-08 16:36:28 550 [info]: Database Pool is closed
+2022-07-08 16:38:18 812 [info]:  >> DATABASE 접속됨 [threaId=46]
+2022-07-08 16:38:18 815 [info]:  >> Connection 임대됨 [threaId=46]
+2022-07-08 16:38:18 820 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:38:18 826 [info]:  >> Connection 반납됨 [threaId=46]
+2022-07-08 16:38:18 835 [info]:  >> Connection 임대됨 [threaId=46]
+2022-07-08 16:38:18 837 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:38:18 839 [info]:  >> Connection 반납됨 [threaId=46]
+2022-07-08 16:38:18 840 [info]:  >> Connection 임대됨 [threaId=46]
+2022-07-08 16:38:18 842 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:38:18 853 [info]:  >> Connection 반납됨 [threaId=46]
+2022-07-08 16:38:18 940 [info]: Database Pool is closed
+2022-07-08 16:40:42 945 [info]:  >> DATABASE 접속됨 [threaId=47]
+2022-07-08 16:40:42 947 [info]:  >> Connection 임대됨 [threaId=47]
+2022-07-08 16:40:42 952 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:40:42 956 [info]:  >> Connection 반납됨 [threaId=47]
+2022-07-08 16:40:42 964 [info]:  >> Connection 임대됨 [threaId=47]
+2022-07-08 16:40:42 967 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:40:42 972 [info]:  >> Connection 반납됨 [threaId=47]
+2022-07-08 16:40:42 974 [info]:  >> Connection 임대됨 [threaId=47]
+2022-07-08 16:40:42 978 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:40:42 987 [info]:  >> Connection 반납됨 [threaId=47]
+2022-07-08 16:40:42 990 [info]: Database Pool is closed
+2022-07-08 16:45:27 766 [info]:  >> DATABASE 접속됨 [threaId=48]
+2022-07-08 16:45:27 769 [info]:  >> Connection 임대됨 [threaId=48]
+2022-07-08 16:45:27 773 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:45:27 779 [info]:  >> Connection 반납됨 [threaId=48]
+2022-07-08 16:45:27 786 [info]:  >> Connection 임대됨 [threaId=48]
+2022-07-08 16:45:27 787 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:45:27 790 [info]:  >> Connection 반납됨 [threaId=48]
+2022-07-08 16:45:27 791 [info]:  >> Connection 임대됨 [threaId=48]
+2022-07-08 16:45:27 793 [debug]: DELETE FROM student WHERE deptno='102'
+2022-07-08 16:45:27 800 [debug]: DELETE FROM professor WHERE deptno='102'
+2022-07-08 16:45:27 806 [info]:  >> Connection 반납됨 [threaId=48]
+2022-07-08 16:45:27 809 [info]: Database Pool is closed
+2022-07-08 16:45:55 316 [info]:  >> DATABASE 접속됨 [threaId=49]
+2022-07-08 16:45:55 318 [info]:  >> Connection 임대됨 [threaId=49]
+2022-07-08 16:45:55 321 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:45:55 326 [info]:  >> Connection 반납됨 [threaId=49]
+2022-07-08 16:45:55 332 [info]:  >> Connection 임대됨 [threaId=49]
+2022-07-08 16:45:55 334 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:45:55 335 [info]:  >> Connection 반납됨 [threaId=49]
+2022-07-08 16:45:55 336 [info]:  >> Connection 임대됨 [threaId=49]
+2022-07-08 16:45:55 339 [debug]: DELETE FROM student WHERE deptno='102'
+2022-07-08 16:45:55 341 [debug]: DELETE FROM professor WHERE deptno='102'
+2022-07-08 16:45:55 342 [info]:  >> Connection 반납됨 [threaId=49]
+2022-07-08 16:45:55 345 [info]: Database Pool is closed
+2022-07-08 16:47:16 053 [info]:  >> DATABASE 접속됨 [threaId=50]
+2022-07-08 16:47:16 055 [info]:  >> Connection 임대됨 [threaId=50]
+2022-07-08 16:47:16 061 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:47:16 078 [info]:  >> Connection 반납됨 [threaId=50]
+2022-07-08 16:47:16 088 [info]:  >> Connection 임대됨 [threaId=50]
+2022-07-08 16:47:16 095 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:47:16 101 [info]:  >> Connection 반납됨 [threaId=50]
+2022-07-08 16:47:16 104 [info]:  >> Connection 임대됨 [threaId=50]
+2022-07-08 16:47:16 111 [debug]: DELETE FROM student WHERE deptno='102'
+2022-07-08 16:47:16 114 [debug]: DELETE FROM professor WHERE deptno='102'
+2022-07-08 16:47:16 119 [info]:  >> Connection 반납됨 [threaId=50]
+2022-07-08 16:47:16 124 [info]: Database Pool is closed
+2022-07-08 16:48:14 474 [info]:  >> DATABASE 접속됨 [threaId=51]
+2022-07-08 16:48:14 477 [info]:  >> Connection 임대됨 [threaId=51]
+2022-07-08 16:48:14 481 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:48:14 485 [info]:  >> Connection 반납됨 [threaId=51]
+2022-07-08 16:48:14 492 [info]:  >> Connection 임대됨 [threaId=51]
+2022-07-08 16:48:14 494 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:48:14 495 [info]:  >> Connection 반납됨 [threaId=51]
+2022-07-08 16:48:14 497 [info]:  >> Connection 임대됨 [threaId=51]
+2022-07-08 16:48:14 498 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:48:14 503 [debug]: select deptno, dname, loc FROM department WHERE deptno='231';
+2022-07-08 16:48:14 504 [info]:  >> Connection 반납됨 [threaId=51]
+2022-07-08 16:48:14 506 [info]:  >> Connection 임대됨 [threaId=51]
+2022-07-08 16:48:14 507 [debug]: DELETE FROM student WHERE deptno='102'
+2022-07-08 16:48:14 508 [debug]: DELETE FROM professor WHERE deptno='102'
+2022-07-08 16:48:14 509 [info]:  >> Connection 반납됨 [threaId=51]
+2022-07-08 16:48:14 512 [info]: Database Pool is closed
+2022-07-08 16:50:32 763 [info]:  >> DATABASE 접속됨 [threaId=52]
+2022-07-08 16:50:32 765 [info]:  >> Connection 임대됨 [threaId=52]
+2022-07-08 16:50:32 770 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:50:32 773 [info]:  >> Connection 반납됨 [threaId=52]
+2022-07-08 16:50:32 780 [info]:  >> Connection 임대됨 [threaId=52]
+2022-07-08 16:50:32 782 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:50:32 784 [info]:  >> Connection 반납됨 [threaId=52]
+2022-07-08 16:50:32 786 [info]:  >> Connection 임대됨 [threaId=52]
+2022-07-08 16:50:32 788 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:50:32 795 [debug]: select deptno, dname, loc FROM department WHERE deptno='232';
+2022-07-08 16:50:32 796 [info]:  >> Connection 반납됨 [threaId=52]
+2022-07-08 16:50:32 797 [info]:  >> Connection 임대됨 [threaId=52]
+2022-07-08 16:50:32 799 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?'  WHERE deptno='102';
+2022-07-08 16:50:32 803 [info]:  >> Connection 반납됨 [threaId=52]
+2022-07-08 16:50:32 809 [info]: Database Pool is closed
+2022-07-08 16:54:00 983 [info]:  >> DATABASE 접속됨 [threaId=53]
+2022-07-08 16:54:00 986 [info]:  >> Connection 임대됨 [threaId=53]
+2022-07-08 16:54:00 990 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:54:00 994 [info]:  >> Connection 반납됨 [threaId=53]
+2022-07-08 16:54:01 004 [info]:  >> Connection 임대됨 [threaId=53]
+2022-07-08 16:54:01 007 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:54:01 010 [info]:  >> Connection 반납됨 [threaId=53]
+2022-07-08 16:54:01 011 [info]:  >> Connection 임대됨 [threaId=53]
+2022-07-08 16:54:01 013 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:54:01 022 [debug]: select deptno, dname, loc FROM department WHERE deptno='233';
+2022-07-08 16:54:01 024 [info]:  >> Connection 반납됨 [threaId=53]
+2022-07-08 16:54:01 033 [info]:  >> Connection 임대됨 [threaId=53]
+2022-07-08 16:54:01 035 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?'  WHERE deptno='102';
+2022-07-08 16:54:01 038 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:54:01 040 [info]:  >> Connection 반납됨 [threaId=53]
+2022-07-08 16:54:01 041 [info]:  >> Connection 임대됨 [threaId=53]
+2022-07-08 16:54:01 043 [debug]: DELETE FROM student WHERE deptno='102'
+2022-07-08 16:54:01 045 [debug]: DELETE FROM professor WHERE deptno='102'
+2022-07-08 16:54:01 046 [info]:  >> Connection 반납됨 [threaId=53]
+2022-07-08 16:54:01 055 [info]: Database Pool is closed
+2022-07-08 16:55:06 773 [info]:  >> DATABASE 접속됨 [threaId=54]
+2022-07-08 16:55:06 777 [info]:  >> Connection 임대됨 [threaId=54]
+2022-07-08 16:55:06 781 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:55:06 787 [info]:  >> Connection 반납됨 [threaId=54]
+2022-07-08 16:55:06 794 [info]:  >> Connection 임대됨 [threaId=54]
+2022-07-08 16:55:06 796 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:55:06 798 [info]:  >> Connection 반납됨 [threaId=54]
+2022-07-08 16:55:06 801 [info]:  >> Connection 임대됨 [threaId=54]
+2022-07-08 16:55:06 803 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 16:55:06 809 [debug]: select deptno, dname, loc FROM department WHERE deptno='234';
+2022-07-08 16:55:06 810 [info]:  >> Connection 반납됨 [threaId=54]
+2022-07-08 16:55:06 811 [info]:  >> Connection 임대됨 [threaId=54]
+2022-07-08 16:55:06 812 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?'  WHERE deptno='102';
+2022-07-08 16:55:06 814 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:55:06 816 [info]:  >> Connection 반납됨 [threaId=54]
+2022-07-08 16:55:06 817 [info]:  >> Connection 임대됨 [threaId=54]
+2022-07-08 16:55:06 818 [debug]: DELETE FROM student WHERE deptno='102'
+2022-07-08 16:55:06 819 [debug]: DELETE FROM professor WHERE deptno='102'
+2022-07-08 16:55:06 821 [debug]: DELETE FROM department WHERE deptno='102';
+2022-07-08 16:55:06 824 [info]:  >> Connection 반납됨 [threaId=54]
+2022-07-08 16:55:06 825 [info]: Database Pool is closed
+2022-07-08 16:56:05 736 [info]:  >> DATABASE 접속됨 [threaId=55]
+2022-07-08 16:56:05 739 [info]:  >> Connection 임대됨 [threaId=55]
+2022-07-08 16:56:05 742 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:56:05 747 [info]:  >> Connection 반납됨 [threaId=55]
+2022-07-08 16:56:05 755 [info]:  >> Connection 임대됨 [threaId=55]
+2022-07-08 16:56:05 757 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:56:05 758 [info]:  >> Connection 반납됨 [threaId=55]
+2022-07-08 16:56:05 761 [info]: Database Pool is closed
+2022-07-08 16:56:33 818 [info]:  >> DATABASE 접속됨 [threaId=56]
+2022-07-08 16:56:33 821 [info]:  >> Connection 임대됨 [threaId=56]
+2022-07-08 16:56:33 825 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:56:33 829 [info]:  >> Connection 반납됨 [threaId=56]
+2022-07-08 16:56:33 838 [info]:  >> Connection 임대됨 [threaId=56]
+2022-07-08 16:56:33 842 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:56:33 847 [info]:  >> Connection 반납됨 [threaId=56]
+2022-07-08 16:56:33 850 [info]: Database Pool is closed
+2022-07-08 16:56:57 105 [info]:  >> DATABASE 접속됨 [threaId=57]
+2022-07-08 16:56:57 107 [info]:  >> Connection 임대됨 [threaId=57]
+2022-07-08 16:56:57 111 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 16:56:57 118 [info]:  >> Connection 반납됨 [threaId=57]
+2022-07-08 16:56:57 126 [info]:  >> Connection 임대됨 [threaId=57]
+2022-07-08 16:56:57 128 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 16:56:57 131 [info]:  >> Connection 반납됨 [threaId=57]
+2022-07-08 16:56:57 135 [info]: Database Pool is closed
+2022-07-08 19:21:00 334 [debug]: --------------------------------------------
+2022-07-08 19:21:00 337 [debug]: |           Start Express Server           |
+2022-07-08 19:21:00 338 [debug]: --------------------------------------------
+2022-07-08 19:21:00 339 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:21:00 340 [debug]: --------------------------------------------
+2022-07-08 19:21:02 598 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:21:02 599 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:21:02 602 [debug]: [GET] http://localhost:3001/depatment?query=풀스택
+2022-07-08 19:21:02 611 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-08 19:21:02 612 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:121:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-08 19:21:02 621 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 22ms
+2022-07-08 19:21:02 622 [debug]: --------------------------------------------------------
+2022-07-08 19:21:31 870 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:21:31 871 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:21:31 871 [debug]: [GET] http://localhost:3001/department?query=학과
+2022-07-08 19:21:31 874 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-08 19:21:31 875 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:121:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-08 19:21:31 878 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-08 19:21:31 879 [debug]: --------------------------------------------------------
+2022-07-08 19:22:12 438 [debug]: --------------------------------------------
+2022-07-08 19:22:12 440 [debug]: |           Start Express Server           |
+2022-07-08 19:22:12 440 [debug]: --------------------------------------------
+2022-07-08 19:22:12 441 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:22:12 442 [debug]: --------------------------------------------
+2022-07-08 19:22:19 859 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:22:19 860 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:22:19 861 [debug]: [GET] http://localhost:3001/department?query=학과
+2022-07-08 19:22:19 867 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-08 19:22:19 868 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:121:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-08 19:22:19 874 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+2022-07-08 19:22:19 875 [debug]: --------------------------------------------------------
+2022-07-08 19:22:23 370 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:22:23 371 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:22:23 372 [debug]: [GET] http://localhost:3001/department?query=학과
+2022-07-08 19:22:23 375 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-08 19:22:23 376 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:121:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-08 19:22:23 378 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-08 19:22:23 378 [debug]: --------------------------------------------------------
+2022-07-08 19:22:52 850 [debug]: --------------------------------------------
+2022-07-08 19:22:52 858 [debug]: |           Start Express Server           |
+2022-07-08 19:22:52 859 [debug]: --------------------------------------------
+2022-07-08 19:22:52 860 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:22:52 862 [debug]: --------------------------------------------
+2022-07-08 19:22:54 431 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:22:54 432 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:22:54 434 [debug]: [GET] http://localhost:3001/department?query=학과
+2022-07-08 19:22:54 441 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-08 19:22:54 442 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:121:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-08 19:22:54 448 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-08 19:22:54 449 [debug]: --------------------------------------------------------
+2022-07-08 19:23:44 304 [debug]: --------------------------------------------
+2022-07-08 19:23:44 309 [debug]: |           Start Express Server           |
+2022-07-08 19:23:44 310 [debug]: --------------------------------------------
+2022-07-08 19:23:44 311 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:23:44 312 [debug]: --------------------------------------------
+2022-07-08 19:23:45 105 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:23:45 106 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:23:45 106 [debug]: [GET] http://localhost:3001/department?query=학과
+2022-07-08 19:23:45 113 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:23:45 170 [info]:  >> DATABASE 접속됨 [threaId=58]
+2022-07-08 19:23:45 171 [info]:  >> Connection 임대됨 [threaId=58]
+2022-07-08 19:23:45 175 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '학과', '%')    OR loc LIKE concat('%', '학과', '%')     ORDER BY deptno DESC
+2022-07-08 19:23:45 180 [info]:  >> Connection 반납됨 [threaId=58]
+2022-07-08 19:23:45 185 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 80ms
+2022-07-08 19:23:45 186 [debug]: --------------------------------------------------------
+2022-07-08 19:23:48 996 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:23:48 997 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:23:48 998 [debug]: [GET] http://localhost:3001/department?query=학과
+2022-07-08 19:23:49 002 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:23:49 002 [info]:  >> Connection 임대됨 [threaId=58]
+2022-07-08 19:23:49 004 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '학과', '%')    OR loc LIKE concat('%', '학과', '%')     ORDER BY deptno DESC
+2022-07-08 19:23:49 006 [info]:  >> Connection 반납됨 [threaId=58]
+2022-07-08 19:23:49 007 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-08 19:23:49 008 [debug]: --------------------------------------------------------
+2022-07-08 19:23:56 463 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:23:56 464 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:23:56 464 [debug]: [GET] http://localhost:3001/department?query=?
+2022-07-08 19:23:56 466 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:23:56 467 [info]:  >> Connection 임대됨 [threaId=58]
+2022-07-08 19:23:56 469 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '?', '%')    OR loc LIKE concat('%', '?', '%')     ORDER BY deptno DESC
+2022-07-08 19:23:56 470 [info]:  >> Connection 반납됨 [threaId=58]
+2022-07-08 19:23:56 472 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-08 19:23:56 472 [debug]: --------------------------------------------------------
+2022-07-08 19:25:25 462 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:25:25 463 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:25:25 463 [debug]: [GET] http://localhost:3001/department/103
+2022-07-08 19:25:25 466 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:25:25 466 [info]:  >> Connection 임대됨 [threaId=58]
+2022-07-08 19:25:25 467 [debug]: select deptno, dname, loc FROM department WHERE deptno='103';
+2022-07-08 19:25:25 468 [info]:  >> Connection 반납됨 [threaId=58]
+2022-07-08 19:25:25 469 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-08 19:25:25 470 [debug]: --------------------------------------------------------
+2022-07-08 19:26:02 111 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:26:02 112 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:26:02 113 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:26:02 133 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:26:02 134 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:26:02 135 [error]: [Error] 20
+2022-07-08 19:26:02 136 [error]: Error: 20
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:36:19)
+    at RegexHelper.num (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:49:21)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:69:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+2022-07-08 19:26:02 138 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+2022-07-08 19:26:02 138 [debug]: --------------------------------------------------------
+2022-07-08 19:26:36 534 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:26:36 535 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:26:36 535 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:26:36 537 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:26:36 537 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:26:36 538 [error]: [Error] 20
+2022-07-08 19:26:36 538 [error]: Error: 20
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:36:19)
+    at RegexHelper.num (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:49:21)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:69:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+2022-07-08 19:26:36 540 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-08 19:26:36 541 [debug]: --------------------------------------------------------
+2022-07-08 19:26:56 551 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:26:56 551 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:26:56 552 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:26:56 553 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:26:56 554 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:26:56 554 [error]: [Error] 20
+2022-07-08 19:26:56 555 [error]: Error: 20
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:36:19)
+    at RegexHelper.num (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:49:21)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:69:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+2022-07-08 19:26:56 557 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-08 19:26:56 558 [debug]: --------------------------------------------------------
+2022-07-08 19:27:00 466 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:27:00 466 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:27:00 467 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:27:00 468 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:27:00 469 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:27:00 469 [error]: [Error] 20
+2022-07-08 19:27:00 470 [error]: Error: 20
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:36:19)
+    at RegexHelper.num (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:49:21)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:69:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+2022-07-08 19:27:00 472 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-08 19:27:00 472 [debug]: --------------------------------------------------------
+2022-07-08 19:28:05 045 [debug]: --------------------------------------------
+2022-07-08 19:28:05 049 [debug]: |           Start Express Server           |
+2022-07-08 19:28:05 050 [debug]: --------------------------------------------
+2022-07-08 19:28:05 050 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:28:05 052 [debug]: --------------------------------------------
+2022-07-08 19:28:09 537 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:28:09 538 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:28:09 539 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:28:09 560 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:28:09 562 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:28:09 564 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:28:09 565 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:69:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:28:09 571 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+2022-07-08 19:28:09 572 [debug]: --------------------------------------------------------
+2022-07-08 19:28:22 773 [debug]: --------------------------------------------
+2022-07-08 19:28:22 777 [debug]: |           Start Express Server           |
+2022-07-08 19:28:22 778 [debug]: --------------------------------------------
+2022-07-08 19:28:22 779 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:28:22 779 [debug]: --------------------------------------------
+2022-07-08 19:28:51 475 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:28:51 476 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:28:51 478 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:28:51 499 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:28:51 500 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:28:51 501 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:28:51 502 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:69:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:28:51 509 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+2022-07-08 19:28:51 515 [debug]: --------------------------------------------------------
+2022-07-08 19:29:55 936 [debug]: --------------------------------------------
+2022-07-08 19:29:55 939 [debug]: |           Start Express Server           |
+2022-07-08 19:29:55 940 [debug]: --------------------------------------------
+2022-07-08 19:29:55 940 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:29:55 941 [debug]: --------------------------------------------
+2022-07-08 19:29:57 069 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:29:57 070 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:29:57 071 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:29:57 091 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:29:57 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:29:57 094 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:29:57 104 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:29:57 112 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 42ms
+2022-07-08 19:29:57 133 [debug]: --------------------------------------------------------
+2022-07-08 19:30:54 667 [debug]: --------------------------------------------
+2022-07-08 19:30:54 670 [debug]: |           Start Express Server           |
+2022-07-08 19:30:54 671 [debug]: --------------------------------------------
+2022-07-08 19:30:54 672 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:30:54 673 [debug]: --------------------------------------------
+2022-07-08 19:30:54 889 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:30:54 890 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:30:54 891 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:30:54 912 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:30:54 915 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:30:54 917 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:30:54 918 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:30:54 927 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 37ms
+2022-07-08 19:30:54 928 [debug]: --------------------------------------------------------
+2022-07-08 19:31:11 523 [debug]: --------------------------------------------
+2022-07-08 19:31:11 527 [debug]: |           Start Express Server           |
+2022-07-08 19:31:11 528 [debug]: --------------------------------------------
+2022-07-08 19:31:11 529 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:31:11 530 [debug]: --------------------------------------------
+2022-07-08 19:31:12 703 [debug]: --------------------------------------------
+2022-07-08 19:31:12 706 [debug]: |           Start Express Server           |
+2022-07-08 19:31:12 706 [debug]: --------------------------------------------
+2022-07-08 19:31:12 707 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:31:12 708 [debug]: --------------------------------------------
+2022-07-08 19:31:27 641 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:31:27 643 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:31:27 644 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:31:27 665 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:31:27 667 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:31:27 669 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:31:27 671 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:31:27 678 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 35ms
+2022-07-08 19:31:27 680 [debug]: --------------------------------------------------------
+2022-07-08 19:41:51 898 [debug]: --------------------------------------------
+2022-07-08 19:41:51 901 [debug]: |           Start Express Server           |
+2022-07-08 19:41:51 901 [debug]: --------------------------------------------
+2022-07-08 19:41:51 902 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:41:51 903 [debug]: --------------------------------------------
+2022-07-08 19:41:56 637 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:41:56 637 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:41:56 638 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:41:56 658 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:41:56 660 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:41:56 663 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:41:56 665 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:41:56 671 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+2022-07-08 19:41:56 672 [debug]: --------------------------------------------------------
+2022-07-08 19:41:58 242 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:41:58 243 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:41:58 243 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:41:58 247 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:41:58 247 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:41:58 248 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:41:58 249 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:41:58 252 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-08 19:41:58 252 [debug]: --------------------------------------------------------
+2022-07-08 19:42:03 717 [debug]: --------------------------------------------
+2022-07-08 19:42:03 719 [debug]: |           Start Express Server           |
+2022-07-08 19:42:03 720 [debug]: --------------------------------------------
+2022-07-08 19:42:03 721 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:42:03 722 [debug]: --------------------------------------------
+2022-07-08 19:42:05 226 [debug]: --------------------------------------------
+2022-07-08 19:42:05 229 [debug]: |           Start Express Server           |
+2022-07-08 19:42:05 229 [debug]: --------------------------------------------
+2022-07-08 19:42:05 230 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:42:05 230 [debug]: --------------------------------------------
+2022-07-08 19:42:07 994 [debug]: --------------------------------------------
+2022-07-08 19:42:07 996 [debug]: |           Start Express Server           |
+2022-07-08 19:42:07 998 [debug]: --------------------------------------------
+2022-07-08 19:42:07 999 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:42:08 000 [debug]: --------------------------------------------
+2022-07-08 19:42:08 625 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:42:08 625 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:42:08 626 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:42:08 649 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:42:08 650 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:42:08 652 [error]: [Error] 학과 이름은 최대 20자 까지 입력 가능합니다.
+2022-07-08 19:42:08 654 [error]: Error: 학과 이름은 최대 20자 까지 입력 가능합니다.
+    at RegexHelper.maxLength (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:61:19)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:175:3)
+2022-07-08 19:42:08 661 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 36ms
+2022-07-08 19:42:08 666 [debug]: --------------------------------------------------------
+2022-07-08 19:43:33 158 [debug]: --------------------------------------------
+2022-07-08 19:43:33 161 [debug]: |           Start Express Server           |
+2022-07-08 19:43:33 163 [debug]: --------------------------------------------
+2022-07-08 19:43:33 165 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:43:33 167 [debug]: --------------------------------------------
+2022-07-08 19:43:34 071 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:43:34 072 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:43:34 073 [debug]: [POST] http://localhost:3001/department
+2022-07-08 19:43:34 093 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:43:34 094 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:43:34 125 [info]:  >> DATABASE 접속됨 [threaId=59]
+2022-07-08 19:43:34 126 [info]:  >> Connection 임대됨 [threaId=59]
+2022-07-08 19:43:34 128 [debug]: INSERT INTO department (dname, loc) VALUES ('새로운학과', '여긴어디?');
+2022-07-08 19:43:34 140 [debug]: select deptno, dname, loc FROM department WHERE deptno='235';
+2022-07-08 19:43:34 143 [info]:  >> Connection 반납됨 [threaId=59]
+2022-07-08 19:43:34 162 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 90ms
+2022-07-08 19:43:34 164 [debug]: --------------------------------------------------------
+2022-07-08 19:44:19 769 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:44:19 770 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:44:19 770 [debug]: [GET] http://localhost:3001/department?query=?
+2022-07-08 19:44:19 774 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:44:19 775 [info]:  >> Connection 임대됨 [threaId=59]
+2022-07-08 19:44:19 777 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '?', '%')    OR loc LIKE concat('%', '?', '%')     ORDER BY deptno DESC
+2022-07-08 19:44:19 779 [info]:  >> Connection 반납됨 [threaId=59]
+2022-07-08 19:44:19 781 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-08 19:44:19 782 [debug]: --------------------------------------------------------
+2022-07-08 19:44:39 358 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:44:39 358 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:44:39 359 [debug]: [PUT] http://localhost:3001/department/234
+2022-07-08 19:44:39 361 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:44:39 363 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:44:39 364 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:44:39 365 [error]: [Error] 20
+2022-07-08 19:44:39 365 [error]: Error: 20
+    at RegexHelper.field (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:36:19)
+    at RegexHelper.num (file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/helper/RegexHelper.js:49:21)
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/controllers/DepartmentController.js:102:25
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:284:15
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+2022-07-08 19:44:39 367 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-08 19:44:39 368 [debug]: --------------------------------------------------------
+2022-07-08 19:45:11 722 [debug]: --------------------------------------------
+2022-07-08 19:45:11 725 [debug]: |           Start Express Server           |
+2022-07-08 19:45:11 726 [debug]: --------------------------------------------
+2022-07-08 19:45:11 726 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:45:11 727 [debug]: --------------------------------------------
+2022-07-08 19:45:13 339 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:45:13 340 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:45:13 341 [debug]: [PUT] http://localhost:3001/department/234
+2022-07-08 19:45:13 363 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:45:13 364 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:45:13 365 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:45:13 399 [info]:  >> DATABASE 접속됨 [threaId=60]
+2022-07-08 19:45:13 401 [info]:  >> Connection 임대됨 [threaId=60]
+2022-07-08 19:45:13 404 [debug]: UPDATE department SET dname='수정된학과', loc='나는누구?'  WHERE deptno='234';
+2022-07-08 19:45:13 409 [debug]: select deptno, dname, loc FROM department WHERE deptno='234';
+2022-07-08 19:45:13 413 [info]:  >> Connection 반납됨 [threaId=60]
+2022-07-08 19:45:13 417 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 77ms
+2022-07-08 19:45:13 418 [debug]: --------------------------------------------------------
+2022-07-08 19:45:15 885 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:45:15 886 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:45:15 886 [debug]: [GET] http://localhost:3001/department?query=?
+2022-07-08 19:45:15 890 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:45:15 891 [info]:  >> Connection 임대됨 [threaId=60]
+2022-07-08 19:45:15 893 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '?', '%')    OR loc LIKE concat('%', '?', '%')     ORDER BY deptno DESC
+2022-07-08 19:45:15 894 [info]:  >> Connection 반납됨 [threaId=60]
+2022-07-08 19:45:15 897 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-08 19:45:15 897 [debug]: --------------------------------------------------------
+2022-07-08 19:45:45 214 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:45:45 215 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:45:45 215 [debug]: [DELETE] http://localhost:3001/department/233
+2022-07-08 19:45:45 217 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-08 19:45:45 217 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:123:48
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-08 19:45:45 220 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+2022-07-08 19:45:45 220 [debug]: --------------------------------------------------------
+2022-07-08 19:46:30 831 [debug]: --------------------------------------------
+2022-07-08 19:46:30 835 [debug]: |           Start Express Server           |
+2022-07-08 19:46:30 836 [debug]: --------------------------------------------
+2022-07-08 19:46:30 837 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 19:46:30 838 [debug]: --------------------------------------------
+2022-07-08 19:46:31 257 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:46:31 258 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:46:31 259 [debug]: [DELETE] http://localhost:3001/department/233
+2022-07-08 19:46:31 267 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:46:31 297 [info]:  >> DATABASE 접속됨 [threaId=61]
+2022-07-08 19:46:31 298 [info]:  >> Connection 임대됨 [threaId=61]
+2022-07-08 19:46:31 300 [debug]: DELETE FROM student WHERE deptno='233'
+2022-07-08 19:46:31 303 [debug]: DELETE FROM professor WHERE deptno='233'
+2022-07-08 19:46:31 305 [debug]: DELETE FROM department WHERE deptno='233';
+2022-07-08 19:46:31 309 [info]:  >> Connection 반납됨 [threaId=61]
+2022-07-08 19:46:31 315 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 57ms
+2022-07-08 19:46:31 316 [debug]: --------------------------------------------------------
+2022-07-08 19:46:33 876 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:46:33 876 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:46:33 877 [debug]: [GET] http://localhost:3001/department?query=?
+2022-07-08 19:46:33 881 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:46:33 882 [info]:  >> Connection 임대됨 [threaId=61]
+2022-07-08 19:46:33 884 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '?', '%')    OR loc LIKE concat('%', '?', '%')     ORDER BY deptno DESC
+2022-07-08 19:46:33 887 [info]:  >> Connection 반납됨 [threaId=61]
+2022-07-08 19:46:33 889 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-08 19:46:33 889 [debug]: --------------------------------------------------------
+2022-07-08 19:46:59 862 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:46:59 863 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:46:59 863 [debug]: [GET] http://localhost:3001/department?query=?
+2022-07-08 19:46:59 865 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:46:59 865 [info]:  >> Connection 임대됨 [threaId=61]
+2022-07-08 19:46:59 868 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '?', '%')    OR loc LIKE concat('%', '?', '%')     ORDER BY deptno DESC
+2022-07-08 19:46:59 869 [info]:  >> Connection 반납됨 [threaId=61]
+2022-07-08 19:46:59 871 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-08 19:46:59 872 [debug]: --------------------------------------------------------
+2022-07-08 19:47:06 731 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 19:47:06 732 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 19:47:06 732 [debug]: [GET] http://localhost:3001/department?query=나는
+2022-07-08 19:47:06 734 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 19:47:06 734 [info]:  >> Connection 임대됨 [threaId=61]
+2022-07-08 19:47:06 735 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')     ORDER BY deptno DESC
+2022-07-08 19:47:06 737 [info]:  >> Connection 반납됨 [threaId=61]
+2022-07-08 19:47:06 738 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-08 19:47:06 739 [debug]: --------------------------------------------------------
+2022-07-08 20:14:02 227 [debug]: --------------------------------------------
+2022-07-08 20:14:02 229 [debug]: |           Start Express Server           |
+2022-07-08 20:14:02 230 [debug]: --------------------------------------------
+2022-07-08 20:14:02 230 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:14:02 231 [debug]: --------------------------------------------
+2022-07-08 20:18:14 993 [debug]: --------------------------------------------
+2022-07-08 20:18:14 996 [debug]: |           Start Express Server           |
+2022-07-08 20:18:14 996 [debug]: --------------------------------------------
+2022-07-08 20:18:14 997 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:18:14 997 [debug]: --------------------------------------------
+2022-07-08 20:24:33 934 [debug]: --------------------------------------------
+2022-07-08 20:24:33 936 [debug]: |           Start Express Server           |
+2022-07-08 20:24:33 937 [debug]: --------------------------------------------
+2022-07-08 20:24:33 937 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:24:33 939 [debug]: --------------------------------------------
+2022-07-08 20:24:38 044 [debug]: --------------------------------------------
+2022-07-08 20:24:38 047 [debug]: |           Start Express Server           |
+2022-07-08 20:24:38 050 [debug]: --------------------------------------------
+2022-07-08 20:24:38 051 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:24:38 053 [debug]: --------------------------------------------
+2022-07-08 20:24:39 286 [debug]: --------------------------------------------
+2022-07-08 20:24:39 289 [debug]: |           Start Express Server           |
+2022-07-08 20:24:39 290 [debug]: --------------------------------------------
+2022-07-08 20:24:39 291 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:24:39 292 [debug]: --------------------------------------------
+2022-07-08 20:25:38 654 [debug]: --------------------------------------------
+2022-07-08 20:25:38 661 [debug]: |           Start Express Server           |
+2022-07-08 20:25:38 662 [debug]: --------------------------------------------
+2022-07-08 20:25:38 665 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:25:38 671 [debug]: --------------------------------------------
+2022-07-08 20:25:40 361 [info]:  >> DATABASE 접속됨 [threaId=62]
+2022-07-08 20:25:40 364 [info]:  >> Connection 임대됨 [threaId=62]
+2022-07-08 20:25:40 368 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 20:25:40 372 [info]:  >> Connection 반납됨 [threaId=62]
+2022-07-08 20:25:40 383 [info]:  >> Connection 임대됨 [threaId=62]
+2022-07-08 20:25:40 384 [debug]: select deptno, dname, loc FROM department WHERE deptno='102';
+2022-07-08 20:25:40 386 [info]:  >> Connection 반납됨 [threaId=62]
+2022-07-08 20:25:40 388 [info]: Database Pool is closed
+2022-07-08 20:25:54 748 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:25:54 749 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:25:54 750 [debug]: [GET] http://localhost:3001/department?query=나는
+2022-07-08 20:25:54 757 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:25:54 758 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:25:54 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:25:54 787 [info]:  >> DATABASE 접속됨 [threaId=63]
+2022-07-08 20:25:54 788 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:25:54 791 [debug]: SELECT COUNT(*) AS `cnt` FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')
+2022-07-08 20:25:54 795 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:25:54 796 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:25:54 797 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:25:54 799 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:25:54 803 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 54ms
+2022-07-08 20:25:54 804 [debug]: --------------------------------------------------------
+2022-07-08 20:25:58 623 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:25:58 624 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:25:58 624 [debug]: [GET] http://localhost:3001/department?query=나는
+2022-07-08 20:25:58 628 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:25:58 629 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:25:58 629 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:25:58 630 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:25:58 631 [debug]: SELECT COUNT(*) AS `cnt` FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')
+2022-07-08 20:25:58 632 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:25:58 632 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:25:58 634 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:25:58 635 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:25:58 636 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-08 20:25:58 637 [debug]: --------------------------------------------------------
+2022-07-08 20:26:02 561 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:26:02 561 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:26:02 562 [debug]: [GET] http://localhost:3001/department?query=나는
+2022-07-08 20:26:02 563 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:02 563 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:02 564 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:02 564 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:02 565 [debug]: SELECT COUNT(*) AS `cnt` FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')
+2022-07-08 20:26:02 566 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:02 566 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:02 567 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:26:02 568 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:02 569 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-08 20:26:02 570 [debug]: --------------------------------------------------------
+2022-07-08 20:26:06 956 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:26:06 957 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:26:06 957 [debug]: [GET] http://localhost:3001/department/103
+2022-07-08 20:26:06 959 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:06 960 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:06 961 [debug]: select deptno, dname, loc FROM department WHERE deptno='103';
+2022-07-08 20:26:06 962 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:06 964 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-08 20:26:06 964 [debug]: --------------------------------------------------------
+2022-07-08 20:26:09 931 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:26:09 931 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:26:09 931 [debug]: [GET] http://localhost:3001/department?query=나는
+2022-07-08 20:26:09 933 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:09 933 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:09 934 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:09 934 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:09 935 [debug]: SELECT COUNT(*) AS `cnt` FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')
+2022-07-08 20:26:09 936 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:09 936 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:09 937 [debug]: select deptno, dname, loc FROM department   WHERE     dname LIKE concat('%', '나는', '%')    OR loc LIKE concat('%', '나는', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:26:09 938 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:09 940 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-08 20:26:09 941 [debug]: --------------------------------------------------------
+2022-07-08 20:26:18 639 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:26:18 639 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:26:18 640 [debug]: [GET] http://localhost:3001/department
+2022-07-08 20:26:18 641 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:18 642 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:18 643 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:26:18 643 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:18 644 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-08 20:26:18 648 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:18 648 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-08 20:26:18 649 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:26:18 650 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-08 20:26:18 652 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-08 20:26:18 652 [debug]: --------------------------------------------------------
+2022-07-08 20:26:47 842 [debug]: --------------------------------------------
+2022-07-08 20:26:47 844 [debug]: |           Start Express Server           |
+2022-07-08 20:26:47 845 [debug]: --------------------------------------------
+2022-07-08 20:26:47 845 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:26:47 846 [debug]: --------------------------------------------
+2022-07-08 20:26:53 320 [info]:  >> DATABASE 접속됨 [threaId=64]
+2022-07-08 20:26:53 323 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-08 20:26:53 327 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC
+2022-07-08 20:26:53 332 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-08 20:26:53 340 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-08 20:26:53 342 [debug]: select deptno, dname, loc FROM department WHERE deptno='232';
+2022-07-08 20:26:53 344 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-08 20:26:53 345 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-08 20:26:53 348 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+2022-07-08 20:26:53 354 [debug]: select deptno, dname, loc FROM department WHERE deptno='236';
+2022-07-08 20:26:53 355 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-08 20:26:53 357 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-08 20:26:53 358 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?'  WHERE deptno='232';
+2022-07-08 20:26:53 360 [debug]: select deptno, dname, loc FROM department WHERE deptno='232';
+2022-07-08 20:26:53 361 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-08 20:26:53 362 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-08 20:26:53 363 [debug]: DELETE FROM student WHERE deptno='232'
+2022-07-08 20:26:53 364 [debug]: DELETE FROM professor WHERE deptno='232'
+2022-07-08 20:26:53 366 [debug]: DELETE FROM department WHERE deptno='232';
+2022-07-08 20:26:53 369 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-08 20:26:53 370 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-08 20:26:53 371 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-08 20:26:53 374 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-08 20:26:53 375 [info]: Database Pool is closed
+2022-07-08 20:27:02 913 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:27:02 914 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:27:02 915 [debug]: [GET] http://localhost:3001/department
+2022-07-08 20:27:02 922 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:27:02 923 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:27:02 924 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:27:02 951 [info]:  >> DATABASE 접속됨 [threaId=65]
+2022-07-08 20:27:02 952 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:27:02 955 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-08 20:27:02 959 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:27:02 960 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:27:02 962 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:27:02 963 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:27:02 967 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 53ms
+2022-07-08 20:27:02 968 [debug]: --------------------------------------------------------
+2022-07-08 20:29:58 324 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:29:58 325 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:29:58 326 [debug]: [GET] http://localhost:3001/department?page=1
+2022-07-08 20:29:58 328 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:29:58 329 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:29:58 330 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:29:58 330 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:29:58 331 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-08 20:29:58 333 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:29:58 333 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:29:58 335 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC     LIMIT 0, 10
+2022-07-08 20:29:58 336 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:29:58 337 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-08 20:29:58 338 [debug]: --------------------------------------------------------
+2022-07-08 20:30:11 831 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:30:11 832 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:30:11 832 [debug]: [GET] http://localhost:3001/department?page=2
+2022-07-08 20:30:11 835 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:30:11 836 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:30:11 836 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:30:11 837 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:30:11 838 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-08 20:30:11 848 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:30:11 849 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:30:11 849 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC     LIMIT 10, 10
+2022-07-08 20:30:11 851 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:30:11 852 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 20ms
+2022-07-08 20:30:11 852 [debug]: --------------------------------------------------------
+2022-07-08 20:30:38 723 [debug]: 클라이언트가 접속했습니다.
+2022-07-08 20:30:38 723 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-08 20:30:38 724 [debug]: [GET] http://localhost:3001/department?page=1&rows=5
+2022-07-08 20:30:38 725 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:30:38 726 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:30:38 726 [debug]: [HTTP %s Params]  %s=%s
+2022-07-08 20:30:38 727 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:30:38 728 [debug]: SELECT COUNT(*) AS `cnt` FROM department
+2022-07-08 20:30:38 730 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:30:38 730 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-08 20:30:38 731 [debug]: select deptno, dname, loc FROM department        ORDER BY deptno DESC     LIMIT 0, 5
+2022-07-08 20:30:38 732 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-08 20:30:38 733 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-08 20:30:38 734 [debug]: --------------------------------------------------------
+2022-07-08 20:38:53 700 [debug]: --------------------------------------------
+2022-07-08 20:38:53 703 [debug]: |           Start Express Server           |
+2022-07-08 20:38:53 704 [debug]: --------------------------------------------
+2022-07-08 20:38:53 704 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:38:53 705 [debug]: --------------------------------------------
+2022-07-08 20:39:19 518 [debug]: --------------------------------------------
+2022-07-08 20:39:19 521 [debug]: |           Start Express Server           |
+2022-07-08 20:39:19 522 [debug]: --------------------------------------------
+2022-07-08 20:39:19 522 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:39:19 523 [debug]: --------------------------------------------
+2022-07-08 20:45:16 900 [debug]: --------------------------------------------
+2022-07-08 20:45:16 902 [debug]: |           Start Express Server           |
+2022-07-08 20:45:16 903 [debug]: --------------------------------------------
+2022-07-08 20:45:16 905 [debug]: server address => http://221.154.247.73:3001
+2022-07-08 20:45:16 905 [debug]: --------------------------------------------
