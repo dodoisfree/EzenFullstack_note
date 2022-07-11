@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { memo } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import DepartmentList from './pages/DepartmentList';
+import DepartmentAdd from './pages/DepartmentAdd';
+import DepartmentEdit from './pages/DepartmentEdit';
+
+const App = memo(() => {
+    return (
+        <div>
+            <h1>Redux-CRUD</h1>
+
+            <hr/>
+
+            <Routes>
+                <Route path='/' exapt element={<DepartmentList />} />
+                <Route path='/department_add' exapt element={<DepartmentAdd />} />
+                <Route path='/department_edit/:deptno' exapt element={<DepartmentEdit />} />
+            </Routes>
+        </div>
+    );
+});
 
 export default App;
