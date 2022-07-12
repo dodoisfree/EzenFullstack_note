@@ -7,7 +7,7 @@ import TableEx from "../components/TableEx";
 import regexHelper from "../libs/RegexHelper";
 
 import { useSelector, useDispatch } from "react-redux";
-import { postItem } from "../slices/DepartmentSlice";
+import { putItem } from "../slices/DepartmentSlice";
 
 const DepartmentEdit = memo(() => {
     /** Path 파라미터에 포함된 id값 획득하기 */
@@ -57,7 +57,7 @@ const DepartmentEdit = memo(() => {
         }
 
         // 리덕스를 통한 데이터 저장 요청. --> 처리가 완료된 후 목록 페이지로 강제 이동한다.
-        dispatch(postItem({
+        dispatch(putItem({
             deptno: deptno,
             dname: current.dname.value,
             loc: current.loc.value,
@@ -83,13 +83,13 @@ const DepartmentEdit = memo(() => {
                             <tr>
                                 <th>학과이름</th>
                                 <td className="inputWrapper">
-                                    <input className="field" type="text" name="dname" />
+                                    <input className="field" type="text" name="dname" defaultValue={origin.dname}/>
                                 </td>
                             </tr>
                             <tr>
                                 <th>학과위치</th>
                                 <td className="inputWrapper">
-                                    <input className="field" type="text" name="loc" />
+                                    <input className="field" type="text" name="loc" defaultValue={origin.loc} />
                                 </td>
                             </tr>
                         </tbody>
