@@ -18,4 +18,6 @@ console.debug('origin: ' + location.origin);      // 통신방식 + 사이트주
 console.debug('pathname: ' + location.pathname);  // 사이트 주소에서 변수 영역 제외한 값 (폴더 & 파일)
 console.debug('search: ' + location.search);      // '?'를 포함한 변수 영역
 console.debug('hash: ' + location.hash);          // '#'과 함께 표시되는 마지막 값
+console.debug(location.query);
+console.debug(location.path);
 console.groupEnd();
