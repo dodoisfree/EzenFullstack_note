@@ -1,0 +1,62 @@
+2022-07-16 22:45:51 161 [debug]: --------------------------------------------
+2022-07-16 22:45:51 164 [debug]: |           Start Express Server           |
+2022-07-16 22:45:51 164 [debug]: --------------------------------------------
+2022-07-16 22:45:51 165 [debug]: server address => http://221.154.247.73:3001
+2022-07-16 22:45:51 166 [debug]: server address => http://192.168.221.1:3001
+2022-07-16 22:45:51 167 [debug]: server address => http://192.168.91.1:3001
+2022-07-16 22:45:51 168 [debug]: --------------------------------------------
+2022-07-16 22:47:18 831 [debug]: 클라이언트가 접속했습니다.
+2022-07-16 22:47:18 847 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-16 22:47:18 859 [debug]: [GET] http://221.154.247.73:3001/
+2022-07-16 22:47:18 873 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+2022-07-16 22:47:18 873 [debug]: --------------------------------------------------------
+2022-07-16 22:47:43 471 [info]: Database Pool is closed
+2022-07-16 22:47:47 330 [debug]: --------------------------------------------
+2022-07-16 22:47:47 333 [debug]: |           Start Express Server           |
+2022-07-16 22:47:47 334 [debug]: --------------------------------------------
+2022-07-16 22:47:47 335 [debug]: server address => http://221.154.247.73:3001
+2022-07-16 22:47:47 337 [debug]: server address => http://192.168.221.1:3001
+2022-07-16 22:47:47 338 [debug]: server address => http://192.168.91.1:3001
+2022-07-16 22:47:47 338 [debug]: --------------------------------------------
+2022-07-16 22:47:53 787 [debug]: --------------------------------------------
+2022-07-16 22:47:53 794 [debug]: |           Start Express Server           |
+2022-07-16 22:47:53 796 [debug]: --------------------------------------------
+2022-07-16 22:47:53 797 [debug]: server address => http://221.154.247.73:3001
+2022-07-16 22:47:53 801 [debug]: server address => http://192.168.221.1:3001
+2022-07-16 22:47:53 804 [debug]: server address => http://192.168.91.1:3001
+2022-07-16 22:47:53 806 [debug]: --------------------------------------------
+2022-07-16 22:47:55 079 [debug]: 클라이언트가 접속했습니다.
+2022-07-16 22:47:55 081 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-16 22:47:55 082 [debug]: [GET] http://221.154.247.73:3001/
+2022-07-16 22:47:55 090 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-16 22:47:55 091 [debug]: --------------------------------------------------------
+2022-07-16 22:48:00 746 [debug]: --------------------------------------------
+2022-07-16 22:48:00 749 [debug]: |           Start Express Server           |
+2022-07-16 22:48:00 750 [debug]: --------------------------------------------
+2022-07-16 22:48:00 751 [debug]: server address => http://221.154.247.73:3001
+2022-07-16 22:48:00 751 [debug]: server address => http://192.168.221.1:3001
+2022-07-16 22:48:00 752 [debug]: server address => http://192.168.91.1:3001
+2022-07-16 22:48:00 755 [debug]: --------------------------------------------
+2022-07-16 22:48:07 799 [debug]: 클라이언트가 접속했습니다.
+2022-07-16 22:48:07 800 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-16 22:48:07 801 [debug]: [GET] http://221.154.247.73:3001/하
+2022-07-16 22:48:07 809 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-16 22:48:07 810 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/14__RESTFULAPI/app.js:123:48
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\express\lib\router\index.js:328:13)
+2022-07-16 22:48:07 816 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-16 22:48:07 817 [debug]: --------------------------------------------------------
+2022-07-16 22:48:23 697 [debug]: 클라이언트가 접속했습니다.
+2022-07-16 22:48:23 698 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-16 22:48:23 699 [debug]: [GET] http://221.154.247.73:3001/index.html
+2022-07-16 22:48:23 704 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+2022-07-16 22:48:23 705 [debug]: --------------------------------------------------------
+2022-07-16 22:49:48 906 [info]: Database Pool is closed
