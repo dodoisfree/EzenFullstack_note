@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="URF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="StudentMapper">
+
+  <!-- 특정 학과에 속한 학생 일괄 삭제 -->
+  <delete id="deleteItemByDeptno">
+    DELETE FROM student WHERE deptno=#{deptno}
+  </delete>
+
+</mapper>

@@ -1,17 +1,37 @@
 import logger from "./helper/LogHelper.js";
-import DBPool from "./helper/DBPool.js";
 import { myip, urlFormat } from "./helper/UtilHelper.js";
+import WebHelper from "./helper/WebHelper.js";
+import DBPool from "./helper/DBPool.js";
 
 import path from "path";
 
 import dotenv from "dotenv";
 import express from "express";
 import useragent from "express-useragent";
+import serveStatic from "serve-static";
+import serveFavicon from "serve-favicon";
+import bodyParser from "body-parser";
+import MethodOverride from "method-override";
+import cookieParser from "cookie-parser";
+import expressSession from "express-session";
+import cors from "cors";
 
-// express 생성
+import PageNotFoundException from "./exceptions/PageNotFoundException.js";
+
+import SetupController from "./controllers/SetupController.js";
+import GetParamsController from "./controllers/GetParamsController.js";
+import PostPutDeleteController from "./controllers/PostPutDeleteController.js";
+import CookieController from "./controllers/CookieController.js";
+import SessionController from "./controllers/SessionController.js";
+import SendMailController from "./controllers/SendMailController.js";
+import FileUploadController from "./controllers/FileUploadController.js";
+import ApiTest from "./controllers/ApiTest.js";
+
+// Express 생성
 const app = express();
 const __dirname = path.resolve();
 dotenv.config({ path: path.join(__dirname, "../config.env") });
+
 
 // client 접속 시 초기화
 app.use(useragent.express());
@@ -57,9 +77,25 @@ process.on('exit', () => {
     logger.info("-----------Server is close -----------");
 });
 
-// Express 추가 설정
-//app.use(cors());
 
+// Express 추가 설정
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json());
+app.use(MethodOverride("X-HTTP-Method"));
+app.use(MethodOverride("X-HTTP-Method-Override"));
+app.use(MethodOverride("X-Method-Override"));
+app.use(MethodOverride("_method"));
+app.use(cookieParser(process.env.COOKIE_ENCRYPT_KEY));
+app.use(expressSession({ secret: process.env.SESSION_ENCRYPT_KEY, resave: false, saveUninitialized: false, }));
+app.use("/", serveStatic(process.env.PUBLIC_PATH));
+app.use(process.env.UPLOAD_URL, serveStatic(process.env.UPLOAD_DIR));
+app.use(process.env.THUMB_URL, serveStatic(process.env.THUMB_DIR));
+
+app.use(serveFavicon(process.env.FAVICON_PATH));
+
+// 서버 구동
 const ip = myip();
 
 app.listen(process.env.PORT, () => {

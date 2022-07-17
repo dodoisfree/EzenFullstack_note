@@ -47,17 +47,17 @@ const WebHelper = () => {
       return this._getParam("GET", key, def);
     };
 
-    /** post 파라미터 수신 함수 --> _get_param 함수를 호출한다. */
+    /** post 파라미터 수신 함수 --> _post_param 함수를 호출한다. */
     req.post = function (key, def) {
       return this._getParam("POST", key, def);
     };
 
-    /** put 파라미터 수신 함수 --> _get_param 함수를 호출한다. */
+    /** put 파라미터 수신 함수 --> _put_param 함수를 호출한다. */
     req.put = function (key, def) {
       return this._getParam("PUT", key, def);
     };
 
-    /** delete 파라미터 수신 함수 --> _get_param 함수를 호출한다. */
+    /** delete 파라미터 수신 함수 --> _delete_param 함수를 호출한다. */
     req.delete = function (key, def) {
       return this._getParam("DELETE", key, def);
     };
