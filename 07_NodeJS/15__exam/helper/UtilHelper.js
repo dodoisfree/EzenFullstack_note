@@ -3,7 +3,6 @@ import { networkInterfaces } from "os";
 const myip = () => {
     const ipAddress = [];
     const nets = networkInterfaces();
-    console.log(nets);
     for (const attr in nets) {
         const item = nets[attr];
 

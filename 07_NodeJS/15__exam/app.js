@@ -92,8 +92,24 @@ app.use(expressSession({ secret: process.env.SESSION_ENCRYPT_KEY, resave: false,
 app.use("/", serveStatic(process.env.PUBLIC_PATH));
 app.use(process.env.UPLOAD_URL, serveStatic(process.env.UPLOAD_DIR));
 app.use(process.env.THUMB_URL, serveStatic(process.env.THUMB_DIR));
-
 app.use(serveFavicon(process.env.FAVICON_PATH));
+app.use(WebHelper());
+
+// url별 백엔드 기능 정의
+app.use(SetupController());
+app.use(GetParamsController());
+app.use(PostPutDeleteController());
+app.use(CookieController());
+app.use(SessionController());
+app.use(SendMailController());
+app.use(FileUploadController());
+app.use(ApiTest());
+
+/** 컨트롤러에서 에러 발생시 'next(에러객체)`를 호출 했을 때 동작할 처리 */
+app.use((err, req, res, next) => res.sendError(err));
+
+/** 앞에서 정의하지 않은 기타 URL에 대한 일괄 처리 (무조건 맨 마지막에 정의해야 함) */
+app.use("*", (req, res, next) => res.sendError(new PageNotFoundException()));
 
 // 서버 구동
 const ip = myip();

@@ -2,7 +2,6 @@ import express from "express";
 import logger from "../helper/LogHelper.js";
 import regexHelper from "../helper/RegexHelper.js";
 import { pagenation } from "../helper/UtilHelper.js";
-import BadRequestException from "../exceptions/BadRequestException.js";
 import departmentService from "../services/DepartmentService.js";
 
 const DepartmentController = () => {

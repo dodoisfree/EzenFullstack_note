@@ -4,9 +4,102 @@
 
 <mapper namespace="ProfessorMapper">
 
-  <!-- 특정 학과에 속한 교수 일괄 삭제 -->
-  <delete id="deleteItemByDeptno">
-    DELETE FROM professor WHERE deptno=#{deptno}
+   <!-- 단일행 조회를 위한 기능 정의 -->
+  <select id="selectItem">
+    select * FROM professor WHERE profno=#{profno};
+  </select>
+
+  <!-- 다중행 조회를 위한 기능 정의 -->
+  <select id="selectList">
+    select * FROM professor
+
+    <where>
+      <if test="name != null and name != ''">
+        name LIKE concat('%', #{name}, '%')
+      </if>
+
+      <if test="userid != null and userid != ''">
+        OR userid LIKE concat('%', #{userid}, '%')
+      </if>
+
+      <if test="position != null and position != ''">
+        OR position LIKE concat('%', #{position}, '%')
+      </if>
+
+      <if test="sal != null and sal != ''">
+        OR sal LIKE concat('%', #{sal}, '%')
+      </if>
+
+      <if test="hiredate != null and hiredate != ''">
+        OR hiredate LIKE concat('%', #{hiredate}, '%')
+      </if>
+
+      <if test="comm != null and comm != ''">
+        OR comm LIKE concat('%', #{comm}, '%')
+      </if>
+
+      <if test="deptno != null and deptno != ''">
+        OR deptno LIKE concat('%', #{deptno}, '%')
+      </if>
+    </where>
+
+    ORDER BY profno DESC
+
+        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+    <if test="listCount > 0">
+      LIMIT ${offset}, ${listCount}
+    </if>
+  </select>
+
+  <!-- 데이터 저장을 위한 기능 정의 -->
+  <insert id="insertItem">
+    INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES (#{name}, #{userid}, #{position}, #{sal}, #{hiredate}, #{comm}, #{deptno});
+  </insert>
+
+  <!-- 데이터 삭제를 위한 기능 정의 -->
+  <delete id="deleteItem">
+    DELETE FROM professor WHERE profno=#{profno};
   </delete>
+
+  <!-- 데이터 갱신을 위한 기능 정의 -->
+  <update id="updateItem">
+    UPDATE professor SET name=#{name}, userid=#{userid}, position=#{position}, sal=#{sal}, hiredate=#{hiredate}, comm=#{comm}, deptno=#{deptno}
+    WHERE profno=#{profno};
+  </update>
+
+  <!-- 데이터 수 조회하기 -->
+  <select id="selectCountAll">
+    SELECT COUNT(*) AS `cnt` FROM professor
+
+    <where>
+      <if test="name != null and name != ''">
+        name LIKE concat('%', #{name}, '%')
+      </if>
+
+      <if test="userid != null and userid != ''">
+        OR userid LIKE concat('%', #{userid}, '%')
+      </if>
+
+      <if test="position != null and position != ''">
+        OR position LIKE concat('%', #{position}, '%')
+      </if>
+
+      <if test="sal != null and sal != ''">
+        OR sal LIKE concat('%', #{sal}, '%')
+      </if>
+
+      <if test="hiredate != null and hiredate != ''">
+        OR hiredate LIKE concat('%', #{hiredate}, '%')
+      </if>
+
+      <if test="comm != null and comm != ''">
+        OR comm LIKE concat('%', #{comm}, '%')
+      </if>
+
+      <if test="deptno != null and deptno != ''">
+        OR deptno LIKE concat('%', #{deptno}, '%')
+      </if>
+    </where>
+  </select>
 
 </mapper>
