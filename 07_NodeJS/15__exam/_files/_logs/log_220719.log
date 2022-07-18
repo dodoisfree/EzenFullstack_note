@@ -1,0 +1,2194 @@
+2022-07-19 00:00:04 207 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:00:04 210 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:00:04 211 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:00:04 213 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 214 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 214 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 214 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 215 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 215 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 215 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:00:04 216 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:00:04 217 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:00:04 219 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:00:04 219 [debug]: --------------------------------------------------------
+2022-07-19 00:01:14 842 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:01:14 845 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:01:14 845 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:01:14 847 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 848 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 848 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 848 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 848 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 850 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 850 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:14 851 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:01:14 851 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:01:14 853 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:01:14 854 [debug]: --------------------------------------------------------
+2022-07-19 00:01:32 083 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:01:32 084 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:01:32 084 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:01:32 086 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 086 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 087 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 087 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 087 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 088 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 088 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:32 088 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:01:32 089 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:01:32 091 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 00:01:32 091 [debug]: --------------------------------------------------------
+2022-07-19 00:01:58 426 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:01:58 427 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:01:58 427 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:01:58 428 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 429 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 429 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 430 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 430 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 430 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 431 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:01:58 464 [info]:  >> DATABASE 접속됨 [threaId=59]
+2022-07-19 00:01:58 464 [info]:  >> Connection 임대됨 [threaId=59]
+2022-07-19 00:01:58 468 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:01:58 476 [debug]: select * FROM professor WHERE profno='9943';
+2022-07-19 00:01:58 481 [info]:  >> Connection 반납됨 [threaId=59]
+2022-07-19 00:01:58 483 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 56ms
+2022-07-19 00:01:58 484 [debug]: --------------------------------------------------------
+2022-07-19 00:02:42 127 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:02:42 128 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:02:42 128 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:02:42 129 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 130 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 130 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 130 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 131 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 131 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 132 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:02:42 132 [info]:  >> Connection 임대됨 [threaId=59]
+2022-07-19 00:02:42 134 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:02:42 141 [debug]: select * FROM professor WHERE profno='9944';
+2022-07-19 00:02:42 142 [info]:  >> Connection 반납됨 [threaId=59]
+2022-07-19 00:02:42 143 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+2022-07-19 00:02:42 143 [debug]: --------------------------------------------------------
+2022-07-19 00:04:49 545 [debug]: --------------------------------------------
+2022-07-19 00:04:49 548 [debug]: |           Start Express Server           |
+2022-07-19 00:04:49 549 [debug]: --------------------------------------------
+2022-07-19 00:04:49 550 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:04:49 551 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:04:49 552 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:04:49 552 [debug]: --------------------------------------------
+2022-07-19 00:04:57 803 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:04:57 804 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:04:57 805 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:04:57 825 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 826 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 827 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 827 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 828 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 828 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 829 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:04:57 865 [info]:  >> DATABASE 접속됨 [threaId=60]
+2022-07-19 00:04:57 866 [info]:  >> Connection 임대됨 [threaId=60]
+2022-07-19 00:04:57 869 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:04:57 877 [debug]: select * FROM professor WHERE profno='9945';
+2022-07-19 00:04:57 882 [info]:  >> Connection 반납됨 [threaId=60]
+2022-07-19 00:04:57 885 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 81ms
+2022-07-19 00:04:57 886 [debug]: --------------------------------------------------------
+2022-07-19 00:05:15 436 [debug]: --------------------------------------------
+2022-07-19 00:05:15 439 [debug]: |           Start Express Server           |
+2022-07-19 00:05:15 439 [debug]: --------------------------------------------
+2022-07-19 00:05:15 440 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:05:15 441 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:05:15 441 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:05:15 442 [debug]: --------------------------------------------
+2022-07-19 00:05:17 273 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:05:17 274 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:05:17 275 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:05:17 295 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 297 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 298 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 299 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 299 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 300 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 302 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:05:17 334 [info]:  >> DATABASE 접속됨 [threaId=61]
+2022-07-19 00:05:17 336 [info]:  >> Connection 임대됨 [threaId=61]
+2022-07-19 00:05:17 339 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:05:17 348 [debug]: select * FROM professor WHERE profno='9946';
+2022-07-19 00:05:17 352 [info]:  >> Connection 반납됨 [threaId=61]
+2022-07-19 00:05:17 358 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 84ms
+2022-07-19 00:05:17 358 [debug]: --------------------------------------------------------
+2022-07-19 00:07:26 906 [debug]: --------------------------------------------
+2022-07-19 00:07:26 909 [debug]: |           Start Express Server           |
+2022-07-19 00:07:26 910 [debug]: --------------------------------------------
+2022-07-19 00:07:26 910 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:07:26 911 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:07:26 912 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:07:26 913 [debug]: --------------------------------------------
+2022-07-19 00:07:28 025 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:07:28 026 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:07:28 028 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:07:28 049 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 050 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 050 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 051 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 051 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 052 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 052 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:07:28 082 [info]:  >> DATABASE 접속됨 [threaId=62]
+2022-07-19 00:07:28 084 [info]:  >> Connection 임대됨 [threaId=62]
+2022-07-19 00:07:28 086 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:07:28 094 [debug]: select * FROM professor WHERE profno='9947';
+2022-07-19 00:07:28 099 [info]:  >> Connection 반납됨 [threaId=62]
+2022-07-19 00:07:28 103 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 77ms
+2022-07-19 00:07:28 104 [debug]: --------------------------------------------------------
+2022-07-19 00:08:06 758 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:08:06 759 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:08:06 760 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:08:06 764 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 764 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 765 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 765 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 766 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 766 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 766 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:06 767 [info]:  >> Connection 임대됨 [threaId=62]
+2022-07-19 00:08:06 769 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 12:12:12', NULL, '201');
+2022-07-19 00:08:06 775 [debug]: select * FROM professor WHERE profno='9948';
+2022-07-19 00:08:06 776 [info]:  >> Connection 반납됨 [threaId=62]
+2022-07-19 00:08:06 777 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+2022-07-19 00:08:06 778 [debug]: --------------------------------------------------------
+2022-07-19 00:08:38 415 [debug]: --------------------------------------------
+2022-07-19 00:08:38 417 [debug]: |           Start Express Server           |
+2022-07-19 00:08:38 418 [debug]: --------------------------------------------
+2022-07-19 00:08:38 419 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:08:38 420 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:08:38 420 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:08:38 421 [debug]: --------------------------------------------
+2022-07-19 00:08:38 742 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:08:38 743 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:08:38 745 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:08:38 763 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 764 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 765 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 765 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 765 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 766 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 766 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:38 796 [info]:  >> DATABASE 접속됨 [threaId=63]
+2022-07-19 00:08:38 796 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-19 00:08:38 799 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 12:12:12', NULL, '201');
+2022-07-19 00:08:38 806 [debug]: select * FROM professor WHERE profno='9949';
+2022-07-19 00:08:38 811 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-19 00:08:38 816 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 73ms
+2022-07-19 00:08:38 818 [debug]: --------------------------------------------------------
+2022-07-19 00:08:43 340 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:08:43 341 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:08:43 341 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:08:43 344 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 345 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 345 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 346 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 346 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 346 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 347 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:08:43 348 [info]:  >> Connection 임대됨 [threaId=63]
+2022-07-19 00:08:43 349 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 12:12:12', NULL, '201');
+2022-07-19 00:08:43 354 [debug]: select * FROM professor WHERE profno='9950';
+2022-07-19 00:08:43 355 [info]:  >> Connection 반납됨 [threaId=63]
+2022-07-19 00:08:43 357 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-19 00:08:43 357 [debug]: --------------------------------------------------------
+2022-07-19 00:09:15 449 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:09:15 450 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:09:15 451 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:09:15 453 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 453 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 454 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 454 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 454 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 455 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 455 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:15 456 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:09:15 456 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:09:15 458 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-19 00:09:15 459 [debug]: --------------------------------------------------------
+2022-07-19 00:09:20 511 [debug]: --------------------------------------------
+2022-07-19 00:09:20 514 [debug]: |           Start Express Server           |
+2022-07-19 00:09:20 514 [debug]: --------------------------------------------
+2022-07-19 00:09:20 515 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:09:20 516 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:09:20 516 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:09:20 516 [debug]: --------------------------------------------
+2022-07-19 00:09:23 736 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:09:23 737 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:09:23 739 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:09:23 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 762 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 762 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 763 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 763 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 764 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 767 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:09:23 829 [info]:  >> DATABASE 접속됨 [threaId=64]
+2022-07-19 00:09:23 830 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-19 00:09:23 832 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-10 12:12:12', NULL, '201');
+2022-07-19 00:09:23 838 [debug]: select * FROM professor WHERE profno='9951';
+2022-07-19 00:09:23 842 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-19 00:09:23 847 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 110ms
+2022-07-19 00:09:23 853 [debug]: --------------------------------------------------------
+2022-07-19 00:12:36 319 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:12:36 320 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:12:36 321 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:12:36 324 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 325 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 326 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 326 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 327 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 327 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 328 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:12:36 329 [info]:  >> Connection 임대됨 [threaId=64]
+2022-07-19 00:12:36 330 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-10 21:09:31', NULL, '201');
+2022-07-19 00:12:36 335 [debug]: select * FROM professor WHERE profno='9952';
+2022-07-19 00:12:36 336 [info]:  >> Connection 반납됨 [threaId=64]
+2022-07-19 00:12:36 338 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+2022-07-19 00:12:36 338 [debug]: --------------------------------------------------------
+2022-07-19 00:13:18 873 [debug]: --------------------------------------------
+2022-07-19 00:13:18 875 [debug]: |           Start Express Server           |
+2022-07-19 00:13:18 876 [debug]: --------------------------------------------
+2022-07-19 00:13:18 877 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:13:18 878 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:13:18 878 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:13:18 879 [debug]: --------------------------------------------
+2022-07-19 00:13:26 604 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:13:26 605 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:13:26 607 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:13:26 627 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 629 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 629 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 629 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 630 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 630 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 631 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:26 663 [info]:  >> DATABASE 접속됨 [threaId=65]
+2022-07-19 00:13:26 664 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-19 00:13:26 667 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-10 21:09:31', NULL, '201');
+2022-07-19 00:13:26 677 [debug]: select * FROM professor WHERE profno='9953';
+2022-07-19 00:13:26 680 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-19 00:13:26 685 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 80ms
+2022-07-19 00:13:26 685 [debug]: --------------------------------------------------------
+2022-07-19 00:13:39 301 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:13:39 302 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:13:39 303 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:13:39 306 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 307 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 307 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 308 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 308 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 309 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 309 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:13:39 310 [info]:  >> Connection 임대됨 [threaId=65]
+2022-07-19 00:13:39 311 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:13:39 317 [debug]: select * FROM professor WHERE profno='9954';
+2022-07-19 00:13:39 319 [info]:  >> Connection 반납됨 [threaId=65]
+2022-07-19 00:13:39 320 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+2022-07-19 00:13:39 321 [debug]: --------------------------------------------------------
+2022-07-19 00:16:24 770 [debug]: --------------------------------------------
+2022-07-19 00:16:24 774 [debug]: |           Start Express Server           |
+2022-07-19 00:16:24 775 [debug]: --------------------------------------------
+2022-07-19 00:16:24 776 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:16:24 776 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:16:24 777 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:16:24 777 [debug]: --------------------------------------------
+2022-07-19 00:16:25 110 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:16:25 111 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:16:25 112 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:16:25 133 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 135 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 136 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 136 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 160 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 163 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 163 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:16:25 236 [info]:  >> DATABASE 접속됨 [threaId=66]
+2022-07-19 00:16:25 236 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:16:25 241 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:16:25 249 [debug]: select * FROM professor WHERE profno='9955';
+2022-07-19 00:16:25 252 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:16:25 257 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 146ms
+2022-07-19 00:16:25 258 [debug]: --------------------------------------------------------
+2022-07-19 00:17:05 602 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:17:05 602 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:17:05 603 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:17:05 607 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 607 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 608 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 608 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 608 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 609 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 609 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:05 610 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:17:05 610 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:17:05 612 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-19 00:17:05 613 [debug]: --------------------------------------------------------
+2022-07-19 00:17:08 852 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:17:08 852 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:17:08 853 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:17:08 855 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 856 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 856 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 857 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 857 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 857 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 858 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:17:08 859 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:17:08 860 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:17:08 866 [debug]: select * FROM professor WHERE profno='9956';
+2022-07-19 00:17:08 867 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:17:08 869 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-19 00:17:08 869 [debug]: --------------------------------------------------------
+2022-07-19 00:18:45 576 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:18:45 576 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:18:45 577 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:18:45 578 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 579 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 579 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 580 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 580 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 580 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 581 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:18:45 581 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:18:45 582 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 22:00:00', NULL, '201');
+2022-07-19 00:18:45 587 [debug]: select * FROM professor WHERE profno='9957';
+2022-07-19 00:18:45 588 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:18:45 589 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-19 00:18:45 590 [debug]: --------------------------------------------------------
+2022-07-19 00:19:13 859 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:19:13 859 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:19:13 860 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:19:13 861 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 862 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 862 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 862 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 863 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 863 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 863 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:13 863 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:19:13 864 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 00:00:00', NULL, '201');
+2022-07-19 00:19:13 873 [debug]: select * FROM professor WHERE profno='9958';
+2022-07-19 00:19:13 874 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:19:13 875 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-19 00:19:13 876 [debug]: --------------------------------------------------------
+2022-07-19 00:19:43 949 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:19:43 950 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:19:43 950 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:19:43 952 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 954 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 954 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 954 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:43 955 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:19:43 956 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 06:00:00', NULL, '201');
+2022-07-19 00:19:43 959 [debug]: select * FROM professor WHERE profno='9959';
+2022-07-19 00:19:43 960 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:19:43 961 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-19 00:19:43 961 [debug]: --------------------------------------------------------
+2022-07-19 00:19:49 838 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:19:49 838 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:19:49 839 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:19:49 840 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 841 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 841 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 841 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 842 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 842 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 842 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:19:49 844 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:19:49 844 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 12:00:00', NULL, '201');
+2022-07-19 00:19:49 849 [debug]: select * FROM professor WHERE profno='9960';
+2022-07-19 00:19:49 850 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:19:49 851 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-19 00:19:49 852 [debug]: --------------------------------------------------------
+2022-07-19 00:20:52 912 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:20:52 913 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:20:52 913 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:20:52 915 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 915 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 916 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 916 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 916 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 917 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 917 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:20:52 918 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:20:52 919 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-11-11 12:00:00', '2', '201');
+2022-07-19 00:20:52 923 [debug]: select * FROM professor WHERE profno='9961';
+2022-07-19 00:20:52 924 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:20:52 925 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-19 00:20:52 925 [debug]: --------------------------------------------------------
+2022-07-19 00:22:56 915 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:22:56 920 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:22:56 938 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:22:56 941 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 958 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 959 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 959 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 959 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 959 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 960 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 960 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:22:56 960 [error]: [Error] 아이디는 영문과 숫자로만 입력 가능합니다.
+2022-07-19 00:22:56 961 [error]: Error: 아이디는 영문과 숫자로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.engNum (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:152:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:142:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:22:56 963 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 43ms
+2022-07-19 00:22:56 963 [debug]: --------------------------------------------------------
+2022-07-19 00:23:42 034 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:23:42 035 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:23:42 043 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:23:42 044 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 045 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 046 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 047 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 047 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 048 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 048 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 048 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:23:42 049 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:23:42 050 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 06:02:30', comm=NULL, deptno='202'  WHERE profno='9920';
+2022-07-19 00:23:42 054 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:23:42 055 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:23:42 056 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+2022-07-19 00:23:42 056 [debug]: --------------------------------------------------------
+2022-07-19 00:24:56 288 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:24:56 288 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:24:56 289 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:24:56 290 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 291 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 291 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 291 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 292 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 292 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 292 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 292 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:24:56 293 [error]: [Error] 이름은 한글로만 입력 가능합니다.
+2022-07-19 00:24:56 293 [error]: Error: 이름은 한글로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.kor (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:143:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:139:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:24:56 295 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 00:24:56 295 [debug]: --------------------------------------------------------
+2022-07-19 00:25:30 503 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:25:30 504 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:25:30 504 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:25:30 506 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 506 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 507 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 507 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 507 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 508 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 508 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 508 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:25:30 509 [error]: [Error] 아이디는 영문과 숫자로만 입력 가능합니다.
+2022-07-19 00:25:30 509 [error]: Error: 아이디는 영문과 숫자로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.engNum (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:152:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:142:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:25:30 511 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 00:25:30 511 [debug]: --------------------------------------------------------
+2022-07-19 00:26:01 693 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:26:01 694 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:26:01 694 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:26:01 696 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 696 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 697 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 697 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 699 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 699 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 700 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 700 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:01 700 [error]: [Error] 급여는 숫자로만 입력 가능합니다.
+2022-07-19 00:26:01 701 [error]: Error: 급여는 숫자로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.num (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:67:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:147:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:26:01 703 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:26:01 703 [debug]: --------------------------------------------------------
+2022-07-19 00:26:31 341 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:26:31 342 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:26:31 342 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:26:31 344 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 344 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 344 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 345 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 345 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 345 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 346 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 346 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:31 347 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:26:31 347 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:150:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:26:31 350 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-19 00:26:31 350 [debug]: --------------------------------------------------------
+2022-07-19 00:26:54 313 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:26:54 314 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:26:54 314 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:26:54 316 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 316 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 317 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 317 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 317 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 318 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 318 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 318 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:26:54 318 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:26:54 319 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm=NULL, deptno='202'  WHERE profno='9920';
+2022-07-19 00:26:54 324 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:26:54 325 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:26:54 326 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-19 00:26:54 326 [debug]: --------------------------------------------------------
+2022-07-19 00:27:19 225 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:27:19 225 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:27:19 226 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:27:19 227 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 227 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 228 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 228 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 228 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 230 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 230 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 231 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:19 231 [error]: [Error] 보직수당은 미입력 또는 숫자로만 입력 가능합니다.
+2022-07-19 00:27:19 231 [error]: Error: 보직수당은 미입력 또는 숫자로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.nullNum (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:58:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:151:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:27:19 233 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+2022-07-19 00:27:19 234 [debug]: --------------------------------------------------------
+2022-07-19 00:27:39 601 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:27:39 602 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:27:39 602 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:27:39 604 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 604 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 605 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 605 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 605 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 606 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 606 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 606 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:39 607 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:27:39 608 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm=NULL, deptno='202'  WHERE profno='9920';
+2022-07-19 00:27:39 609 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:27:39 610 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:27:39 611 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:27:39 613 [debug]: --------------------------------------------------------
+2022-07-19 00:27:57 317 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:27:57 317 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:27:57 318 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:27:57 319 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 319 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 320 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 320 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 320 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 320 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 321 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 321 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:27:57 321 [info]:  >> Connection 임대됨 [threaId=66]
+2022-07-19 00:27:57 322 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:27:57 327 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:27:57 328 [info]:  >> Connection 반납됨 [threaId=66]
+2022-07-19 00:27:57 329 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-19 00:27:57 330 [debug]: --------------------------------------------------------
+2022-07-19 00:28:17 397 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:28:17 398 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:28:17 398 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:28:17 399 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 400 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 400 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 401 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 401 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 401 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 401 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 402 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:28:17 402 [error]: [Error] 학과번호를 입력해주세요.
+2022-07-19 00:28:17 403 [error]: Error: 학과번호를 입력해주세요.
+    at RegexHelper.value (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:21:19)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:152:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:421:3)
+2022-07-19 00:28:17 405 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 00:28:17 405 [debug]: --------------------------------------------------------
+2022-07-19 00:31:35 073 [debug]: --------------------------------------------
+2022-07-19 00:31:35 081 [debug]: |           Start Express Server           |
+2022-07-19 00:31:35 082 [debug]: --------------------------------------------
+2022-07-19 00:31:35 083 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:31:35 084 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:31:35 085 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:31:35 086 [debug]: --------------------------------------------
+2022-07-19 00:35:03 356 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:35:03 357 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:35:03 359 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:35:03 378 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 379 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 379 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 379 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 380 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 380 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 381 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:03 381 [error]: [Error] 이름은 한글로만 입력 가능합니다.
+2022-07-19 00:35:03 382 [error]: Error: 이름은 한글로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.kor (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:143:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:84:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:35:03 390 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+2022-07-19 00:35:03 398 [debug]: --------------------------------------------------------
+2022-07-19 00:35:33 085 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:35:33 086 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:35:33 086 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:35:33 090 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 091 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 093 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 093 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:35:33 094 [error]: [Error] 아이디는 영문과 숫자로만 입력 가능합니다.
+2022-07-19 00:35:33 095 [error]: Error: 아이디는 영문과 숫자로만 입력 가능합니다.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.engNum (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:152:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:87:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:35:33 096 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-19 00:35:33 097 [debug]: --------------------------------------------------------
+2022-07-19 00:36:13 384 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:36:13 385 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:36:13 385 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:36:13 387 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 387 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 388 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 388 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 388 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 389 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 390 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:36:13 391 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:36:13 391 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:36:13 394 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:36:13 395 [debug]: --------------------------------------------------------
+2022-07-19 00:42:36 210 [debug]: --------------------------------------------
+2022-07-19 00:42:36 213 [debug]: |           Start Express Server           |
+2022-07-19 00:42:36 214 [debug]: --------------------------------------------
+2022-07-19 00:42:36 215 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:42:36 216 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:42:36 216 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:42:36 220 [debug]: --------------------------------------------
+2022-07-19 00:42:43 995 [debug]: --------------------------------------------
+2022-07-19 00:42:43 997 [debug]: |           Start Express Server           |
+2022-07-19 00:42:43 998 [debug]: --------------------------------------------
+2022-07-19 00:42:43 998 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:42:43 999 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:42:43 999 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:42:44 000 [debug]: --------------------------------------------
+2022-07-19 00:42:50 707 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:42:50 708 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:42:50 709 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:42:50 729 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 731 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 731 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 732 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 732 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 733 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 735 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:42:50 737 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:42:50 738 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:42:50 744 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 36ms
+2022-07-19 00:42:50 745 [debug]: --------------------------------------------------------
+2022-07-19 00:43:50 956 [debug]: --------------------------------------------
+2022-07-19 00:43:50 958 [debug]: |           Start Express Server           |
+2022-07-19 00:43:50 959 [debug]: --------------------------------------------
+2022-07-19 00:43:50 959 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:43:50 960 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:43:50 961 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:43:50 961 [debug]: --------------------------------------------
+2022-07-19 00:43:58 003 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:43:58 004 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:43:58 006 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:43:58 026 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 028 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 029 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 030 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 030 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 031 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 032 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:43:58 036 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:43:58 037 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:43:58 076 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 72ms
+2022-07-19 00:43:58 094 [debug]: --------------------------------------------------------
+2022-07-19 00:44:09 570 [debug]: --------------------------------------------
+2022-07-19 00:44:09 573 [debug]: |           Start Express Server           |
+2022-07-19 00:44:09 574 [debug]: --------------------------------------------
+2022-07-19 00:44:09 574 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:44:09 575 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:44:09 576 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:44:09 576 [debug]: --------------------------------------------
+2022-07-19 00:44:18 182 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:44:18 184 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:44:18 186 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:44:18 204 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 205 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 205 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 205 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 206 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 206 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 207 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:18 208 [error]: [Error] 입사일은 yyyy-MM-dd 형식에 맞게 입력해주세요.
+2022-07-19 00:44:18 208 [error]: Error: 입사일은 yyyy-MM-dd 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:44:18 214 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+2022-07-19 00:44:18 218 [debug]: --------------------------------------------------------
+2022-07-19 00:44:42 260 [debug]: --------------------------------------------
+2022-07-19 00:44:42 263 [debug]: |           Start Express Server           |
+2022-07-19 00:44:42 264 [debug]: --------------------------------------------
+2022-07-19 00:44:42 265 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:44:42 265 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:44:42 267 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:44:42 268 [debug]: --------------------------------------------
+2022-07-19 00:44:44 812 [debug]: --------------------------------------------
+2022-07-19 00:44:44 815 [debug]: |           Start Express Server           |
+2022-07-19 00:44:44 816 [debug]: --------------------------------------------
+2022-07-19 00:44:44 817 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:44:44 818 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:44:44 818 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:44:44 819 [debug]: --------------------------------------------
+2022-07-19 00:44:47 945 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:44:47 946 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:44:47 947 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:44:47 969 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 970 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 971 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 972 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 972 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 973 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 973 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:47 975 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:44:47 975 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:44:47 982 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 36ms
+2022-07-19 00:44:47 984 [debug]: --------------------------------------------------------
+2022-07-19 00:44:54 097 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:44:54 098 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:44:54 098 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:44:54 102 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 103 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 104 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 104 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 104 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 105 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 105 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:54 106 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:44:54 106 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:44:54 108 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-19 00:44:54 109 [debug]: --------------------------------------------------------
+2022-07-19 00:44:56 638 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:44:56 638 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:44:56 639 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:44:56 641 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 641 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 642 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 642 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 642 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 643 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 643 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:44:56 644 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:44:56 645 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:44:56 647 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:44:56 647 [debug]: --------------------------------------------------------
+2022-07-19 00:45:15 407 [info]: Database Pool is closed
+2022-07-19 00:45:20 128 [debug]: --------------------------------------------
+2022-07-19 00:45:20 131 [debug]: |           Start Express Server           |
+2022-07-19 00:45:20 132 [debug]: --------------------------------------------
+2022-07-19 00:45:20 134 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:45:20 134 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:45:20 135 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:45:20 136 [debug]: --------------------------------------------
+2022-07-19 00:45:23 925 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:45:23 926 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:45:23 927 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:45:23 948 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 951 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 951 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 952 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 954 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 955 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:23 957 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:45:23 958 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:45:23 965 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 39ms
+2022-07-19 00:45:23 969 [debug]: --------------------------------------------------------
+2022-07-19 00:45:47 627 [debug]: --------------------------------------------
+2022-07-19 00:45:47 629 [debug]: |           Start Express Server           |
+2022-07-19 00:45:47 630 [debug]: --------------------------------------------
+2022-07-19 00:45:47 631 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:45:47 631 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:45:47 632 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:45:47 634 [debug]: --------------------------------------------
+2022-07-19 00:45:55 618 [debug]: --------------------------------------------
+2022-07-19 00:45:55 622 [debug]: |           Start Express Server           |
+2022-07-19 00:45:55 623 [debug]: --------------------------------------------
+2022-07-19 00:45:55 623 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:45:55 624 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:45:55 625 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:45:55 625 [debug]: --------------------------------------------
+2022-07-19 00:45:57 925 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:45:57 926 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:45:57 927 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:45:57 947 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 951 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 951 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 952 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 952 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:45:57 966 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:45:57 969 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:45:57 978 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 53ms
+2022-07-19 00:45:57 978 [debug]: --------------------------------------------------------
+2022-07-19 00:46:00 926 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:46:00 927 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:46:00 927 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 00:46:00 930 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:00 957 [info]:  >> DATABASE 접속됨 [threaId=67]
+2022-07-19 00:46:00 959 [info]:  >> Connection 임대됨 [threaId=67]
+2022-07-19 00:46:00 961 [debug]: select * FROM professor WHERE profno='9902';
+2022-07-19 00:46:00 967 [info]:  >> Connection 반납됨 [threaId=67]
+2022-07-19 00:46:00 969 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 42ms
+2022-07-19 00:46:00 970 [debug]: --------------------------------------------------------
+2022-07-19 00:46:03 087 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:46:03 087 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:46:03 088 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:46:03 089 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 090 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 090 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 090 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 091 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 092 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:03 093 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:46:03 093 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:95:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+2022-07-19 00:46:03 096 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:46:03 096 [debug]: --------------------------------------------------------
+2022-07-19 00:46:10 252 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:46:10 253 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:46:10 253 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 00:46:10 255 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 256 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 256 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 257 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 257 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 257 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 258 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:10 259 [info]:  >> Connection 임대됨 [threaId=67]
+2022-07-19 00:46:10 261 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-12-11 12:00:00', NULL, '201');
+2022-07-19 00:46:10 268 [debug]: select * FROM professor WHERE profno='9962';
+2022-07-19 00:46:10 270 [info]:  >> Connection 반납됨 [threaId=67]
+2022-07-19 00:46:10 271 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+2022-07-19 00:46:10 272 [debug]: --------------------------------------------------------
+2022-07-19 00:46:23 201 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:46:23 202 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:46:23 202 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:46:23 204 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 205 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 205 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 205 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 206 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 206 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 206 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 206 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:46:23 207 [info]:  >> Connection 임대됨 [threaId=67]
+2022-07-19 00:46:23 208 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:46:23 209 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:46:23 210 [info]:  >> Connection 반납됨 [threaId=67]
+2022-07-19 00:46:23 211 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 00:46:23 212 [debug]: --------------------------------------------------------
+2022-07-19 00:47:57 263 [debug]: --------------------------------------------
+2022-07-19 00:47:57 269 [debug]: |           Start Express Server           |
+2022-07-19 00:47:57 269 [debug]: --------------------------------------------
+2022-07-19 00:47:57 270 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:47:57 270 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:47:57 271 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:47:57 271 [debug]: --------------------------------------------
+2022-07-19 00:49:56 484 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:49:56 485 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:49:56 487 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:49:56 506 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 507 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 508 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 508 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 508 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 509 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 509 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 510 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:49:56 564 [info]:  >> DATABASE 접속됨 [threaId=68]
+2022-07-19 00:49:56 570 [info]:  >> Connection 임대됨 [threaId=68]
+2022-07-19 00:49:56 573 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:49:56 586 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:49:56 590 [info]:  >> Connection 반납됨 [threaId=68]
+2022-07-19 00:49:56 596 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 111ms
+2022-07-19 00:49:56 597 [debug]: --------------------------------------------------------
+2022-07-19 00:52:39 597 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:52:39 603 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:52:39 604 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:52:39 607 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 607 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 607 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 608 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 608 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 609 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 609 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 609 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:39 611 [info]:  >> Connection 임대됨 [threaId=68]
+2022-07-19 00:52:39 613 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:52:39 614 [debug]: select * FROM professor WHERE profno='9920';
+2022-07-19 00:52:39 615 [info]:  >> Connection 반납됨 [threaId=68]
+2022-07-19 00:52:39 616 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-19 00:52:39 617 [debug]: --------------------------------------------------------
+2022-07-19 00:52:50 165 [debug]: --------------------------------------------
+2022-07-19 00:52:50 169 [debug]: |           Start Express Server           |
+2022-07-19 00:52:50 170 [debug]: --------------------------------------------
+2022-07-19 00:52:50 171 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:52:50 172 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:52:50 177 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:52:50 179 [debug]: --------------------------------------------
+2022-07-19 00:52:50 373 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:52:50 374 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:52:50 375 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:52:50 396 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 397 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 398 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 399 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 399 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 400 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 400 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 400 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:52:50 442 [info]:  >> DATABASE 접속됨 [threaId=69]
+2022-07-19 00:52:50 445 [info]:  >> Connection 임대됨 [threaId=69]
+2022-07-19 00:52:50 448 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:52:50 449 [info]:  >> Connection 반납됨 [threaId=69]
+2022-07-19 00:52:50 450 [error]: [Error] Namespace [ProfessorDepartmentMapper] not exists.
+2022-07-19 00:52:50 450 [error]: Error: Namespace [ProfessorDepartmentMapper] not exists.
+    at MybatisMapper.getStatement (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mybatis-mapper\index.js:86:52)
+    at ProfessorService.editItem (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:125:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:161:20
+2022-07-19 00:52:50 454 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 80ms
+2022-07-19 00:52:50 455 [debug]: --------------------------------------------------------
+2022-07-19 00:53:30 665 [debug]: --------------------------------------------
+2022-07-19 00:53:30 689 [debug]: |           Start Express Server           |
+2022-07-19 00:53:30 690 [debug]: --------------------------------------------
+2022-07-19 00:53:30 691 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:53:30 691 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:53:30 692 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:53:30 692 [debug]: --------------------------------------------
+2022-07-19 00:53:30 773 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:53:30 774 [debug]: [client] ::1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:53:30 775 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:53:30 798 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 799 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 799 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 800 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 800 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 801 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 802 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 807 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:53:30 851 [info]:  >> DATABASE 접속됨 [threaId=70]
+2022-07-19 00:53:30 852 [info]:  >> Connection 임대됨 [threaId=70]
+2022-07-19 00:53:30 855 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:53:30 858 [debug]: SELECT   profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') AS `h_date`,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:53:30 863 [info]:  >> Connection 반납됨 [threaId=70]
+2022-07-19 00:53:30 867 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 94ms
+2022-07-19 00:53:30 868 [debug]: --------------------------------------------------------
+2022-07-19 00:56:18 663 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:56:18 664 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:56:18 665 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:56:18 668 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 668 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 669 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 669 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 669 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 670 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 670 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 670 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:18 671 [info]:  >> Connection 임대됨 [threaId=70]
+2022-07-19 00:56:18 673 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:56:18 675 [debug]: SELECT   profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') AS `h_date`,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:56:18 676 [info]:  >> Connection 반납됨 [threaId=70]
+2022-07-19 00:56:18 678 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+2022-07-19 00:56:18 678 [debug]: --------------------------------------------------------
+2022-07-19 00:56:43 784 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:56:43 784 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:56:43 785 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:56:43 786 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 787 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 787 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 787 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 788 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 788 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 789 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 789 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:43 790 [info]:  >> Connection 임대됨 [threaId=70]
+2022-07-19 00:56:43 791 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:56:43 793 [debug]: SELECT   profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') AS `h_date`,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:56:43 793 [info]:  >> Connection 반납됨 [threaId=70]
+2022-07-19 00:56:43 795 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-19 00:56:43 796 [debug]: --------------------------------------------------------
+2022-07-19 00:56:50 660 [debug]: --------------------------------------------
+2022-07-19 00:56:50 666 [debug]: |           Start Express Server           |
+2022-07-19 00:56:50 667 [debug]: --------------------------------------------
+2022-07-19 00:56:50 668 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:56:50 669 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:56:50 670 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:56:50 671 [debug]: --------------------------------------------
+2022-07-19 00:56:51 537 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:56:51 538 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:56:51 540 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:56:51 560 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 562 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 562 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 563 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 563 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 564 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 564 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 564 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:56:51 596 [info]:  >> DATABASE 접속됨 [threaId=71]
+2022-07-19 00:56:51 597 [info]:  >> Connection 임대됨 [threaId=71]
+2022-07-19 00:56:51 599 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:56:51 601 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:56:51 605 [info]:  >> Connection 반납됨 [threaId=71]
+2022-07-19 00:56:51 613 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 75ms
+2022-07-19 00:56:51 614 [debug]: --------------------------------------------------------
+2022-07-19 00:57:05 180 [info]: Database Pool is closed
+2022-07-19 00:57:09 795 [debug]: --------------------------------------------
+2022-07-19 00:57:09 799 [debug]: |           Start Express Server           |
+2022-07-19 00:57:09 799 [debug]: --------------------------------------------
+2022-07-19 00:57:09 801 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:57:09 801 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:57:09 802 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:57:09 803 [debug]: --------------------------------------------
+2022-07-19 00:57:09 938 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:57:09 939 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:57:09 941 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:57:09 961 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 962 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 963 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 963 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 964 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 965 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 965 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:09 965 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:10 033 [info]:  >> DATABASE 접속됨 [threaId=72]
+2022-07-19 00:57:10 041 [info]:  >> Connection 임대됨 [threaId=72]
+2022-07-19 00:57:10 048 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:57:10 051 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:57:10 055 [info]:  >> Connection 반납됨 [threaId=72]
+2022-07-19 00:57:10 076 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 137ms
+2022-07-19 00:57:10 081 [debug]: --------------------------------------------------------
+2022-07-19 00:57:40 523 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:57:40 524 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:57:40 524 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:57:40 528 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 528 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 529 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 529 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 530 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 530 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 530 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 531 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:57:40 532 [info]:  >> Connection 임대됨 [threaId=72]
+2022-07-19 00:57:40 533 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:57:40 535 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:57:40 536 [info]:  >> Connection 반납됨 [threaId=72]
+2022-07-19 00:57:40 538 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+2022-07-19 00:57:40 538 [debug]: --------------------------------------------------------
+2022-07-19 00:58:10 046 [info]: Database Pool is closed
+2022-07-19 00:58:14 287 [debug]: --------------------------------------------
+2022-07-19 00:58:14 290 [debug]: |           Start Express Server           |
+2022-07-19 00:58:14 291 [debug]: --------------------------------------------
+2022-07-19 00:58:14 294 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 00:58:14 294 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 00:58:14 295 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 00:58:14 296 [debug]: --------------------------------------------
+2022-07-19 00:58:15 392 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:58:15 393 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:58:15 394 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:58:15 414 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 415 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 416 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 417 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 417 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 418 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 418 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 418 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:15 452 [info]:  >> DATABASE 접속됨 [threaId=73]
+2022-07-19 00:58:15 453 [info]:  >> Connection 임대됨 [threaId=73]
+2022-07-19 00:58:15 455 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:58:15 459 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:58:15 464 [info]:  >> Connection 반납됨 [threaId=73]
+2022-07-19 00:58:15 468 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 75ms
+2022-07-19 00:58:15 470 [debug]: --------------------------------------------------------
+2022-07-19 00:58:29 532 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:58:29 533 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:58:29 533 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:58:29 537 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 537 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 537 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 538 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 538 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 539 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 540 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 541 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:29 542 [error]: [Error] 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+2022-07-19 00:58:29 542 [error]: Error: 입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.
+    at RegexHelper.field (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:37:19)
+    at RegexHelper.date (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/helper/RegexHelper.js:76:21)
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:150:25
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+2022-07-19 00:58:29 544 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-19 00:58:29 545 [debug]: --------------------------------------------------------
+2022-07-19 00:58:37 590 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:58:37 590 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:58:37 591 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:58:37 594 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 595 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 596 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 596 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 596 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 597 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 597 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 598 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:37 598 [info]:  >> Connection 임대됨 [threaId=73]
+2022-07-19 00:58:37 600 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 09:00:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:58:37 605 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:58:37 607 [info]:  >> Connection 반납됨 [threaId=73]
+2022-07-19 00:58:37 608 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+2022-07-19 00:58:37 609 [debug]: --------------------------------------------------------
+2022-07-19 00:58:50 613 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 00:58:50 613 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 00:58:50 613 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 00:58:50 615 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 615 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 616 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 616 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 00:58:50 618 [info]:  >> Connection 임대됨 [threaId=73]
+2022-07-19 00:58:50 618 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 00:58:50 626 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 00:58:50 627 [info]:  >> Connection 반납됨 [threaId=73]
+2022-07-19 00:58:50 628 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+2022-07-19 00:58:50 629 [debug]: --------------------------------------------------------
+2022-07-19 01:00:55 393 [debug]: --------------------------------------------
+2022-07-19 01:00:55 396 [debug]: |           Start Express Server           |
+2022-07-19 01:00:55 397 [debug]: --------------------------------------------
+2022-07-19 01:00:55 397 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:00:55 398 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:00:55 399 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:00:55 399 [debug]: --------------------------------------------
+2022-07-19 01:00:57 090 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:00:57 091 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:00:57 093 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:00:57 112 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 113 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 114 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 114 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 115 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 116 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 116 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 117 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:00:57 152 [info]:  >> DATABASE 접속됨 [threaId=74]
+2022-07-19 01:00:57 153 [info]:  >> Connection 임대됨 [threaId=74]
+2022-07-19 01:00:57 157 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 01:00:57 159 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:00:57 163 [info]:  >> Connection 반납됨 [threaId=74]
+2022-07-19 01:00:57 167 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 76ms
+2022-07-19 01:00:57 169 [debug]: --------------------------------------------------------
+2022-07-19 01:01:39 611 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:01:39 612 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:01:39 613 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:01:39 616 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 616 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 617 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:39 619 [info]:  >> Connection 임대됨 [threaId=74]
+2022-07-19 01:01:39 621 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm=NULL, deptno='202'  WHERE profno='9920';
+2022-07-19 01:01:39 626 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:01:39 627 [info]:  >> Connection 반납됨 [threaId=74]
+2022-07-19 01:01:39 628 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-19 01:01:39 629 [debug]: --------------------------------------------------------
+2022-07-19 01:01:57 616 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:01:57 616 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:01:57 617 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:01:57 618 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 619 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 620 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 620 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 620 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 621 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 621 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 622 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:01:57 623 [info]:  >> Connection 임대됨 [threaId=74]
+2022-07-19 01:01:57 624 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 01:01:57 629 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:01:57 630 [info]:  >> Connection 반납됨 [threaId=74]
+2022-07-19 01:01:57 631 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+2022-07-19 01:01:57 631 [debug]: --------------------------------------------------------
+2022-07-19 01:02:06 008 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:02:06 009 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:02:06 009 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:02:06 011 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 011 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 012 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 012 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 012 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 013 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 013 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 013 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:02:06 014 [info]:  >> Connection 임대됨 [threaId=74]
+2022-07-19 01:02:06 015 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 01:02:06 016 [debug]: SELECT   profno, name, userid, position, sal, hiredate,  comm, p.deptno, dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:02:06 017 [info]:  >> Connection 반납됨 [threaId=74]
+2022-07-19 01:02:06 018 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 01:02:06 020 [debug]: --------------------------------------------------------
+2022-07-19 01:04:17 103 [debug]: --------------------------------------------
+2022-07-19 01:04:17 106 [debug]: |           Start Express Server           |
+2022-07-19 01:04:17 107 [debug]: --------------------------------------------
+2022-07-19 01:04:17 108 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:04:17 108 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:04:17 109 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:04:17 109 [debug]: --------------------------------------------
+2022-07-19 01:04:17 788 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:04:17 789 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:04:17 790 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:04:17 811 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 812 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 813 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 813 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 814 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 815 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 815 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 816 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:17 847 [info]:  >> DATABASE 접속됨 [threaId=75]
+2022-07-19 01:04:17 848 [info]:  >> Connection 임대됨 [threaId=75]
+2022-07-19 01:04:17 850 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 01:04:17 854 [debug]: SELECT   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:04:17 858 [info]:  >> Connection 반납됨 [threaId=75]
+2022-07-19 01:04:17 863 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 74ms
+2022-07-19 01:04:17 864 [debug]: --------------------------------------------------------
+2022-07-19 01:04:38 264 [debug]: --------------------------------------------
+2022-07-19 01:04:38 267 [debug]: |           Start Express Server           |
+2022-07-19 01:04:38 269 [debug]: --------------------------------------------
+2022-07-19 01:04:38 270 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:04:38 271 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:04:38 272 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:04:38 273 [debug]: --------------------------------------------
+2022-07-19 01:04:51 254 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:04:51 256 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:04:51 257 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:04:51 280 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 282 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 283 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 284 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 293 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 295 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 297 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 298 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:04:51 342 [info]:  >> DATABASE 접속됨 [threaId=76]
+2022-07-19 01:04:51 343 [info]:  >> Connection 임대됨 [threaId=76]
+2022-07-19 01:04:51 346 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 01:04:51 348 [debug]: SELECT   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:04:51 353 [info]:  >> Connection 반납됨 [threaId=76]
+2022-07-19 01:04:51 362 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 107ms
+2022-07-19 01:04:51 364 [debug]: --------------------------------------------------------
+2022-07-19 01:07:12 760 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:07:12 761 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:07:12 761 [debug]: [DELETE] http://localhost:3001/department/9962
+2022-07-19 01:07:12 764 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-07-19 01:07:12 764 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/app.js:114:48
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\express\lib\router\index.js:328:13)
+2022-07-19 01:07:12 768 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 01:07:12 768 [debug]: --------------------------------------------------------
+2022-07-19 01:07:20 820 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:07:20 821 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:07:20 821 [debug]: [DELETE] http://localhost:3001/professor/9962
+2022-07-19 01:07:20 822 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:07:20 823 [info]:  >> Connection 임대됨 [threaId=76]
+2022-07-19 01:07:20 824 [debug]: DELETE FROM student WHERE profno='9962'
+2022-07-19 01:07:20 826 [debug]: DELETE FROM professor WHERE profno='9962';
+2022-07-19 01:07:20 830 [info]:  >> Connection 반납됨 [threaId=76]
+2022-07-19 01:07:20 831 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-19 01:07:20 833 [debug]: --------------------------------------------------------
+2022-07-19 01:11:13 524 [debug]: --------------------------------------------
+2022-07-19 01:11:13 526 [debug]: |           Start Express Server           |
+2022-07-19 01:11:13 527 [debug]: --------------------------------------------
+2022-07-19 01:11:13 527 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:11:13 528 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:11:13 528 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:11:13 529 [debug]: --------------------------------------------
+2022-07-19 01:11:17 727 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:11:17 728 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:11:17 730 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 01:11:17 740 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:17 788 [info]:  >> DATABASE 접속됨 [threaId=77]
+2022-07-19 01:11:17 790 [info]:  >> Connection 임대됨 [threaId=77]
+2022-07-19 01:11:17 794 [debug]: select * FROM professor WHERE profno='9902';
+2022-07-19 01:11:17 807 [info]:  >> Connection 반납됨 [threaId=77]
+2022-07-19 01:11:17 821 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 93ms
+2022-07-19 01:11:17 826 [debug]: --------------------------------------------------------
+2022-07-19 01:11:19 692 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:11:19 692 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:11:19 693 [debug]: [POST] http://localhost:3001/professor
+2022-07-19 01:11:19 709 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 710 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 711 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 711 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 712 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 712 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 713 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:19 715 [info]:  >> Connection 임대됨 [threaId=77]
+2022-07-19 01:11:19 716 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너교수', 'profyou1', '부교수', '400', '1991-12-11 12:00:00', NULL, '201');
+2022-07-19 01:11:19 724 [debug]: select * FROM professor WHERE profno='9963';
+2022-07-19 01:11:19 725 [info]:  >> Connection 반납됨 [threaId=77]
+2022-07-19 01:11:19 727 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 35ms
+2022-07-19 01:11:19 727 [debug]: --------------------------------------------------------
+2022-07-19 01:11:22 835 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:11:22 836 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:11:22 836 [debug]: [PUT] http://localhost:3001/professor/9920
+2022-07-19 01:11:22 839 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 839 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 840 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 840 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 841 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 841 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 841 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 842 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:11:22 843 [info]:  >> Connection 임대됨 [threaId=77]
+2022-07-19 01:11:22 845 [debug]: UPDATE professor SET name='수정교수', userid='profput123', position='조교수', sal='320', hiredate='2022-07-18 10:02:30', comm='10', deptno='202'  WHERE profno='9920';
+2022-07-19 01:11:22 847 [debug]: SELECT   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9920'
+2022-07-19 01:11:22 849 [info]:  >> Connection 반납됨 [threaId=77]
+2022-07-19 01:11:22 850 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+2022-07-19 01:11:22 851 [debug]: --------------------------------------------------------
+2022-07-19 01:22:06 559 [debug]: --------------------------------------------
+2022-07-19 01:22:06 563 [debug]: |           Start Express Server           |
+2022-07-19 01:22:06 563 [debug]: --------------------------------------------
+2022-07-19 01:22:06 565 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:22:06 565 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:22:06 567 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:22:06 567 [debug]: --------------------------------------------
+2022-07-19 01:22:14 397 [debug]: --------------------------------------------
+2022-07-19 01:22:14 400 [debug]: |           Start Express Server           |
+2022-07-19 01:22:14 402 [debug]: --------------------------------------------
+2022-07-19 01:22:14 403 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:22:14 405 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:22:14 406 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:22:14 408 [debug]: --------------------------------------------
+2022-07-19 01:26:11 238 [debug]: --------------------------------------------
+2022-07-19 01:26:11 240 [debug]: |           Start Express Server           |
+2022-07-19 01:26:11 241 [debug]: --------------------------------------------
+2022-07-19 01:26:11 242 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:26:11 242 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:26:11 243 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:26:11 243 [debug]: --------------------------------------------
+2022-07-19 01:26:24 548 [debug]: --------------------------------------------
+2022-07-19 01:26:24 551 [debug]: |           Start Express Server           |
+2022-07-19 01:26:24 553 [debug]: --------------------------------------------
+2022-07-19 01:26:24 554 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:26:24 554 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:26:24 555 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:26:24 557 [debug]: --------------------------------------------
+2022-07-19 01:26:26 997 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:26:26 998 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:26:26 999 [debug]: [DELETE] http://localhost:3001/professor/9961
+2022-07-19 01:26:27 006 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:26:27 041 [info]:  >> DATABASE 접속됨 [threaId=80]
+2022-07-19 01:26:27 042 [info]:  >> Connection 임대됨 [threaId=80]
+2022-07-19 01:26:27 044 [debug]: UPDATE student SET profno=null WHERE profno='9961';
+2022-07-19 01:26:27 050 [debug]: DELETE FROM professor WHERE profno='9961';
+2022-07-19 01:26:27 059 [info]:  >> Connection 반납됨 [threaId=80]
+2022-07-19 01:26:27 064 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 66ms
+2022-07-19 01:26:27 064 [debug]: --------------------------------------------------------
+2022-07-19 01:31:10 309 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:31:10 310 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:31:10 311 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 01:31:10 315 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:31:10 316 [info]:  >> Connection 임대됨 [threaId=80]
+2022-07-19 01:31:10 317 [debug]: select * FROM professor WHERE profno='9902';
+2022-07-19 01:31:10 320 [info]:  >> Connection 반납됨 [threaId=80]
+2022-07-19 01:31:10 321 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-19 01:31:10 322 [debug]: --------------------------------------------------------
+2022-07-19 01:35:21 512 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:35:21 512 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:35:21 513 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 01:35:21 515 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:35:21 515 [info]:  >> Connection 임대됨 [threaId=80]
+2022-07-19 01:35:21 517 [debug]: select * FROM professor WHERE profno='9902';
+2022-07-19 01:35:21 518 [info]:  >> Connection 반납됨 [threaId=80]
+2022-07-19 01:35:21 519 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 01:35:21 519 [debug]: --------------------------------------------------------
+2022-07-19 01:35:32 205 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:35:32 206 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:35:32 206 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 01:35:32 208 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:35:32 209 [info]:  >> Connection 임대됨 [threaId=80]
+2022-07-19 01:35:32 209 [debug]: select * FROM professor WHERE profno='9902';
+2022-07-19 01:35:32 211 [info]:  >> Connection 반납됨 [threaId=80]
+2022-07-19 01:35:32 213 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-19 01:35:32 213 [debug]: --------------------------------------------------------
+2022-07-19 01:36:00 780 [debug]: --------------------------------------------
+2022-07-19 01:36:00 783 [debug]: |           Start Express Server           |
+2022-07-19 01:36:00 783 [debug]: --------------------------------------------
+2022-07-19 01:36:00 784 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:36:00 785 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:36:00 786 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:36:00 786 [debug]: --------------------------------------------
+2022-07-19 01:36:20 185 [debug]: --------------------------------------------
+2022-07-19 01:36:20 188 [debug]: |           Start Express Server           |
+2022-07-19 01:36:20 188 [debug]: --------------------------------------------
+2022-07-19 01:36:20 189 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:36:20 190 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:36:20 191 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:36:20 192 [debug]: --------------------------------------------
+2022-07-19 01:36:27 503 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:36:27 505 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:36:27 506 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 01:36:27 514 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:36:27 546 [info]:  >> DATABASE 접속됨 [threaId=81]
+2022-07-19 01:36:27 547 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:36:27 550 [debug]: SELECT   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9902'
+2022-07-19 01:36:27 554 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:36:27 558 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 54ms
+2022-07-19 01:36:27 559 [debug]: --------------------------------------------------------
+2022-07-19 01:39:39 234 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:39:39 235 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:39:39 235 [debug]: [GET] http://localhost:3001/professor?query=나는
+2022-07-19 01:39:39 238 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:39:39 239 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:39:39 240 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:39:39 241 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:39:39 244 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:39:39 253 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:39:39 253 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:39:39 256 [debug]: select * FROM professor        ORDER BY profno DESC     LIMIT 0, 10
+2022-07-19 01:39:39 258 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:39:39 259 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
+2022-07-19 01:39:39 260 [debug]: --------------------------------------------------------
+2022-07-19 01:40:50 610 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:40:50 610 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:40:50 611 [debug]: [GET] http://localhost:3001/professor?page=1
+2022-07-19 01:40:50 612 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:50 613 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:50 613 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:50 613 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:40:50 615 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:40:50 618 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:40:50 618 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:40:50 619 [debug]: select * FROM professor        ORDER BY profno DESC     LIMIT 0, 10
+2022-07-19 01:40:50 620 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:40:50 621 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-19 01:40:50 621 [debug]: --------------------------------------------------------
+2022-07-19 01:40:54 190 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:40:54 191 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:40:54 191 [debug]: [GET] http://localhost:3001/professor?page=1&rows=5
+2022-07-19 01:40:54 193 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:54 194 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:54 194 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:54 195 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:40:54 196 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:40:54 197 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:40:54 198 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:40:54 199 [debug]: select * FROM professor        ORDER BY profno DESC     LIMIT 0, 5
+2022-07-19 01:40:54 200 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:40:54 201 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-19 01:40:54 201 [debug]: --------------------------------------------------------
+2022-07-19 01:40:58 311 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:40:58 311 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:40:58 312 [debug]: [GET] http://localhost:3001/professor?page=1&rows=2
+2022-07-19 01:40:58 313 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:58 314 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:58 314 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:40:58 315 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:40:58 316 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:40:58 318 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:40:58 319 [info]:  >> Connection 임대됨 [threaId=81]
+2022-07-19 01:40:58 320 [debug]: select * FROM professor        ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:40:58 321 [info]:  >> Connection 반납됨 [threaId=81]
+2022-07-19 01:40:58 323 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-19 01:40:58 324 [debug]: --------------------------------------------------------
+2022-07-19 01:42:46 676 [debug]: --------------------------------------------
+2022-07-19 01:42:46 679 [debug]: |           Start Express Server           |
+2022-07-19 01:42:46 679 [debug]: --------------------------------------------
+2022-07-19 01:42:46 680 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:42:46 681 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:42:46 681 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:42:46 684 [debug]: --------------------------------------------
+2022-07-19 01:42:51 544 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:42:51 545 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:42:51 546 [debug]: [GET] http://localhost:3001/professor/9902
+2022-07-19 01:42:51 554 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:42:51 587 [info]:  >> DATABASE 접속됨 [threaId=82]
+2022-07-19 01:42:51 590 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:42:51 593 [debug]: SELECT   *, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE profno='9902'
+2022-07-19 01:42:51 613 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:42:51 644 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 99ms
+2022-07-19 01:42:51 645 [debug]: --------------------------------------------------------
+2022-07-19 01:45:34 338 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:45:34 339 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:45:34 339 [debug]: [GET] http://localhost:3001/professor?page=1&rows=2
+2022-07-19 01:45:34 343 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:45:34 344 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:45:34 344 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:45:34 345 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:45:34 347 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:45:34 357 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:45:34 358 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:45:34 359 [debug]: select *, d.dname FROM professor        ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:45:34 360 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:45:34 361 [error]: [Error] Unknown column 'd.dname' in 'field list'
+2022-07-19 01:45:34 362 [error]: Error: Unknown column 'd.dname' in 'field list'
+    at PromisePoolConnection.query (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:24:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:20
+2022-07-19 01:45:34 363 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
+2022-07-19 01:45:34 363 [debug]: --------------------------------------------------------
+2022-07-19 01:46:32 756 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:46:32 757 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:46:32 757 [debug]: [GET] http://localhost:3001/professor?page=1&rows=2
+2022-07-19 01:46:32 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:46:32 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:46:32 759 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:46:32 760 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:46:32 761 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:46:32 768 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:46:32 769 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:46:32 771 [debug]: select *, d.dname FROM professor        ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:46:32 771 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:46:32 772 [error]: [Error] Unknown column 'd.dname' in 'field list'
+2022-07-19 01:46:32 772 [error]: Error: Unknown column 'd.dname' in 'field list'
+    at PromisePoolConnection.query (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:24:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:20
+2022-07-19 01:46:32 774 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+2022-07-19 01:46:32 774 [debug]: --------------------------------------------------------
+2022-07-19 01:51:23 322 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:51:23 322 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:51:23 323 [debug]: [GET] http://localhost:3001/professor
+2022-07-19 01:51:23 324 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:23 325 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:23 325 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:23 326 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:51:23 327 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:51:23 329 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:51:23 330 [info]:  >> Connection 임대됨 [threaId=82]
+2022-07-19 01:51:23 331 [debug]: select *, d.dname FROM professor        ORDER BY profno DESC     LIMIT 0, 10
+2022-07-19 01:51:23 332 [info]:  >> Connection 반납됨 [threaId=82]
+2022-07-19 01:51:23 332 [error]: [Error] Unknown column 'd.dname' in 'field list'
+2022-07-19 01:51:23 333 [error]: Error: Unknown column 'd.dname' in 'field list'
+    at PromisePoolConnection.query (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:24:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:20
+2022-07-19 01:51:23 334 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-19 01:51:23 334 [debug]: --------------------------------------------------------
+2022-07-19 01:51:45 027 [debug]: --------------------------------------------
+2022-07-19 01:51:45 030 [debug]: |           Start Express Server           |
+2022-07-19 01:51:45 031 [debug]: --------------------------------------------
+2022-07-19 01:51:45 031 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:51:45 032 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:51:45 033 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:51:45 034 [debug]: --------------------------------------------
+2022-07-19 01:51:47 936 [debug]: --------------------------------------------
+2022-07-19 01:51:47 939 [debug]: |           Start Express Server           |
+2022-07-19 01:51:47 940 [debug]: --------------------------------------------
+2022-07-19 01:51:47 941 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:51:47 941 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:51:47 942 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:51:47 942 [debug]: --------------------------------------------
+2022-07-19 01:51:48 589 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:51:48 590 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:51:48 591 [debug]: [GET] http://localhost:3001/professor
+2022-07-19 01:51:48 598 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:48 599 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:48 600 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:48 632 [info]:  >> DATABASE 접속됨 [threaId=83]
+2022-07-19 01:51:48 634 [info]:  >> Connection 임대됨 [threaId=83]
+2022-07-19 01:51:48 646 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:51:48 667 [info]:  >> Connection 반납됨 [threaId=83]
+2022-07-19 01:51:48 668 [info]:  >> Connection 임대됨 [threaId=83]
+2022-07-19 01:51:48 669 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno
+2022-07-19 01:51:48 671 [info]:  >> Connection 반납됨 [threaId=83]
+2022-07-19 01:51:48 676 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 86ms
+2022-07-19 01:51:48 676 [debug]: --------------------------------------------------------
+2022-07-19 01:51:57 755 [debug]: --------------------------------------------
+2022-07-19 01:51:57 758 [debug]: |           Start Express Server           |
+2022-07-19 01:51:57 759 [debug]: --------------------------------------------
+2022-07-19 01:51:57 759 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 01:51:57 760 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 01:51:57 760 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 01:51:57 761 [debug]: --------------------------------------------
+2022-07-19 01:51:58 378 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:51:58 379 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:51:58 381 [debug]: [GET] http://localhost:3001/professor
+2022-07-19 01:51:58 388 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:58 389 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:58 390 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:51:58 419 [info]:  >> DATABASE 접속됨 [threaId=84]
+2022-07-19 01:51:58 421 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:51:58 425 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:51:58 428 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:51:58 429 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:51:58 430 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
+2022-07-19 01:51:58 433 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:51:58 438 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 59ms
+2022-07-19 01:51:58 439 [debug]: --------------------------------------------------------
+2022-07-19 01:52:01 317 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:52:01 317 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:52:01 318 [debug]: [GET] http://localhost:3001/professor?page=1&rows=2
+2022-07-19 01:52:01 320 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:52:01 321 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:52:01 321 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:52:01 322 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:52:01 323 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:52:01 328 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:52:01 329 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:52:01 330 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:52:01 331 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:52:01 333 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-07-19 01:52:01 333 [debug]: --------------------------------------------------------
+2022-07-19 01:52:08 213 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:52:08 214 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:52:08 215 [debug]: [GET] http://localhost:3001/professor?name=너&page=1&rows=2
+2022-07-19 01:52:08 217 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:52:08 218 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:52:08 219 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:52:08 219 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:52:08 221 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:52:08 223 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:52:08 224 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:52:08 225 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:52:08 227 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:52:08 228 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+2022-07-19 01:52:08 229 [debug]: --------------------------------------------------------
+2022-07-19 01:54:55 228 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:54:55 229 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:54:55 230 [debug]: [GET] http://localhost:3001/professor?name=너&page=1&rows=2
+2022-07-19 01:54:55 232 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:54:55 232 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:54:55 232 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:54:55 233 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:54:55 234 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:54:55 235 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:54:55 236 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:54:55 236 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:54:55 237 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:54:55 238 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+2022-07-19 01:54:55 238 [debug]: --------------------------------------------------------
+2022-07-19 01:55:02 511 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:55:02 512 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:55:02 512 [debug]: [GET] http://localhost:3001/professor?query=너&page=1&rows=2
+2022-07-19 01:55:02 514 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:55:02 515 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:55:02 515 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:55:02 516 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:55:02 517 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:55:02 519 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:55:02 520 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:55:02 522 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:55:02 523 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:55:02 524 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+2022-07-19 01:55:02 525 [debug]: --------------------------------------------------------
+2022-07-19 01:55:10 078 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 01:55:10 078 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 01:55:10 079 [debug]: [GET] http://localhost:3001/professor?query=나&page=1&rows=2
+2022-07-19 01:55:10 081 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:55:10 081 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:55:10 082 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 01:55:10 082 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:55:10 083 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 01:55:10 085 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:55:10 085 [info]:  >> Connection 임대됨 [threaId=84]
+2022-07-19 01:55:10 086 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 01:55:10 087 [info]:  >> Connection 반납됨 [threaId=84]
+2022-07-19 01:55:10 088 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-19 01:55:10 089 [debug]: --------------------------------------------------------
+2022-07-19 02:21:06 385 [debug]: --------------------------------------------
+2022-07-19 02:21:06 388 [debug]: |           Start Express Server           |
+2022-07-19 02:21:06 389 [debug]: --------------------------------------------
+2022-07-19 02:21:06 389 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:21:06 390 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:21:06 390 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:21:06 391 [debug]: --------------------------------------------
+2022-07-19 02:21:09 169 [debug]: --------------------------------------------
+2022-07-19 02:21:09 172 [debug]: |           Start Express Server           |
+2022-07-19 02:21:09 172 [debug]: --------------------------------------------
+2022-07-19 02:21:09 173 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:21:09 174 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:21:09 175 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:21:09 175 [debug]: --------------------------------------------
+2022-07-19 02:21:12 894 [debug]: --------------------------------------------
+2022-07-19 02:21:12 897 [debug]: |           Start Express Server           |
+2022-07-19 02:21:12 898 [debug]: --------------------------------------------
+2022-07-19 02:21:12 899 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:21:12 899 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:21:12 900 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:21:12 900 [debug]: --------------------------------------------
+2022-07-19 02:21:14 889 [debug]: --------------------------------------------
+2022-07-19 02:21:14 892 [debug]: |           Start Express Server           |
+2022-07-19 02:21:14 892 [debug]: --------------------------------------------
+2022-07-19 02:21:14 893 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:21:14 894 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:21:14 895 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:21:14 896 [debug]: --------------------------------------------
+2022-07-19 02:21:20 019 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:21:20 020 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:21:20 022 [debug]: [GET] http://localhost:3001/professor?query=나
+2022-07-19 02:21:20 032 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:20 033 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:20 034 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:20 066 [info]:  >> DATABASE 접속됨 [threaId=85]
+2022-07-19 02:21:20 067 [info]:  >> Connection 임대됨 [threaId=85]
+2022-07-19 02:21:20 070 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:21:20 076 [info]:  >> Connection 반납됨 [threaId=85]
+2022-07-19 02:21:20 076 [info]:  >> Connection 임대됨 [threaId=85]
+2022-07-19 02:21:20 078 [info]:  >> Connection 반납됨 [threaId=85]
+2022-07-19 02:21:20 079 [error]: [Error] SQL ID [selectList] not exists
+2022-07-19 02:21:20 080 [error]: Error: SQL ID [selectList] not exists
+    at MybatisMapper.getStatement (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mybatis-mapper\index.js:88:57)
+    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:152:37)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:20
+2022-07-19 02:21:20 084 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 64ms
+2022-07-19 02:21:20 085 [debug]: --------------------------------------------------------
+2022-07-19 02:21:22 966 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:21:22 966 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:21:22 967 [debug]: [GET] http://localhost:3001/professor
+2022-07-19 02:21:22 970 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:22 971 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:22 971 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:22 972 [info]:  >> Connection 임대됨 [threaId=85]
+2022-07-19 02:21:22 974 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:21:22 977 [info]:  >> Connection 반납됨 [threaId=85]
+2022-07-19 02:21:22 978 [info]:  >> Connection 임대됨 [threaId=85]
+2022-07-19 02:21:22 978 [info]:  >> Connection 반납됨 [threaId=85]
+2022-07-19 02:21:22 979 [error]: [Error] SQL ID [selectList] not exists
+2022-07-19 02:21:22 979 [error]: Error: SQL ID [selectList] not exists
+    at MybatisMapper.getStatement (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mybatis-mapper\index.js:88:57)
+    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:152:37)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:20
+2022-07-19 02:21:22 981 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+2022-07-19 02:21:22 981 [debug]: --------------------------------------------------------
+2022-07-19 02:21:24 268 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:21:24 269 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:21:24 269 [debug]: [GET] http://localhost:3001/professor
+2022-07-19 02:21:24 271 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:24 272 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:24 272 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:24 272 [info]:  >> Connection 임대됨 [threaId=85]
+2022-07-19 02:21:24 274 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:21:24 276 [info]:  >> Connection 반납됨 [threaId=85]
+2022-07-19 02:21:24 277 [info]:  >> Connection 임대됨 [threaId=85]
+2022-07-19 02:21:24 278 [info]:  >> Connection 반납됨 [threaId=85]
+2022-07-19 02:21:24 278 [error]: [Error] SQL ID [selectList] not exists
+2022-07-19 02:21:24 278 [error]: Error: SQL ID [selectList] not exists
+    at MybatisMapper.getStatement (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\15__exam\node_modules\mybatis-mapper\index.js:88:57)
+    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/services/ProfessorService.js:152:37)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:20
+2022-07-19 02:21:24 280 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-07-19 02:21:24 280 [debug]: --------------------------------------------------------
+2022-07-19 02:21:33 218 [debug]: --------------------------------------------
+2022-07-19 02:21:33 221 [debug]: |           Start Express Server           |
+2022-07-19 02:21:33 221 [debug]: --------------------------------------------
+2022-07-19 02:21:33 221 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:21:33 222 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:21:33 222 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:21:33 223 [debug]: --------------------------------------------
+2022-07-19 02:21:34 678 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:21:34 679 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:21:34 680 [debug]: [GET] http://localhost:3001/professor
+2022-07-19 02:21:34 687 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:34 688 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:34 688 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:34 716 [info]:  >> DATABASE 접속됨 [threaId=86]
+2022-07-19 02:21:34 717 [info]:  >> Connection 임대됨 [threaId=86]
+2022-07-19 02:21:34 720 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:21:34 724 [info]:  >> Connection 반납됨 [threaId=86]
+2022-07-19 02:21:34 725 [info]:  >> Connection 임대됨 [threaId=86]
+2022-07-19 02:21:34 728 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
+2022-07-19 02:21:34 730 [info]:  >> Connection 반납됨 [threaId=86]
+2022-07-19 02:21:34 734 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 56ms
+2022-07-19 02:21:34 735 [debug]: --------------------------------------------------------
+2022-07-19 02:21:39 931 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:21:39 932 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:21:39 932 [debug]: [GET] http://localhost:3001/professor?query=나
+2022-07-19 02:21:39 935 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:39 935 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:39 936 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:39 936 [info]:  >> Connection 임대됨 [threaId=86]
+2022-07-19 02:21:39 937 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:21:39 940 [info]:  >> Connection 반납됨 [threaId=86]
+2022-07-19 02:21:39 940 [info]:  >> Connection 임대됨 [threaId=86]
+2022-07-19 02:21:39 941 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
+2022-07-19 02:21:39 943 [info]:  >> Connection 반납됨 [threaId=86]
+2022-07-19 02:21:39 945 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-19 02:21:39 945 [debug]: --------------------------------------------------------
+2022-07-19 02:21:54 009 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:21:54 010 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:21:54 011 [debug]: [GET] http://localhost:3001/professor?query=나&page=1&rows=2
+2022-07-19 02:21:54 013 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:54 014 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:54 014 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:21:54 015 [info]:  >> Connection 임대됨 [threaId=86]
+2022-07-19 02:21:54 016 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:21:54 052 [info]:  >> Connection 반납됨 [threaId=86]
+2022-07-19 02:21:54 053 [info]:  >> Connection 임대됨 [threaId=86]
+2022-07-19 02:21:54 055 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 02:21:54 055 [info]:  >> Connection 반납됨 [threaId=86]
+2022-07-19 02:21:54 057 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 47ms
+2022-07-19 02:21:54 057 [debug]: --------------------------------------------------------
+2022-07-19 02:22:05 888 [debug]: --------------------------------------------
+2022-07-19 02:22:05 891 [debug]: |           Start Express Server           |
+2022-07-19 02:22:05 892 [debug]: --------------------------------------------
+2022-07-19 02:22:05 892 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:22:05 894 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:22:05 894 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:22:05 895 [debug]: --------------------------------------------
+2022-07-19 02:22:35 857 [debug]: --------------------------------------------
+2022-07-19 02:22:35 860 [debug]: |           Start Express Server           |
+2022-07-19 02:22:35 860 [debug]: --------------------------------------------
+2022-07-19 02:22:35 861 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:22:35 863 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:22:35 864 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:22:35 864 [debug]: --------------------------------------------
+2022-07-19 02:23:29 449 [debug]: --------------------------------------------
+2022-07-19 02:23:29 452 [debug]: |           Start Express Server           |
+2022-07-19 02:23:29 452 [debug]: --------------------------------------------
+2022-07-19 02:23:29 453 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:23:29 453 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:23:29 454 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:23:29 454 [debug]: --------------------------------------------
+2022-07-19 02:23:32 595 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:23:32 596 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:23:32 597 [debug]: [GET] http://localhost:3001/professor?query=나&page=1&rows=2
+2022-07-19 02:23:32 604 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:23:32 606 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:23:32 606 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:23:32 646 [info]:  >> DATABASE 접속됨 [threaId=87]
+2022-07-19 02:23:32 647 [info]:  >> Connection 임대됨 [threaId=87]
+2022-07-19 02:23:32 651 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:23:32 692 [info]:  >> Connection 반납됨 [threaId=87]
+2022-07-19 02:23:32 693 [error]: [TypeError] professorService.getJoinList is not a function
+2022-07-19 02:23:32 694 [error]: TypeError: professorService.getJoinList is not a function
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__exam/controllers/ProfessorController.js:36:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-07-19 02:23:32 698 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 102ms
+2022-07-19 02:23:32 699 [debug]: --------------------------------------------------------
+2022-07-19 02:23:46 423 [debug]: --------------------------------------------
+2022-07-19 02:23:46 426 [debug]: |           Start Express Server           |
+2022-07-19 02:23:46 426 [debug]: --------------------------------------------
+2022-07-19 02:23:46 427 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:23:46 428 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:23:46 429 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:23:46 430 [debug]: --------------------------------------------
+2022-07-19 02:28:13 692 [debug]: --------------------------------------------
+2022-07-19 02:28:13 696 [debug]: |           Start Express Server           |
+2022-07-19 02:28:13 697 [debug]: --------------------------------------------
+2022-07-19 02:28:13 698 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:28:13 699 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:28:13 699 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:28:13 700 [debug]: --------------------------------------------
+2022-07-19 02:28:25 992 [debug]: --------------------------------------------
+2022-07-19 02:28:25 995 [debug]: |           Start Express Server           |
+2022-07-19 02:28:25 995 [debug]: --------------------------------------------
+2022-07-19 02:28:25 996 [debug]: server address => http://221.154.247.73:3001
+2022-07-19 02:28:25 997 [debug]: server address => http://192.168.221.1:3001
+2022-07-19 02:28:25 997 [debug]: server address => http://192.168.91.1:3001
+2022-07-19 02:28:25 998 [debug]: --------------------------------------------
+2022-07-19 02:28:28 363 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:28:28 364 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:28:28 365 [debug]: [GET] http://localhost:3001/professor?query=나&page=1&rows=2
+2022-07-19 02:28:28 374 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:28 375 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:28 376 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:28 407 [info]:  >> DATABASE 접속됨 [threaId=88]
+2022-07-19 02:28:28 408 [info]:  >> Connection 임대됨 [threaId=88]
+2022-07-19 02:28:28 412 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:28:28 415 [info]:  >> Connection 반납됨 [threaId=88]
+2022-07-19 02:28:28 416 [info]:  >> Connection 임대됨 [threaId=88]
+2022-07-19 02:28:28 418 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 02:28:28 420 [info]:  >> Connection 반납됨 [threaId=88]
+2022-07-19 02:28:28 426 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 62ms
+2022-07-19 02:28:28 427 [debug]: --------------------------------------------------------
+2022-07-19 02:28:37 941 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:28:37 942 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:28:37 942 [debug]: [GET] http://localhost:3001/professor?name=나&page=1&rows=2
+2022-07-19 02:28:37 945 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:37 946 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:37 946 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:37 947 [info]:  >> Connection 임대됨 [threaId=88]
+2022-07-19 02:28:37 949 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:28:37 953 [info]:  >> Connection 반납됨 [threaId=88]
+2022-07-19 02:28:37 954 [info]:  >> Connection 임대됨 [threaId=88]
+2022-07-19 02:28:37 956 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 02:28:37 957 [info]:  >> Connection 반납됨 [threaId=88]
+2022-07-19 02:28:37 959 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+2022-07-19 02:28:37 960 [debug]: --------------------------------------------------------
+2022-07-19 02:28:49 230 [debug]: 클라이언트가 접속했습니다.
+2022-07-19 02:28:49 231 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-19 02:28:49 231 [debug]: [GET] http://localhost:3001/professor?query=나&page=1&rows=2
+2022-07-19 02:28:49 233 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:49 233 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:49 234 [debug]: [HTTP %s Params]  %s=%s
+2022-07-19 02:28:49 234 [info]:  >> Connection 임대됨 [threaId=88]
+2022-07-19 02:28:49 235 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
+2022-07-19 02:28:49 240 [info]:  >> Connection 반납됨 [threaId=88]
+2022-07-19 02:28:49 241 [info]:  >> Connection 임대됨 [threaId=88]
+2022-07-19 02:28:49 242 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 2
+2022-07-19 02:28:49 243 [info]:  >> Connection 반납됨 [threaId=88]
+2022-07-19 02:28:49 244 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+2022-07-19 02:28:49 244 [debug]: --------------------------------------------------------

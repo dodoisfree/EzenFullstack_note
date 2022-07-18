@@ -1,333 +1,0 @@
-2022-07-18 01:10:36 956 [debug]: --------------------------------------------
-2022-07-18 01:10:36 960 [debug]: |           Start Express Server           |
-2022-07-18 01:10:36 962 [debug]: --------------------------------------------
-2022-07-18 01:10:36 963 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:10:36 965 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:10:36 968 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:10:36 971 [debug]: --------------------------------------------
-2022-07-18 01:11:50 372 [debug]: --------------------------------------------
-2022-07-18 01:11:50 375 [debug]: |           Start Express Server           |
-2022-07-18 01:11:50 376 [debug]: --------------------------------------------
-2022-07-18 01:11:50 377 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:11:50 378 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:11:50 380 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:11:50 380 [debug]: --------------------------------------------
-2022-07-18 01:11:52 840 [info]: Database Pool is closed
-2022-07-18 01:12:11 428 [debug]: --------------------------------------------
-2022-07-18 01:12:11 431 [debug]: |           Start Express Server           |
-2022-07-18 01:12:11 431 [debug]: --------------------------------------------
-2022-07-18 01:12:11 432 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:12:11 432 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:12:11 433 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:12:11 433 [debug]: --------------------------------------------
-2022-07-18 01:12:20 146 [debug]: 클라이언트가 접속했습니다.
-2022-07-18 01:12:20 153 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-18 01:12:20 155 [debug]: [GET] http://221.154.247.73:3001/
-2022-07-18 01:12:20 169 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
-2022-07-18 01:12:20 170 [debug]: --------------------------------------------------------
-2022-07-18 01:12:47 240 [debug]: 클라이언트가 접속했습니다.
-2022-07-18 01:12:47 241 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-18 01:12:47 242 [debug]: [GET] http://221.154.247.73:3001/send_post
-2022-07-18 01:12:47 247 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
-2022-07-18 01:12:47 248 [debug]: --------------------------------------------------------
-2022-07-18 01:13:20 669 [debug]: 클라이언트가 접속했습니다.
-2022-07-18 01:13:20 670 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-18 01:13:20 670 [debug]: [GET] http://221.154.247.73:3001/page1
-2022-07-18 01:13:20 675 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
-2022-07-18 01:13:20 676 [debug]: --------------------------------------------------------
-2022-07-18 01:13:24 368 [debug]: 클라이언트가 접속했습니다.
-2022-07-18 01:13:24 369 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-18 01:13:24 370 [debug]: [GET] http://221.154.247.73:3001/page2
-2022-07-18 01:13:24 372 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
-2022-07-18 01:13:24 373 [debug]: --------------------------------------------------------
-2022-07-18 01:13:26 915 [debug]: 클라이언트가 접속했습니다.
-2022-07-18 01:13:26 916 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-18 01:13:26 917 [debug]: [GET] http://221.154.247.73:3001/page3
-2022-07-18 01:13:26 920 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
-2022-07-18 01:13:26 921 [debug]: --------------------------------------------------------
-2022-07-18 01:14:26 319 [debug]: --------------------------------------------
-2022-07-18 01:14:26 322 [debug]: |           Start Express Server           |
-2022-07-18 01:14:26 323 [debug]: --------------------------------------------
-2022-07-18 01:14:26 323 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:14:26 324 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:14:26 325 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:14:26 325 [debug]: --------------------------------------------
-2022-07-18 01:14:55 820 [debug]: --------------------------------------------
-2022-07-18 01:14:55 823 [debug]: |           Start Express Server           |
-2022-07-18 01:14:55 823 [debug]: --------------------------------------------
-2022-07-18 01:14:55 824 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:14:55 825 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:14:55 825 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:14:55 826 [debug]: --------------------------------------------
-2022-07-18 01:37:57 782 [debug]: --------------------------------------------
-2022-07-18 01:37:57 835 [debug]: |           Start Express Server           |
-2022-07-18 01:37:57 874 [debug]: --------------------------------------------
-2022-07-18 01:37:57 875 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:37:57 876 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:37:57 878 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:37:57 881 [debug]: --------------------------------------------
-2022-07-18 01:38:13 476 [debug]: --------------------------------------------
-2022-07-18 01:38:13 479 [debug]: |           Start Express Server           |
-2022-07-18 01:38:13 480 [debug]: --------------------------------------------
-2022-07-18 01:38:13 481 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:38:13 482 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:38:13 483 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:38:13 486 [debug]: --------------------------------------------
-2022-07-18 01:56:44 878 [debug]: --------------------------------------------
-2022-07-18 01:56:44 882 [debug]: |           Start Express Server           |
-2022-07-18 01:56:44 882 [debug]: --------------------------------------------
-2022-07-18 01:56:44 883 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 01:56:44 884 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 01:56:44 884 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 01:56:44 885 [debug]: --------------------------------------------
-2022-07-18 02:14:55 954 [debug]: --------------------------------------------
-2022-07-18 02:14:55 960 [debug]: |           Start Express Server           |
-2022-07-18 02:14:55 962 [debug]: --------------------------------------------
-2022-07-18 02:14:55 963 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 02:14:55 966 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 02:14:55 967 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 02:14:55 968 [debug]: --------------------------------------------
-2022-07-18 02:15:21 907 [debug]: --------------------------------------------
-2022-07-18 02:15:21 909 [debug]: |           Start Express Server           |
-2022-07-18 02:15:21 910 [debug]: --------------------------------------------
-2022-07-18 02:15:21 912 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 02:15:21 912 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 02:15:21 913 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 02:15:21 914 [debug]: --------------------------------------------
-2022-07-18 02:15:33 917 [debug]: --------------------------------------------
-2022-07-18 02:15:33 920 [debug]: |           Start Express Server           |
-2022-07-18 02:15:33 921 [debug]: --------------------------------------------
-2022-07-18 02:15:33 922 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 02:15:33 922 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 02:15:33 923 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 02:15:33 923 [debug]: --------------------------------------------
-2022-07-18 02:18:23 130 [debug]: --------------------------------------------
-2022-07-18 02:18:23 133 [debug]: |           Start Express Server           |
-2022-07-18 02:18:23 134 [debug]: --------------------------------------------
-2022-07-18 02:18:23 134 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 02:18:23 135 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 02:18:23 135 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 02:18:23 136 [debug]: --------------------------------------------
-2022-07-18 02:20:30 326 [debug]: --------------------------------------------
-2022-07-18 02:20:30 329 [debug]: |           Start Express Server           |
-2022-07-18 02:20:30 330 [debug]: --------------------------------------------
-2022-07-18 02:20:30 330 [debug]: server address => http://221.154.247.73:3001
-2022-07-18 02:20:30 331 [debug]: server address => http://192.168.221.1:3001
-2022-07-18 02:20:30 332 [debug]: server address => http://192.168.91.1:3001
-2022-07-18 02:20:30 332 [debug]: --------------------------------------------
-2022-07-18 02:23:45 815 [info]:  >> DATABASE 접속됨 [threaId=10]
-2022-07-18 02:23:45 817 [info]:  >> Connection 임대됨 [threaId=10]
-2022-07-18 02:23:45 821 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:23:45 826 [info]:  >> Connection 반납됨 [threaId=10]
-2022-07-18 02:23:45 831 [info]:  >> Connection 임대됨 [threaId=10]
-2022-07-18 02:23:45 832 [debug]: select * FROM professor WHERE profno='232';
-2022-07-18 02:23:45 836 [info]:  >> Connection 반납됨 [threaId=10]
-2022-07-18 02:23:45 838 [info]: Database Pool is closed
-2022-07-18 02:23:48 704 [info]:  >> DATABASE 접속됨 [threaId=11]
-2022-07-18 02:23:48 709 [info]:  >> Connection 임대됨 [threaId=11]
-2022-07-18 02:23:48 712 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:23:48 716 [info]:  >> Connection 반납됨 [threaId=11]
-2022-07-18 02:23:48 721 [info]:  >> Connection 임대됨 [threaId=11]
-2022-07-18 02:23:48 723 [debug]: select * FROM professor WHERE profno='232';
-2022-07-18 02:23:48 725 [info]:  >> Connection 반납됨 [threaId=11]
-2022-07-18 02:23:48 729 [info]: Database Pool is closed
-2022-07-18 02:23:56 356 [info]:  >> DATABASE 접속됨 [threaId=12]
-2022-07-18 02:23:56 360 [info]:  >> Connection 임대됨 [threaId=12]
-2022-07-18 02:23:56 363 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:23:56 367 [info]:  >> Connection 반납됨 [threaId=12]
-2022-07-18 02:23:56 378 [info]:  >> Connection 임대됨 [threaId=12]
-2022-07-18 02:23:56 380 [debug]: select * FROM professor WHERE profno='232';
-2022-07-18 02:23:56 382 [info]:  >> Connection 반납됨 [threaId=12]
-2022-07-18 02:23:56 386 [info]: Database Pool is closed
-2022-07-18 02:24:33 439 [info]:  >> DATABASE 접속됨 [threaId=13]
-2022-07-18 02:24:33 441 [info]:  >> Connection 임대됨 [threaId=13]
-2022-07-18 02:24:33 445 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:24:33 449 [info]:  >> Connection 반납됨 [threaId=13]
-2022-07-18 02:24:33 456 [info]:  >> Connection 임대됨 [threaId=13]
-2022-07-18 02:24:33 460 [debug]: select * FROM professor WHERE profno='9902';
-2022-07-18 02:24:33 462 [info]:  >> Connection 반납됨 [threaId=13]
-2022-07-18 02:24:33 464 [info]:  >> Connection 임대됨 [threaId=13]
-2022-07-18 02:24:33 469 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:24:33 504 [debug]: select * FROM professor WHERE profno='9909';
-2022-07-18 02:24:33 515 [info]:  >> Connection 반납됨 [threaId=13]
-2022-07-18 02:24:33 519 [info]:  >> Connection 임대됨 [threaId=13]
-2022-07-18 02:24:33 521 [info]:  >> Connection 반납됨 [threaId=13]
-2022-07-18 02:24:33 525 [info]: Database Pool is closed
-2022-07-18 02:24:41 831 [info]:  >> DATABASE 접속됨 [threaId=14]
-2022-07-18 02:24:41 834 [info]:  >> Connection 임대됨 [threaId=14]
-2022-07-18 02:24:41 841 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:24:41 846 [info]:  >> Connection 반납됨 [threaId=14]
-2022-07-18 02:24:41 860 [info]:  >> Connection 임대됨 [threaId=14]
-2022-07-18 02:24:41 871 [debug]: select * FROM professor WHERE profno='9902';
-2022-07-18 02:24:41 878 [info]:  >> Connection 반납됨 [threaId=14]
-2022-07-18 02:24:41 881 [info]:  >> Connection 임대됨 [threaId=14]
-2022-07-18 02:24:41 884 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:24:41 888 [debug]: select * FROM professor WHERE profno='9910';
-2022-07-18 02:24:41 889 [info]:  >> Connection 반납됨 [threaId=14]
-2022-07-18 02:24:41 891 [info]:  >> Connection 임대됨 [threaId=14]
-2022-07-18 02:24:41 892 [info]:  >> Connection 반납됨 [threaId=14]
-2022-07-18 02:24:41 895 [info]: Database Pool is closed
-2022-07-18 02:24:58 100 [info]:  >> DATABASE 접속됨 [threaId=15]
-2022-07-18 02:24:58 103 [info]:  >> Connection 임대됨 [threaId=15]
-2022-07-18 02:24:58 107 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:24:58 113 [info]:  >> Connection 반납됨 [threaId=15]
-2022-07-18 02:24:58 123 [info]:  >> Connection 임대됨 [threaId=15]
-2022-07-18 02:24:58 125 [debug]: select * FROM professor WHERE profno='9902';
-2022-07-18 02:24:58 129 [info]:  >> Connection 반납됨 [threaId=15]
-2022-07-18 02:24:58 131 [info]:  >> Connection 임대됨 [threaId=15]
-2022-07-18 02:24:58 133 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:24:58 139 [debug]: select * FROM professor WHERE profno='9911';
-2022-07-18 02:24:58 140 [info]:  >> Connection 반납됨 [threaId=15]
-2022-07-18 02:24:58 143 [info]:  >> Connection 임대됨 [threaId=15]
-2022-07-18 02:24:58 143 [info]:  >> Connection 반납됨 [threaId=15]
-2022-07-18 02:24:58 146 [info]: Database Pool is closed
-2022-07-18 02:26:14 145 [info]:  >> DATABASE 접속됨 [threaId=16]
-2022-07-18 02:26:14 148 [info]:  >> Connection 임대됨 [threaId=16]
-2022-07-18 02:26:14 152 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:26:14 157 [info]:  >> Connection 반납됨 [threaId=16]
-2022-07-18 02:26:14 165 [info]:  >> Connection 임대됨 [threaId=16]
-2022-07-18 02:26:14 168 [debug]: select * FROM professor WHERE profno='9902';
-2022-07-18 02:26:14 170 [info]:  >> Connection 반납됨 [threaId=16]
-2022-07-18 02:26:14 172 [info]:  >> Connection 임대됨 [threaId=16]
-2022-07-18 02:26:14 174 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:26:14 179 [debug]: select * FROM professor WHERE profno='9912';
-2022-07-18 02:26:14 180 [info]:  >> Connection 반납됨 [threaId=16]
-2022-07-18 02:26:14 182 [info]:  >> Connection 임대됨 [threaId=16]
-2022-07-18 02:26:14 183 [info]:  >> Connection 반납됨 [threaId=16]
-2022-07-18 02:26:14 186 [info]: Database Pool is closed
-2022-07-18 02:26:25 563 [info]:  >> DATABASE 접속됨 [threaId=17]
-2022-07-18 02:26:25 566 [info]:  >> Connection 임대됨 [threaId=17]
-2022-07-18 02:26:25 572 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:26:25 581 [info]:  >> Connection 반납됨 [threaId=17]
-2022-07-18 02:26:25 600 [info]:  >> Connection 임대됨 [threaId=17]
-2022-07-18 02:26:25 609 [debug]: select * FROM professor WHERE profno='9902';
-2022-07-18 02:26:25 614 [info]:  >> Connection 반납됨 [threaId=17]
-2022-07-18 02:26:25 616 [info]:  >> Connection 임대됨 [threaId=17]
-2022-07-18 02:26:25 619 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:26:25 626 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:26:25 627 [info]:  >> Connection 반납됨 [threaId=17]
-2022-07-18 02:26:25 630 [info]:  >> Connection 임대됨 [threaId=17]
-2022-07-18 02:26:25 631 [info]:  >> Connection 반납됨 [threaId=17]
-2022-07-18 02:26:25 633 [info]: Database Pool is closed
-2022-07-18 02:27:38 347 [info]:  >> DATABASE 접속됨 [threaId=18]
-2022-07-18 02:27:38 351 [info]:  >> Connection 임대됨 [threaId=18]
-2022-07-18 02:27:38 355 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:27:38 360 [info]:  >> Connection 반납됨 [threaId=18]
-2022-07-18 02:27:38 375 [info]:  >> Connection 임대됨 [threaId=18]
-2022-07-18 02:27:38 380 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:27:38 384 [info]:  >> Connection 반납됨 [threaId=18]
-2022-07-18 02:27:38 388 [info]:  >> Connection 임대됨 [threaId=18]
-2022-07-18 02:27:38 390 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:27:38 394 [debug]: select * FROM professor WHERE profno='9914';
-2022-07-18 02:27:38 395 [info]:  >> Connection 반납됨 [threaId=18]
-2022-07-18 02:27:38 397 [info]:  >> Connection 임대됨 [threaId=18]
-2022-07-18 02:27:38 398 [debug]: UPDATE professor SET name='너교수', userid='test1234', position='조조교수', sal='320', hiredate='2022-07-18 00:00:00', comm=NULL, deptno='202'  WHERE profno='9913';
-2022-07-18 02:27:38 405 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:27:38 406 [info]:  >> Connection 반납됨 [threaId=18]
-2022-07-18 02:27:38 408 [info]:  >> Connection 임대됨 [threaId=18]
-2022-07-18 02:27:38 409 [info]:  >> Connection 반납됨 [threaId=18]
-2022-07-18 02:27:38 411 [info]: Database Pool is closed
-2022-07-18 02:28:46 345 [info]:  >> DATABASE 접속됨 [threaId=19]
-2022-07-18 02:28:46 347 [info]:  >> Connection 임대됨 [threaId=19]
-2022-07-18 02:28:46 352 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:28:46 358 [info]:  >> Connection 반납됨 [threaId=19]
-2022-07-18 02:28:46 374 [info]:  >> Connection 임대됨 [threaId=19]
-2022-07-18 02:28:46 378 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:28:46 384 [info]:  >> Connection 반납됨 [threaId=19]
-2022-07-18 02:28:46 388 [info]:  >> Connection 임대됨 [threaId=19]
-2022-07-18 02:28:46 391 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:28:46 397 [debug]: select * FROM professor WHERE profno='9915';
-2022-07-18 02:28:46 399 [info]:  >> Connection 반납됨 [threaId=19]
-2022-07-18 02:28:46 402 [info]:  >> Connection 임대됨 [threaId=19]
-2022-07-18 02:28:46 403 [debug]: UPDATE professor SET name='너교수', userid='test1234', position='조조교수', sal='320', hiredate='2022-07-18 00:00:00', comm=NULL, deptno='202'  WHERE profno='9913';
-2022-07-18 02:28:46 405 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:28:46 407 [info]:  >> Connection 반납됨 [threaId=19]
-2022-07-18 02:28:46 410 [info]:  >> Connection 임대됨 [threaId=19]
-2022-07-18 02:28:46 410 [info]:  >> Connection 반납됨 [threaId=19]
-2022-07-18 02:28:46 413 [info]: Database Pool is closed
-2022-07-18 02:31:07 701 [info]:  >> DATABASE 접속됨 [threaId=20]
-2022-07-18 02:31:07 703 [info]:  >> Connection 임대됨 [threaId=20]
-2022-07-18 02:31:07 707 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:31:07 714 [info]:  >> Connection 반납됨 [threaId=20]
-2022-07-18 02:31:07 736 [info]:  >> Connection 임대됨 [threaId=20]
-2022-07-18 02:31:07 743 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:31:07 748 [info]:  >> Connection 반납됨 [threaId=20]
-2022-07-18 02:31:07 754 [info]:  >> Connection 임대됨 [threaId=20]
-2022-07-18 02:31:07 758 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:31:07 761 [debug]: select * FROM professor WHERE profno='9916';
-2022-07-18 02:31:07 763 [info]:  >> Connection 반납됨 [threaId=20]
-2022-07-18 02:31:07 767 [info]:  >> Connection 임대됨 [threaId=20]
-2022-07-18 02:31:07 769 [debug]: UPDATE professor SET name='너교수', userid='test1234', position='조조교수', sal='320', hiredate='2022-07-18 00:00:00', comm=NULL, deptno='202'  WHERE profno='9913';
-2022-07-18 02:31:07 771 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:31:07 772 [info]:  >> Connection 반납됨 [threaId=20]
-2022-07-18 02:31:07 775 [info]:  >> Connection 임대됨 [threaId=20]
-2022-07-18 02:31:07 777 [debug]: DELETE FROM student WHERE profno='9913'
-2022-07-18 02:31:07 779 [info]:  >> Connection 반납됨 [threaId=20]
-2022-07-18 02:31:07 782 [info]: Database Pool is closed
-2022-07-18 02:32:20 164 [info]:  >> DATABASE 접속됨 [threaId=21]
-2022-07-18 02:32:20 166 [info]:  >> Connection 임대됨 [threaId=21]
-2022-07-18 02:32:20 170 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:32:20 175 [info]:  >> Connection 반납됨 [threaId=21]
-2022-07-18 02:32:20 189 [info]:  >> Connection 임대됨 [threaId=21]
-2022-07-18 02:32:20 191 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:32:20 195 [info]:  >> Connection 반납됨 [threaId=21]
-2022-07-18 02:32:20 201 [info]:  >> Connection 임대됨 [threaId=21]
-2022-07-18 02:32:20 203 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:32:20 209 [debug]: select * FROM professor WHERE profno='9917';
-2022-07-18 02:32:20 210 [info]:  >> Connection 반납됨 [threaId=21]
-2022-07-18 02:32:20 213 [info]:  >> Connection 임대됨 [threaId=21]
-2022-07-18 02:32:20 215 [debug]: UPDATE professor SET name='너교수', userid='test1234', position='조조교수', sal='320', hiredate='2022-07-18 00:00:00', comm=NULL, deptno='202'  WHERE profno='9913';
-2022-07-18 02:32:20 217 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:32:20 219 [info]:  >> Connection 반납됨 [threaId=21]
-2022-07-18 02:32:20 221 [info]:  >> Connection 임대됨 [threaId=21]
-2022-07-18 02:32:20 224 [info]:  >> Connection 반납됨 [threaId=21]
-2022-07-18 02:32:20 227 [info]: Database Pool is closed
-2022-07-18 02:37:34 924 [info]:  >> DATABASE 접속됨 [threaId=22]
-2022-07-18 02:37:34 927 [info]:  >> Connection 임대됨 [threaId=22]
-2022-07-18 02:37:34 931 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:37:34 935 [info]:  >> Connection 반납됨 [threaId=22]
-2022-07-18 02:37:34 949 [info]:  >> Connection 임대됨 [threaId=22]
-2022-07-18 02:37:34 950 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:37:34 953 [info]:  >> Connection 반납됨 [threaId=22]
-2022-07-18 02:37:34 955 [info]:  >> Connection 임대됨 [threaId=22]
-2022-07-18 02:37:34 957 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:37:34 965 [debug]: select * FROM professor WHERE profno='9918';
-2022-07-18 02:37:34 966 [info]:  >> Connection 반납됨 [threaId=22]
-2022-07-18 02:37:34 968 [info]:  >> Connection 임대됨 [threaId=22]
-2022-07-18 02:37:34 969 [debug]: UPDATE professor SET name='너교수', userid='test1234', position='조조교수', sal='320', hiredate='2022-07-18 00:00:00', comm=NULL, deptno='202'  WHERE profno='9913';
-2022-07-18 02:37:34 971 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:37:34 972 [info]:  >> Connection 반납됨 [threaId=22]
-2022-07-18 02:37:34 973 [info]:  >> Connection 임대됨 [threaId=22]
-2022-07-18 02:37:34 974 [info]:  >> Connection 반납됨 [threaId=22]
-2022-07-18 02:37:34 977 [info]: Database Pool is closed
-2022-07-18 02:39:46 134 [info]:  >> DATABASE 접속됨 [threaId=23]
-2022-07-18 02:39:46 137 [info]:  >> Connection 임대됨 [threaId=23]
-2022-07-18 02:39:46 142 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:39:46 147 [info]:  >> Connection 반납됨 [threaId=23]
-2022-07-18 02:39:46 170 [info]:  >> Connection 임대됨 [threaId=23]
-2022-07-18 02:39:46 174 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:39:46 185 [info]:  >> Connection 반납됨 [threaId=23]
-2022-07-18 02:39:46 188 [info]:  >> Connection 임대됨 [threaId=23]
-2022-07-18 02:39:46 193 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('나교수', 'test123', '조교수', '320', '2022-07-18 00:00:00', NULL, '202');
-2022-07-18 02:39:46 198 [debug]: select * FROM professor WHERE profno='9919';
-2022-07-18 02:39:46 200 [info]:  >> Connection 반납됨 [threaId=23]
-2022-07-18 02:39:46 202 [info]:  >> Connection 임대됨 [threaId=23]
-2022-07-18 02:39:46 203 [debug]: UPDATE professor SET name='너교수', userid='test1234', position='조조교수', sal='320', hiredate='2022-07-18 00:00:00', comm=NULL, deptno='202'  WHERE profno='9913';
-2022-07-18 02:39:46 204 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:39:46 206 [info]:  >> Connection 반납됨 [threaId=23]
-2022-07-18 02:39:46 208 [info]:  >> Connection 임대됨 [threaId=23]
-2022-07-18 02:39:46 209 [debug]: DELETE FROM student WHERE profno='9913'
-2022-07-18 02:39:46 211 [debug]: DELETE FROM professor WHERE profno='9913';
-2022-07-18 02:39:46 215 [info]:  >> Connection 반납됨 [threaId=23]
-2022-07-18 02:39:46 216 [info]:  >> Connection 임대됨 [threaId=23]
-2022-07-18 02:39:46 217 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-18 02:39:46 222 [info]:  >> Connection 반납됨 [threaId=23]
-2022-07-18 02:39:46 223 [info]: Database Pool is closed
-2022-07-18 02:43:14 883 [info]:  >> DATABASE 접속됨 [threaId=24]
-2022-07-18 02:43:14 887 [info]:  >> Connection 임대됨 [threaId=24]
-2022-07-18 02:43:14 892 [debug]: select * FROM professor        ORDER BY profno DESC
-2022-07-18 02:43:14 897 [info]:  >> Connection 반납됨 [threaId=24]
-2022-07-18 02:43:14 913 [info]:  >> Connection 임대됨 [threaId=24]
-2022-07-18 02:43:14 915 [debug]: select * FROM professor WHERE profno='9913';
-2022-07-18 02:43:14 918 [info]:  >> Connection 반납됨 [threaId=24]
-2022-07-18 02:43:14 921 [info]: Database Pool is closed

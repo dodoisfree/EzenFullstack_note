@@ -50,6 +50,7 @@ const WebHelper = () => {
     /** post 파라미터 수신 함수 --> _post_param 함수를 호출한다. */
     req.post = function (key, def) {
       return this._getParam("POST", key, def);
+      console.log(key,def);
     };
 
     /** put 파라미터 수신 함수 --> _put_param 함수를 호출한다. */

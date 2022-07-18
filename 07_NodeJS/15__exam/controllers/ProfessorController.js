@@ -18,8 +18,7 @@ const ProfessorController = () => {
 
         const params = {};
         if (query) {
-            params.dname = query;
-            params.loc = query;
+            params.name = query;
         }
 
         // 데이터 조회 결과가 저장될 빈 변수
@@ -48,7 +47,7 @@ const ProfessorController = () => {
 
         // 파라미터 유효성 검사
         try {
-            regexHelper.value(profno, "교수번호가 없습니다.");
+            regexHelper.value(profno, "교수번호를 입력해주세요.");
             regexHelper.num(profno, "교수번호가 잘못되었습니다.");
         } catch (err) {
             return next(err);
@@ -78,24 +77,23 @@ const ProfessorController = () => {
         const hiredate = req.post("hiredate");
         const comm = req.post("comm");
         const deptno = req.post("deptno");
-        console.log(name.length);
-
         // 유효성 검사
         try {
-            regexHelper.value(name, "이름이 없습니다.");
+            regexHelper.value(name, "이름을 입력해주세요.");
+            regexHelper.kor(name, "이름은 한글로만 입력 가능합니다.");
             regexHelper.maxLength(name, 20, "이름은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(userid, "아이디가 없습니다.");
+            regexHelper.value(userid, "아이디를 입력해주세요.");
+            regexHelper.engNum(userid, "아이디는 영문과 숫자로만 입력 가능합니다.");
             regexHelper.maxLength(userid, 20, "아이디는 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(position, "직급이 없습니다.");
+            regexHelper.value(position, "직급을 입력해주세요.");
             regexHelper.maxLength(position, 20, "직급은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(sal, "급여가 없습니다.");
+            regexHelper.value(sal, "급여를 입력해주세요.");
+            regexHelper.num(sal, "급여는 숫자로만 입력 가능합니다.");
             regexHelper.maxLength(sal, 20, "급여는 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(hiredate, "입사일이 없습니다.");
-            regexHelper.maxLength(hiredate, 20, "입사일은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(comm, "보직수당 없습니다.");
-            regexHelper.maxLength(comm, 20, "보직수당은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(deptno, "학과번호가 없습니다.");
-            regexHelper.maxLength(deptno, 20, "학과번호는 최대 3자 까지 입력 가능합니다.");
+            regexHelper.value(hiredate, "입사일을 입력해주세요.");
+            regexHelper.date(hiredate, "입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.");
+            regexHelper.nullNum(comm, "보직수당은 미입력 또는 숫자로만 입력 가능합니다.");
+            regexHelper.value(deptno, "학과번호를 입력해주세요.");
         } catch (err) {
             return next(err);
         }
@@ -134,22 +132,23 @@ const ProfessorController = () => {
 
         // 유효성 검사
         try {
-            regexHelper.value(profno, "교수번호가 없습니다.");
+            regexHelper.value(profno, "교수번호를 입력해주세요.");
             regexHelper.num(profno, "교수번호가 잘못되었습니다.");
-            regexHelper.value(name, "이름이 없습니다.");
+            regexHelper.value(name, "이름을 입력해주세요.");
+            regexHelper.kor(name, "이름은 한글로만 입력 가능합니다.");
             regexHelper.maxLength(name, 20, "이름은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(userid, "아이디가 없습니다.");
+            regexHelper.value(userid, "아이디를 입력해주세요.");
+            regexHelper.engNum(userid, "아이디는 영문과 숫자로만 입력 가능합니다.");
             regexHelper.maxLength(userid, 20, "아이디는 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(position, "직급이 없습니다.");
+            regexHelper.value(position, "직급을 입력해주세요.");
             regexHelper.maxLength(position, 20, "직급은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(sal, "연봉이 없습니다.");
-            regexHelper.maxLength(sal, 20, "연봉은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(hiredate, "입사일이 없습니다.");
-            regexHelper.maxLength(hiredate, 20, "입사일은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(comm, "보직수당 없습니다.");
-            regexHelper.maxLength(comm, 20, "보직수당은 최대 20자 까지 입력 가능합니다.");
-            regexHelper.value(deptno, "학과번호가 없습니다.");
-            regexHelper.maxLength(deptno, 20, "학과번호는 최대 3자 까지 입력 가능합니다.");
+            regexHelper.value(sal, "급여를 입력해주세요.");
+            regexHelper.num(sal, "급여는 숫자로만 입력 가능합니다.");
+            regexHelper.maxLength(sal, 20, "급여는 최대 20자 까지 입력 가능합니다.");
+            regexHelper.value(hiredate, "입사일을 입력해주세요.");
+            regexHelper.date(hiredate, "입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.");
+            regexHelper.nullNum(comm, "보직수당은 미입력 또는 숫자로만 입력 가능합니다.");
+            regexHelper.value(deptno, "학과번호를 입력해주세요.");
         } catch (err) {
             return next(err);
         }
@@ -181,7 +180,7 @@ const ProfessorController = () => {
         const profno = req.get('profno');
         // 유효성 검사
         try {
-            regexHelper.value(profno, "교수번호가 없습니다.");
+            regexHelper.value(profno, "교수번호를 입력해주세요.");
             regexHelper.num(profno, "교수번호가 잘못되었습니다.");
         } catch (err) {
             return next(err);

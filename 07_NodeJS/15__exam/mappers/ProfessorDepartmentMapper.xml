@@ -6,21 +6,11 @@
   <!-- Join 결과를 반환 -->
   <select id="selectJoin">
     SELECT 
-      profno, name, userid, position, sal,
-      date_format(hiredate, '%Y-%m-%d') AS `h_date`,
-      comm, p.deptno, dname, loc
+      profno, name, userid, position, sal, hiredate,
+      comm, p.deptno, dname
     FROM professor AS `p`
     INNER JOIN department AS `d`
     ON p.deptno = d.deptno
-
-    <where>
-      <if test="dname != null and dname != ''">
-        dname LIKE concat('%', #{dname}, '%')
-      </if>
-
-      <if test="loc != null and loc != ''">
-        OR loc LIKE concat('%', #{loc}, '%')
-      </if>
-    </where>
+    WHERE profno=#{profno}
   </select>
 </mapper>
