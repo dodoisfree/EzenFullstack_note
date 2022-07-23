@@ -80,20 +80,31 @@ const ProfessorController = () => {
         // 유효성 검사
         try {
             regexHelper.value(name, "이름을 입력해주세요.");
+            regexHelper.minLength(name, 2, "이름은 최소 2글자 이상부터 입력 가능합니다.");
+            regexHelper.maxLength(name, 20, "이름은 최대 20글자 까지 입력 가능합니다.");
             regexHelper.kor(name, "이름은 한글로만 입력 가능합니다.");
-            regexHelper.maxLength(name, 20, "이름은 최대 20자 까지 입력 가능합니다.");
+
             regexHelper.value(userid, "아이디를 입력해주세요.");
+            regexHelper.minLength(userid, 2, "아이디는 최소 2글자 이상부터 입력 가능합니다.");
+            regexHelper.maxLength(userid, 20, "아이디는 최대 20글자 까지 입력 가능합니다.");
             regexHelper.engNum(userid, "아이디는 영문과 숫자로만 입력 가능합니다.");
-            regexHelper.maxLength(userid, 20, "아이디는 최대 20자 까지 입력 가능합니다.");
+
             regexHelper.value(position, "직급을 입력해주세요.");
+            regexHelper.minLength(position, 2, "직급은 최소 2글자 이상부터 입력 가능합니다.");
             regexHelper.maxLength(position, 20, "직급은 최대 20자 까지 입력 가능합니다.");
+            regexHelper.kor(position, "직급은 한글로만 입력 가능합니다.");
+
             regexHelper.value(sal, "급여를 입력해주세요.");
-            regexHelper.num(sal, "급여는 숫자로만 입력 가능합니다.");
+            regexHelper.minLength(sal, 2, "급여는 최소 2글자 이상부터 입력 가능합니다.");
             regexHelper.maxLength(sal, 20, "급여는 최대 20자 까지 입력 가능합니다.");
+            regexHelper.num(sal, "급여는 숫자로만 입력 가능합니다.");
+
             regexHelper.value(hiredate, "입사일을 입력해주세요.");
             regexHelper.date(hiredate, "입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.");
+
             regexHelper.nullNum(comm, "보직수당은 미입력 또는 숫자로만 입력 가능합니다.");
             regexHelper.value(deptno, "학과번호를 입력해주세요.");
+            regexHelper.num(deptno, "학과번호는 숫자로만 입력 가능합니다.");
         } catch (err) {
             return next(err);
         }

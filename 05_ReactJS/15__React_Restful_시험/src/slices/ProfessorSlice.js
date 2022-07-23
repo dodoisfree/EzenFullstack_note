@@ -48,7 +48,7 @@ export const postItem = createAsyncThunk(
     "ProfessorSlice/postItem",
     async (payload, { rejectWithValue }) => {
         let result = null;
-
+        
         try {
             result = await axios.post(API_URL, {
                 name: payload.name,
@@ -129,7 +129,7 @@ const ProfessorSlice = createSlice({
 
         /** 데이터 저장을 위한 액션 함수 */
         [postItem.pending]: pending,
-        [putItem.fulfilled]: (state, { meta, payload }) => {
+        [postItem.fulfilled]: (state, { meta, payload }) => {
             // 기존의 상태값을 복사한다. (원본이 JSON이므로 깊은 복사를 수행해야 한다)
             const data = cloneDeep(state.data);
             console.log(data);

@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 const useQueryString = (props) => {
     // QueryString 문자열 추출함
     const { search } = useLocation();
-    console.log("검색어 : ", search);
     // QueryString 문자열을 객체로 변환
     const params = new URLSearchParams(search);
 

@@ -14,8 +14,8 @@ const App = memo(() => {
 
             <Routes>
                 <Route path='/' exapt element={<ProfessorList />} />
-                <Route path='/professorAdd' exapt element={<ProfessorAdd />} />
-                <Route path='/ProfessorEdit/:deptno' exapt element={<ProfessorEdit />} />
+                <Route path='/professorAdd' element={<ProfessorAdd />} />
+                <Route path='/ProfessorEdit/:profno' exapt element={<ProfessorEdit />} />
             </Routes>
         </div>
     );

@@ -1,1584 +1,0 @@
-2022-07-23 02:19:15 596 [debug]: --------------------------------------------
-2022-07-23 02:19:15 601 [debug]: |           Start Express Server           |
-2022-07-23 02:19:15 602 [debug]: --------------------------------------------
-2022-07-23 02:19:15 603 [debug]: server address => http://221.154.247.73:3001
-2022-07-23 02:19:15 604 [debug]: server address => http://192.168.221.1:3001
-2022-07-23 02:19:15 604 [debug]: server address => http://192.168.91.1:3001
-2022-07-23 02:19:15 605 [debug]: --------------------------------------------
-2022-07-23 02:34:16 519 [debug]: --------------------------------------------
-2022-07-23 02:34:16 523 [debug]: |           Start Express Server           |
-2022-07-23 02:34:16 525 [debug]: --------------------------------------------
-2022-07-23 02:34:16 526 [debug]: server address => http://221.154.247.73:3001
-2022-07-23 02:34:16 529 [debug]: server address => http://192.168.221.1:3001
-2022-07-23 02:34:16 530 [debug]: server address => http://192.168.91.1:3001
-2022-07-23 02:34:16 530 [debug]: --------------------------------------------
-2022-07-23 02:37:51 285 [debug]: --------------------------------------------
-2022-07-23 02:37:51 287 [debug]: |           Start Express Server           |
-2022-07-23 02:37:51 288 [debug]: --------------------------------------------
-2022-07-23 02:37:51 288 [debug]: server address => http://221.154.247.73:3001
-2022-07-23 02:37:51 289 [debug]: server address => http://192.168.221.1:3001
-2022-07-23 02:37:51 290 [debug]: server address => http://192.168.91.1:3001
-2022-07-23 02:37:51 291 [debug]: --------------------------------------------
-2022-07-23 02:37:57 069 [debug]: --------------------------------------------
-2022-07-23 02:37:57 074 [debug]: |           Start Express Server           |
-2022-07-23 02:37:57 076 [debug]: --------------------------------------------
-2022-07-23 02:37:57 077 [debug]: server address => http://221.154.247.73:3001
-2022-07-23 02:37:57 077 [debug]: server address => http://192.168.221.1:3001
-2022-07-23 02:37:57 078 [debug]: server address => http://192.168.91.1:3001
-2022-07-23 02:37:57 082 [debug]: --------------------------------------------
-2022-07-23 03:24:02 268 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:24:02 270 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:24:02 271 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:24:02 279 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:02 280 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:02 281 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:02 378 [info]:  >> DATABASE 접속됨 [threaId=90]
-2022-07-23 03:24:02 379 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:02 384 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:24:02 433 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:02 436 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:02 438 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:24:02 446 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:02 448 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:24:02 448 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:24:02 454 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 185ms
-2022-07-23 03:24:02 455 [debug]: --------------------------------------------------------
-2022-07-23 03:24:02 470 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:24:02 470 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:24:02 471 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:24:02 475 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:02 476 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:02 476 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:02 477 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:02 478 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:24:02 479 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:02 479 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:02 480 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:24:02 482 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:02 483 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:24:02 483 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:24:02 485 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
-2022-07-23 03:24:02 485 [debug]: --------------------------------------------------------
-2022-07-23 03:24:03 831 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:24:03 831 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:24:03 832 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:24:03 833 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:03 833 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:03 834 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:03 834 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:03 835 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:24:03 836 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:03 836 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:03 837 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:24:03 838 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:03 839 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:24:03 839 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:24:03 841 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:24:03 841 [debug]: --------------------------------------------------------
-2022-07-23 03:24:03 843 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:24:03 844 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:24:03 844 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:24:03 846 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:03 847 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:03 847 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:03 848 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:03 849 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:24:03 849 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:03 850 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:03 850 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:24:03 852 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:03 852 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:24:03 853 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:24:03 854 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:24:03 855 [debug]: --------------------------------------------------------
-2022-07-23 03:24:05 597 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:24:05 597 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:24:05 598 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:24:05 599 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:05 600 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:05 600 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:05 600 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:05 601 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:24:05 602 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:05 603 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:05 604 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:24:05 605 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:05 605 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:24:05 606 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:24:05 608 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:24:05 608 [debug]: --------------------------------------------------------
-2022-07-23 03:24:05 609 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:24:05 610 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:24:05 610 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:24:05 613 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:05 613 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:05 614 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:24:05 614 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:05 615 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:24:05 616 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:05 616 [info]:  >> Connection 임대됨 [threaId=90]
-2022-07-23 03:24:05 617 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:24:05 618 [info]:  >> Connection 반납됨 [threaId=90]
-2022-07-23 03:24:05 619 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:24:05 619 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:24:05 620 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:24:05 621 [debug]: --------------------------------------------------------
-2022-07-23 03:25:14 762 [info]: Database Pool is closed
-2022-07-23 03:25:31 276 [debug]: --------------------------------------------
-2022-07-23 03:25:31 279 [debug]: |           Start Express Server           |
-2022-07-23 03:25:31 280 [debug]: --------------------------------------------
-2022-07-23 03:25:31 281 [debug]: server address => http://221.154.247.73:3001
-2022-07-23 03:25:31 282 [debug]: server address => http://192.168.221.1:3001
-2022-07-23 03:25:31 283 [debug]: server address => http://192.168.91.1:3001
-2022-07-23 03:25:31 284 [debug]: --------------------------------------------
-2022-07-23 03:25:32 167 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:32 168 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:32 170 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:25:32 177 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:32 178 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:32 179 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:32 228 [info]:  >> DATABASE 접속됨 [threaId=91]
-2022-07-23 03:25:32 229 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:32 232 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:25:32 237 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:32 240 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:32 242 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:32 245 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:32 246 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:25:32 246 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:25:32 251 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 83ms
-2022-07-23 03:25:32 252 [debug]: --------------------------------------------------------
-2022-07-23 03:25:32 256 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:32 256 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:32 257 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:25:32 260 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:32 261 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:32 261 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:32 261 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:32 262 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:25:32 264 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:32 265 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:32 268 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:32 285 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:32 287 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:25:32 288 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:25:32 292 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 36ms
-2022-07-23 03:25:32 293 [debug]: --------------------------------------------------------
-2022-07-23 03:25:33 645 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:33 645 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:33 646 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:25:33 647 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:33 647 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:33 648 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:33 648 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:33 649 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:25:33 650 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:33 651 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:33 652 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:33 653 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:33 653 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:25:33 654 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:25:33 656 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:25:33 656 [debug]: --------------------------------------------------------
-2022-07-23 03:25:33 661 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:33 661 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:33 662 [debug]: [GET] http://localhost:3001/professor/?query=MVC&page=2&rows=5
-2022-07-23 03:25:33 663 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:33 663 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:33 664 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:33 664 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:33 665 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', 'MVC', '%')
-2022-07-23 03:25:33 666 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:33 667 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:33 667 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', 'MVC', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:33 668 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:33 669 [error]: [Error] 조회된 데이터가 없습니다.
-2022-07-23 03:25:33 669 [error]: Error: 조회된 데이터가 없습니다.
-    at ProfessorService.getList (file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/services/ProfessorService.js:156:23)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/15__node_%EC%8B%9C%ED%97%98/controllers/ProfessorController.js:35:20
-2022-07-23 03:25:33 671 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:25:33 671 [debug]: --------------------------------------------------------
-2022-07-23 03:25:47 137 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:47 138 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:47 141 [debug]: [GET] http://localhost:3001/professor/?query=너&page=2&rows=5
-2022-07-23 03:25:47 143 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:47 143 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:47 144 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:47 144 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:47 146 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '너', '%')
-2022-07-23 03:25:47 148 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:47 149 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:47 151 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '너', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:47 154 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:47 158 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 20ms
-2022-07-23 03:25:47 158 [debug]: --------------------------------------------------------
-2022-07-23 03:25:53 859 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:53 859 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:53 860 [debug]: [GET] http://localhost:3001/professor/?query=너&page=2&rows=5
-2022-07-23 03:25:53 861 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:53 861 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:53 862 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:53 862 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:53 863 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '너', '%')
-2022-07-23 03:25:53 864 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:53 864 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:53 865 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '너', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:53 866 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:53 867 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
-2022-07-23 03:25:53 867 [debug]: --------------------------------------------------------
-2022-07-23 03:25:53 874 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:53 875 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:53 875 [debug]: [GET] http://localhost:3001/professor/?query=너&page=2&rows=5
-2022-07-23 03:25:53 878 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:53 878 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:53 878 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:53 879 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:53 880 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '너', '%')
-2022-07-23 03:25:53 881 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:53 881 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:53 882 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '너', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:53 883 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:53 884 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
-2022-07-23 03:25:53 885 [debug]: --------------------------------------------------------
-2022-07-23 03:25:55 594 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:55 595 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:55 596 [debug]: [GET] http://localhost:3001/professor/?query=너&page=2&rows=5
-2022-07-23 03:25:55 597 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:55 597 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:55 598 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:55 598 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:55 599 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '너', '%')
-2022-07-23 03:25:55 599 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:55 600 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:55 600 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '너', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:55 601 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:55 602 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
-2022-07-23 03:25:55 603 [debug]: --------------------------------------------------------
-2022-07-23 03:25:55 605 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:25:55 606 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:25:55 606 [debug]: [GET] http://localhost:3001/professor/?query=너&page=2&rows=5
-2022-07-23 03:25:55 608 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:55 608 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:55 609 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:25:55 609 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:55 610 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '너', '%')
-2022-07-23 03:25:55 610 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:55 611 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:25:55 612 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '너', '%')    ORDER BY profno DESC     LIMIT 5, 5
-2022-07-23 03:25:55 613 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:25:55 614 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
-2022-07-23 03:25:55 614 [debug]: --------------------------------------------------------
-2022-07-23 03:26:03 932 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:03 933 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:03 933 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:26:03 935 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:03 936 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:03 937 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:03 937 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:03 938 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:04 112 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:04 112 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:04 113 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:04 114 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:04 439 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:04 440 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:04 440 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:26:04 442 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:04 442 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:04 442 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:04 443 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:04 443 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:04 542 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:04 542 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:04 543 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:04 544 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:04 545 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 105ms
-2022-07-23 03:26:04 546 [debug]: --------------------------------------------------------
-2022-07-23 03:26:04 548 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:04 548 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:04 549 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:26:04 550 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:04 551 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:04 551 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:04 551 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:04 552 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:04 554 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:04 554 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:04 556 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:04 557 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:04 558 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:26:04 558 [debug]: --------------------------------------------------------
-2022-07-23 03:26:06 929 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:06 931 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:06 932 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:26:06 933 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:06 933 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:06 934 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:06 934 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:06 935 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:06 938 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:06 939 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:06 940 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:06 941 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:06 942 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
-2022-07-23 03:26:06 943 [debug]: --------------------------------------------------------
-2022-07-23 03:26:08 937 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:08 939 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:08 939 [debug]: [GET] http://localhost:3001/professor/?query=&rows=30
-2022-07-23 03:26:08 942 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:08 942 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:08 942 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:08 943 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:08 944 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:08 945 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:08 946 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:08 946 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 30
-2022-07-23 03:26:08 947 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:08 949 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:26:08 949 [debug]: --------------------------------------------------------
-2022-07-23 03:26:13 955 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:13 958 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:13 960 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:26:13 962 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:13 963 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:13 966 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:13 967 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:13 968 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:13 969 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:13 970 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:13 971 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:13 972 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:13 973 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
-2022-07-23 03:26:13 974 [debug]: --------------------------------------------------------
-2022-07-23 03:26:17 929 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:17 929 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:17 930 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:26:17 932 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:17 932 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:17 933 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:17 933 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:17 934 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:17 936 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:17 936 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:17 937 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:17 938 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:17 940 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:26:17 940 [debug]: --------------------------------------------------------
-2022-07-23 03:26:17 944 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:17 945 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:17 945 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:26:17 946 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:17 947 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:17 947 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:17 947 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:17 948 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:17 953 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:17 954 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:17 955 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:17 956 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:17 957 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
-2022-07-23 03:26:17 958 [debug]: --------------------------------------------------------
-2022-07-23 03:26:19 137 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:19 138 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:19 139 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:26:19 141 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:19 142 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:19 142 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:19 142 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:19 143 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:19 146 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:19 146 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:19 147 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:26:19 148 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:19 149 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:26:19 150 [debug]: --------------------------------------------------------
-2022-07-23 03:26:19 716 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:19 717 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:19 717 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:26:19 718 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:19 719 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:19 719 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:19 719 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:19 720 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:19 725 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:19 725 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:19 726 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:26:19 727 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:19 728 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:26:19 729 [debug]: --------------------------------------------------------
-2022-07-23 03:26:20 146 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:20 147 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:20 148 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:26:20 152 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:20 152 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:20 153 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:20 153 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:20 154 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:20 171 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:20 171 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:20 173 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:26:20 174 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:20 175 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
-2022-07-23 03:26:20 176 [debug]: --------------------------------------------------------
-2022-07-23 03:26:21 321 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:21 322 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:21 323 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:26:21 324 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:21 324 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:21 325 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:21 325 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:21 326 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:21 327 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:21 327 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:21 328 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:21 329 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:21 330 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
-2022-07-23 03:26:21 330 [debug]: --------------------------------------------------------
-2022-07-23 03:26:24 544 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:24 544 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:24 545 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:26:24 546 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:24 546 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:24 547 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:24 547 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:24 548 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:24 553 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:24 554 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:24 556 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:24 558 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:24 559 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
-2022-07-23 03:26:24 559 [debug]: --------------------------------------------------------
-2022-07-23 03:26:24 562 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:26:24 562 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:26:24 563 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:26:24 564 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:24 564 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:24 565 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:26:24 566 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:24 567 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:26:24 575 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:24 576 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:26:24 576 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:26:24 577 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:26:24 578 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:26:24 579 [debug]: --------------------------------------------------------
-2022-07-23 03:27:24 346 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:27:24 347 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
-2022-07-23 03:27:24 347 [debug]: [GET] http://localhost:3001/professor?query=나
-2022-07-23 03:27:24 350 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:27:24 351 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:27:24 351 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:27:24 352 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:27:24 353 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '나', '%')
-2022-07-23 03:27:24 353 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:27:24 354 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:27:24 355 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '나', '%')    ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:27:24 356 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:27:24 357 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:27:24 358 [debug]: --------------------------------------------------------
-2022-07-23 03:28:19 149 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:19 149 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:19 150 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:28:19 151 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:19 151 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:19 152 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:19 153 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:19 153 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:19 211 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:19 211 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:19 212 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:28:19 213 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:19 214 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 65ms
-2022-07-23 03:28:19 215 [debug]: --------------------------------------------------------
-2022-07-23 03:28:21 620 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:21 621 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:21 621 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:28:21 622 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:21 623 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:21 623 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:21 623 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:21 624 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:21 626 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:21 626 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:21 627 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:28:21 628 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:21 630 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
-2022-07-23 03:28:21 630 [debug]: --------------------------------------------------------
-2022-07-23 03:28:21 633 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:21 634 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:21 634 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:28:21 635 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:21 636 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:21 636 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:21 638 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:21 639 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:21 782 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:21 783 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:21 784 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:28:21 785 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:21 785 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 151ms
-2022-07-23 03:28:21 786 [debug]: --------------------------------------------------------
-2022-07-23 03:28:25 642 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:25 642 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:25 643 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:28:25 644 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:25 644 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:25 644 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:25 645 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:25 645 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:25 647 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:25 647 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:25 648 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:28:25 649 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:25 651 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
-2022-07-23 03:28:25 652 [debug]: --------------------------------------------------------
-2022-07-23 03:28:26 792 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:26 793 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:26 794 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:28:26 802 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:26 802 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:26 802 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:26 803 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:26 803 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:26 843 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:26 843 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:26 844 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:28:26 845 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:26 847 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 53ms
-2022-07-23 03:28:26 847 [debug]: --------------------------------------------------------
-2022-07-23 03:28:31 726 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:31 727 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:31 727 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:28:31 728 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:31 729 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:31 729 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:31 730 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:31 730 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:31 746 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:31 746 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:31 747 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:28:31 748 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:31 749 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 22ms
-2022-07-23 03:28:31 749 [debug]: --------------------------------------------------------
-2022-07-23 03:28:31 752 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:28:31 752 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:28:31 753 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:28:31 755 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:31 755 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:31 756 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:28:31 756 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:31 757 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:28:31 768 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:31 769 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:28:31 771 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:28:31 772 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:28:31 773 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
-2022-07-23 03:28:31 774 [debug]: --------------------------------------------------------
-2022-07-23 03:29:08 036 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:08 037 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:08 038 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:29:08 039 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:08 039 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:08 040 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:08 040 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:08 040 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:08 057 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:08 058 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:08 059 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:08 060 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:08 061 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
-2022-07-23 03:29:08 061 [debug]: --------------------------------------------------------
-2022-07-23 03:29:08 071 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:08 071 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:08 071 [debug]: [GET] http://localhost:3001/professor/?query=
-2022-07-23 03:29:08 073 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:08 073 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:08 073 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:08 074 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:08 074 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:08 101 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:08 101 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:08 103 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:08 104 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:08 105 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
-2022-07-23 03:29:08 105 [debug]: --------------------------------------------------------
-2022-07-23 03:29:09 686 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:09 690 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:09 691 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:29:09 692 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:09 693 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:09 693 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:09 693 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:09 695 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:09 707 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:09 708 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:09 709 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:09 709 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:09 710 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 20ms
-2022-07-23 03:29:09 711 [debug]: --------------------------------------------------------
-2022-07-23 03:29:11 047 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:11 048 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:11 049 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:29:11 051 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:11 052 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:11 053 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:11 053 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:11 054 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:11 058 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:11 059 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:11 059 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:11 060 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:11 061 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
-2022-07-23 03:29:11 062 [debug]: --------------------------------------------------------
-2022-07-23 03:29:11 074 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:11 074 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:11 075 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:29:11 076 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:11 076 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:11 076 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:11 077 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:11 077 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:11 099 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:11 100 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:11 100 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:11 101 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:11 103 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
-2022-07-23 03:29:11 103 [debug]: --------------------------------------------------------
-2022-07-23 03:29:12 233 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:12 233 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:12 233 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:29:12 234 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:12 235 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:12 237 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:12 237 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:12 238 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:12 241 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:12 242 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:12 242 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:12 243 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:12 244 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:29:12 244 [debug]: --------------------------------------------------------
-2022-07-23 03:29:12 249 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:12 250 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:12 250 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:29:12 253 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:12 253 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:12 253 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:12 254 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:12 255 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:12 284 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:12 285 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:12 286 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:12 287 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:12 288 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 38ms
-2022-07-23 03:29:12 288 [debug]: --------------------------------------------------------
-2022-07-23 03:29:20 742 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:20 742 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:20 743 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:29:20 744 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:20 744 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:20 745 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:20 745 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:20 746 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:29:20 938 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:20 939 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:20 939 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:20 940 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:20 941 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 199ms
-2022-07-23 03:29:20 942 [debug]: --------------------------------------------------------
-2022-07-23 03:29:25 097 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:25 097 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:25 098 [debug]: [GET] http://localhost:3001/professor/?query=나&rows=10
-2022-07-23 03:29:25 099 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:25 099 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:25 099 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:25 100 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:25 101 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '나', '%')
-2022-07-23 03:29:25 102 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:25 102 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:25 103 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '나', '%')    ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:25 104 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:25 105 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
-2022-07-23 03:29:25 105 [debug]: --------------------------------------------------------
-2022-07-23 03:29:25 106 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:29:25 107 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:29:25 107 [debug]: [GET] http://localhost:3001/professor/?query=나&rows=10
-2022-07-23 03:29:25 108 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:25 109 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:25 109 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:29:25 109 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:25 110 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     name LIKE concat('%', '나', '%')
-2022-07-23 03:29:25 110 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:25 111 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:29:25 111 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     name LIKE concat('%', '나', '%')    ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:29:25 112 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:29:25 113 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
-2022-07-23 03:29:25 113 [debug]: --------------------------------------------------------
-2022-07-23 03:31:23 113 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:31:23 114 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:31:23 114 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:31:23 115 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:23 115 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:23 116 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:23 116 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:23 118 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:31:23 132 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:23 132 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:23 134 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:31:23 136 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:23 137 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
-2022-07-23 03:31:23 137 [debug]: --------------------------------------------------------
-2022-07-23 03:31:27 554 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:31:27 555 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:31:27 555 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:31:27 556 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:27 557 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:27 558 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:27 558 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:27 559 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:31:27 568 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:27 569 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:27 570 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:31:27 570 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:27 571 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:31:27 572 [debug]: --------------------------------------------------------
-2022-07-23 03:31:27 573 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:31:27 574 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:31:27 574 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:31:27 575 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:27 575 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:27 576 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:27 576 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:27 577 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:31:27 580 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:27 580 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:27 581 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:31:27 582 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:27 583 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
-2022-07-23 03:31:27 584 [debug]: --------------------------------------------------------
-2022-07-23 03:31:29 519 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:31:29 519 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:31:29 519 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:31:29 520 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:29 520 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:29 521 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:29 521 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:29 522 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:31:29 523 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:29 524 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:29 524 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:31:29 525 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:29 526 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
-2022-07-23 03:31:29 526 [debug]: --------------------------------------------------------
-2022-07-23 03:31:29 528 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:31:29 528 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:31:29 529 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:31:29 530 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:29 530 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:29 530 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:31:29 531 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:29 532 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:31:29 539 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:29 539 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:31:29 540 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:31:29 541 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:31:29 542 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
-2022-07-23 03:31:29 543 [debug]: --------------------------------------------------------
-2022-07-23 03:32:18 443 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:18 444 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:18 444 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:18 446 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:18 446 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:18 446 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:18 447 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:18 447 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:18 689 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:18 689 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:18 690 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:18 690 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:18 691 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 247ms
-2022-07-23 03:32:18 692 [debug]: --------------------------------------------------------
-2022-07-23 03:32:20 119 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:20 119 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:20 120 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:20 121 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:20 122 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:20 122 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:20 122 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:20 123 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:20 125 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:20 126 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:20 127 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:20 128 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:20 129 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:32:20 130 [debug]: --------------------------------------------------------
-2022-07-23 03:32:20 135 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:20 136 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:20 136 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:20 139 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:20 139 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:20 139 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:20 140 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:20 141 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:20 143 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:20 144 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:20 145 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:20 146 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:20 147 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:32:20 148 [debug]: --------------------------------------------------------
-2022-07-23 03:32:22 292 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:22 292 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:22 293 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:22 294 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:22 295 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:22 296 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:22 296 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:22 297 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:22 301 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:22 301 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:22 302 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:22 303 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:22 304 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
-2022-07-23 03:32:22 304 [debug]: --------------------------------------------------------
-2022-07-23 03:32:22 305 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:22 305 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:22 306 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:22 307 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:22 307 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:22 308 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:22 308 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:22 309 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:22 318 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:22 318 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:22 319 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:22 320 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:22 321 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:32:22 321 [debug]: --------------------------------------------------------
-2022-07-23 03:32:50 129 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:50 130 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:50 130 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:50 131 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:50 131 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:50 132 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:50 133 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:50 134 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:50 137 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:50 137 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:50 138 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:50 139 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:50 140 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
-2022-07-23 03:32:50 140 [debug]: --------------------------------------------------------
-2022-07-23 03:32:50 142 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:50 143 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:50 143 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:50 145 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:50 145 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:50 146 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:50 146 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:50 147 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:50 148 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:50 149 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:50 150 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:50 151 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:50 152 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
-2022-07-23 03:32:50 152 [debug]: --------------------------------------------------------
-2022-07-23 03:32:53 867 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:53 868 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:53 869 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:53 870 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:53 870 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:53 870 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:53 871 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:53 871 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:53 874 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:53 875 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:53 876 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:53 879 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:53 880 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
-2022-07-23 03:32:53 881 [debug]: --------------------------------------------------------
-2022-07-23 03:32:53 883 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:53 883 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:53 884 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:32:53 885 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:53 885 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:53 885 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:53 886 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:53 886 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:53 891 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:53 891 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:53 892 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:32:53 894 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:53 895 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
-2022-07-23 03:32:53 895 [debug]: --------------------------------------------------------
-2022-07-23 03:32:57 378 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:57 378 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:57 379 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:32:57 380 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:57 381 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:57 381 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:57 381 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:57 383 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:57 384 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:57 385 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:57 386 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:32:57 387 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:57 388 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:32:57 388 [debug]: --------------------------------------------------------
-2022-07-23 03:32:58 308 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:58 309 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:58 310 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:32:58 312 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:58 312 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:58 313 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:58 313 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:58 314 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:58 319 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:58 320 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:58 321 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:32:58 322 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:58 324 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
-2022-07-23 03:32:58 324 [debug]: --------------------------------------------------------
-2022-07-23 03:32:59 098 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:59 099 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:59 099 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:32:59 100 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:59 101 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:59 101 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:59 101 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:59 102 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:59 115 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:59 116 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:59 117 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:32:59 118 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:59 120 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 22ms
-2022-07-23 03:32:59 121 [debug]: --------------------------------------------------------
-2022-07-23 03:32:59 575 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:32:59 578 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:32:59 580 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:32:59 582 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:59 584 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:59 584 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:32:59 585 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:59 585 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:32:59 594 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:59 595 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:32:59 595 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:32:59 596 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:32:59 597 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
-2022-07-23 03:32:59 598 [debug]: --------------------------------------------------------
-2022-07-23 03:33:00 102 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:33:00 102 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:33:00 103 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:33:00 104 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:00 104 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:00 105 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:00 105 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:00 106 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:33:00 125 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:00 126 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:00 126 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:33:00 127 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:00 128 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
-2022-07-23 03:33:00 129 [debug]: --------------------------------------------------------
-2022-07-23 03:33:00 578 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:33:00 580 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:33:00 581 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:33:00 583 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:00 584 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:00 584 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:00 584 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:00 585 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:33:00 593 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:00 593 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:00 594 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:33:00 595 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:00 595 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
-2022-07-23 03:33:00 596 [debug]: --------------------------------------------------------
-2022-07-23 03:33:04 303 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:33:04 303 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:33:04 304 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:33:04 305 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:04 305 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:04 306 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:04 306 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:04 307 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:33:04 317 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:04 317 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:04 318 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:33:04 319 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:04 320 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
-2022-07-23 03:33:04 320 [debug]: --------------------------------------------------------
-2022-07-23 03:33:07 708 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:33:07 709 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:33:07 710 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:33:07 713 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:07 714 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:07 714 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:33:07 714 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:07 715 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:33:07 727 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:07 727 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:33:07 728 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:33:07 729 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:33:07 730 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
-2022-07-23 03:33:07 730 [debug]: --------------------------------------------------------
-2022-07-23 03:36:06 789 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:06 789 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:06 790 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:36:06 791 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:06 791 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:06 792 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:06 793 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:06 794 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:06 841 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:06 842 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:06 842 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:36:06 844 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:06 845 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 56ms
-2022-07-23 03:36:06 845 [debug]: --------------------------------------------------------
-2022-07-23 03:36:14 123 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:14 124 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:14 124 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:36:14 126 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:14 126 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:14 126 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:14 127 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:14 127 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:14 138 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:14 138 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:14 139 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:36:14 140 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:14 141 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
-2022-07-23 03:36:14 141 [debug]: --------------------------------------------------------
-2022-07-23 03:36:23 410 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:23 411 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:23 413 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:36:23 415 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:23 416 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:23 416 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:23 417 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:23 417 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:23 445 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:23 447 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:23 448 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:36:23 449 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:23 450 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 39ms
-2022-07-23 03:36:23 450 [debug]: --------------------------------------------------------
-2022-07-23 03:36:53 128 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:53 129 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:53 131 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:36:53 132 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:53 133 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:53 133 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:53 133 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:53 134 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:53 139 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:53 140 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:53 141 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:36:53 142 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:53 143 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
-2022-07-23 03:36:53 143 [debug]: --------------------------------------------------------
-2022-07-23 03:36:56 208 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:56 209 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:56 209 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:36:56 212 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:56 213 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:56 213 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:56 214 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:56 215 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:56 257 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:56 257 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:56 258 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:36:56 259 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:56 260 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 50ms
-2022-07-23 03:36:56 260 [debug]: --------------------------------------------------------
-2022-07-23 03:36:56 976 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:56 977 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:56 979 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:36:56 980 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:56 981 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:56 982 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:56 982 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:56 983 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:56 995 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:56 995 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:56 996 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:36:56 997 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:56 998 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
-2022-07-23 03:36:56 999 [debug]: --------------------------------------------------------
-2022-07-23 03:36:57 721 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:57 721 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:57 722 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:36:57 723 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:57 724 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:57 724 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:57 724 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:57 725 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:36:57 739 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:57 740 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:57 740 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:36:57 741 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:36:57 742 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
-2022-07-23 03:36:57 743 [debug]: --------------------------------------------------------
-2022-07-23 03:36:59 981 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:36:59 982 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:36:59 982 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:36:59 985 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:59 986 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:59 986 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:36:59 987 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:36:59 987 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:00 009 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:00 010 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:00 010 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:37:00 011 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:00 013 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
-2022-07-23 03:37:00 013 [debug]: --------------------------------------------------------
-2022-07-23 03:37:01 119 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:01 120 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:01 123 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:37:01 125 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:01 125 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:01 126 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:01 126 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:01 127 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:01 141 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:01 142 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:01 142 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:37:01 143 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:01 144 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
-2022-07-23 03:37:01 144 [debug]: --------------------------------------------------------
-2022-07-23 03:37:30 068 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:30 068 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:30 069 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:37:30 070 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:30 070 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:30 070 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:30 071 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:30 071 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:30 081 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:30 081 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:30 082 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:37:30 083 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:30 084 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:37:30 084 [debug]: --------------------------------------------------------
-2022-07-23 03:37:31 496 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:31 496 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:31 497 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:37:31 498 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:31 499 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:31 500 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:31 500 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:31 500 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:31 669 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:31 669 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:31 670 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:37:31 671 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:31 672 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 176ms
-2022-07-23 03:37:31 673 [debug]: --------------------------------------------------------
-2022-07-23 03:37:39 318 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:39 319 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:39 319 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:37:39 320 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:39 320 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:39 321 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:39 321 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:39 322 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:39 570 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:39 571 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:39 571 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:37:39 572 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:39 573 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 254ms
-2022-07-23 03:37:39 573 [debug]: --------------------------------------------------------
-2022-07-23 03:37:40 527 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:40 528 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:40 529 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:37:40 534 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:40 535 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:40 535 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:40 535 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:40 536 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:40 570 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:40 571 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:40 571 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:37:40 572 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:40 573 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 45ms
-2022-07-23 03:37:40 573 [debug]: --------------------------------------------------------
-2022-07-23 03:37:41 037 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:41 040 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:41 040 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:37:41 042 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:41 042 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:41 042 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:41 042 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:41 044 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:41 072 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:41 073 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:41 073 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:37:41 074 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:41 075 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 35ms
-2022-07-23 03:37:41 075 [debug]: --------------------------------------------------------
-2022-07-23 03:37:47 088 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:47 089 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:47 089 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:37:47 091 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:47 092 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:47 092 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:47 093 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:47 093 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:47 223 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:47 223 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:47 224 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:37:47 225 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:47 226 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 137ms
-2022-07-23 03:37:47 227 [debug]: --------------------------------------------------------
-2022-07-23 03:37:48 035 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:48 036 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:48 037 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:37:48 042 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:48 043 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:48 043 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:48 043 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:48 044 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:48 165 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:48 166 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:48 166 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:37:48 167 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:48 168 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 132ms
-2022-07-23 03:37:48 168 [debug]: --------------------------------------------------------
-2022-07-23 03:37:48 649 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:48 649 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:48 650 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:37:48 651 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:48 651 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:48 652 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:48 652 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:48 652 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:48 676 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:48 677 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:48 679 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:37:48 680 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:48 681 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
-2022-07-23 03:37:48 681 [debug]: --------------------------------------------------------
-2022-07-23 03:37:49 737 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:49 738 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:49 738 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:37:49 739 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:49 739 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:49 740 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:49 740 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:49 742 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:49 781 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:49 781 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:49 782 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:37:49 783 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:49 784 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 46ms
-2022-07-23 03:37:49 784 [debug]: --------------------------------------------------------
-2022-07-23 03:37:50 466 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:50 466 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:50 466 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:37:50 468 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:50 468 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:50 468 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:50 468 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:50 469 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:50 504 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:50 505 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:50 505 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:37:50 506 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:50 507 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 41ms
-2022-07-23 03:37:50 508 [debug]: --------------------------------------------------------
-2022-07-23 03:37:50 963 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:50 964 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:50 964 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:37:50 966 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:50 967 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:50 967 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:50 967 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:50 968 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:50 983 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:50 983 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:50 984 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:37:50 984 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:50 985 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
-2022-07-23 03:37:50 986 [debug]: --------------------------------------------------------
-2022-07-23 03:37:51 399 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:51 400 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:51 400 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:37:51 402 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:51 403 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:51 403 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:51 404 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:51 404 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:51 407 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:51 407 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:51 408 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:37:51 409 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:51 410 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
-2022-07-23 03:37:51 410 [debug]: --------------------------------------------------------
-2022-07-23 03:37:51 763 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:51 763 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:51 764 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:37:51 765 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:51 766 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:51 766 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:51 766 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:51 767 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:51 789 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:51 790 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:51 790 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:37:51 792 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:51 793 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
-2022-07-23 03:37:51 793 [debug]: --------------------------------------------------------
-2022-07-23 03:37:52 604 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:52 604 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:52 605 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:37:52 606 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:52 607 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:52 607 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:52 608 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:52 608 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:52 635 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:52 636 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:52 636 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:37:52 637 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:52 638 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
-2022-07-23 03:37:52 638 [debug]: --------------------------------------------------------
-2022-07-23 03:37:53 025 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:53 026 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:53 027 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:37:53 030 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:53 031 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:53 031 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:53 032 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:53 032 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:53 040 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:53 040 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:53 041 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:37:53 042 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:53 043 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
-2022-07-23 03:37:53 044 [debug]: --------------------------------------------------------
-2022-07-23 03:37:53 405 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:53 407 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:53 408 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:37:53 409 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:53 409 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:53 410 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:53 410 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:53 412 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:53 436 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:53 437 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:53 437 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:37:53 438 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:53 439 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
-2022-07-23 03:37:53 439 [debug]: --------------------------------------------------------
-2022-07-23 03:37:54 202 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:37:54 204 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:37:54 204 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:37:54 206 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:54 207 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:54 207 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:37:54 208 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:54 208 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:37:54 218 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:54 219 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:37:54 219 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:37:54 220 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:37:54 221 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
-2022-07-23 03:37:54 222 [debug]: --------------------------------------------------------
-2022-07-23 03:38:11 171 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:11 173 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:11 174 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:38:11 176 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:11 177 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:11 178 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:11 178 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:11 179 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:11 407 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:11 407 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:11 408 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:38:11 409 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:11 409 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 236ms
-2022-07-23 03:38:11 410 [debug]: --------------------------------------------------------
-2022-07-23 03:38:13 455 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:13 456 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:13 456 [debug]: [GET] http://localhost:3001/professor/?query=&page=2&rows=10
-2022-07-23 03:38:13 457 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:13 458 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:13 458 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:13 458 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:13 459 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:13 600 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:13 600 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:13 601 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 10, 10
-2022-07-23 03:38:13 601 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:13 603 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 147ms
-2022-07-23 03:38:13 603 [debug]: --------------------------------------------------------
-2022-07-23 03:38:14 641 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:14 645 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:14 645 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:38:14 647 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:14 647 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:14 648 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:14 648 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:14 649 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:14 658 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:14 659 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:14 659 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:38:14 660 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:14 661 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:38:14 662 [debug]: --------------------------------------------------------
-2022-07-23 03:38:15 175 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:15 176 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:15 177 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:38:15 179 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:15 179 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:15 180 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:15 180 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:15 181 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:15 199 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:15 200 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:15 200 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:38:15 201 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:15 202 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
-2022-07-23 03:38:15 203 [debug]: --------------------------------------------------------
-2022-07-23 03:38:16 135 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:16 137 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:16 137 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:38:16 138 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:16 139 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:16 139 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:16 140 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:16 141 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:16 157 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:16 159 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:16 160 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:38:16 162 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:16 163 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
-2022-07-23 03:38:16 163 [debug]: --------------------------------------------------------
-2022-07-23 03:38:17 473 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:17 476 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:17 476 [debug]: [GET] http://localhost:3001/professor/?query=&page=1&rows=10
-2022-07-23 03:38:17 478 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:17 479 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:17 479 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:17 480 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:17 480 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:17 491 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:17 491 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:17 492 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:38:17 493 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:17 495 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
-2022-07-23 03:38:17 496 [debug]: --------------------------------------------------------
-2022-07-23 03:38:32 685 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:32 686 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:32 688 [debug]: [GET] http://localhost:3001/professor/?query=&page=3&rows=10
-2022-07-23 03:38:32 690 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:32 690 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:32 691 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:32 691 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:32 691 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:32 810 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:32 810 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:32 811 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 20, 10
-2022-07-23 03:38:32 813 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:32 814 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 128ms
-2022-07-23 03:38:32 815 [debug]: --------------------------------------------------------
-2022-07-23 03:38:33 368 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:33 369 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:33 370 [debug]: [GET] http://localhost:3001/professor/?query=&page=4&rows=10
-2022-07-23 03:38:33 372 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:33 372 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:33 373 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:33 373 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:33 374 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:33 388 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:33 389 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:33 389 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 30, 10
-2022-07-23 03:38:33 391 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:33 392 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
-2022-07-23 03:38:33 392 [debug]: --------------------------------------------------------
-2022-07-23 03:38:34 103 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:34 104 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:34 104 [debug]: [GET] http://localhost:3001/professor/?query=&page=5&rows=10
-2022-07-23 03:38:34 106 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:34 106 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:34 106 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:34 107 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:34 107 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:34 117 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:34 117 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:34 118 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 40, 10
-2022-07-23 03:38:34 119 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:34 120 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:38:34 120 [debug]: --------------------------------------------------------
-2022-07-23 03:38:45 165 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:45 165 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:45 166 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:38:45 167 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:45 168 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:45 168 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:45 169 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:45 169 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:45 171 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:45 172 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:45 172 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:38:45 173 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:45 174 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
-2022-07-23 03:38:45 174 [debug]: --------------------------------------------------------
-2022-07-23 03:38:45 179 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:38:45 179 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:38:45 180 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:38:45 181 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:45 181 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:45 181 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:38:45 183 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:45 184 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:38:45 192 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:45 192 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:38:45 193 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:38:45 194 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:38:45 195 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
-2022-07-23 03:38:45 196 [debug]: --------------------------------------------------------
-2022-07-23 03:39:46 385 [debug]: 클라이언트가 접속했습니다.
-2022-07-23 03:39:46 385 [debug]: [client] ::1 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
-2022-07-23 03:39:46 386 [debug]: [GET] http://localhost:3001/professor/?query=&rows=10
-2022-07-23 03:39:46 387 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:39:46 387 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:39:46 387 [debug]: [HTTP %s Params]  %s=%s
-2022-07-23 03:39:46 388 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:39:46 388 [debug]: SELECT COUNT(*) AS `cnt` FROM professor
-2022-07-23 03:39:46 669 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:39:46 670 [info]:  >> Connection 임대됨 [threaId=91]
-2022-07-23 03:39:46 670 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno      ORDER BY profno DESC     LIMIT 0, 10
-2022-07-23 03:39:46 671 [info]:  >> Connection 반납됨 [threaId=91]
-2022-07-23 03:39:46 672 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 287ms
-2022-07-23 03:39:46 673 [debug]: --------------------------------------------------------

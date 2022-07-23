@@ -52,8 +52,6 @@ class RegexHelper {
             (typeof content === "string" && content.trim().length === 0)
         ) {
             content = 1;
-        } else {
-            content = content;
         }
         return this.field(content, msg, /^[0-9]*$/);
     }

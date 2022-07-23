@@ -1,5 +1,6 @@
 import React, { memo, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import dayjs from "dayjs";
 
 import Spinner from "../components/Spinner";
 import ErrorView from "../components/ErrorView";
@@ -31,18 +32,18 @@ const ProfessorEdit = memo(() => {
 
     /** 페이지가 열림과 동시에 id값에 대한 데이터를 조회하여 리덕스 상태값에 반영한다. */
     useEffect(() => {
-        const index = data.item.findIndex(e => e.profno === parseInt(profno));
-
+        const index = data && data.item.findIndex(e => e.profno === parseInt(profno));
+        //console.log(data);
         setOrigin({
             name: data.item[index].name,
             userid: data.item[index].userid,
             position: data.item[index].position,
             sal: data.item[index].sal,
-            hiredate: data.item[index].hiredate,
+            hiredate: dayjs(data.item[index].hiredate).format('YYYY-MM-DD'),
             comm: data.item[index].comm,
             deptno: data.item[index].deptno,
         });
-    }, [dispatch, data, profno]);
+    }, [data, profno]);
 
     /** <form>의 submit 버튼이 눌러졌을 때 호출될 이벤트 핸들러 */
     const onSubmit = React.useCallback((e) => {
@@ -50,33 +51,36 @@ const ProfessorEdit = memo(() => {
 
         // 이벤트가 발생한 폼 객체
         const current = e.target;
+        const time = ' 00:00:00';
 
         // 입력값에 대한 유효성 검사
         try {
-            regexHelper.value(current.name, "이름을 입력해주세요.");
-            regexHelper.minLength(current.name, 2, "이름은 최소 2글자 이상부터 입력 가능합니다.");
-            regexHelper.maxLength(current.name, 20, "이름은 최대 20글자 까지 입력 가능합니다.");
-            regexHelper.kor(current.name, "이름은 한글로만 입력 가능합니다.");
+            regexHelper.value(current.name.value, "이름을 입력해주세요.");
+            regexHelper.minLength(current.name.value, 2, "이름은 최소 2글자 이상부터 입력 가능합니다.");
+            regexHelper.maxLength(current.name.value, 20, "이름은 최대 20글자 까지 입력 가능합니다.");
+            regexHelper.kor(current.name.value, "이름은 한글로만 입력 가능합니다.");
+    
+            regexHelper.value(current.userid.value, "아이디를 입력해주세요.");
+            regexHelper.minLength(current.userid.value, 2, "아이디는 최소 2글자 이상부터 입력 가능합니다.");
+            regexHelper.maxLength(current.userid.value, 20, "아이디는 최대 20글자 까지 입력 가능합니다.");
+            regexHelper.engNum(current.userid.value, "아이디는 영문과 숫자로만 입력 가능합니다.");
+    
+            regexHelper.value(current.position.value, "직급을 입력해주세요.");
+            regexHelper.minLength(current.position.value, 2, "직급은 최소 2글자 이상부터 입력 가능합니다.");
+            regexHelper.maxLength(current.position.value, 20, "직급은 최대 20자 까지 입력 가능합니다.");
+            regexHelper.kor(current.position.value, "직급은 한글로만 입력 가능합니다.");
+                
+            regexHelper.value(current.sal.value, "급여를 입력해주세요.");
+            regexHelper.minLength(current.sal.value, 2, "급여는 최소 2글자 이상부터 입력 가능합니다.");
+            regexHelper.maxLength(current.sal.value, 20, "급여는 최대 20자 까지 입력 가능합니다.");
+            regexHelper.num(current.sal.value, "급여는 숫자로만 입력 가능합니다.");
 
+            regexHelper.value(current.hiredate.value, "입사일을 입력해주세요.");
+            regexHelper.date(current.hiredate.value+time, "입사일은 YYYY-MM-DD 형식에 맞게 입력해주세요.");
 
-            regexHelper.value(current.userid, "아이디를 입력해주세요.");
-            regexHelper.minLength(current.userid, 2, "아이디는 최소 2글자 이상부터 입력 가능합니다.");
-            regexHelper.maxLength(current.userid, 20, "아이디는 최대 20글자 까지 입력 가능합니다.");
-            regexHelper.engNum(current.userid, "아이디는 영문과 숫자로만 입력 가능합니다.");
-
-            regexHelper.value(current.position, "직급을 입력해주세요.");
-            regexHelper.minLength(current.position, 2, "아이디는 최소 2글자 이상부터 입력 가능합니다.");
-            regexHelper.maxLength(current.position, 20, "직급은 최대 20자 까지 입력 가능합니다.");
-
-            regexHelper.value(current.sal, "급여를 입력해주세요.");
-            regexHelper.minLength(current.sal, 2, "급여는 최소 2글자 이상부터 입력 가능합니다.");
-            regexHelper.maxLength(current.sal, 20, "급여는 최대 20자 까지 입력 가능합니다.");
-            regexHelper.num(current.sal, "급여는 숫자로만 입력 가능합니다.");
-            regexHelper.value(current.hiredate, "입사일을 입력해주세요.");
-            regexHelper.date(current.hiredate, "입사일은 yyyy-MM-dd hh:mm:ss 형식에 맞게 입력해주세요.");
-            regexHelper.nullNum(current.comm, "보직수당은 미입력 또는 숫자로만 입력 가능합니다.");
-            regexHelper.value(current.deptno, "학과번호를 입력해주세요.");
-            regexHelper.num(current.sal, "학과번호는 숫자로만 입력 가능합니다.");
+            regexHelper.nullNum(current.comm.value, "보직수당은 미입력 또는 숫자로만 입력 가능합니다.");
+            regexHelper.value(current.deptno.value, "학과번호를 입력해주세요.");
+            regexHelper.num(current.deptno.value, "학과번호는 숫자로만 입력 가능합니다.");
 
         } catch (e) {
             window.alert(e.message);
@@ -99,6 +103,7 @@ const ProfessorEdit = memo(() => {
         });
 
     }, [dispatch, profno, navigate]);
+
     return (
         <>
             <Spinner visible={loading} />
@@ -128,7 +133,7 @@ const ProfessorEdit = memo(() => {
                             <tr>
                                 <th>직급</th>
                                 <td className="inputWrapper">
-                                    <input className="field" type="text" name="userid" defaultValue={origin.userid} />
+                                    <input className="field" type="text" name="position" defaultValue={origin.position} />
                                 </td>
                             </tr>
                             <tr>

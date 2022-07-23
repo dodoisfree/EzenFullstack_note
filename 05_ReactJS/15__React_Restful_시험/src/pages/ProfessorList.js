@@ -1,3 +1,9 @@
+/**
+ * @filename    : ProfessorList.js
+ * @author      : 천경재 (yocasd2@gamil.com)
+ * @description : 조회 페이지(목록, 단일항목, 페이지네이션)
+*/
+
 import React, { memo, useCallback, useRef } from "react";
 import styled from "styled-components";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -11,7 +17,6 @@ import Table from "../components/Table";
 import { useSelector, useDispatch } from "react-redux";
 import { getList, deleteItem } from "../slices/ProfessorSlice";
 
-// 입력 컨트롤들을 포함하는 박스
 const ControlContainer = styled.form`
     position: sticky;
     top: 0;
@@ -43,7 +48,6 @@ const ControlContainer = styled.form`
     }
 `;
 
-// 페이지 번호
 const Pagenation = styled.ul`
     list-style: none;
     padding: 0;
@@ -76,29 +80,23 @@ const Pagenation = styled.ul`
 `;
 
 const ProfessorList = memo(() => {
-    /** 리덕스 관련 초기화 */
     const dispatch = useDispatch();
     const { data, loading, error } = useSelector(
         (state) => state.ProfessorSlice
     );
 
-    /** 페이지 강제 이동을 처리하기 위한 navigate함수 생성 */
     const navigate = useNavigate();
 
-    /** QueryString 문자열 얻기 */
-    // ex) http://localhost:3000?query=풀스택&rows=10&page=3
     const { query, rows, page } = useQueryString({
         query: "",
         rows: 10,
         page: 1,
     });
 
-    /** 목록 수 드롭다운에 접근할 참조변수 */
+
     const refRowsDropdown = useRef();
-    /** 입력요소에 접근할 참조변수 */
     const refTextInput = useRef();
 
-    /** 최초 마운트 혹은 QueryString이 변경될 때 마다 hook -> 리덕스를 통해 목록을 조회한다. */
     React.useEffect(() => {
         dispatch(
             getList({
@@ -111,30 +109,27 @@ const ProfessorList = memo(() => {
         refTextInput.current.value = query;
     }, [dispatch, query, rows, page]);
 
-    /** 검색 이벤트 */
     const onSearchSubmit = useCallback(
         (e) => {
             e.preventDefault();
             const dropdown = refRowsDropdown.current;
             const input = refTextInput.current;
-            console.log(refTextInput.current);
+
             navigate(`/?query=${input.value}&rows=${dropdown.value}`);
         },
         [navigate]
     );
 
-    /** 수정 버튼 클릭 이벤트 처리 */
     const onEditClick = useCallback(
         (e) => {
             e.preventDefault();
             const current = e.target;
             const profno = current.dataset.profno;
-            navigate(`/professorEdit/${profno}`);
+            navigate(`/ProfessorEdit/${profno}`);
         },
         [navigate]
     );
 
-    /** 삭제 버튼 클릭 이벤트 처리 --> 리덕스를 통해 삭제 처리 --> data값이 갱신되므로 화면에 자동 반영된다. */
     const onDeleteClick = useCallback(
         (e) => {
             e.preventDefault();
@@ -160,9 +155,9 @@ const ProfessorList = memo(() => {
         <div>
             <Spinner visible={loading} />
 
-            <ControlContainer onsu>
-                <select name="rows" className="controll" onChange={onSearchSubmit} ref={refRowsDropdown}>
-                    <option value="10">10개씩 보기</option>
+            <ControlContainer onSubmit={onSearchSubmit}>
+                <select defaultValue={rows} name="rows" className="controll" onChange={onSearchSubmit} ref={refRowsDropdown}>
+                    <option value={rows}>10개씩 보기</option>
                     <option value="20">20개씩 보기</option>
                     <option value="30">30개씩 보기</option>
                 </select>
@@ -213,7 +208,7 @@ const ProfessorList = memo(() => {
                                                     </button>
                                                 </td>
                                                 <td>
-                                                    <button type="bitton" data-profno={item.profno} data-dname={item.profno} onClick={onDeleteClick}>
+                                                    <button type="bitton" data-profno={item.profno} data-name={item.name} onClick={onDeleteClick}>
                                                         삭제하기
                                                     </button>
                                                 </td>
