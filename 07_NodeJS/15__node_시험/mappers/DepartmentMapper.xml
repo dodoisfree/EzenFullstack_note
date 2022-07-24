@@ -4,62 +4,9 @@
 
 <mapper namespace="DepartmentMapper">
 
-  <!-- 단일행 조회를 위한 기능 정의 -->
-  <select id="selectItem">
-    select deptno, dname, loc FROM department WHERE deptno=#{deptno};
+  <!-- 중복없이 학과번호들 검색 -->
+  <select id="deptnoList">
+    select distinct deptno from department;
   </select>
 
-  <!-- 다중행 조회를 위한 기능 정의 -->
-  <select id="selectList">
-    select deptno, dname, loc FROM department
-
-    <where>
-      <if test="dname != null and dname != ''">
-        dname LIKE concat('%', #{dname}, '%')
-      </if>
-
-      <if test="loc != null and loc != ''">
-        OR loc LIKE concat('%', #{loc}, '%')
-      </if>
-    </where>
-
-    ORDER BY deptno DESC
-
-        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
-    <if test="listCount > 0">
-      LIMIT ${offset}, ${listCount}
-    </if>
-  </select>
-
-  <!-- 데이터 저장을 위한 기능 정의 -->
-  <insert id="insertItem">
-    INSERT INTO department (dname, loc) VALUES (#{dname}, #{loc});
-  </insert>
-
-  <!-- 데이터 삭제를 위한 기능 정의 -->
-  <delete id="deleteItem">
-    DELETE FROM department WHERE deptno=#{deptno};
-  </delete>
-
-  <!-- 데이터 갱신을 위한 기능 정의 -->
-  <update id="updateItem">
-    UPDATE department SET dname=#{dname}, loc=#{loc}
-    WHERE deptno=#{deptno};
-  </update>
-
-  <!-- 데이터 수 조회하기 -->
-  <select id="selectCountAll">
-    SELECT COUNT(*) AS `cnt` FROM department
-
-    <where>
-      <if test="dname != null and dname != ''">
-        dname LIKE concat('%', #{dname}, '%')
-      </if>
-
-      <if test="loc != null and loc != ''">
-        OR loc LIKE concat('%', #{loc}, '%')
-      </if>
-    </where>
-  </select>
-  
 </mapper>

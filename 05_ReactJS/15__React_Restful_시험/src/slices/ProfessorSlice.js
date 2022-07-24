@@ -1,3 +1,9 @@
+/**
+ * @filename    : ProfessorSlice.js
+ * @author      : 천경재 (yocasd2@gamil.com)
+ * @description : 리덕스 슬라이스
+*/
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { pending, fulfilled, rejected } from "../Util";
 import axios from "axios";
@@ -32,7 +38,7 @@ export const getItem = createAsyncThunk(
     "ProfessorSlice/getItem",
     async (payload, { rejectWithValue }) => {
         let result = null;
-
+        console.log(payload?.profno);
         try {
             result = await axios.get(`${API_URL}${payload?.profno}/`);
         } catch (err) {
@@ -170,7 +176,6 @@ const ProfessorSlice = createSlice({
                 error: null,
             };
         },
-        [deleteItem.rejected]: rejected,
         [putItem.rejected]: rejected,
 
         /** 데이터 삭제를 위한 액션 함수 */

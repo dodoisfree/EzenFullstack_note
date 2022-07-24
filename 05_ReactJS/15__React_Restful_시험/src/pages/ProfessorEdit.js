@@ -1,3 +1,9 @@
+/**
+ * @filename    : ProfessorEdit.js
+ * @author      : 천경재 (yocasd2@gamil.com)
+ * @description : 데이터 수정 페이지
+*/
+
 import React, { memo, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import dayjs from "dayjs";
@@ -10,16 +16,26 @@ import regexHelper from "../libs/RegexHelper";
 import { useSelector, useDispatch } from "react-redux";
 import { putItem } from "../slices/ProfessorSlice";
 
+import useAxios from "axios-hooks";
+
 const ProfessorEdit = memo(() => {
-    /** Path 파라미터에 포함된 id값 획득하기 */
+    const [ dept ] = useAxios("http://localhost:3001/department");
+    const [deptItem, setdeptItem] = useState();
+
+    useEffect(() => {
+        if (dept.loading === false) {
+            if (dept.data) {
+                setdeptItem(dept && dept.data.item);
+            }
+        }
+    }, [dept]);
+
     const {profno} = useParams();
-
-    /** 데이터 수정 후 목록 페에지로 강제 이동하기 위한 함수 생성 */
     const navigate = useNavigate();
-
-    /** 리덕스 초기화 */
     const dispatch = useDispatch();
     const { data, loading, error } = useSelector((state) => state.ProfessorSlice);
+    const [today] = React.useState(dayjs().format('YYYY-MM-DD'));
+
     const [origin, setOrigin] = useState({
         name: '',
         userid: '',
@@ -30,10 +46,8 @@ const ProfessorEdit = memo(() => {
         deptno: '',
     })
 
-    /** 페이지가 열림과 동시에 id값에 대한 데이터를 조회하여 리덕스 상태값에 반영한다. */
     useEffect(() => {
         const index = data && data.item.findIndex(e => e.profno === parseInt(profno));
-        //console.log(data);
         setOrigin({
             name: data.item[index].name,
             userid: data.item[index].userid,
@@ -43,17 +57,16 @@ const ProfessorEdit = memo(() => {
             comm: data.item[index].comm,
             deptno: data.item[index].deptno,
         });
+        console.log(data.item[index].deptno);
     }, [data, profno]);
 
     /** <form>의 submit 버튼이 눌러졌을 때 호출될 이벤트 핸들러 */
     const onSubmit = React.useCallback((e) => {
         e.preventDefault();
 
-        // 이벤트가 발생한 폼 객체
         const current = e.target;
         const time = ' 00:00:00';
 
-        // 입력값에 대한 유효성 검사
         try {
             regexHelper.value(current.name.value, "이름을 입력해주세요.");
             regexHelper.minLength(current.name.value, 2, "이름은 최소 2글자 이상부터 입력 가능합니다.");
@@ -88,16 +101,15 @@ const ProfessorEdit = memo(() => {
             return;
         }
 
-        // 리덕스를 통한 데이터 저장 요청. --> 처리가 완료된 후 목록 페이지로 강제 이동한다.
         dispatch(putItem({
             profno: profno,
             name: current.name.value,
             userid: current.userid.value,
-            position: current.name.position,
-            sal: current.userid.sal,
-            hiredate: current.name.hiredate,
-            comm: current.userid.comm,
-            deptno: current.userid.deptno,
+            position: current.position.value,
+            sal: current.sal.value,
+            hiredate: current.hiredate.value+time,
+            comm: current.comm.value,
+            deptno: current.deptno.value,
         })).then(() => {
             navigate("/");
         });
@@ -145,7 +157,7 @@ const ProfessorEdit = memo(() => {
                             <tr>
                                 <th>입사일</th>
                                 <td className="inputWrapper">
-                                    <input className="field" type="text" name="hiredate" defaultValue={origin.hiredate} />
+                                    <input className="field" type="date" name="hiredate" max={today} defaultValue={origin.hiredate}/>
                                 </td>
                             </tr>
                             <tr>
@@ -157,7 +169,9 @@ const ProfessorEdit = memo(() => {
                             <tr>
                                 <th>학과번호</th>
                                 <td className="inputWrapper">
-                                    <input className="field" type="text" name="deptno" defaultValue={origin.deptno} />
+                                    <select className="field" name="deptno" key={origin.deptno} defaultValue={origin.deptno}>
+                                        {deptItem && deptItem.map((v, i) => <option key={i} value={v.deptno}>{v.deptno}</option>)}
+                                    </select>                                            
                                 </td>
                             </tr>
                         </tbody>

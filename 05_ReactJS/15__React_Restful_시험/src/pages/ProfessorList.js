@@ -1,7 +1,7 @@
 /**
  * @filename    : ProfessorList.js
  * @author      : 천경재 (yocasd2@gamil.com)
- * @description : 조회 페이지(목록, 단일항목, 페이지네이션)
+ * @description : 목록 출력, 상제 조회 페이지 이동, 삭제, 수정페이지 이동, 등록 페이지 이동 등
 */
 
 import React, { memo, useCallback, useRef } from "react";
@@ -84,8 +84,11 @@ const ProfessorList = memo(() => {
     const { data, loading, error } = useSelector(
         (state) => state.ProfessorSlice
     );
-
     const navigate = useNavigate();
+
+    const refRowsDropdown = useRef();
+    const refTextInput = useRef();
+    const refDetails = useRef();
 
     const { query, rows, page } = useQueryString({
         query: "",
@@ -93,10 +96,7 @@ const ProfessorList = memo(() => {
         page: 1,
     });
 
-
-    const refRowsDropdown = useRef();
-    const refTextInput = useRef();
-
+    // 검색
     React.useEffect(() => {
         dispatch(
             getList({
@@ -109,48 +109,43 @@ const ProfessorList = memo(() => {
         refTextInput.current.value = query;
     }, [dispatch, query, rows, page]);
 
-    const onSearchSubmit = useCallback(
-        (e) => {
-            e.preventDefault();
-            const dropdown = refRowsDropdown.current;
-            const input = refTextInput.current;
+    // 목록 조회
+    const onSearchSubmit = useCallback((e) => {
+        e.preventDefault();
+        const dropdown = refRowsDropdown.current;
+        const input = refTextInput.current;
 
-            navigate(`/?query=${input.value}&rows=${dropdown.value}`);
-        },
-        [navigate]
-    );
+        navigate(`/?query=${input.value}&rows=${dropdown.value}`);
+    }, [navigate]);
 
-    const onEditClick = useCallback(
-        (e) => {
-            e.preventDefault();
-            const current = e.target;
-            const profno = current.dataset.profno;
-            navigate(`/ProfessorEdit/${profno}`);
-        },
-        [navigate]
-    );
+    const onEditClick = useCallback((e) => {
+        e.preventDefault();
+        const current = e.target;
+        const profno = current.dataset.profno;
+        navigate(`/ProfessorEdit/${profno}`);
+
+    }, [navigate]);
 
     const onDeleteClick = useCallback(
-        (e) => {
-            e.preventDefault();
+        (e) => {e.preventDefault();
 
-            const current = e.target;
+        const current = e.target;
 
-            if (
-                window.confirm(
-                    `정말 ${current.dataset.name}(을)를 삭제하시겠습니까?`
-                )
-            ) {
-                dispatch(
-                    deleteItem({
-                        profno: current.dataset.profno,
-                    })
-                );
-            }
-        },
-        [dispatch]
-    );
-    
+        if (window.confirm(`정말 ${current.dataset.name}(을)를 삭제하시겠습니까?`)) {
+            dispatch(
+                deleteItem({
+                    profno: current.dataset.profno,
+                })
+            );
+        }
+    }, [dispatch]);
+
+    const onDetailSubmit = useCallback((e) => {
+        e.preventDefault();
+        const input = refDetails.current.value;
+        navigate(`/ProfessorItem/${input}`);
+    }, [navigate]);
+
     return (
         <div>
             <Spinner visible={loading} />
@@ -161,13 +156,19 @@ const ProfessorList = memo(() => {
                     <option value="20">20개씩 보기</option>
                     <option value="30">30개씩 보기</option>
                 </select>
-                <input type="text" className="controll" ref={refTextInput} />
+                <input type="text" className="controll" ref={refTextInput} placeholder='교수번호 혹은 이름 입력.'/>
                 <button type="submit" className="controll clickable">
                     검색
                 </button>
                 <NavLink to="professorAdd" className="controll clickable">
                     교수정보 추가하기
                 </NavLink>
+            </ControlContainer>
+            <ControlContainer onSubmit={onDetailSubmit}>
+                <input type="text" className="controll" ref={refDetails} placeholder='교수번호를 입력해주세요.'/>
+                <button type="submit" className="controll clickable">
+                    상세보기
+                </button>
             </ControlContainer>
 
             {error ? (
@@ -186,13 +187,15 @@ const ProfessorList = memo(() => {
                                     <th>입사일</th>
                                     <th>보직수당</th>
                                     <th>학과번호</th>
+                                    <th>수정</th>
+                                    <th>삭제</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {data.item.length > 0 ? (
                                     data.item.map((item, index) => {
                                         return (
-                                            <tr key={item.profno}>
+                                            <tr key={item.profno} className="profno">
                                                 {/* 데이터를 텍스트로 출력 */}
                                                 <td>{item.profno}</td>
                                                 <td>{item.name}</td>

@@ -1,3 +1,9 @@
+/**
+ * @filename    : ProfessorAdd.js
+ * @author      : 천경재 (yocasd2@gamil.com)
+ * @description : 신규 데이터 등록 페이지
+*/
+
 import React, { memo } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -10,11 +16,12 @@ import regexHelper from "../libs/RegexHelper";
 import { useSelector, useDispatch } from "react-redux";
 import { postItem } from "../slices/ProfessorSlice";
 import dayjs from "dayjs";
+import useAxios from "axios-hooks";
 
 const ProfessorAdd = memo(() => {
-
+    const [{ data }] = useAxios("http://localhost:3001/department");
+    
     const navigate = useNavigate();
-
     const dispatch = useDispatch();
     const { loading, error } = useSelector((state) => state.ProfessorSlice);
     const [today] = React.useState(dayjs().format('YYYY-MM-DD'));
@@ -87,31 +94,31 @@ const ProfessorAdd = memo(() => {
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th>* 이름</th>
+                                <th>이름</th>
                                 <td className="inputWrapper">
                                     <input className="field" type="text" name="name" />
                                 </td>
                             </tr>
                             <tr>
-                                <th>* 아이디</th>
+                                <th>아이디</th>
                                 <td className="inputWrapper">
                                     <input className="field" type="text" name="userid" />
                                 </td>
                             </tr>
                             <tr>
-                                <th>* 직급</th>
+                                <th>직급</th>
                                 <td className="inputWrapper">
                                     <input className="field" type="text" name="position" />
                                 </td>
                             </tr>
                             <tr>
-                                <th>* 급여</th>
+                                <th>급여</th>
                                 <td className="inputWrapper">
                                     <input className="field" type="text" name="sal" />
                                 </td>
                             </tr>
                             <tr>
-                                <th>* 입사일</th>
+                                <th>입사일</th>
                                 <td className="inputWrapper">
                                     <input className="field" type="date" name="hiredate" max={today}/>
                                 </td>
@@ -123,9 +130,11 @@ const ProfessorAdd = memo(() => {
                                 </td>
                             </tr>
                             <tr>
-                                <th>* 학과번호</th>
+                                <th>학과번호</th>
                                 <td className="inputWrapper">
-                                    <input className="field" type="text" name="deptno" />
+                                    <select className="field" name="deptno">
+                                        {data && data.item.map((v, i) => <option key={i} value={v.deptno}>{v.deptno}</option>)}
+                                    </select>                                            
                                 </td>
                             </tr>
                         </tbody>

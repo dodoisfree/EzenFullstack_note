@@ -27,6 +27,7 @@ import SendMailController from "./controllers/SendMailController.js";
 import FileUploadController from "./controllers/FileUploadController.js";
 import ApiTest from "./controllers/ApiTest.js";
 import ProfessorController from "./controllers/ProfessorController.js";
+import DepartmentController from "./controllers/DepartmentController.js";
 
 // Express 생성
 const app = express();
@@ -106,6 +107,7 @@ app.use(SendMailController());
 app.use(FileUploadController());
 app.use(ApiTest());
 app.use(ProfessorController());
+app.use(DepartmentController());
 
 /** 컨트롤러에서 에러 발생시 'next(에러객체)`를 호출 했을 때 동작할 처리 */
 app.use((err, req, res, next) => res.sendError(err));

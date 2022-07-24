@@ -44,13 +44,17 @@
     INNER JOIN department AS `d`
     ON p.deptno = d.deptno
         <where>
+            <if test="profno != null and profno != ''">
+            profno LIKE concat('%', #{profno}, '%')
+            </if>
+
             <if test="name != null and name != ''">
-            name LIKE concat('%', #{name}, '%')
+            OR name LIKE concat('%', #{name}, '%')
             </if>
         </where>
     ORDER BY profno DESC
 
-        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+                <!-- 페이지 구현을 위한 LIMIT절 추가 -->
         <if test="listCount > 0">
         LIMIT ${offset}, ${listCount}
         </if>
@@ -60,8 +64,12 @@
     <select id="selectCountAll">
     SELECT COUNT(*) AS `cnt` FROM professor
         <where>
+            <if test="profno != null and profno != ''">
+            profno LIKE concat('%', #{profno}, '%')
+            </if>
+
             <if test="name != null and name != ''">
-            name LIKE concat('%', #{name}, '%')
+            OR name LIKE concat('%', #{name}, '%')
             </if>
         </where>
     </select>
