@@ -1,0 +1,95 @@
+2022-07-30 23:31:30 385 [debug]: --------------------------------------------
+2022-07-30 23:31:30 387 [debug]: |           Start Express Server           |
+2022-07-30 23:31:30 388 [debug]: --------------------------------------------
+2022-07-30 23:31:30 389 [debug]: server address => http://221.154.247.73:3001
+2022-07-30 23:31:30 390 [debug]: server address => http://192.168.221.1:3001
+2022-07-30 23:31:30 391 [debug]: server address => http://192.168.91.1:3001
+2022-07-30 23:31:30 396 [debug]: --------------------------------------------
+2022-07-30 23:31:33 075 [debug]: 클라이언트가 접속했습니다.
+2022-07-30 23:31:33 077 [debug]: [client] ::ffff:221.154.247.73 / Windows 10.0 / Chrome / (102.0.5005.141) / Microsoft Windows
+2022-07-30 23:31:33 079 [debug]: [GET] http://221.154.247.73:3001/
+2022-07-30 23:31:33 091 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+2022-07-30 23:31:33 092 [debug]: --------------------------------------------------------
+2022-07-30 23:31:59 825 [debug]: 클라이언트가 접속했습니다.
+2022-07-30 23:31:59 826 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-30 23:31:59 827 [debug]: [GET] http://localhost:3001/professor?query=9917
+2022-07-30 23:31:59 833 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:31:59 834 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:31:59 834 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:31:59 943 [info]:  >> DATABASE 접속됨 [threaId=8]
+2022-07-30 23:31:59 944 [info]:  >> Connection 임대됨 [threaId=8]
+2022-07-30 23:31:59 947 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     profno LIKE concat('%', '9917', '%')    OR name LIKE concat('%', '9917', '%')
+2022-07-30 23:32:00 046 [info]:  >> Connection 반납됨 [threaId=8]
+2022-07-30 23:32:00 047 [info]:  >> Connection 임대됨 [threaId=8]
+2022-07-30 23:32:00 049 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     profno LIKE concat('%', '9917', '%')    OR name LIKE concat('%', '9917', '%')    ORDER BY profno DESC     LIMIT 0, 10
+2022-07-30 23:32:00 069 [info]:  >> Connection 반납됨 [threaId=8]
+2022-07-30 23:32:00 072 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 246ms
+2022-07-30 23:32:00 072 [debug]: --------------------------------------------------------
+2022-07-30 23:32:17 915 [debug]: --------------------------------------------
+2022-07-30 23:32:17 919 [debug]: |           Start Express Server           |
+2022-07-30 23:32:17 922 [debug]: --------------------------------------------
+2022-07-30 23:32:17 923 [debug]: server address => http://221.154.247.73:3001
+2022-07-30 23:32:17 928 [debug]: server address => http://192.168.221.1:3001
+2022-07-30 23:32:17 930 [debug]: server address => http://192.168.91.1:3001
+2022-07-30 23:32:17 931 [debug]: --------------------------------------------
+2022-07-30 23:32:20 644 [debug]: --------------------------------------------
+2022-07-30 23:32:20 646 [debug]: |           Start Express Server           |
+2022-07-30 23:32:20 647 [debug]: --------------------------------------------
+2022-07-30 23:32:20 649 [debug]: server address => http://221.154.247.73:3001
+2022-07-30 23:32:20 649 [debug]: server address => http://192.168.221.1:3001
+2022-07-30 23:32:20 651 [debug]: server address => http://192.168.91.1:3001
+2022-07-30 23:32:20 651 [debug]: --------------------------------------------
+2022-07-30 23:32:21 824 [debug]: 클라이언트가 접속했습니다.
+2022-07-30 23:32:21 825 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-30 23:32:21 827 [debug]: [GET] http://localhost:3001/professor?query=9917
+2022-07-30 23:32:21 834 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:21 836 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:21 836 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:21 867 [info]:  >> DATABASE 접속됨 [threaId=9]
+2022-07-30 23:32:21 868 [info]:  >> Connection 임대됨 [threaId=9]
+2022-07-30 23:32:21 872 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     profno LIKE concat('%', '9917', '%')    OR name LIKE concat('%', '9917', '%')
+2022-07-30 23:32:21 875 [info]:  >> Connection 반납됨 [threaId=9]
+2022-07-30 23:32:21 876 [info]:  >> Connection 임대됨 [threaId=9]
+2022-07-30 23:32:21 878 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     profno LIKE concat('%', '9917', '%')    OR name LIKE concat('%', '9917', '%')    ORDER BY profno DESC     LIMIT 0, 10
+2022-07-30 23:32:21 881 [info]:  >> Connection 반납됨 [threaId=9]
+2022-07-30 23:32:21 886 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 61ms
+2022-07-30 23:32:21 886 [debug]: --------------------------------------------------------
+2022-07-30 23:32:32 564 [debug]: 클라이언트가 접속했습니다.
+2022-07-30 23:32:32 564 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-30 23:32:32 565 [debug]: [POST] http://localhost:3001/professor/
+2022-07-30 23:32:32 584 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 585 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 586 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 586 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 586 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 587 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 587 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:32 588 [info]:  >> Connection 임대됨 [threaId=9]
+2022-07-30 23:32:32 590 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('너도교수', 'profyou1', '부교수', '400', '1991-12-11 12:00:00', '2', '201');
+2022-07-30 23:32:32 610 [debug]: select * FROM professor WHERE profno='9978';
+2022-07-30 23:32:32 612 [info]:  >> Connection 반납됨 [threaId=9]
+2022-07-30 23:32:32 614 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 50ms
+2022-07-30 23:32:32 615 [debug]: --------------------------------------------------------
+2022-07-30 23:32:36 031 [debug]: 클라이언트가 접속했습니다.
+2022-07-30 23:32:36 031 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-30 23:32:36 032 [debug]: [GET] http://localhost:3001/department
+2022-07-30 23:32:36 034 [info]:  >> Connection 임대됨 [threaId=9]
+2022-07-30 23:32:36 035 [debug]: select distinct deptno from department;
+2022-07-30 23:32:36 037 [info]:  >> Connection 반납됨 [threaId=9]
+2022-07-30 23:32:36 038 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+2022-07-30 23:32:36 038 [debug]: --------------------------------------------------------
+2022-07-30 23:32:42 950 [debug]: 클라이언트가 접속했습니다.
+2022-07-30 23:32:42 950 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-07-30 23:32:42 950 [debug]: [GET] http://localhost:3001/professor?query=9917
+2022-07-30 23:32:42 952 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:42 952 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:42 953 [debug]: [HTTP %s Params]  %s=%s
+2022-07-30 23:32:42 953 [info]:  >> Connection 임대됨 [threaId=9]
+2022-07-30 23:32:42 955 [debug]: SELECT COUNT(*) AS `cnt` FROM professor  WHERE     profno LIKE concat('%', '9917', '%')    OR name LIKE concat('%', '9917', '%')
+2022-07-30 23:32:42 956 [info]:  >> Connection 반납됨 [threaId=9]
+2022-07-30 23:32:42 956 [info]:  >> Connection 임대됨 [threaId=9]
+2022-07-30 23:32:42 958 [debug]: select   p.profno, p.name, p.userid, p.position,   p.sal, p.hiredate, p.comm, p.deptno, d.dname  FROM professor AS `p`  INNER JOIN department AS `d`  ON p.deptno = d.deptno  WHERE     profno LIKE concat('%', '9917', '%')    OR name LIKE concat('%', '9917', '%')    ORDER BY profno DESC     LIMIT 0, 10
+2022-07-30 23:32:42 959 [info]:  >> Connection 반납됨 [threaId=9]
+2022-07-30 23:32:42 960 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+2022-07-30 23:32:42 961 [debug]: --------------------------------------------------------
+2022-07-30 23:35:10 182 [info]: Database Pool is closed

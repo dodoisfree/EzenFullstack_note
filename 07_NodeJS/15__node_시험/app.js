@@ -18,14 +18,6 @@ import cors from "cors";
 
 import PageNotFoundException from "./exceptions/PageNotFoundException.js";
 
-import SetupController from "./controllers/SetupController.js";
-import GetParamsController from "./controllers/GetParamsController.js";
-import PostPutDeleteController from "./controllers/PostPutDeleteController.js";
-import CookieController from "./controllers/CookieController.js";
-import SessionController from "./controllers/SessionController.js";
-import SendMailController from "./controllers/SendMailController.js";
-import FileUploadController from "./controllers/FileUploadController.js";
-import ApiTest from "./controllers/ApiTest.js";
 import ProfessorController from "./controllers/ProfessorController.js";
 import DepartmentController from "./controllers/DepartmentController.js";
 
@@ -98,14 +90,6 @@ app.use(serveFavicon(process.env.FAVICON_PATH));
 app.use(WebHelper());
 
 // url별 백엔드 기능 정의
-app.use(SetupController());
-app.use(GetParamsController());
-app.use(PostPutDeleteController());
-app.use(CookieController());
-app.use(SessionController());
-app.use(SendMailController());
-app.use(FileUploadController());
-app.use(ApiTest());
 app.use(ProfessorController());
 app.use(DepartmentController());
 
