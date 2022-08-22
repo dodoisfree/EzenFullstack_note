@@ -1,0 +1,57 @@
+2022-08-20 15:04:03 140 [debug]: --------------------------------------------
+2022-08-20 15:04:03 144 [debug]: |           Start Express Server           |
+2022-08-20 15:04:03 145 [debug]: --------------------------------------------
+2022-08-20 15:04:03 147 [debug]: server address => http://221.154.247.233:3001
+2022-08-20 15:04:03 149 [debug]: server address => http://192.168.221.1:3001
+2022-08-20 15:04:03 150 [debug]: server address => http://192.168.91.1:3001
+2022-08-20 15:04:03 151 [debug]: --------------------------------------------
+2022-08-20 15:04:22 455 [debug]: 클라이언트가 접속했습니다.
+2022-08-20 15:04:22 457 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-08-20 15:04:22 458 [debug]: [POST] http://localhost:3001/send_mail
+2022-08-20 15:04:22 487 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:22 488 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:22 489 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:22 490 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:22 491 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:22 492 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:23 738 [error]: [Error] Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials t11-20020a1709027fcb00b00172c7dee22fsm1445933plb.236 - gsmtp
+2022-08-20 15:04:23 739 [error]: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials t11-20020a1709027fcb00b00172c7dee22fsm1445933plb.236 - gsmtp
+    at SMTPConnection._formatError (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:787:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:1539:34)
+    at SMTPConnection.<anonymous> (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:543:26)
+    at SMTPConnection._processResponse (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:950:20)
+    at SMTPConnection._onData (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:752:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:191:44)
+    at TLSSocket.emit (node:events:526:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10)
+2022-08-20 15:04:23 744 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1287ms
+2022-08-20 15:04:23 744 [debug]: --------------------------------------------------------
+2022-08-20 15:04:55 889 [debug]: 클라이언트가 접속했습니다.
+2022-08-20 15:04:55 890 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia / (2022.4.2) / unknown
+2022-08-20 15:04:55 891 [debug]: [POST] http://localhost:3001/send_mail
+2022-08-20 15:04:55 894 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:55 894 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:55 895 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:55 895 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:55 895 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:55 896 [debug]: [HTTP %s Params]  %s=%s
+2022-08-20 15:04:56 846 [error]: [Error] Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i132-20020a62878a000000b0052dfe83e19csm4540494pfe.16 - gsmtp
+2022-08-20 15:04:56 847 [error]: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i132-20020a62878a000000b0052dfe83e19csm4540494pfe.16 - gsmtp
+    at SMTPConnection._formatError (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:787:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:1539:34)
+    at SMTPConnection.<anonymous> (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:543:26)
+    at SMTPConnection._processResponse (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:950:20)
+    at SMTPConnection._onData (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:752:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\14__RESTFULAPI\node_modules\nodemailer\lib\smtp-connection\index.js:191:44)
+    at TLSSocket.emit (node:events:526:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10)
+2022-08-20 15:04:56 850 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 960ms
+2022-08-20 15:04:56 851 [debug]: --------------------------------------------------------

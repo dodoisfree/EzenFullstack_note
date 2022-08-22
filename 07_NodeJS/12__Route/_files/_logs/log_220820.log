@@ -1,0 +1,34 @@
+2022-08-20 15:03:03 861 [debug]: --------------------------------------------
+2022-08-20 15:03:03 865 [debug]: |           Start Express Server           |
+2022-08-20 15:03:03 866 [debug]: --------------------------------------------
+2022-08-20 15:03:03 867 [debug]: server address => http://221.154.247.233:3001
+2022-08-20 15:03:03 869 [debug]: server address => http://192.168.221.1:3001
+2022-08-20 15:03:03 870 [debug]: server address => http://192.168.91.1:3001
+2022-08-20 15:03:03 870 [debug]: --------------------------------------------
+2022-08-20 15:03:25 194 [debug]: 클라이언트가 접속했습니다.
+2022-08-20 15:03:25 195 [debug]: [client] ::ffff:221.154.247.233 / Windows 10.0 / Chrome / (104.0.5112.87) / Microsoft Windows
+2022-08-20 15:03:25 199 [debug]: [GET] http://221.154.247.233:3001/
+2022-08-20 15:03:25 211 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+2022-08-20 15:03:25 212 [debug]: --------------------------------------------------------
+2022-08-20 15:03:25 449 [debug]: 클라이언트가 접속했습니다.
+2022-08-20 15:03:25 450 [debug]: [client] ::ffff:221.154.247.233 / Windows 10.0 / Chrome / (104.0.5112.87) / Microsoft Windows
+2022-08-20 15:03:25 451 [debug]: [GET] http://221.154.247.233:3001/favicon.ico
+2022-08-20 15:03:25 470 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 20ms
+2022-08-20 15:03:25 470 [debug]: --------------------------------------------------------
+2022-08-20 15:03:38 765 [debug]: 클라이언트가 접속했습니다.
+2022-08-20 15:03:38 765 [debug]: [client] ::ffff:221.154.247.233 / Windows 10.0 / Chrome / (104.0.5112.87) / Microsoft Windows
+2022-08-20 15:03:38 766 [debug]: [GET] http://221.154.247.233:3001/send_mail
+2022-08-20 15:03:38 772 [error]: [Error] 페이지를 찾을 수 없습니다.
+2022-08-20 15:03:38 772 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/yocas/Desktop/Down/EzenFullstack_note/07_NodeJS/12__Route/app.js:178:48
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\yocas\Desktop\Down\EzenFullstack_note\07_NodeJS\12__Route\node_modules\express\lib\router\index.js:328:13)
+2022-08-20 15:03:38 776 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+2022-08-20 15:03:38 777 [debug]: --------------------------------------------------------
